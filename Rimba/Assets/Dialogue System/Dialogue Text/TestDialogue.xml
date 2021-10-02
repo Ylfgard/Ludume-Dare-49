@@ -1,0 +1,20 @@
+<dialogue>
+    <sentence>
+        <text>Писатель: Герой просыпается в особняке.</text>
+        <duration>5</duration>
+        <fmodSoundPath>banks/event/dialogue1</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>Инвестор: Давайте чуть приземлённей.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>Писатель: Ну ладно. Герой просыпается в...</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>
