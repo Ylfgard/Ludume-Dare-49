@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   Speed: 5
-  Health: 0
-  Stamina: 0
+  Health: 100
+  Stamina: 100
