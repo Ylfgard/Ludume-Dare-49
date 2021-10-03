@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] private float knifeRange;
-    [SerializeField] private float pebbleRange;
+    public float knifeRange = 6f;
+    public float pebbleRange = 8f;
 
     [SerializeField] private GameObject knifeInHand;
     [SerializeField] private GameObject pebbleInHand;
@@ -58,6 +58,7 @@ public class Weapon : MonoBehaviour
                 knifeInHand.SetActive(false);
                 isKnifeAiming = false;
                 // Throw knife
+                InitThrowing(knifeProjectilePrefab);
                 Debug.Log("Throw knife");
             }
 
@@ -96,6 +97,7 @@ public class Weapon : MonoBehaviour
                 pebbleInHand.SetActive(false);
                 isPebbleAiming = false;
                 // Throw pebble
+                InitThrowing(pebbleProjectilePrefab);
                 Debug.Log("Throw pebble");
             }
 
@@ -124,6 +126,23 @@ public class Weapon : MonoBehaviour
             dist = transform.position + Vector3.ClampMagnitude(dist, (isKnifeAiming ? knifeRange : pebbleRange));
 
             trajectory.SetPosition(1, dist);
+        }
+    }
+
+    private void InitThrowing(GameObject projectilePrefab)
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = new Vector3(mousePos.x, mousePos.y, transform.position.z);
+        Vector3 direction = Vector3.Normalize(mousePos - transform.position);
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90f));
+
+        GameObject proj = Instantiate(projectilePrefab, transform.position, rotation);
+
+        if(proj.TryGetComponent(out Pebble p))
+        {
+            p.endPos = mousePos;
         }
     }
 }
