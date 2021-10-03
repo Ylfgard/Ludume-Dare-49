@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a8a295bbefb804db9d84ea1578face, type: 3}
   m_Name: Shotgun
   m_EditorClassIdentifier: 
-  Damage: 10
-  Accuracy: 1
+  Damage: 20
+  Accuracy: 10
   Rate: 1
-  Ammo: 0
+  Ammo: 480
+  AmmoPerShot: 5

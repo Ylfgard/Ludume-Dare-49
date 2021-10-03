@@ -9,7 +9,8 @@ public class MainCharacterLogic : BaseCharacterLogic
     {
         Move();
         Aim(MouseWorld.GetPosition());
-        if (Input.GetMouseButtonDown(0) && characterData.Weapon != null) Shoot();
+        Attack();
+        
     }
     private void Move()
     {
@@ -30,5 +31,14 @@ public class MainCharacterLogic : BaseCharacterLogic
         //{
         //    m_animator.SetBool("move", false);
         //}
+    }
+    public void Attack()
+    {
+        if (Input.GetMouseButtonDown(0) && characterData.Weapon != null && characterData.Weapon.WeaponObject.Ammo > characterData.Weapon.WeaponObject.AmmoPerShot && !isReloadingWeapon)
+        {
+            characterData.ChangeAmmo(-characterData.Weapon.WeaponObject.AmmoPerShot);
+            Shoot();
+            reloadingWeaponCoroutine = StartCoroutine(ReloadingWeaponsCoroutine());
+        }
     }
 }
