@@ -6,14 +6,22 @@ using UnityEngine;
 public class SwordAttack : MonoBehaviour
 {
     private int damage = 20;
-    public GameObject attacker;
+    public float cooldownTime;
+    private bool isCooldown;
     private float time;
+    
+    public GameObject attacker;
+    public GameObject slashEffect;
 
     // Start is called before the first frame update
     void Start()
     {
-        attacker = gameObject.transform.parent.gameObject;
+        var parent = transform.parent;
+        attacker = parent.gameObject;
         transform.position = attacker.transform.position;
+        slashEffect = Instantiate(slashEffect, parent.transform.position, parent.transform.rotation);
+        slashEffect.transform.parent = null;
+        slashEffect.transform.Rotate(0, 0, 90);
         StartCoroutine(Attack());
     }
 
@@ -28,6 +36,7 @@ public class SwordAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
+        Destroy(slashEffect.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
