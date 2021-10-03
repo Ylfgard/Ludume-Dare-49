@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2779412977307323569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.26, y: -0.87, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 271ade31dcf71e34e88ce523a2271903, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.99, y: 4.26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,9 +99,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1.08}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1.229871
 --- !u!50 &2779412977307323572
 Rigidbody2D:
   serializedVersion: 4
@@ -135,8 +135,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f228d5fb8f497be4fbc274d56b113c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDamage: 30
   HPText: {fileID: 0}
+  sword: {fileID: 3247788434698149695, guid: 3b2b6b1462a0d8b40accf1038bb8440a, type: 3}
+  spear: {fileID: 4056597273730945965, guid: 1a03e4fa1f3dcc64e93ec8bdb88977a8, type: 3}
+  hammer: {fileID: 3861803348845893281, guid: 0c8f8c9a9cebcb047aa87e06b8a3a611, type: 3}
+  hammerCharge: 0
+  medicineHeal: 30
+  directions:
+  - {fileID: 21300000, guid: 271ade31dcf71e34e88ce523a2271903, type: 3}
+  - {fileID: 21300000, guid: d41c5b32a84d1ff4aafe403d9ccb2e21, type: 3}
+  - {fileID: 21300000, guid: 6c885212f64c2cb48844035ca8d1d033, type: 3}
+  - {fileID: 21300000, guid: 5ecad19fb4918f246bb780a08008a14b, type: 3}
+  mouseRel: {x: 0, y: 0}
 --- !u!58 &2779412977307323575
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -144,7 +154,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2779412977307323569}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1

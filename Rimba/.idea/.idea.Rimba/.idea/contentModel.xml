@@ -13,6 +13,25 @@
             <e p="CharacterLogic.cs" t="Include" />
           </e>
         </e>
+        <e p="Dialogue System" t="Include">
+          <e p="Dialogue Text" t="Include">
+            <e p="TestDialogue.xml" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="DialogueHandler.cs" t="Include" />
+            <e p="DialogueTrigger.cs" t="Include" />
+            <e p="DialogueViewer.cs" t="Include" />
+            <e p="IDialogueEvent.cs" t="Include" />
+            <e p="SentenceShower.cs" t="Include" />
+          </e>
+          <e p="TestDialogueEvent.cs" t="Include" />
+        </e>
+        <e p="Menu" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="GamePauser.cs" t="Include" />
+            <e p="MenuFuntions.cs" t="Include" />
+          </e>
+        </e>
         <e p="Slasher" t="Include">
           <e p="Scripts" t="Include">
             <e p="Attacks" t="Include">
@@ -20,10 +39,20 @@
               <e p="SpearAttack.cs" t="Include" />
               <e p="SwordAttack.cs" t="Include" />
             </e>
+            <e p="DaVinchiMechController.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="playerTrigger.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Stage_Stealth" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Hero.cs" t="Include" />
+            <e p="Knife.cs" t="Include" />
+            <e p="KnifePickUp.cs" t="Include" />
+            <e p="Pebble.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

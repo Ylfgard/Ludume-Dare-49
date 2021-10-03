@@ -8,12 +8,16 @@ public class SwordAttack : MonoBehaviour
     private int damage = 20;
     public GameObject attacker;
     private float time;
+    
+    public GameObject slashEffect;
 
     // Start is called before the first frame update
     void Start()
     {
-        attacker = gameObject.transform.parent.gameObject;
+        var parent = gameObject.transform.parent;
+        attacker = parent.gameObject;
         transform.position = attacker.transform.position;
+        slashEffect = Instantiate(slashEffect, parent.transform.position, parent.transform.rotation);
         StartCoroutine(Attack());
     }
 
@@ -28,6 +32,7 @@ public class SwordAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
+        Destroy(slashEffect.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
