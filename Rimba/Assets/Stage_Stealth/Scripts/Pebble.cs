@@ -11,6 +11,7 @@ public class Pebble : MonoBehaviour
     private bool isResting;
     private Vector3 startPos;
     private Rigidbody2D rb;
+    private Collider2D coll;
 
     public Vector3 endPos { get; set; }
 
@@ -18,7 +19,7 @@ public class Pebble : MonoBehaviour
     {
         maxRange = GameObject.FindGameObjectWithTag("Player").GetComponent<Weapon>().pebbleRange;
         rb = GetComponent<Rigidbody2D>();
-
+        coll = GetComponent<Collider2D>();
     }
 
     private void Start()
@@ -51,8 +52,9 @@ public class Pebble : MonoBehaviour
 
     private void ProjectileStopped()
     {
-        enabled = false;
         rb.Sleep();
+        coll.enabled = false;
+        enabled = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
