@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Enemy
   m_EditorClassIdentifier: 
   Speed: 0
-  Health: 0
+  Health: 100
   Stamina: 0
   Weapon: {fileID: 0}

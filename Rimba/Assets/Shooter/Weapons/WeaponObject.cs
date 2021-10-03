@@ -5,7 +5,7 @@ using UnityEngine;
 public class WeaponObject : ScriptableObject
 {
     //public GameObject Visual;
-    public float Damage;
+    public int Damage;
     public float Accuracy;
     public float Rate;
     public float Ammo;

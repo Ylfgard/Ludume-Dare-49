@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a8a295bbefb804db9d84ea1578face, type: 3}
   m_Name: AssaultRifle
   m_EditorClassIdentifier: 
-  Visual: {fileID: 0}
-  Damage: 0
-  Accuracy: 0
-  Rate: 0
-  Ammo: 0
+  Damage: 5
+  Accuracy: 3
+  Rate: 0.5
+  Ammo: 20

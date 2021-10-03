@@ -5,36 +5,21 @@ using UnityEngine;
 public class BaseCharacterLogic : MonoBehaviour
 {
     public CharacterData characterData;
-    protected Rigidbody2D m_rigidBody;
     private Transform aimTransform;
+    protected Rigidbody2D m_rigidBody;
+    public GameObject hitPoint;
+    
     //private Animator aimAnimator;
-    //private Transform aimGunEndPointTransform;
+    
+    protected bool isReloadingWeapon = false;
+    protected Coroutine reloadingWeaponCoroutine;
     private void Awake()
     {
         aimTransform = transform.Find("Aim"); 
         m_rigidBody = GetComponent<Rigidbody2D>();
         characterData.Weapon = GetComponentInChildren<Weapon>();
     }
-    protected virtual void Move()
-    {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized;
-        Vector2 velocity = m_rigidBody.velocity;
-        {
-            velocity = movement * characterData.Speed;
-        }
-        m_rigidBody.velocity = velocity;
-
-        //if (velocity.x != 0 || velocity.y != 0)
-        //{
-        //    m_animator.SetBool("move", true);
-        //}
-        //else
-        //{
-        //    m_animator.SetBool("move", false);
-        //}
-    }
+    
     protected void Aim(Vector3 target)
     {
         aimTransform.LookAt(target);
@@ -67,9 +52,36 @@ public class BaseCharacterLogic : MonoBehaviour
             else
                 characterData.Weapon.SpriteRenderer.sortingLayerName = "WeaponBehind";
         }
-
+    }
+    protected IEnumerator ReloadingWeaponsCoroutine()
+    {
+        isReloadingWeapon = true;
+        yield return new WaitForSeconds(characterData.Weapon.WeaponObject.Rate);
+        isReloadingWeapon = false;
+        yield return null;
+    }
+    protected void TakeDamage(int damage)
+    {
+        characterData.ChangeHealth(-damage);
+        if (characterData.CurrentHealth < 1) Die();
     }
     protected void Shoot()
+    {
+        float accuracy = 90/characterData.Weapon.WeaponObject.Accuracy;
+        float spread = Random.Range(-accuracy, accuracy);
+        Vector3 spreadVector = Quaternion.Euler(0, 0, spread) * characterData.Weapon.AimGunEndPointTransform.right;
+        RaycastHit2D raycastHit2D = Physics2D.Raycast(characterData.Weapon.AimGunEndPointTransform.position, spreadVector);
+        Debug.DrawRay(characterData.Weapon.AimGunEndPointTransform.position, spreadVector);
+        if (raycastHit2D.collider != null)
+        {
+            BaseCharacterLogic characterLogic = raycastHit2D.collider.gameObject.GetComponent<BaseCharacterLogic>();
+            if (characterLogic != null)
+            {                
+                characterLogic.TakeDamage(characterData.Weapon.WeaponObject.Damage);
+            }
+        }
+    }
+    protected virtual void Die()
     {
 
     }

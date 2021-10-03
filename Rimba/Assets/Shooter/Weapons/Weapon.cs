@@ -9,12 +9,14 @@ public class Weapon : GroundItem
     public SpriteRenderer SpriteRenderer;
     public Vector3 localPosition;
     public bool isEquipped = false;
-    
+    public Transform AimGunEndPointTransform;
+
     void Awake() //test
     {
         rigidBody = GetComponent<Rigidbody2D>();
         SpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         rigidBody.bodyType = RigidbodyType2D.Kinematic;
+        AimGunEndPointTransform = transform.Find("AimGunEndPoint");
     }
 
     protected override void PickUp(Collector collector)

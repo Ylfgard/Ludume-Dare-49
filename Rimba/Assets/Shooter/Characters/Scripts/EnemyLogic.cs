@@ -5,12 +5,17 @@ using UnityEngine;
 public class EnemyLogic : BaseCharacterLogic
 {
     public Transform target;
+    public Transform mainCharacter;
     public List<Transform> PatrolPoints;
     private bool targetIsRight = true;
     private bool isPatrolling = true;
+    private bool isTargetDetected = false;
     private Coroutine patrolCoroutine;
     private Coroutine rotateTargetCoroutine;
     public float rotateSpeed;
+    public float VisibilityDistance;
+    public float cosViewingAngle = 0.5f;
+    
 
 
     private void Start()
@@ -18,8 +23,6 @@ public class EnemyLogic : BaseCharacterLogic
         transform.position = PatrolPoints[0].position;
         rotateTargetCoroutine = StartCoroutine(RotateTargetCoroutine());
         patrolCoroutine = StartCoroutine(PatrolCoroutine());
-
-
     }
     private IEnumerator RotateTargetCoroutine()
     {
@@ -59,15 +62,49 @@ public class EnemyLogic : BaseCharacterLogic
     }
     private void FixedUpdate()
     {
-        LookAround();
+        if(isPatrolling)
+        {
+            LookAround();
+            Patrol();
+        }
+        if(isTargetDetected)
+        {
+            Attack();
+        }
     }
 
     private void Patrol()
     {
-        
+        float diastance = Vector3.Distance(mainCharacter.position, transform.position);
+        Vector3 direction;
+        if(diastance <= VisibilityDistance)
+        {
+            direction = mainCharacter.position - transform.position;
+            if(Vector3.Dot(transform.up, direction) >= cosViewingAngle)
+            {
+                isTargetDetected = true;
+                isPatrolling = false;
+                StopCoroutine(patrolCoroutine);
+                StopCoroutine(rotateTargetCoroutine);
+            }
+        }        
     }
     private void LookAround()
     {
         if(isPatrolling) Aim(target.position);
     }
+    private void Attack()
+    {
+        Aim(mainCharacter.position);
+        if (!isReloadingWeapon)
+        {
+            Shoot();
+            reloadingWeaponCoroutine = StartCoroutine(ReloadingWeaponsCoroutine());
+        }
+    }
+    protected override void Die()
+    {
+        this.gameObject.SetActive(false);
+    }
+   
 }
