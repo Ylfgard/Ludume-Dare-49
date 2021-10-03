@@ -1,13 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.Rendering;
 
 public class DialogueHandler : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueFrame;
     [SerializeField] private Transform contentTransform;
     [SerializeField] private GameObject sentencePref;
+    [SerializeField] private Volume postProcessingVolume;
+    [SerializeField] private GameObject playImage;
     [HideInInspector] public UnityEvent showNextSentenceEvent;
     private List<IDialogueEvent> dialogueEvents = new List<IDialogueEvent>();
     private int curSentenceIndex = 0;
@@ -22,7 +24,12 @@ public class DialogueHandler : MonoBehaviour
     public void StartDialogue(TextAsset dialogue, IDialogueEvent[] dialEvs, bool pauseGame)
     {
         ClearSentences();
-        if(pauseGame) GamePauser.StopGame(gameObject);
+        if(pauseGame)
+        {
+            postProcessingVolume.weight = 1;
+            playImage.SetActive(true);
+            GamePauser.StopGame(gameObject);
+        }
         curSentenceIndex = 0;
         curDialogue = DialogueViewer.Load(dialogue);
         foreach(IDialogueEvent ev in dialEvs)
@@ -76,6 +83,11 @@ public class DialogueHandler : MonoBehaviour
         ClearSentences();
         dialogueFrame.SetActive(false);
         curDialogue = null;
+        if(playImage.activeSelf)
+        {
+            postProcessingVolume.weight = 0;
+            playImage.SetActive(false);
+        }
         GamePauser.ContinueGame(gameObject);
     }
 }
