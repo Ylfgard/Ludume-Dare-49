@@ -19,7 +19,7 @@ public class MenuFuntions : MonoBehaviour
     public void LoadLastPlayedLevel() 
     { 
         string loadedLevelName;
-        loadedLevelName = PlayerPrefs.GetString("lastGameScene", "MainMenu");
+        loadedLevelName = PlayerPrefs.GetString("lastGameScene", "Mansion");
         SceneManager.LoadScene(loadedLevelName); 
     }
 

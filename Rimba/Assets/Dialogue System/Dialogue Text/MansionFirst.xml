@@ -1,0 +1,20 @@
+<dialogue>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Итак, история моего героя начинается на частном приеме,  во время которого ему нужно выкрасть атомную бомбу.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text></text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Хотя нет! Какой частный прием, он должен выкрасть атомную бомбу из хорошо охраняемого настоящего логова террористов!</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>
