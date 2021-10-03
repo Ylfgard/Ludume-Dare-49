@@ -135,7 +135,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: da921d06d3933a948aa39c519fdf0412, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e442bdc8130aa24b80d9af4fb0ef906, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -180,9 +180,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.3944927}
+  m_Offset: {x: 0, y: -1.02}
   serializedVersion: 2
-  m_Radius: 0.9756657
+  m_Radius: 1.28
 --- !u!114 &5534596848813667657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,13 +197,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   HP: 100
-  enemyType: 1
+  enemyType: 0
   needToChase: 0
   sword: {fileID: 3247788434698149695, guid: 3b2b6b1462a0d8b40accf1038bb8440a, type: 3}
   spear: {fileID: 4056597273730945965, guid: 1a03e4fa1f3dcc64e93ec8bdb88977a8, type: 3}
   hammer: {fileID: 3861803348845893281, guid: 0c8f8c9a9cebcb047aa87e06b8a3a611, type: 3}
   directions:
-  - {fileID: 21300000, guid: da921d06d3933a948aa39c519fdf0412, type: 3}
-  - {fileID: 21300000, guid: 8e8857b555a93514e89c25d265c16f07, type: 3}
-  - {fileID: 21300000, guid: a13c4778c0c231344a8d78f615135413, type: 3}
-  - {fileID: 21300000, guid: 6a20ad8a510e59948a00fcf1ce92474f, type: 3}
+  - {fileID: 21300000, guid: 8e442bdc8130aa24b80d9af4fb0ef906, type: 3}
+  - {fileID: 21300000, guid: 979a0e0d6f71fa6438b552c2945fb4c7, type: 3}
+  - {fileID: 21300000, guid: 2f7b04c655f3bc6439133950358ec9cd, type: 3}
+  - {fileID: 21300000, guid: b34986ef1e06d584790047dbb881a6c9, type: 3}

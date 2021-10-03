@@ -32,7 +32,7 @@ public class EnemyController : MonoBehaviour
         player = GameObject.Find("Player");
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         enemyHPText = GameObject.Find("Enemy HP Text").GetComponent<Text>();
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        target = player.transform;
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
     

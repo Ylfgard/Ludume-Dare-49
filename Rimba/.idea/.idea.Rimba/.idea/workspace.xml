@@ -43,12 +43,13 @@
         <option value="$PROJECT_DIR$/Assets/Slaher/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Slaher/Scripts/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/PlayerTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SwordAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SpearAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/HammerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/DaVinchiMechController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SwordAttack.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +96,7 @@
       <updated>1633181857907</updated>
       <workItem from="1633181866813" duration="14646000" />
       <workItem from="1633196682159" duration="23706000" />
-      <workItem from="1633271338070" duration="18534000" />
+      <workItem from="1633271338070" duration="22914000" />
     </task>
     <servers />
   </component>

@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public GameObject sword;
     public GameObject spear;
     public GameObject hammer;
+    
+    private bool isCooldown;
 
     [SerializeField] private float hammerCharge = 0;
     [SerializeField] private int medicineHeal = 30;
@@ -52,7 +54,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (gameManager.isGameActive)
+        // Атаки разным оружием
+        if (gameManager.isGameActive && !isCooldown)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
@@ -129,16 +132,26 @@ public class PlayerController : MonoBehaviour
     void SwordAttack()
     {
         Instantiate(sword, gameObject.transform);
+        StartCoroutine(Cooldown(1.0f));
     }
 
     void SpearAttack()
     {
         Instantiate(spear, gameObject.transform);
+        StartCoroutine(Cooldown(3.0f));
     }
     
     void HammerAttack()
     {
         Instantiate(hammer, gameObject.transform);
+        StartCoroutine(Cooldown(1.0f));
+    }
+
+    IEnumerator Cooldown(float cooldownTime)
+    {
+        isCooldown = true;
+        yield return new WaitForSeconds(cooldownTime);
+        isCooldown = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
