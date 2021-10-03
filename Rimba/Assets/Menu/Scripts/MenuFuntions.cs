@@ -54,8 +54,6 @@ public class MenuFuntions : MonoBehaviour
         Application.Quit(); 
     }
 
-    
-
     private void Start() 
     {
         CloseMenu();

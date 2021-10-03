@@ -19,9 +19,10 @@ public class DialogueHandler : MonoBehaviour
         EndDialogue();
     }
 
-    public void StartDialogue(TextAsset dialogue, IDialogueEvent[] dialEvs)
+    public void StartDialogue(TextAsset dialogue, IDialogueEvent[] dialEvs, bool pauseGame)
     {
         ClearSentences();
+        if(pauseGame) GamePauser.StopGame(gameObject);
         curSentenceIndex = 0;
         curDialogue = DialogueViewer.Load(dialogue);
         foreach(IDialogueEvent ev in dialEvs)
@@ -75,5 +76,6 @@ public class DialogueHandler : MonoBehaviour
         ClearSentences();
         dialogueFrame.SetActive(false);
         curDialogue = null;
+        GamePauser.ContinueGame(gameObject);
     }
 }

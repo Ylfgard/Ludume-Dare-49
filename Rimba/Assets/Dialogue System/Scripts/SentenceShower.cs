@@ -27,7 +27,7 @@ public class SentenceShower : MonoBehaviour
 
     private IEnumerator ShowByLetters()
     {
-        yield return new WaitForSeconds(showByLettersDelay);
+        yield return new WaitForSecondsRealtime(showByLettersDelay);
         if(curSymbol < refSentenceText.Length)
         {
             curSentenceText += refSentenceText[curSymbol];
@@ -43,7 +43,7 @@ public class SentenceShower : MonoBehaviour
 
     private IEnumerator ShowNextSentence()
     {
-        yield return new WaitForSeconds(delayBeforeShowNext);
+        yield return new WaitForSecondsRealtime(delayBeforeShowNext);
         dialogueHandler.NextSentence();
         EndWritting();
     }

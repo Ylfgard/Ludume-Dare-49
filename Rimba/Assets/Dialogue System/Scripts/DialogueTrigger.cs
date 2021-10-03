@@ -10,6 +10,6 @@ public class DialogueTrigger : MonoBehaviour
     {
         dialogueHandler = FindObjectOfType<DialogueHandler>();
         IDialogueEvent[]  dialogueEvents = gameObject.GetComponents<IDialogueEvent>();
-        dialogueHandler.StartDialogue(dialogueText, dialogueEvents);
+        dialogueHandler.StartDialogue(dialogueText, dialogueEvents, true);
     }
 }
