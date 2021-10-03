@@ -162,7 +162,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!114 &2614957429387619491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  standTime: 3
+  standStillTime: 3
+  lookRange: 10
   waypoints:
   - {fileID: 0}
   - {fileID: 0}

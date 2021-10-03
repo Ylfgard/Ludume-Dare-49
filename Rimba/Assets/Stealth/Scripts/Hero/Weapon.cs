@@ -10,6 +10,8 @@ namespace ElusiveRimba
         public float knifeRange = 6f;
         public float pebbleRange = 8f;
 
+        [SerializeField] private int numberOfKnives = 5;
+
         [SerializeField] private float cooldown = 1f;
 
         [SerializeField] private GameObject knifeInHand;
@@ -55,7 +57,7 @@ namespace ElusiveRimba
             {
                 isLMBDown = true;
 
-                if(canAim && !isCooldown)
+                if(canAim && !isCooldown && numberOfKnives > 0)
                 {
                     EnableTrajectory(true);
                     knifeInHand.SetActive(true);
@@ -80,6 +82,7 @@ namespace ElusiveRimba
                     isKnifeAiming = false;
                     // Throw knife
                     InitThrowing(knifeProjectilePrefab);
+
                 }
 
                 if(!isRMBDown)
@@ -150,6 +153,9 @@ namespace ElusiveRimba
 
         private void InitThrowing(GameObject projectilePrefab)
         {
+            //if(projectilePrefab == knifeProjectilePrefab)
+            //    MinusOneKnife();
+
             lastThrowTime = Time.time;
 
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -164,6 +170,26 @@ namespace ElusiveRimba
             if(proj.TryGetComponent(out Pebble p))
             {
                 p.endPos = mousePos;
+            }
+            else
+            {
+                MinusOneKnife();
+            }
+        }
+
+        public void PlusOneKnife()
+        {
+            numberOfKnives++;
+            Debug.Log(numberOfKnives);
+            StealthStageManager.S.KnivesUIRefresh(numberOfKnives);
+        }
+        public void MinusOneKnife()
+        {
+            if(numberOfKnives > 0)
+            {
+                numberOfKnives--;
+                Debug.Log(numberOfKnives);
+                StealthStageManager.S.KnivesUIRefresh(numberOfKnives);
             }
         }
     }

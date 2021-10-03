@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace ElusiveRimba
 {
-
     public class Pebble : MonoBehaviour
     {
         [SerializeField] private float speed = 20;
