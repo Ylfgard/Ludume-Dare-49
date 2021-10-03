@@ -10,11 +10,29 @@ public class HammerAttack : MonoBehaviour
     private float speed = 3.0f;
     private float timeOfAttack = 0.5f;
     
+    private Vector2 target;
+
     // Start is called before the first frame update
     void Start()
     {
         attacker = gameObject.transform.parent.gameObject;
         transform.position = attacker.transform.position;
+        
+        if (attacker.CompareTag("Player"))
+        {
+            target = attacker.GetComponent<PlayerController>().mouseRel;
+        }
+
+        if (attacker.CompareTag("Enemy"))
+        {
+            target = GameObject.Find("Player").transform.position - gameObject.transform.position;
+        }
+
+        float angle = Mathf.Atan2(target.y, target.x) * Mathf.Rad2Deg - 90;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        
+        transform.parent = null;
+        
         StartCoroutine(Attack());
     }
 
