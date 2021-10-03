@@ -2,25 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Knife : MonoBehaviour
+public class Pebble : MonoBehaviour
 {
-    [SerializeField] private float speed = 35;
+    [SerializeField] private float speed = 20;
     [SerializeField] private float rotationSpeed = 100f;
 
-    private Rigidbody2D rb;
-    private Vector3 startPos, currentPos, endPos;
-    private float range;
+    private float maxRange, range;
     private bool isResting;
+    private Vector3 startPos;
+    private Rigidbody2D rb;
+
+    public Vector3 endPos { get; set; }
 
     private void Awake()
     {
-        range = GameObject.FindGameObjectWithTag("Player").GetComponent<Weapon>().knifeRange;
+        maxRange = GameObject.FindGameObjectWithTag("Player").GetComponent<Weapon>().pebbleRange;
         rb = GetComponent<Rigidbody2D>();
+
     }
 
     private void Start()
     {
         startPos = transform.position;
+
+        float r = (endPos - startPos).magnitude;
+        range = r < maxRange ? r : maxRange;
     }
 
     private void FixedUpdate()
@@ -30,21 +36,23 @@ public class Knife : MonoBehaviour
 
     private void Move()
     {
-        if(Mathf.Abs((transform.position - startPos).magnitude) < range)
+        float currPosRange = (transform.position - startPos).magnitude;
+        if(currPosRange < range)
         {
             transform.Translate(Vector3.up * speed * Time.fixedDeltaTime, Space.Self);
         }
         else
         {
             // Projectile ranged stop actions
+            // Fall on ground sound
             ProjectileStopped();
         }
     }
 
     private void ProjectileStopped()
     {
-        rb.Sleep();
         enabled = false;
+        rb.Sleep();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -52,14 +60,13 @@ public class Knife : MonoBehaviour
         switch(other.gameObject.tag)
         {
             case "Enemy":
-                // Enemy hit sound and blood effects
+                // When pebble hits enemy?
                 ProjectileStopped();
                 break;
 
             case "Obstacle":
-                // Obstacle hit sound and maybe some particle effects
+                // Obstacle hit sound (same as ground hit sound?)
                 ProjectileStopped();
-                Debug.Log("Collide OBS");
                 break;
 
             default:
