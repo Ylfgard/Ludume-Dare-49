@@ -2,7 +2,7 @@
     <sentence>
         <text>Писатель: Герой просыпается в особняке.</text>
         <duration>5</duration>
-        <fmodSoundPath>banks/event/dialogue1</fmodSoundPath>
+        <fmodSoundPath></fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
