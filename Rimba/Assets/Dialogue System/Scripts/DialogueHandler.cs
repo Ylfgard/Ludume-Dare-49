@@ -8,7 +8,6 @@ public class DialogueHandler : MonoBehaviour
     [SerializeField] private GameObject dialogueFrame;
     [SerializeField] private Transform contentTransform;
     [SerializeField] private GameObject sentencePref;
-    [SerializeField] private float showByLettersDelay; // Изменить на PlayerPrefs и брать из настроект
     [HideInInspector] public UnityEvent showNextSentenceEvent;
     private List<IDialogueEvent> dialogueEvents = new List<IDialogueEvent>();
     private int curSentenceIndex = 0;
@@ -59,7 +58,6 @@ public class DialogueHandler : MonoBehaviour
         sentenceShower.dialogueHandler = this;
         sentenceShower.refSentenceText = sentenceText;
         sentenceShower.fmodSoundPath = fmodSoundPath;
-        sentenceShower.showByLettersDelay = showByLettersDelay;
         sentenceShower.delayBeforeShowNext = delayBeforeShowNext;
     }
 

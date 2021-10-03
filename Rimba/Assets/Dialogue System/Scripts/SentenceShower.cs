@@ -5,10 +5,10 @@ using UnityEngine.UI;
 public class SentenceShower : MonoBehaviour
 {
     public string refSentenceText;
-    public float showByLettersDelay; // Изменить на PlayerPrefs и брать из настроект
     public float delayBeforeShowNext;
     public DialogueHandler dialogueHandler;
     public string fmodSoundPath;
+    private float showByLettersDelay;
     private string curSentenceText;
     private int curSymbol;
     private Text text;
@@ -17,7 +17,8 @@ public class SentenceShower : MonoBehaviour
     {
         dialogueHandler.showNextSentenceEvent.AddListener(EndWritting);
         text = gameObject.GetComponent<Text>();
-
+        
+        showByLettersDelay = PlayerPrefs.GetFloat("TextShowSpeed");
         curSentenceText = ""; curSymbol = 0;
         text.text = curSentenceText;
         //if(fmodSoundPath != "") ДОБАВИТЬ ЗВУК FMOD!!!
@@ -26,7 +27,7 @@ public class SentenceShower : MonoBehaviour
 
     private IEnumerator ShowByLetters()
     {
-        yield return new WaitForSecondsRealtime(showByLettersDelay);
+        yield return new WaitForSeconds(showByLettersDelay);
         if(curSymbol < refSentenceText.Length)
         {
             curSentenceText += refSentenceText[curSymbol];
@@ -42,7 +43,7 @@ public class SentenceShower : MonoBehaviour
 
     private IEnumerator ShowNextSentence()
     {
-        yield return new WaitForSecondsRealtime(delayBeforeShowNext);
+        yield return new WaitForSeconds(delayBeforeShowNext);
         dialogueHandler.NextSentence();
         EndWritting();
     }
