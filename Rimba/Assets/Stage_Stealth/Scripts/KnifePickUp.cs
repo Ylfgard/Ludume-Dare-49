@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KnifePickUp : MonoBehaviour
+namespace ElusiveRimba
 {
 
-
-    public bool canPickUp { get; set; }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class KnifePickUp : MonoBehaviour
     {
-        if(collision.gameObject.CompareTag("Player"))
+
+
+        public bool canPickUp { get; set; }
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            // Pick up knife
-            Debug.LogWarning("Knife should be added to inventory");
-            Destroy(gameObject);
+            if(collision.gameObject.CompareTag("Player"))
+            {
+                // Pick up knife
+                Debug.LogWarning("Knife should be added to inventory");
+                Destroy(gameObject);
+            }
         }
     }
 }

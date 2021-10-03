@@ -2,78 +2,82 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pebble : MonoBehaviour
+namespace ElusiveRimba
 {
-    [SerializeField] private float speed = 20;
-    [SerializeField] private float rotationSpeed = 100f;
 
-    private float maxRange, range;
-    private bool isResting;
-    private Vector3 startPos;
-    private Rigidbody2D rb;
-    private Collider2D coll;
-
-    public Vector3 endPos { get; set; }
-
-    private void Awake()
+    public class Pebble : MonoBehaviour
     {
-        maxRange = GameObject.FindGameObjectWithTag("Player").GetComponent<Weapon>().pebbleRange;
-        rb = GetComponent<Rigidbody2D>();
-        coll = GetComponent<Collider2D>();
-    }
+        [SerializeField] private float speed = 20;
+        [SerializeField] private float rotationSpeed = 100f;
 
-    private void Start()
-    {
-        startPos = transform.position;
+        private float maxRange, range;
+        private bool isResting;
+        private Vector3 startPos;
+        private Rigidbody2D rb;
+        private Collider2D coll;
 
-        float r = (endPos - startPos).magnitude;
-        range = r < maxRange ? r : maxRange;
-    }
+        public Vector3 endPos { get; set; }
 
-    private void FixedUpdate()
-    {
-        Move();
-    }
-
-    private void Move()
-    {
-        float currPosRange = (transform.position - startPos).magnitude;
-        if(currPosRange < range)
+        private void Awake()
         {
-            transform.Translate(Vector3.up * speed * Time.fixedDeltaTime, Space.Self);
+            maxRange = GameObject.FindGameObjectWithTag("Player").GetComponent<Weapon>().pebbleRange;
+            rb = GetComponent<Rigidbody2D>();
+            coll = GetComponent<Collider2D>();
         }
-        else
+
+        private void Start()
         {
-            // Projectile ranged stop actions
-            // Fall on ground sound
-            ProjectileStopped();
+            startPos = transform.position;
+
+            float r = (endPos - startPos).magnitude;
+            range = r < maxRange ? r : maxRange;
         }
-    }
 
-    private void ProjectileStopped()
-    {
-        rb.Sleep();
-        coll.enabled = false;
-        enabled = false;
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        switch(other.gameObject.tag)
+        private void FixedUpdate()
         {
-            case "Enemy":
-                // When pebble hits enemy?
-                ProjectileStopped();
-                break;
+            Move();
+        }
 
-            case "Obstacle":
-                // Obstacle hit sound (same as ground hit sound?)
+        private void Move()
+        {
+            float currPosRange = (transform.position - startPos).magnitude;
+            if(currPosRange < range)
+            {
+                transform.Translate(Vector3.up * speed * Time.fixedDeltaTime, Space.Self);
+            }
+            else
+            {
+                // Projectile ranged stop actions
+                // Fall on ground sound
                 ProjectileStopped();
-                break;
+            }
+        }
 
-            default:
-                // Other collisions
-                break;
+        private void ProjectileStopped()
+        {
+            rb.Sleep();
+            coll.enabled = false;
+            enabled = false;
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            switch(other.gameObject.tag)
+            {
+                case "Enemy":
+                    // When pebble hits enemy?
+                    ProjectileStopped();
+                    break;
+
+                case "Obstacle":
+                    // Obstacle hit sound (same as ground hit sound?)
+                    ProjectileStopped();
+                    break;
+
+                default:
+                    // Other collisions
+                    break;
+            }
         }
     }
 }
