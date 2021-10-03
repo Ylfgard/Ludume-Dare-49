@@ -5,20 +5,19 @@ using UnityEngine;
 public class CharacterLogic : MonoBehaviour
 {
     public CharacterData characterData;
-    private Rigidbody2D m_rigidBody;
+    protected Rigidbody2D m_rigidBody;
     private void Awake()
     {
         m_rigidBody = GetComponent<Rigidbody2D>();
     }
-    void Move()
+    protected void Move()
     {
-
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         Vector2 movement = new Vector2(moveHorizontal, moveVertical).normalized;
         Vector2 velocity = m_rigidBody.velocity;
         {
-            velocity = movement * characterData.Speed;                                     //Обычная скорость            
+            velocity = movement * characterData.Speed;         
         }
         m_rigidBody.velocity = velocity;
 

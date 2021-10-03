@@ -8,6 +8,7 @@ public class SentenceShower : MonoBehaviour
     public float delayBeforeShowNext;
     public DialogueHandler dialogueHandler;
     public string fmodSoundPath;
+    private FMOD.Studio.EventInstance instance;
     private float showByLettersDelay;
     private string curSentenceText;
     private int curSymbol;
@@ -21,13 +22,19 @@ public class SentenceShower : MonoBehaviour
         showByLettersDelay = PlayerPrefs.GetFloat("TextShowSpeed");
         curSentenceText = ""; curSymbol = 0;
         text.text = curSentenceText;
-        //if(fmodSoundPath != "") ДОБАВИТЬ ЗВУК FMOD!!!
+        if(fmodSoundPath != "")
+        {
+            instance = FMODUnity.RuntimeManager.CreateInstance(fmodSoundPath);
+            instance.start();
+            delayBeforeShowNext = FMODUnity.EventManager.EventFromPath(fmodSoundPath).Length + 0.1f;
+            StartCoroutine(ShowNextSentence());
+        }
         StartCoroutine(ShowByLetters());
     }
 
     private IEnumerator ShowByLetters()
     {
-        yield return new WaitForSeconds(showByLettersDelay);
+        yield return new WaitForSecondsRealtime(showByLettersDelay);
         if(curSymbol < refSentenceText.Length)
         {
             curSentenceText += refSentenceText[curSymbol];
@@ -37,13 +44,14 @@ public class SentenceShower : MonoBehaviour
         }
         else
         {
+            if(fmodSoundPath == "")
             StartCoroutine(ShowNextSentence()); 
         }
     }
 
     private IEnumerator ShowNextSentence()
     {
-        yield return new WaitForSeconds(delayBeforeShowNext);
+        yield return new WaitForSecondsRealtime(delayBeforeShowNext);
         dialogueHandler.NextSentence();
         EndWritting();
     }
@@ -51,6 +59,11 @@ public class SentenceShower : MonoBehaviour
     public void EndWritting()
     {
         StopAllCoroutines();
+        if(fmodSoundPath != "")
+        {
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            instance.release();
+        }
         Destroy(gameObject);
     }
 }

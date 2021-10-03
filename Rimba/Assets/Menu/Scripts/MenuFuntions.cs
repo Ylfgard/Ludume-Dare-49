@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuFuntions : MonoBehaviour
 {
+    [SerializeField] private bool isStartMenu;
     [SerializeField] private GameObject menuFone;
     [SerializeField] private GameObject settingsFone;
     [SerializeField] private Slider textShowSpeedSlider;
@@ -13,6 +14,13 @@ public class MenuFuntions : MonoBehaviour
     public void LoadLevel(string levelName) 
     { 
         SceneManager.LoadScene(levelName); 
+    }
+
+    public void LoadLastPlayedLevel() 
+    { 
+        string loadedLevelName;
+        loadedLevelName = PlayerPrefs.GetString("lastGameScene", "MainMenu");
+        SceneManager.LoadScene(loadedLevelName); 
     }
 
     public void RestartLevel() 
@@ -39,6 +47,7 @@ public class MenuFuntions : MonoBehaviour
     public void OpenMenu()
     {
         GamePauser.StopGame(gameObject);
+        CloseSettings();
         menuFone.SetActive(true);
     }
 
@@ -54,16 +63,22 @@ public class MenuFuntions : MonoBehaviour
         Application.Quit(); 
     }
 
-    
-
     private void Start() 
     {
-        CloseMenu();
+        if(isStartMenu) 
+        {
+            OpenMenu();
+        }
+        else 
+        {
+            PlayerPrefs.SetString("lastGameScene", SceneManager.GetActiveScene().name);
+            CloseMenu();
+        }
     }
 
     private void Update() 
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(!isStartMenu && Input.GetKeyDown(KeyCode.Escape))
             if(menuFone.activeSelf) CloseMenu();
             else OpenMenu();
     }
