@@ -7,54 +7,80 @@ namespace ElusiveRimba
     public class Enemy : MonoBehaviour
     {
         [SerializeField] private float speed = 100f;
-        [SerializeField] private float standTime = 3f;
+        [SerializeField] private float standStillTime = 3f;
+
+        [SerializeField] private float lookRange = 10f;
+        [SerializeField] private float hearRange = 3f;
+        [SerializeField] private float fieldOfView = 90f;
+
+        [Header("")]
+        [SerializeField] private GameObject hero;
         [SerializeField] private Transform[] waypoints;
 
-        private GameObject hero;
         private Transform targetWaypoint;
+        private Vector3 lookDirection;
 
         private int currWaypointNdx;
         private float changeActionTimer;
+        private bool isGameOver;
         private bool canMove;
-
-        //private bool canMove
-        //{
-        //    get
-        //    {
-        //        if(changeActionTimer >= Time.time)
-        //        {
-        //            return false;
-        //        }
-        //        else
-        //        {
-        //            return true;
-        //        }
-        //    }
-        //}
-
-        private void Awake()
-        {
-            hero = GameObject.FindGameObjectWithTag("Player");
-        }
 
         private void Start()
         {
-            StartCoroutine(StandingCoroutine(standTime));
+            StartCoroutine(StandingCoroutine(standStillTime));
         }
 
         private void Update()
         {
-            Patrolling();
+            if(!isGameOver)
+            {
+                Perception();
+                Patrolling();
+            }
+        }
+
+        private void Perception()
+        {
+            Vector3 vToHero = hero.transform.position - transform.position;
+            
+            if(vToHero.magnitude < lookRange)
+            {
+                float angle = Vector3.Angle(lookDirection, vToHero);
+                if(angle <= fieldOfView / 2)
+                {
+                    if(Physics2D.Raycast(transform.position, hero.transform.position - transform.position).collider.gameObject.CompareTag("Player"))
+                    {
+                        Debug.DrawRay(transform.position, hero.transform.position - transform.position, Color.yellow);
+
+                        //Game over
+                        StealthStageManager.S.GameOverAndRestart();
+                        Debug.LogWarning("RESTART LEVEL");
+                        isGameOver = true;
+                    }
+                }
+            }
+            else if(vToHero.magnitude < hearRange)
+            {
+                StealthStageManager.S.GameOverAndRestart();
+            }
+        }
+
+        private void ChangeLookDirection()
+        {
+            lookDirection = (waypoints[(currWaypointNdx + 1) % waypoints.Length].position - transform.position).normalized;
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawLine(transform.position, lookDirection * lookRange + transform.position);
+
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, hearRange);
         }
 
         private void Patrolling()
         {
-            //if(isMoving && (targetWaypoint.transform.position - transform.position).magnitude <= 0.1f)
-            //{
-            //    isMoving = false;
-            //    changeActionTimer = Time.time + standTime;
-            //}
-
             if(canMove)
             {
                 Move(targetWaypoint);
@@ -63,22 +89,22 @@ namespace ElusiveRimba
 
         private void Move(Transform target)
         {
-            //Vector3 direction = (target.transform.position - transform.position).normalized;
-            //transform.Translate(direction * speed * Time.deltaTime);
             transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
 
             if((target.transform.position - transform.position).magnitude <= 0.1f)
             {
-                //isMoving = false;
                 canMove = false;
-                changeActionTimer = Time.time + standTime;
-                StartCoroutine(StandingCoroutine(standTime));
+                changeActionTimer = Time.time + standStillTime;
+                StartCoroutine(StandingCoroutine(standStillTime));
             }
         }
 
         private IEnumerator StandingCoroutine(float time)
         {
+            ChangeLookDirection();
+
             yield return new WaitForSeconds(time);
+
             ChangeToNextTargetWaypoint();
             canMove = true;
         }
@@ -95,7 +121,6 @@ namespace ElusiveRimba
             }
 
             targetWaypoint = waypoints[currWaypointNdx];
-            Debug.Log("Waypoint: " + currWaypointNdx);
         }
     }
 }
