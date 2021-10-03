@@ -7,7 +7,9 @@ public class Knife : MonoBehaviour
     [SerializeField] private float speed = 35;
     [SerializeField] private float rotationSpeed = 100f;
 
+    private Collider2D coll;
     private Rigidbody2D rb;
+    private KnifePickUp knifePickUpScript;
     private Vector3 startPos, currentPos, endPos;
     private float range;
     private bool isResting;
@@ -15,7 +17,9 @@ public class Knife : MonoBehaviour
     private void Awake()
     {
         range = GameObject.FindGameObjectWithTag("Player").GetComponent<Weapon>().knifeRange;
+        coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
+        knifePickUpScript = GetComponent<KnifePickUp>();
     }
 
     private void Start()
@@ -44,6 +48,9 @@ public class Knife : MonoBehaviour
     private void ProjectileStopped()
     {
         rb.Sleep();
+        coll.isTrigger = true;
+        knifePickUpScript.canPickUp = true;
+
         enabled = false;
     }
 
@@ -59,7 +66,6 @@ public class Knife : MonoBehaviour
             case "Obstacle":
                 // Obstacle hit sound and maybe some particle effects
                 ProjectileStopped();
-                Debug.Log("Collide OBS");
                 break;
 
             default:

@@ -7,6 +7,8 @@ public class Weapon : MonoBehaviour
     public float knifeRange = 6f;
     public float pebbleRange = 8f;
 
+    [SerializeField] private float cooldown = 1f;
+
     [SerializeField] private GameObject knifeInHand;
     [SerializeField] private GameObject pebbleInHand;
     [SerializeField] private GameObject knifeProjectilePrefab;
@@ -16,6 +18,22 @@ public class Weapon : MonoBehaviour
     private bool canAim = true;
     private bool isKnifeAiming, isPebbleAiming;
     private bool isLMBDown, isRMBDown;
+    private float lastThrowTime;
+
+    public bool isCooldown
+    {
+        get
+        {
+            if(Time.time - lastThrowTime > cooldown)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    }
 
     private void Start()
     {
@@ -34,7 +52,7 @@ public class Weapon : MonoBehaviour
         {
             isLMBDown = true;
 
-            if(canAim)
+            if(canAim && !isCooldown)
             {
                 EnableTrajectory(true);
                 knifeInHand.SetActive(true);
@@ -59,7 +77,6 @@ public class Weapon : MonoBehaviour
                 isKnifeAiming = false;
                 // Throw knife
                 InitThrowing(knifeProjectilePrefab);
-                Debug.Log("Throw knife");
             }
 
             if(!isRMBDown)
@@ -73,7 +90,7 @@ public class Weapon : MonoBehaviour
         {
             isRMBDown = true;
 
-            if(canAim)
+            if(canAim && !isCooldown)
             {
                 EnableTrajectory(true);
                 pebbleInHand.SetActive(true);
@@ -98,7 +115,6 @@ public class Weapon : MonoBehaviour
                 isPebbleAiming = false;
                 // Throw pebble
                 InitThrowing(pebbleProjectilePrefab);
-                Debug.Log("Throw pebble");
             }
 
             if(!isLMBDown)
@@ -131,6 +147,8 @@ public class Weapon : MonoBehaviour
 
     private void InitThrowing(GameObject projectilePrefab)
     {
+        lastThrowTime = Time.time;
+
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos = new Vector3(mousePos.x, mousePos.y, transform.position.z);
         Vector3 direction = Vector3.Normalize(mousePos - transform.position);
