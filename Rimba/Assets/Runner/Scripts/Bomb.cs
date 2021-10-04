@@ -47,7 +47,7 @@ public class Bomb : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
-            SceneManager.LoadScene(Go_to_the_next.lvl);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 

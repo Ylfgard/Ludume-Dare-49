@@ -2,19 +2,19 @@
     <sentence>
         <text>ПИСАТЕЛЬ: А  когда он находит это изобретение...  Оказывается, что это атомная бомба, разработанная самим Леонардо да Винчи!</text>
         <duration>5</duration>
-        <fmodSoundPath></fmodSoundPath>
+        <fmodSoundPath>event:/а когда он находит это изобретение</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
         <text>ИЗДАТЕЛЬ: Опять атомная бомба? Что же вы придумаете дальше?</text>
         <duration>5</duration>
-        <fmodSoundPath></fmodSoundPath>
+        <fmodSoundPath>event:/опять атомная бомба</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Дальше са-амое интересное! Погоня! Наш герой похитил старинную атомную бомбу, созданную Леонардо да Винчи, но у нее запустился таймер, ну тот, который  обратного отсчета. Хорошо что на этот случай у него есть надежный друг, который живет на Кубе...</text>
+        <text>ПИСАТЕЛЬ: Дальше са-амое интересное! Погоня! Наш герой похитил старинную атомную бомбу, созданную Леонардо да Винчи, но у нее запустился таймер, ну... тот, который  обратного отсчета. Хорошо, что на этот случай у него есть надежный друг, который живет на Кубе...</text>
         <duration>15</duration>
-        <fmodSoundPath></fmodSoundPath>
+        <fmodSoundPath>event:/дальше самое интересное</fmodSoundPath>
         <triggerEvent>true</triggerEvent>
     </sentence>
 </dialogue>

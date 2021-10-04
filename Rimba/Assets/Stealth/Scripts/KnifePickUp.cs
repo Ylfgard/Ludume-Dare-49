@@ -21,7 +21,6 @@ namespace ElusiveRimba
             if(collision.gameObject.CompareTag("Player"))
             {
                 // Pick up knife
-                Debug.LogWarning("Knife should be added to inventory");
                 weaponScript.PlusOneKnife();
                 Destroy(gameObject);
             }
