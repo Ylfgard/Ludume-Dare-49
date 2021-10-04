@@ -7,7 +7,7 @@ public class DaVinchiMechController : MonoBehaviour
 {
     public float speed;
     public int HP;
-
+    [SerializeField] private TextAsset finalDialogue;
     private Transform target;
     private GameManager gameManager;
     private GameObject player;
@@ -69,6 +69,8 @@ public class DaVinchiMechController : MonoBehaviour
 
         if (HP <= 0)
         {
+            IDialogueEvent [] ide = gameObject.GetComponents<IDialogueEvent>();
+            FindObjectOfType<DialogueHandler>().StartDialogue(finalDialogue,ide,true);
             Destroy(gameObject);
             gameManager.GoToCredits();
         }
