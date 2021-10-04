@@ -24,6 +24,8 @@ namespace Rimba
             [SerializeField] private float attackDamage = 10f;
             [SerializeField] private float attackCooldown = 2f;
 
+            [SerializeField] private float coolnessReward = 40f;
+
             private Collider2D[] hits;
             private PlayerController target;
             private float speed;
@@ -51,6 +53,10 @@ namespace Rimba
             {
                 if (health <= 0)
                 {
+                    if (target)
+                    {
+                        target.coolness += coolnessReward;
+                    }
                     Destroy(gameObject);
                     return;
                 }
