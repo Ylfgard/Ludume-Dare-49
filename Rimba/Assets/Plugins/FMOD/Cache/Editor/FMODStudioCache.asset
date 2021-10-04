@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9137573937502016426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Desktop/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 637689766172284668
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-9100435066279679974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,7 +34,7 @@ MonoBehaviour:
   guid: 25e31e600bb9a04d8127e33a3e72730d
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -42,6 +60,28 @@ MonoBehaviour:
   lastModified: 637688843700075824
   FileSizes: []
   Exists: 1
+--- !u!114 &-9046031230429881045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
 --- !u!114 &-9032996972859258833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +100,7 @@ MonoBehaviour:
   lastModified: 637689137241575222
   FileSizes: []
   Exists: 0
---- !u!114 &-8716754786381218972
+--- !u!114 &-8694183547064801715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,21 +110,92 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0442\u043E\u0447\u043D\u043E \u0442\u043E\u0447\u043D\u043E 
-    \u0432 \u043F\u043E\u0434\u0432\u043E\u0440\u043E\u0442\u043D\u0435"
+  m_Name: "event:/\u0442\u0430\u043A \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043E\u043B\u0433\u043E"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0442\u043E\u0447\u043D\u043E \u0442\u043E\u0447\u043D\u043E  \u0432
-    \u043F\u043E\u0434\u0432\u043E\u0440\u043E\u0442\u043D\u0435"
-  guid: 7d2cf62f8f14d54fa9da95587ed78a6f
+  Path: "event:/\u0442\u0430\u043A \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043E\u043B\u0433\u043E"
+  guid: d04a664192094842bd91d5143c0d7822
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2936
+--- !u!114 &-8523705328207165819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u043D\u0435 \u0442\u0430\u043A"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u043D\u0435 \u0442\u0430\u043A"
+  guid: b42e157dd903f54c9cc57fe577eb5f93
+  Banks:
+  - {fileID: -9137573937502016426}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 16053
+  Length: 14734
+--- !u!114 &-8465399251766155159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043C\u043E\u0436\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+    \u0447\u0443\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043C\u043E\u0436\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+    \u0447\u0443\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
+  guid: a7407a7b2bf49d439c2f4c4f64a34cd6
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16376
+--- !u!114 &-8395324788914075200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0438\u043B\u0438 \u0435\u0433\u043E \u0431\u0440\u043E\u0441\u0438\u0442
+    \u0434\u0435\u0432\u0443\u0448\u043A\u0430"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0438\u043B\u0438 \u0435\u0433\u043E \u0431\u0440\u043E\u0441\u0438\u0442
+    \u0434\u0435\u0432\u0443\u0448\u043A\u0430"
+  guid: 383f7158bc37944491edb618eb390c32
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5289
 --- !u!114 &-8271440730780014260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,7 +212,7 @@ MonoBehaviour:
   guid: db96e8784f0ed047a81494d4af368a80
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -109,31 +220,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-8243206770448613910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0432\u0430\u043C \u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
-    \u0447\u0442\u043E \u044D\u0442\u043E \u0438\u0437\u0431\u0438\u0442\u044B\u0439"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0432\u0430\u043C \u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
-    \u0447\u0442\u043E \u044D\u0442\u043E \u0438\u0437\u0431\u0438\u0442\u044B\u0439"
-  guid: cbe69649fd2a9d4fb6bf4bc5ff69f621
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8906
 --- !u!114 &-8148652187946830720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +240,29 @@ MonoBehaviour:
   - Name: 
     Value: 792
   Exists: 1
+--- !u!114 &-8065372921074129638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043B\u0443\u0447\u0448\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043B\u0443\u0447\u0448\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435"
+  guid: 58e4cf9866f52043b1e55fa2897effda
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5349
 --- !u!114 &-7957756187874001222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +286,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 27724
---- !u!114 &-7952034271477005170
+--- !u!114 &-7876140530402713910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,19 +296,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439 \u0431\u043B\u043F\u0433\u043E\u0440\u043E\u0434\u0435\u043D"
+  m_Name: "event:/\u043F\u0443\u0441\u0442\u044C \u044D\u0442\u043E \u0431\u0443\u0434\u0435\u0442
+    \u0441\u0442\u0430\u0440\u0438\u043D\u043D\u044B\u0439 \u0437\u0430\u043C\u043E\u043A"
   m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439 \u0431\u043B\u043F\u0433\u043E\u0440\u043E\u0434\u0435\u043D"
-  guid: 389e51512cec324199e1663c9d1c169e
+  Path: "event:/\u043F\u0443\u0441\u0442\u044C \u044D\u0442\u043E \u0431\u0443\u0434\u0435\u0442
+    \u0441\u0442\u0430\u0440\u0438\u043D\u043D\u044B\u0439 \u0437\u0430\u043C\u043E\u043A"
+  guid: 0f02713d5055454abfeed4c0a557d9b5
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8716
+  Length: 8525
 --- !u!114 &-7827050678630093121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +327,7 @@ MonoBehaviour:
   guid: bc19cd64616b3547b124cd1bf83b21f3
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -224,7 +335,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1500
---- !u!114 &-7616971672145575488
+--- !u!114 &-7729166905177628124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,119 +345,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0430 \u0435\u0449\u0451 \u0434\u043E\u0431\u0430\u0432\u0438\u043C
-    \u0433\u0435\u0440\u043E\u044E"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u0430 \u0435\u0449\u0451 \u0434\u043E\u0431\u0430\u0432\u0438\u043C
-    \u0433\u0435\u0440\u043E\u044E"
-  guid: d747d50982b34c43a2bd4874cae24780
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6003
---- !u!114 &-7288863693704885735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0438 \u043F\u0440\u0430\u0432\u0434\u0430, \u043E\u0431\u044B\u0447\u043D\u043E\u0435
-    \u044F\u0432\u043B\u0435\u043D\u0438\u0435"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0438 \u043F\u0440\u0430\u0432\u0434\u0430, \u043E\u0431\u044B\u0447\u043D\u043E\u0435
-    \u044F\u0432\u043B\u0435\u043D\u0438\u0435"
-  guid: 6f5c2116b69e0448bba94e617c3a6056
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3954
---- !u!114 &-7205640029046598437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/dash
-  m_EditorClassIdentifier: 
-  Path: event:/dash
-  guid: bc4a5b0cd7627841abf88de92ecaf4ac
-  Banks:
-  - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
-  IsStream: 0
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 390
---- !u!114 &-6880128370321318416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u044F \u0442\u0443\u0442 \u043F\u043E\u0434\u0443\u043C\u0430\u043B"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u044F \u0442\u0443\u0442 \u043F\u043E\u0434\u0443\u043C\u0430\u043B"
-  guid: d942a67c191c8a41985ce2a3b63fd6f9
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 7432
---- !u!114 &-6764864314722999059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043A\u043E\u0433\u043E \u0432\u044B \u0432 \u0441\u0432\u043E\u0435\u043C
-    \u0443\u043C\u0435"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u043A\u043E\u0433\u043E \u0432\u044B \u0432 \u0441\u0432\u043E\u0435\u043C
-    \u0443\u043C\u0435"
-  guid: f0bfc750ee6e97409ca7f81fcf16db7e
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 7603
---- !u!114 &-6666381292086051203
+  Length: 27724
+--- !u!114 &-7210804234619671137
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -369,7 +380,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 27724
---- !u!114 &-6655178453277976490
+--- !u!114 &-7205640029046598437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -379,19 +390,115 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0430 \u0433\u0435\u0440\u043E\u0439"
+  m_Name: event:/dash
   m_EditorClassIdentifier: 
-  Path: "event:/\u0430 \u0433\u0435\u0440\u043E\u0439"
-  guid: f41bcc36e8ca1a4ba43d6277ab12e1a8
+  Path: event:/dash
+  guid: bc4a5b0cd7627841abf88de92ecaf4ac
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -5788830950135445270}
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 390
+--- !u!114 &-7200560221462039032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0430 \u043F\u043E\u0442\u043E\u043C \u043F\u0440\u0438\u0435\u0437\u0436\u0430\u044E\u0442
+    \u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0438\u043A\u0438"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u043F\u043E\u0442\u043E\u043C \u043F\u0440\u0438\u0435\u0437\u0436\u0430\u044E\u0442
+    \u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0438\u043A\u0438"
+  guid: a58c58fbfbde234bbd461f53fc4c0150
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13314
+--- !u!114 &-6945520178849829963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0434\u0430 \u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430 \u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
+  guid: dd82086ba3abfd4c9132fae8dde0f5cf
+  Banks:
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3686
+  Length: 2210
+--- !u!114 &-6648018159244533979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &-6645202452359016115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u0438 \u0435\u0449\u0451
+    \u0440\u0430\u0449 \u043D\u0435\u0442"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u0438 \u0435\u0449\u0451 \u0440\u0430\u0449
+    \u043D\u0435\u0442"
+  guid: 4e6384cb56ff814caa65cac9a0152a22
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13423
 --- !u!114 &-6602068192392138650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,7 +515,7 @@ MonoBehaviour:
   guid: bdd8ef3062910f41a64e539d5427215d
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -416,7 +523,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-6223362251690778408
+--- !u!114 &-6537062631237292874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -426,21 +533,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430\u043B\u044C\u0448\u0435 \u0441\u0430\u043C\u043E\u0435
-    \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430\u043B\u044C\u0448\u0435 \u0441\u0430\u043C\u043E\u0435
-    \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435"
-  guid: 42a3bbfd83163247ad414e30cfbab81b
-  Banks:
-  - {fileID: -5535843653654025189}
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
   IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &-6218088963090363933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0433\u0434\u0435 \u0431\u0443\u0434\u0435\u0442 \u0436\u0438\u0442\u044C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0433\u0434\u0435 \u0431\u0443\u0434\u0435\u0442 \u0436\u0438\u0442\u044C"
+  guid: e320d922a050c944a154356c9dea39a1
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 19071
+  Length: 4012
 --- !u!114 &-5961114208677291763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +634,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1500
---- !u!114 &-5917404937749953768
+--- !u!114 &-5803854655429973465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -517,102 +644,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430\u0434\u0430 \u044F \u043F\u0438\u0448\u0443 \u0440\u043E\u043C\u0430\u043D"
+  m_Name: "event:/\u0434\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430\u0434\u0430 \u044F \u043F\u0438\u0448\u0443 \u0440\u043E\u043C\u0430\u043D"
-  guid: e6c9a71928147141954071dbd64a1e2e
+  Path: "event:/\u0434\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C"
+  guid: faae5c191acadb42be850b98882b29d1
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 26734
---- !u!114 &-5788830950135445270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/fmod/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637689474177835803
-  FileSizes: []
-  Exists: 1
---- !u!114 &-5674636840286139450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: 
-  guid: 296910cc18679040b13bbdcdd7142d23
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 27724
---- !u!114 &-5574150701107196023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435 \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435 \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435"
-  guid: 25fbccd3a599a045aaa7a68d041ea166
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 16390
---- !u!114 &-5535843653654025189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/fmod/Desktop/Desktop/Master.bank
-  Name: Desktop/Master
-  StudioPath: bank:/Master
-  lastModified: 637689756547784850
-  FileSizes: []
-  Exists: 1
---- !u!114 &-5437940083944376971
+  Length: 11386
+--- !u!114 &-5790738734837648704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -629,7 +674,7 @@ MonoBehaviour:
     \u043C\u043D\u043E\u0433\u043E"
   guid: 7531adb258e3494a86ae8b0a3499fe9a
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -637,6 +682,47 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7645
+--- !u!114 &-5788830950135445270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637689143221689007
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5546320872407206570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
+  guid: f035b8965cf4e940b402c9ca89782638
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1395
 --- !u!114 &-5408116696647953133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,7 +739,7 @@ MonoBehaviour:
   guid: fff722549d84f44f8e8880e2b117ebdb
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -683,7 +769,27 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-5138435555781139081
+--- !u!114 &-5176531492224062711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Desktop/Desktop/Master.strings.bank
+  Name: Desktop/Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637689766172304673
+  FileSizes:
+  - Name: 
+    Value: 6210
+  Exists: 1
+--- !u!114 &-5075704685428510143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -693,22 +799,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043A\u043E\u043D\u0435\u0447\u043D\u043E \u0438 \u0435\u0449\u0451
-    \u0443 \u043D\u0435\u0433\u043E \u043D\u0430\u0448\u0430"
+  m_Name: "event:/\u0430 \u043F\u043E-\u043C\u043E\u0435\u043C\u0443 \u0432\u044B
+    \u0438\u0437\u043D\u0430\u0430\u043B\u044C\u043D\u043E"
   m_EditorClassIdentifier: 
-  Path: "event:/\u043A\u043E\u043D\u0435\u0447\u043D\u043E \u0438 \u0435\u0449\u0451
-    \u0443 \u043D\u0435\u0433\u043E \u043D\u0430\u0448\u0430"
-  guid: d6e3777813404147898c7be087780fde
+  Path: "event:/\u0430 \u043F\u043E-\u043C\u043E\u0435\u043C\u0443 \u0432\u044B \u0438\u0437\u043D\u0430\u0430\u043B\u044C\u043D\u043E"
+  guid: 9f98eb6fe2fa9d42a765ca00d4ee637a
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4678
---- !u!114 &-5088159122855976510
+  Length: 5442
+--- !u!114 &-4913337342767108859
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -718,21 +823,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0438\u043B\u0438 \u0435\u0433\u043E \u0431\u0440\u043E\u0441\u0438\u0442
-    \u0434\u0435\u0432\u0443\u0448\u043A\u0430"
+  m_Name: "event:/\u0433\u0435\u0440\u043E\u0439 \u0441\u043F\u0430\u0441\u0430\u0435\u0442\u0441\u044F"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0438\u043B\u0438 \u0435\u0433\u043E \u0431\u0440\u043E\u0441\u0438\u0442
-    \u0434\u0435\u0432\u0443\u0448\u043A\u0430"
-  guid: 383f7158bc37944491edb618eb390c32
+  Path: "event:/\u0433\u0435\u0440\u043E\u0439 \u0441\u043F\u0430\u0441\u0430\u0435\u0442\u0441\u044F"
+  guid: 40dcee824c97d341bca264931e59fb5c
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11347
+--- !u!114 &-4880912705547258704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0434\u0430\u0436\u0435 \u043D\u0435 \u0437\u043D\u0430\u044E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430\u0436\u0435 \u043D\u0435 \u0437\u043D\u0430\u044E"
+  guid: 3df7e914b336394ea53aa2023ac21529
+  Banks:
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5289
+  Length: 7570
 --- !u!114 &-4774839077425590031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,7 +875,7 @@ MonoBehaviour:
   guid: 0c24d34445fc514ea5a7821b65b87738
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -757,7 +883,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 410
---- !u!114 &-4606528120211645369
+--- !u!114 &-4714458604532542078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -767,20 +893,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0431\u0440\u043E\u0441\u044C\u0442\u0435"
+  m_Name: "event:/\u0437\u043D\u0430\u0435\u0442\u0435 \u0430 \u043C\u043D\u0435
+    \u0434\u0430\u0436\u0435 \u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0431\u0440\u043E\u0441\u044C\u0442\u0435"
-  guid: bfc797c9ca5d7c49acefd25d879ed5b7
+  Path: "event:/\u0437\u043D\u0430\u0435\u0442\u0435 \u0430 \u043C\u043D\u0435 \u0434\u0430\u0436\u0435
+    \u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F"
+  guid: 75b11a7a947faa43b8138d1541a980ff
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4788
---- !u!114 &-4393020390512748545
+  Length: 4710
+--- !u!114 &-4532086978623542871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -790,20 +918,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043F\u0443\u0441\u0442\u044C \u043B\u0443\u0447\u0448\u0435"
+  m_Name: "event:/\u0442\u0438\u0442\u0440\u044B \u0443\u0436\u0435 \u043D\u0430\u0447\u0430\u043B\u0438\u0441\u044C"
   m_EditorClassIdentifier: 
-  Path: "event:/\u043F\u0443\u0441\u0442\u044C \u043B\u0443\u0447\u0448\u0435"
-  guid: 71c001fb57144a459f5c15d67ebb8296
+  Path: "event:/\u0442\u0438\u0442\u0440\u044B \u0443\u0436\u0435 \u043D\u0430\u0447\u0430\u043B\u0438\u0441\u044C"
+  guid: 68cf43ec5ed32e41b122f6b092b0def9
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5759
---- !u!114 &-3385783963195929482
+  Length: 1262
+--- !u!114 &-4151395931827809966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -813,21 +941,115 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0430 \u043A\u043E\u0433\u0434\u0430 \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
-    \u044D\u0442\u043E \u0438\u0437\u043E\u0431\u0440\u0435\u0442\u0435\u043D\u0438\u0435"
+  m_Name: "event:/\u0441\u043E\u0434\u0435\u044F\u043D\u043E\u043C \u041B\u0435\u043E\u043D\u0430\u0440\u0434\u043E"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0430 \u043A\u043E\u0433\u0434\u0430 \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
-    \u044D\u0442\u043E \u0438\u0437\u043E\u0431\u0440\u0435\u0442\u0435\u043D\u0438\u0435"
-  guid: 47fbc37ed92cd04e87d9154390f77fef
+  Path: "event:/\u0441\u043E\u0434\u0435\u044F\u043D\u043E\u043C \u041B\u0435\u043E\u043D\u0430\u0440\u0434\u043E"
+  guid: 5eb3b7cc1d1e24409e1acefe9e6e5fa4
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8823
+  Length: 2304
+--- !u!114 &-4102261012628422440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
+    \u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0438\u0439 \u0434\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
+    \u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0438\u0439 \u0434\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
+  guid: e1684f46de4c19439c779b3208e6967c
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13013
+--- !u!114 &-4093099465160908507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0432\u0440\u043E\u0434\u0435 \u0431\u044B"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0432\u0440\u043E\u0434\u0435 \u0431\u044B"
+  guid: e339758f741645478d297ad2e14ba0b3
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5495
+--- !u!114 &-3640541328673599867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0442\u043E\u0447\u043D\u043E \u0442\u043E\u0447\u043D\u043E 
+    \u0432 \u043F\u043E\u0434\u0432\u043E\u0440\u043E\u0442\u043D\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0442\u043E\u0447\u043D\u043E \u0442\u043E\u0447\u043D\u043E  \u0432
+    \u043F\u043E\u0434\u0432\u043E\u0440\u043E\u0442\u043D\u0435"
+  guid: 7d2cf62f8f14d54fa9da95587ed78a6f
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16053
+--- !u!114 &-3190922854677829980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
 --- !u!114 &-3172950367974121865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,7 +1066,7 @@ MonoBehaviour:
   guid: f801d068f9627749801839ee71f7d244
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -852,25 +1074,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3250
---- !u!114 &-2929287536771658310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Bank A.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/fmod/Desktop/Desktop/Bank A.bank
-  Name: Desktop/Bank A
-  StudioPath: bank:/Bank A
-  lastModified: 637689756547334824
-  FileSizes: []
-  Exists: 1
---- !u!114 &-2767620057637710937
+--- !u!114 &-3064125723539431650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -880,21 +1084,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430 \u0432\u044B \u043F\u0440\u043E\u0441\u0442\u043E
-    \u0445\u043E\u0442\u0438\u0442\u0435"
+  m_Name: "event:/\u0432\u0434\u043E\u0445"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430 \u0432\u044B \u043F\u0440\u043E\u0441\u0442\u043E \u0445\u043E\u0442\u0438\u0442\u0435"
-  guid: cf5b73fa26d70e49b505c3740ac30274
+  Path: "event:/\u0432\u0434\u043E\u0445"
+  guid: 2e879ec7c65431478659bb2912db21ff
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3660
---- !u!114 &-2727097202636794272
+  Length: 3492
+--- !u!114 &-3045673713463286591
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -904,20 +1107,68 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435 \u0434\u0443\u043C\u0430\u044E"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0435\u0442 \u043D\u0435 \u0434\u0443\u043C\u0430\u044E"
-  guid: 8a7aaf992766df468289306f919ac122
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &-2731863024731806114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
+    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
+    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
+  guid: 931b89714561164f8f3ab18be4e49383
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5423
+--- !u!114 &-2605612492938566991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0438 \u0432\u043E\u0442 \u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0438 \u0432\u043E\u0442 \u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439"
+  guid: d54936c86547ac4292afca481a3e5399
+  Banks:
+  - {fileID: -9137573937502016426}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 14990
---- !u!114 &-2679253013632222903
+  Length: 10950
+--- !u!114 &-2511495179439621819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -927,44 +1178,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043F\u0443\u0441\u0442\u044C \u044D\u0442\u043E \u0431\u0443\u0434\u0435\u0442
-    \u0441\u0442\u0430\u0440\u0438\u043D\u043D\u044B\u0439 \u0437\u0430\u043C\u043E\u043A"
+  m_Name: "event:/\u043D\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C \u0437\u043B\u043E\u0434\u0435\u044F
+    \u0441\u043B\u0438\u0448\u043A\u043E\u043C"
   m_EditorClassIdentifier: 
-  Path: "event:/\u043F\u0443\u0441\u0442\u044C \u044D\u0442\u043E \u0431\u0443\u0434\u0435\u0442
-    \u0441\u0442\u0430\u0440\u0438\u043D\u043D\u044B\u0439 \u0437\u0430\u043C\u043E\u043A"
-  guid: 0f02713d5055454abfeed4c0a557d9b5
+  Path: "event:/\u043D\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C \u0437\u043B\u043E\u0434\u0435\u044F
+    \u0441\u043B\u0438\u0448\u043A\u043E\u043C"
+  guid: d8d4720e98bfee48b52a976b7deb7750
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8525
---- !u!114 &-2558981733035224757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0442\u0438\u0442\u0440\u044B \u0443\u0436\u0435 \u043D\u0430\u0447\u0430\u043B\u0438\u0441\u044C"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0442\u0438\u0442\u0440\u044B \u0443\u0436\u0435 \u043D\u0430\u0447\u0430\u043B\u0438\u0441\u044C"
-  guid: 68cf43ec5ed32e41b122f6b092b0def9
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1262
+  Length: 7355
 --- !u!114 &-2455483902430768598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,7 +1209,7 @@ MonoBehaviour:
   guid: aae17726d075194eb724b1d313080159
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -989,29 +1217,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-2419624820562171429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0443 \u0443\u0436 \u043D\u0435\u0442"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0443 \u0443\u0436 \u043D\u0435\u0442"
-  guid: 304927680fed3b4e8e7fdab29655c989
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4944
 --- !u!114 &-2386006341458478031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1028,7 +1233,7 @@ MonoBehaviour:
   guid: 312a48454a7a8444804c7610463e46d1
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1036,6 +1241,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 320
+--- !u!114 &-2334258985387782821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
 --- !u!114 &-2056237394088243595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,7 +1285,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-1962831151748706410
+--- !u!114 &-1664297512350314811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1068,22 +1295,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043C\u043E\u0436\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-    \u0447\u0443\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
+  m_Name: "event:/\u043D\u0443 \u043D\u0435\u0442 \u044D\u0442\u043E \u0441\u043A\u0443\u0447\u043D\u043E"
   m_EditorClassIdentifier: 
-  Path: "event:/\u043C\u043E\u0436\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-    \u0447\u0443\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
-  guid: a7407a7b2bf49d439c2f4c4f64a34cd6
+  Path: "event:/\u043D\u0443 \u043D\u0435\u0442 \u044D\u0442\u043E \u0441\u043A\u0443\u0447\u043D\u043E"
+  guid: 6c055fd40346114da935ee31859d87d3
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 16376
---- !u!114 &-1950806084972637455
+  Length: 21853
+--- !u!114 &-1643393517226477725
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1105,7 +1330,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 27724
---- !u!114 &-1368380524671741273
+--- !u!114 &-1527676662104522006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1115,19 +1340,66 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0443 \u043D\u0435\u0442 \u044D\u0442\u043E \u0441\u043A\u0443\u0447\u043D\u043E"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0443 \u043D\u0435\u0442 \u044D\u0442\u043E \u0441\u043A\u0443\u0447\u043D\u043E"
-  guid: 6c055fd40346114da935ee31859d87d3
-  Banks:
-  - {fileID: -5535843653654025189}
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
   IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &-1496771740293838411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0430 \u0433\u0435\u0440\u043E\u0439"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0433\u0435\u0440\u043E\u0439"
+  guid: f41bcc36e8ca1a4ba43d6277ab12e1a8
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 21853
+  Length: 3686
+--- !u!114 &-1357691517042815203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043A\u043E\u0433\u043E \u0432\u044B \u0432 \u0441\u0432\u043E\u0435\u043C
+    \u0443\u043C\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043A\u043E\u0433\u043E \u0432\u044B \u0432 \u0441\u0432\u043E\u0435\u043C
+    \u0443\u043C\u0435"
+  guid: f0bfc750ee6e97409ca7f81fcf16db7e
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7603
 --- !u!114 &-1306822890344288268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,7 +1416,7 @@ MonoBehaviour:
   guid: d65aec6f5e34284e8bb4f02d8e9d6909
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1152,7 +1424,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-1159164158475745221
+--- !u!114 &-1253503529801133057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1162,42 +1434,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0432\u0434\u043E\u0445"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u0432\u0434\u043E\u0445"
-  guid: 2e879ec7c65431478659bb2912db21ff
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3492
---- !u!114 &-1129549046561267385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0433\u0435\u0440\u043E\u0439 \u0441\u043F\u0430\u0441\u0430\u0435\u0442\u0441\u044F"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0433\u0435\u0440\u043E\u0439 \u0441\u043F\u0430\u0441\u0430\u0435\u0442\u0441\u044F"
-  guid: 40dcee824c97d341bca264931e59fb5c
-  Banks:
-  - {fileID: -5535843653654025189}
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11347
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
 --- !u!114 &-1066379260133146287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,7 +1468,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-983040590483088532
+--- !u!114 &-1058457336574641468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1230,44 +1478,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0442\u0430\u0439\u0433\u0430, \u0441\u0438\u0431\u0438\u0440\u0441\u043A\u0430\u044F
-    \u0445\u043E\u043B\u043E\u0434\u043D\u0430\u044F"
+  m_Name: "event:/\u043D\u0443 \u0430\u043B\u0438\u0433\u0430\u0442\u043E\u0440\u0430
+    , \u043A\u0430\u0439\u043C\u0430\u043D\u0430"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0442\u0430\u0439\u0433\u0430, \u0441\u0438\u0431\u0438\u0440\u0441\u043A\u0430\u044F
-    \u0445\u043E\u043B\u043E\u0434\u043D\u0430\u044F"
-  guid: 14d30304d84c524391e62d5b11f1a502
+  Path: "event:/\u043D\u0443 \u0430\u043B\u0438\u0433\u0430\u0442\u043E\u0440\u0430
+    , \u043A\u0430\u0439\u043C\u0430\u043D\u0430"
+  guid: 2cddf56f680bdb489969b07f8298d47a
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8489
---- !u!114 &-971519956041656702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
-  guid: f035b8965cf4e940b402c9ca89782638
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1395
+  Length: 6544
 --- !u!114 &-876183036164634536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1288,7 +1513,7 @@ MonoBehaviour:
   - Name: 
     Value: 1452
   Exists: 0
---- !u!114 &-800155838261549835
+--- !u!114 &-812798486437866603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1298,44 +1523,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0442\u043E\u0433\u0434\u0430 \u0433\u0435\u0440\u043E\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0435\u0442
-    \u0443 \u043D\u0435\u0433\u043E"
+  m_Name: "event:/\u0442\u0430\u0439\u0433\u0430, \u0441\u0438\u0431\u0438\u0440\u0441\u043A\u0430\u044F
+    \u0445\u043E\u043B\u043E\u0434\u043D\u0430\u044F"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0442\u043E\u0433\u0434\u0430 \u0433\u0435\u0440\u043E\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0435\u0442
-    \u0443 \u043D\u0435\u0433\u043E"
-  guid: b0914feec21b7740b91300277c1186a9
+  Path: "event:/\u0442\u0430\u0439\u0433\u0430, \u0441\u0438\u0431\u0438\u0440\u0441\u043A\u0430\u044F
+    \u0445\u043E\u043B\u043E\u0434\u043D\u0430\u044F"
+  guid: 14d30304d84c524391e62d5b11f1a502
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 7496
---- !u!114 &-796458461164805810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430 \u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430 \u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
-  guid: dd82086ba3abfd4c9132fae8dde0f5cf
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2210
+  Length: 8489
 --- !u!114 &-713142032915921784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1354,7 +1556,7 @@ MonoBehaviour:
   lastModified: 637688843707510459
   FileSizes: []
   Exists: 1
---- !u!114 &-707256437763158418
+--- !u!114 &-560165806747427344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1364,20 +1566,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0438 \u0442\u0430\u043A \u0438\u0441\u0442\u043E\u0440\u0438\u044F"
+  m_Name: "event:/\u0434\u0430\u0434\u0430 \u044F \u043F\u0438\u0448\u0443 \u0440\u043E\u043C\u0430\u043D"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0438 \u0442\u0430\u043A \u0438\u0441\u0442\u043E\u0440\u0438\u044F"
-  guid: 70d3752aae26b04999d6177d338504c6
+  Path: "event:/\u0434\u0430\u0434\u0430 \u044F \u043F\u0438\u0448\u0443 \u0440\u043E\u043C\u0430\u043D"
+  guid: e6c9a71928147141954071dbd64a1e2e
   Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
+  - {fileID: -9137573937502016426}
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8740
---- !u!114 &-450080539110142015
+  Length: 26734
+--- !u!114 &-271756510080442461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1387,19 +1589,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0441\u043E\u0434\u0435\u044F\u043D\u043E\u043C \u041B\u0435\u043E\u043D\u0430\u0440\u0434\u043E"
+  m_Name: "event:/\u043D\u0443 \u0430 \u0438\u043D\u0430\u0447\u0435 \u0441\u043A\u0443\u0447\u043D\u043E"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0441\u043E\u0434\u0435\u044F\u043D\u043E\u043C \u041B\u0435\u043E\u043D\u0430\u0440\u0434\u043E"
-  guid: 5eb3b7cc1d1e24409e1acefe9e6e5fa4
+  Path: "event:/\u043D\u0443 \u0430 \u0438\u043D\u0430\u0447\u0435 \u0441\u043A\u0443\u0447\u043D\u043E"
+  guid: 3e4a4038a510c344b8498ce44059eaef
   Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
+  - {fileID: -9137573937502016426}
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2304
+  Length: 11990
 --- !u!114 &-201560761087458428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,7 +1618,7 @@ MonoBehaviour:
   guid: 67937f5a623ba042a0ab6c017fb66c0f
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1424,6 +1626,31 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1640
+--- !u!114 &-117680831266193208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0434\u0430 \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F
+    \u0447\u0442\u043E \u044D\u0442\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430 \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F
+    \u0447\u0442\u043E \u044D\u0442\u043E"
+  guid: 217b85386fa82e4b8f829c86e871b4e0
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16115
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1439,9 +1666,9 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 7096970982621069173}
   - {fileID: -5788830950135445270}
-  - {fileID: 5645055159080164812}
-  - {fileID: -2929287536771658310}
-  - {fileID: -5535843653654025189}
+  - {fileID: -5176531492224062711}
+  - {fileID: 1019284415157357494}
+  - {fileID: -9137573937502016426}
   EditorEvents:
   - {fileID: 8191511290356568764}
   - {fileID: -4774839077425590031}
@@ -1459,84 +1686,84 @@ MonoBehaviour:
   - {fileID: -8271440730780014260}
   - {fileID: -3172950367974121865}
   - {fileID: -5408116696647953133}
-  - {fileID: 3933292442622632302}
-  - {fileID: 4019100682297624779}
-  - {fileID: 3032089660742523689}
-  - {fileID: -2679253013632222903}
-  - {fileID: -983040590483088532}
-  - {fileID: 1447484946464684770}
-  - {fileID: -5574150701107196023}
-  - {fileID: 8264954963704092763}
-  - {fileID: 5910914677684740511}
-  - {fileID: -1159164158475745221}
-  - {fileID: -2419624820562171429}
-  - {fileID: -5088159122855976510}
-  - {fileID: -7952034271477005170}
-  - {fileID: 2129390628916069863}
-  - {fileID: 6794144323677597234}
-  - {fileID: 8646178263225732679}
-  - {fileID: -1129549046561267385}
-  - {fileID: -6223362251690778408}
-  - {fileID: -3385783963195929482}
-  - {fileID: 8208160919028455153}
-  - {fileID: 7607511638847652155}
-  - {fileID: 132084588343159816}
-  - {fileID: -450080539110142015}
-  - {fileID: 1289785493972934158}
-  - {fileID: -2558981733035224757}
-  - {fileID: -1368380524671741273}
-  - {fileID: -7288863693704885735}
-  - {fileID: -707256437763158418}
-  - {fileID: -4393020390512748545}
-  - {fileID: -5437940083944376971}
-  - {fileID: 6001985163159485299}
-  - {fileID: 5316465694417656171}
-  - {fileID: -8716754786381218972}
-  - {fileID: 4977177733702106753}
-  - {fileID: -2727097202636794272}
-  - {fileID: 8438011321081266713}
-  - {fileID: 5056685064568061495}
-  - {fileID: 8581536768540807132}
-  - {fileID: 6266294290929029804}
-  - {fileID: 4753510607818270206}
-  - {fileID: -1962831151748706410}
-  - {fileID: -800155838261549835}
-  - {fileID: 7370261677407082213}
-  - {fileID: 6034563631652260941}
-  - {fileID: 1207913334928580996}
-  - {fileID: -4606528120211645369}
-  - {fileID: 1951645087874579813}
-  - {fileID: 942261116605006383}
-  - {fileID: -8243206770448613910}
-  - {fileID: -2767620057637710937}
-  - {fileID: 6776679297031428883}
-  - {fileID: 4249812680656708032}
-  - {fileID: -5138435555781139081}
-  - {fileID: -7616971672145575488}
-  - {fileID: 4210465224446473127}
-  - {fileID: -6880128370321318416}
-  - {fileID: -796458461164805810}
-  - {fileID: 5049697313869154901}
-  - {fileID: 4655538290561881954}
-  - {fileID: 4791620349500860382}
-  - {fileID: 587310009628044355}
-  - {fileID: -5917404937749953768}
-  - {fileID: 5739332562931402698}
-  - {fileID: -971519956041656702}
-  - {fileID: -6764864314722999059}
-  - {fileID: -6655178453277976490}
-  - {fileID: 8763987167496165217}
-  - {fileID: 1135686640484301283}
-  - {fileID: -6666381292086051203}
+  - {fileID: 2146516505593689445}
+  - {fileID: 8503778077276401132}
+  - {fileID: 5750486701825299191}
+  - {fileID: -7876140530402713910}
+  - {fileID: -812798486437866603}
+  - {fileID: -117680831266193208}
+  - {fileID: 7147467430145341900}
+  - {fileID: 6107824024573148204}
+  - {fileID: -1058457336574641468}
+  - {fileID: -3064125723539431650}
+  - {fileID: 2533529526504934776}
+  - {fileID: -8395324788914075200}
+  - {fileID: 1218233716141323347}
+  - {fileID: 2487484057764615762}
+  - {fileID: -4880912705547258704}
+  - {fileID: -271756510080442461}
+  - {fileID: -4913337342767108859}
+  - {fileID: 6651905618822789562}
+  - {fileID: 4725215946291668750}
+  - {fileID: 2538156721152196093}
+  - {fileID: -6645202452359016115}
+  - {fileID: -8065372921074129638}
+  - {fileID: -4151395931827809966}
+  - {fileID: 9024404130089021317}
+  - {fileID: -4532086978623542871}
+  - {fileID: -1664297512350314811}
+  - {fileID: 5296818644948383651}
+  - {fileID: 7884411178308059283}
+  - {fileID: 6274331160500186661}
+  - {fileID: -5790738734837648704}
+  - {fileID: -4714458604532542078}
+  - {fileID: 5905841712399509531}
+  - {fileID: -3640541328673599867}
+  - {fileID: 5017548783270037992}
+  - {fileID: 2277150255640371536}
+  - {fileID: 56904775487562793}
+  - {fileID: 7101648090096062927}
+  - {fileID: -2731863024731806114}
+  - {fileID: -5075704685428510143}
+  - {fileID: -7200560221462039032}
+  - {fileID: -8465399251766155159}
+  - {fileID: 8019872867876518733}
+  - {fileID: -8523705328207165819}
+  - {fileID: 9066415827339096436}
+  - {fileID: 1319878241710223413}
+  - {fileID: 7014152076706807267}
+  - {fileID: 1066406302242347375}
+  - {fileID: 9034218031389077342}
+  - {fileID: 8729828832899892572}
+  - {fileID: 1005625943383696003}
+  - {fileID: -8694183547064801715}
+  - {fileID: -2605612492938566991}
+  - {fileID: 4674427532660628419}
+  - {fileID: 3409624451039310794}
+  - {fileID: -2511495179439621819}
+  - {fileID: 3157110012999854056}
+  - {fileID: -6945520178849829963}
+  - {fileID: -4102261012628422440}
+  - {fileID: -6218088963090363933}
+  - {fileID: -4093099465160908507}
+  - {fileID: 5491877693293517176}
+  - {fileID: -560165806747427344}
+  - {fileID: 6048569263335411855}
+  - {fileID: -5546320872407206570}
+  - {fileID: -1357691517042815203}
+  - {fileID: -1496771740293838411}
+  - {fileID: 2483279082852695479}
+  - {fileID: -5803854655429973465}
+  - {fileID: -7210804234619671137}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   StringsBanks:
-  - {fileID: 5645055159080164812}
-  stringsBankWriteTime: 637689756547804851
+  - {fileID: -5176531492224062711}
+  stringsBankWriteTime: 637689766172304673
   cacheVersion: 8
---- !u!114 &132084588343159816
+--- !u!114 &24828129690960311
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1546,20 +1773,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043B\u0443\u0447\u0448\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u043B\u0443\u0447\u0448\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435"
-  guid: 58e4cf9866f52043b1e55fa2897effda
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5349
---- !u!114 &587310009628044355
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &56904775487562793
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1569,19 +1795,88 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u043E \u043D\u043E\u0432\u044B\u0445 \u0432\u0441\u0442\u0440\u0435\u0447\u044C"
+  m_Name: "event:/\u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u043B\u0443\u0447\u0448\u0435
+    \u043E\u0441\u0442\u0430\u0432\u0438\u043C"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u043E \u043D\u043E\u0432\u044B\u0445 \u0432\u0441\u0442\u0440\u0435\u0447\u044C"
-  guid: e3cdeb578ac23642883de1d6e4c17d6e
+  Path: "event:/\u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u043B\u0443\u0447\u0448\u0435
+    \u043E\u0441\u0442\u0430\u0432\u0438\u043C"
+  guid: 9224bb3b09f2794da91793f78f89ecd7
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1995
+  Length: 9894
+--- !u!114 &376174497101143787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &539829521002572724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &615833445958225340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
 --- !u!114 &674222428111769926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1604,7 +1899,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &942261116605006383
+--- !u!114 &963778533492147860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1614,45 +1909,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043E\u043F\u044F\u0442\u044C \u0430\u0442\u043E\u043C\u043D\u0430\u044F
-    \u0431\u043E\u043C\u0431\u0430"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u043E\u043F\u044F\u0442\u044C \u0430\u0442\u043E\u043C\u043D\u0430\u044F
-    \u0431\u043E\u043C\u0431\u0430"
-  guid: cb769393582a9d458ec40eb27104b392
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
   Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4041
---- !u!114 &1135686640484301283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C"
-  guid: faae5c191acadb42be850b98882b29d1
-  Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -5788830950135445270}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11386
---- !u!114 &1207913334928580996
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &1005625943383696003
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1662,22 +1932,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0430 \u0432 \u043A\u043E\u043D\u0446\u0435, \u043A\u043E\u0433\u0434\u0430
-    \u043F\u043E\u0434\u0440\u0443\u0447\u043D\u044B\u0435"
+  m_Name: "event:/\u0434\u0430 \u0432\u044B \u043F\u0440\u043E\u0441\u0442\u043E
+    \u0445\u043E\u0442\u0438\u0442\u0435"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0430 \u0432 \u043A\u043E\u043D\u0446\u0435, \u043A\u043E\u0433\u0434\u0430
-    \u043F\u043E\u0434\u0440\u0443\u0447\u043D\u044B\u0435"
-  guid: b8a3a14d1642e3438b85be5eee4766b5
+  Path: "event:/\u0434\u0430 \u0432\u044B \u043F\u0440\u043E\u0441\u0442\u043E \u0445\u043E\u0442\u0438\u0442\u0435"
+  guid: cf5b73fa26d70e49b505c3740ac30274
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5638
---- !u!114 &1289785493972934158
+  Length: 3660
+--- !u!114 &1019284415157357494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1686,48 +1955,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0445\u043E\u0442\u044F \u043D\u0435\u0442, \u043A\u0430\u043A\u043E\u0439
-    \u0447\u0430\u0441\u0442\u043D\u044B\u0439 \u043F\u0440\u0438\u0435\u043C"
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Bank A.bank
   m_EditorClassIdentifier: 
-  Path: "event:/\u0445\u043E\u0442\u044F \u043D\u0435\u0442, \u043A\u0430\u043A\u043E\u0439
-    \u0447\u0430\u0441\u0442\u043D\u044B\u0439 \u043F\u0440\u0438\u0435\u043C"
-  guid: 65466c343aee9c4fb0c6be37a71fd55d
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 7238
---- !u!114 &1447484946464684770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430 \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F
-    \u0447\u0442\u043E \u044D\u0442\u043E"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430 \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F
-    \u0447\u0442\u043E \u044D\u0442\u043E"
-  guid: 217b85386fa82e4b8f829c86e871b4e0
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 16115
---- !u!114 &1951645087874579813
+  Path: Assets/fmod/Desktop/Desktop/Bank A.bank
+  Name: Desktop/Bank A
+  StudioPath: bank:/Bank A
+  lastModified: 637689766171778557
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1066406302242347375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1744,7 +1981,7 @@ MonoBehaviour:
     \u0437\u0430\u043B"
   guid: cab74a35d97f254aa9360624de7561a6
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1752,7 +1989,148 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6381
---- !u!114 &2129390628916069863
+--- !u!114 &1218233716141323347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439 \u0431\u043B\u043F\u0433\u043E\u0440\u043E\u0434\u0435\u043D"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439 \u0431\u043B\u043F\u0433\u043E\u0440\u043E\u0434\u0435\u043D"
+  guid: 389e51512cec324199e1663c9d1c169e
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8716
+--- !u!114 &1308774757560915711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &1319878241710223413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0430 \u0432 \u043A\u043E\u043D\u0446\u0435, \u043A\u043E\u0433\u0434\u0430
+    \u043F\u043E\u0434\u0440\u0443\u0447\u043D\u044B\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0432 \u043A\u043E\u043D\u0446\u0435, \u043A\u043E\u0433\u0434\u0430
+    \u043F\u043E\u0434\u0440\u0443\u0447\u043D\u044B\u0435"
+  guid: b8a3a14d1642e3438b85be5eee4766b5
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5638
+--- !u!114 &2146516505593689445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0435\u0442 \u0443\u0436 \u0434\u0430\u0432\u0430\u0439\u0442\u0435
+    \u0447\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0435\u0442 \u0443\u0436 \u0434\u0430\u0432\u0430\u0439\u0442\u0435
+    \u0447\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435"
+  guid: 0284725b2beef14982139f048f4371af
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12990
+--- !u!114 &2277150255640371536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435 \u0434\u0443\u043C\u0430\u044E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0435\u0442 \u043D\u0435 \u0434\u0443\u043C\u0430\u044E"
+  guid: 8a7aaf992766df468289306f919ac122
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14990
+--- !u!114 &2483279082852695479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0443\u0443 \u0435\u0441\u0442\u044C \u0440\u0430\u0437\u043D\u044B\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0443\u0443 \u0435\u0441\u0442\u044C \u0440\u0430\u0437\u043D\u044B\u0435"
+  guid: f9763083ab4ae14db958619404e17454
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2741
+--- !u!114 &2487484057764615762
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1769,7 +2147,7 @@ MonoBehaviour:
     \u0435\u0441\u0442\u044C"
   guid: 3deb621c4e0fd343aadc4d9370d9549d
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1777,6 +2155,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9587
+--- !u!114 &2533529526504934776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0443 \u0443\u0436 \u043D\u0435\u0442"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0443 \u0443\u0436 \u043D\u0435\u0442"
+  guid: 304927680fed3b4e8e7fdab29655c989
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4944
+--- !u!114 &2538156721152196093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0430 \u0437\u043D\u0430\u0435\u0442\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0437\u043D\u0430\u0435\u0442\u0435"
+  guid: 4bfc045ae111ce4086b2400605d9398b
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8202
 --- !u!114 &2960576793651158255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1819,7 +2243,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &3032089660742523689
+--- !u!114 &3157110012999854056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1829,21 +2253,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430, \u043D\u0430\u0441 \u043F\u0440\u0438\u0436\u0430\u043B\u0438
-    \u0432 \u0431\u0430\u0440\u0435"
+  m_Name: "event:/\u044F \u0442\u0443\u0442 \u043F\u043E\u0434\u0443\u043C\u0430\u043B"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430, \u043D\u0430\u0441 \u043F\u0440\u0438\u0436\u0430\u043B\u0438
-    \u0432 \u0431\u0430\u0440\u0435"
-  guid: 0d0271e7db7d3d4d835e36f11079b2c9
+  Path: "event:/\u044F \u0442\u0443\u0442 \u043F\u043E\u0434\u0443\u043C\u0430\u043B"
+  guid: d942a67c191c8a41985ce2a3b63fd6f9
   Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 1
+  - {fileID: -9137573937502016426}
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 11999
+  Length: 7432
+--- !u!114 &3409624451039310794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0430 \u0435\u0449\u0451 \u0434\u043E\u0431\u0430\u0432\u0438\u043C
+    \u0433\u0435\u0440\u043E\u044E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0435\u0449\u0451 \u0434\u043E\u0431\u0430\u0432\u0438\u043C
+    \u0433\u0435\u0440\u043E\u044E"
+  guid: d747d50982b34c43a2bd4874cae24780
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6003
 --- !u!114 &3446205811329390020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1860,7 +2307,7 @@ MonoBehaviour:
   guid: 733e1c07e2815c45976160148f57a747
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1913,7 +2360,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 410
---- !u!114 &3933292442622632302
+--- !u!114 &3724513654376125791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1923,22 +2370,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0435\u0442 \u0443\u0436 \u0434\u0430\u0432\u0430\u0439\u0442\u0435
-    \u0447\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0435\u0442 \u0443\u0436 \u0434\u0430\u0432\u0430\u0439\u0442\u0435
-    \u0447\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435"
-  guid: 0284725b2beef14982139f048f4371af
-  Banks:
-  - {fileID: -5535843653654025189}
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 12990
---- !u!114 &4019100682297624779
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &3801049874677898601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1948,21 +2392,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043E\u043D \u0431\u0443\u0434\u0435\u0442 \u0432 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u043C
-    \u043F\u0430\u0440\u043E\u0432\u043E\u043C"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u043E\u043D \u0431\u0443\u0434\u0435\u0442 \u0432 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u043C
-    \u043F\u0430\u0440\u043E\u0432\u043E\u043C"
-  guid: 08c8339bc778924593f10e436b043046
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3765
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
 --- !u!114 &4208467627660821086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1979,7 +2420,7 @@ MonoBehaviour:
   guid: 29b77371cac7f34a8a4cfa80e4507f0f
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1987,7 +2428,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &4210465224446473127
+--- !u!114 &4538433695044225774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1997,45 +2438,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C \u0437\u043B\u043E\u0434\u0435\u044F
-    \u0441\u043B\u0438\u0448\u043A\u043E\u043C"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C \u0437\u043B\u043E\u0434\u0435\u044F
-    \u0441\u043B\u0438\u0448\u043A\u043E\u043C"
-  guid: d8d4720e98bfee48b52a976b7deb7750
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 7355
---- !u!114 &4249812680656708032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0438 \u0432\u043E\u0442 \u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0438 \u0432\u043E\u0442 \u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439"
-  guid: d54936c86547ac4292afca481a3e5399
-  Banks:
-  - {fileID: -5535843653654025189}
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10950
---- !u!114 &4655538290561881954
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &4674427532660628419
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2045,20 +2460,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0433\u0434\u0435 \u0431\u0443\u0434\u0435\u0442 \u0436\u0438\u0442\u044C"
+  m_Name: "event:/\u043A\u043E\u043D\u0435\u0447\u043D\u043E \u0438 \u0435\u0449\u0451
+    \u0443 \u043D\u0435\u0433\u043E \u043D\u0430\u0448\u0430"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0433\u0434\u0435 \u0431\u0443\u0434\u0435\u0442 \u0436\u0438\u0442\u044C"
-  guid: e320d922a050c944a154356c9dea39a1
+  Path: "event:/\u043A\u043E\u043D\u0435\u0447\u043D\u043E \u0438 \u0435\u0449\u0451
+    \u0443 \u043D\u0435\u0433\u043E \u043D\u0430\u0448\u0430"
+  guid: d6e3777813404147898c7be087780fde
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4012
---- !u!114 &4753510607818270206
+  Length: 4678
+--- !u!114 &4725215946291668750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2068,45 +2485,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0430 \u043F\u043E\u0442\u043E\u043C \u043F\u0440\u0438\u0435\u0437\u0436\u0430\u044E\u0442
-    \u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0438\u043A\u0438"
+  m_Name: "event:/\u0430 \u043A\u043E\u0433\u0434\u0430 \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
+    \u044D\u0442\u043E \u0438\u0437\u043E\u0431\u0440\u0435\u0442\u0435\u043D\u0438\u0435"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0430 \u043F\u043E\u0442\u043E\u043C \u043F\u0440\u0438\u0435\u0437\u0436\u0430\u044E\u0442
-    \u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0438\u043A\u0438"
-  guid: a58c58fbfbde234bbd461f53fc4c0150
+  Path: "event:/\u0430 \u043A\u043E\u0433\u0434\u0430 \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
+    \u044D\u0442\u043E \u0438\u0437\u043E\u0431\u0440\u0435\u0442\u0435\u043D\u0438\u0435"
+  guid: 47fbc37ed92cd04e87d9154390f77fef
   Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 13314
---- !u!114 &4791620349500860382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0432\u0440\u043E\u0434\u0435 \u0431\u044B"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0432\u0440\u043E\u0434\u0435 \u0431\u044B"
-  guid: e339758f741645478d297ad2e14ba0b3
-  Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5495
---- !u!114 &4977177733702106753
+  Length: 8823
+--- !u!114 &5017548783270037992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2123,7 +2517,7 @@ MonoBehaviour:
     \u0443 \u0432\u0430\u0441 \u043F\u0440\u0438\u043F\u0430\u0441\u0435\u043D\u0430"
   guid: 7dec6693446a62479db06ae6714ba66d
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2131,54 +2525,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3252
---- !u!114 &5049697313869154901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
-    \u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0438\u0439 \u0434\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
-    \u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0438\u0439 \u0434\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
-  guid: e1684f46de4c19439c779b3208e6967c
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 13013
---- !u!114 &5056685064568061495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
-  guid: 92ee527e9bb55a409c83385d5de12429
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1133
 --- !u!114 &5210946947426467310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2201,7 +2547,80 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 320
---- !u!114 &5316465694417656171
+--- !u!114 &5296818644948383651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0438 \u043F\u0440\u0430\u0432\u0434\u0430, \u043E\u0431\u044B\u0447\u043D\u043E\u0435
+    \u044F\u0432\u043B\u0435\u043D\u0438\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0438 \u043F\u0440\u0430\u0432\u0434\u0430, \u043E\u0431\u044B\u0447\u043D\u043E\u0435
+    \u044F\u0432\u043B\u0435\u043D\u0438\u0435"
+  guid: 6f5c2116b69e0448bba94e617c3a6056
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3954
+--- !u!114 &5491877693293517176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0434\u043E \u043D\u043E\u0432\u044B\u0445 \u0432\u0441\u0442\u0440\u0435\u0447\u044C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u043E \u043D\u043E\u0432\u044B\u0445 \u0432\u0441\u0442\u0440\u0435\u0447\u044C"
+  guid: e3cdeb578ac23642883de1d6e4c17d6e
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1995
+--- !u!114 &5750486701825299191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0434\u0430, \u043D\u0430\u0441 \u043F\u0440\u0438\u0436\u0430\u043B\u0438
+    \u0432 \u0431\u0430\u0440\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430, \u043D\u0430\u0441 \u043F\u0440\u0438\u0436\u0430\u043B\u0438
+    \u0432 \u0431\u0430\u0440\u0435"
+  guid: 0d0271e7db7d3d4d835e36f11079b2c9
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11999
+--- !u!114 &5905841712399509531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2216,7 +2635,7 @@ MonoBehaviour:
   Path: "event:/\u043D\u0443 \u0434\u0430 , \u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
   guid: 7b47811d56fcb946925accb64a8db530
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2224,27 +2643,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6541
---- !u!114 &5645055159080164812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/fmod/Desktop/Desktop/Master.strings.bank
-  Name: Desktop/Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637689756547804851
-  FileSizes:
-  - Name: 
-    Value: 6210
-  Exists: 1
---- !u!114 &5739332562931402698
+--- !u!114 &6048569263335411855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2261,7 +2660,7 @@ MonoBehaviour:
     \u044D\u043F\u0438\u0447\u043D\u043E\u0441\u0442\u0438"
   guid: ea04620ae779c94d9bc3c2a7b2c20bbf
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2269,7 +2668,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4950
---- !u!114 &5910914677684740511
+--- !u!114 &6107824024573148204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2279,91 +2678,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0443 \u0430\u043B\u0438\u0433\u0430\u0442\u043E\u0440\u0430
-    , \u043A\u0430\u0439\u043C\u0430\u043D\u0430"
+  m_Name: "event:/\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E,
+    \u044D\u0442\u043E\u0442 \u0440\u043E\u044F\u043B\u044C"
   m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0443 \u0430\u043B\u0438\u0433\u0430\u0442\u043E\u0440\u0430
-    , \u043A\u0430\u0439\u043C\u0430\u043D\u0430"
-  guid: 2cddf56f680bdb489969b07f8298d47a
+  Path: "event:/\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E,
+    \u044D\u0442\u043E\u0442 \u0440\u043E\u044F\u043B\u044C"
+  guid: 2ac381789b8d2e40acee1748d2018362
   Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6544
---- !u!114 &6001985163159485299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0437\u043D\u0430\u0435\u0442\u0435 \u0430 \u043C\u043D\u0435
-    \u0434\u0430\u0436\u0435 \u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0437\u043D\u0430\u0435\u0442\u0435 \u0430 \u043C\u043D\u0435 \u0434\u0430\u0436\u0435
-    \u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F"
-  guid: 75b11a7a947faa43b8138d1541a980ff
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4710
---- !u!114 &6034563631652260941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0438 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442 \u043A\u0440\u043E\u043A\u043E\u0434\u0438\u043B\u0430"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0438 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442 \u043A\u0440\u043E\u043A\u043E\u0434\u0438\u043B\u0430"
-  guid: b8a2c1045fa222419eed68af33d34507
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2999
---- !u!114 &6100187850921879183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: 
-  guid: 296910cc18679040b13bbdcdd7142d23
-  Banks: []
+  - {fileID: -9137573937502016426}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 27724
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10612
 --- !u!114 &6258683573164666207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2386,7 +2715,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 600
---- !u!114 &6266294290929029804
+--- !u!114 &6274331160500186661
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2396,21 +2725,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0430 \u043F\u043E-\u043C\u043E\u0435\u043C\u0443 \u0432\u044B
-    \u0438\u0437\u043D\u0430\u0430\u043B\u044C\u043D\u043E"
+  m_Name: "event:/\u043F\u0443\u0441\u0442\u044C \u043B\u0443\u0447\u0448\u0435"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0430 \u043F\u043E-\u043C\u043E\u0435\u043C\u0443 \u0432\u044B \u0438\u0437\u043D\u0430\u0430\u043B\u044C\u043D\u043E"
-  guid: 9f98eb6fe2fa9d42a765ca00d4ee637a
+  Path: "event:/\u043F\u0443\u0441\u0442\u044C \u043B\u0443\u0447\u0448\u0435"
+  guid: 71c001fb57144a459f5c15d67ebb8296
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5442
---- !u!114 &6776679297031428883
+  Length: 5759
+--- !u!114 &6651905618822789562
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2420,20 +2748,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0442\u0430\u043A \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043E\u043B\u0433\u043E"
+  m_Name: "event:/\u0434\u0430\u043B\u044C\u0448\u0435 \u0441\u0430\u043C\u043E\u0435
+    \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0442\u0430\u043A \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043E\u043B\u0433\u043E"
-  guid: d04a664192094842bd91d5143c0d7822
+  Path: "event:/\u0434\u0430\u043B\u044C\u0448\u0435 \u0441\u0430\u043C\u043E\u0435
+    \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435"
+  guid: 42a3bbfd83163247ad414e30cfbab81b
   Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
+  - {fileID: -9137573937502016426}
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2936
---- !u!114 &6794144323677597234
+  Length: 19071
+--- !u!114 &6688648310328698010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2443,19 +2773,63 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430\u0436\u0435 \u043D\u0435 \u0437\u043D\u0430\u044E"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430\u0436\u0435 \u043D\u0435 \u0437\u043D\u0430\u044E"
-  guid: 3df7e914b336394ea53aa2023ac21529
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &6955107573906496646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &7014152076706807267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0431\u0440\u043E\u0441\u044C\u0442\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0431\u0440\u043E\u0441\u044C\u0442\u0435"
+  guid: bfc797c9ca5d7c49acefd25d879ed5b7
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 7570
+  Length: 4788
 --- !u!114 &7096970982621069173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2471,9 +2845,55 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 637688866332712804
+  lastModified: 637689137747134674
   FileSizes: []
   Exists: 1
+--- !u!114 &7101648090096062927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
+  guid: 92ee527e9bb55a409c83385d5de12429
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1133
+--- !u!114 &7147467430145341900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435 \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435 \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435"
+  guid: 25fbccd3a599a045aaa7a68d041ea166
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16390
 --- !u!114 &7180716547655501812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2490,7 +2910,7 @@ MonoBehaviour:
   guid: 1b55d22895b4084aa1b354779c539f7e
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -2542,29 +2962,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 600
---- !u!114 &7370261677407082213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u043D\u0435 \u0442\u0430\u043A"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u043D\u0435 \u0442\u0430\u043A"
-  guid: b42e157dd903f54c9cc57fe577eb5f93
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 14734
 --- !u!114 &7414973297824099811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2587,7 +2984,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2044
---- !u!114 &7607511638847652155
+--- !u!114 &7884411178308059283
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2597,21 +2994,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u0438 \u0435\u0449\u0451
-    \u0440\u0430\u0449 \u043D\u0435\u0442"
+  m_Name: "event:/\u0438 \u0442\u0430\u043A \u0438\u0441\u0442\u043E\u0440\u0438\u044F"
   m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u0438 \u0435\u0449\u0451 \u0440\u0430\u0449
-    \u043D\u0435\u0442"
-  guid: 4e6384cb56ff814caa65cac9a0152a22
+  Path: "event:/\u0438 \u0442\u0430\u043A \u0438\u0441\u0442\u043E\u0440\u0438\u044F"
+  guid: 70d3752aae26b04999d6177d338504c6
   Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 1
+  - {fileID: -9137573937502016426}
+  IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 13423
+  Length: 8740
 --- !u!114 &7907743232471291016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,6 +3029,31 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 390
+--- !u!114 &8019872867876518733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0442\u043E\u0433\u0434\u0430 \u0433\u0435\u0440\u043E\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0435\u0442
+    \u0443 \u043D\u0435\u0433\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0442\u043E\u0433\u0434\u0430 \u0433\u0435\u0440\u043E\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0435\u0442
+    \u0443 \u043D\u0435\u0433\u043E"
+  guid: b0914feec21b7740b91300277c1186a9
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7496
 --- !u!114 &8191511290356568764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2650,7 +3070,7 @@ MonoBehaviour:
   guid: 053a070f6068814dbdad27b6bdae5696
   Banks:
   - {fileID: -5788830950135445270}
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2658,54 +3078,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &8208160919028455153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0430 \u0437\u043D\u0430\u0435\u0442\u0435"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0430 \u0437\u043D\u0430\u0435\u0442\u0435"
-  guid: 4bfc045ae111ce4086b2400605d9398b
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8202
---- !u!114 &8264954963704092763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E,
-    \u044D\u0442\u043E\u0442 \u0440\u043E\u044F\u043B\u044C"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E,
-    \u044D\u0442\u043E\u0442 \u0440\u043E\u044F\u043B\u044C"
-  guid: 2ac381789b8d2e40acee1748d2018362
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10612
 --- !u!114 &8343102122518610080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2724,31 +3096,6 @@ MonoBehaviour:
   lastModified: 637689137239277380
   FileSizes: []
   Exists: 0
---- !u!114 &8438011321081266713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u043B\u0443\u0447\u0448\u0435
-    \u043E\u0441\u0442\u0430\u0432\u0438\u043C"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u043B\u0443\u0447\u0448\u0435
-    \u043E\u0441\u0442\u0430\u0432\u0438\u043C"
-  guid: 9224bb3b09f2794da91793f78f89ecd7
-  Banks:
-  - {fileID: -5535843653654025189}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9894
 --- !u!114 &8458550613996066671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2771,7 +3118,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3250
---- !u!114 &8581536768540807132
+--- !u!114 &8503778077276401132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2781,22 +3128,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
-    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
+  m_Name: "event:/\u043E\u043D \u0431\u0443\u0434\u0435\u0442 \u0432 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u043C
+    \u043F\u0430\u0440\u043E\u0432\u043E\u043C"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
-    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
-  guid: 931b89714561164f8f3ab18be4e49383
+  Path: "event:/\u043E\u043D \u0431\u0443\u0434\u0435\u0442 \u0432 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u043C
+    \u043F\u0430\u0440\u043E\u0432\u043E\u043C"
+  guid: 08c8339bc778924593f10e436b043046
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5423
---- !u!114 &8646178263225732679
+  Length: 3765
+--- !u!114 &8516069454580476870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2806,20 +3153,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0443 \u0430 \u0438\u043D\u0430\u0447\u0435 \u0441\u043A\u0443\u0447\u043D\u043E"
+  m_Name: 
   m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0443 \u0430 \u0438\u043D\u0430\u0447\u0435 \u0441\u043A\u0443\u0447\u043D\u043E"
-  guid: 3e4a4038a510c344b8498ce44059eaef
-  Banks:
-  - {fileID: -5535843653654025189}
+  Path: 
+  guid: 296910cc18679040b13bbdcdd7142d23
+  Banks: []
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 11990
---- !u!114 &8763987167496165217
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27724
+--- !u!114 &8729828832899892572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2829,16 +3175,91 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043D\u0443\u0443 \u0435\u0441\u0442\u044C \u0440\u0430\u0437\u043D\u044B\u0435"
+  m_Name: "event:/\u0432\u0430\u043C \u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
+    \u0447\u0442\u043E \u044D\u0442\u043E \u0438\u0437\u0431\u0438\u0442\u044B\u0439"
   m_EditorClassIdentifier: 
-  Path: "event:/\u043D\u0443\u0443 \u0435\u0441\u0442\u044C \u0440\u0430\u0437\u043D\u044B\u0435"
-  guid: f9763083ab4ae14db958619404e17454
+  Path: "event:/\u0432\u0430\u043C \u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
+    \u0447\u0442\u043E \u044D\u0442\u043E \u0438\u0437\u0431\u0438\u0442\u044B\u0439"
+  guid: cbe69649fd2a9d4fb6bf4bc5ff69f621
   Banks:
-  - {fileID: -5535843653654025189}
+  - {fileID: -9137573937502016426}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2741
+  Length: 8906
+--- !u!114 &9024404130089021317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0445\u043E\u0442\u044F \u043D\u0435\u0442, \u043A\u0430\u043A\u043E\u0439
+    \u0447\u0430\u0441\u0442\u043D\u044B\u0439 \u043F\u0440\u0438\u0435\u043C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0445\u043E\u0442\u044F \u043D\u0435\u0442, \u043A\u0430\u043A\u043E\u0439
+    \u0447\u0430\u0441\u0442\u043D\u044B\u0439 \u043F\u0440\u0438\u0435\u043C"
+  guid: 65466c343aee9c4fb0c6be37a71fd55d
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7238
+--- !u!114 &9034218031389077342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043E\u043F\u044F\u0442\u044C \u0430\u0442\u043E\u043C\u043D\u0430\u044F
+    \u0431\u043E\u043C\u0431\u0430"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043E\u043F\u044F\u0442\u044C \u0430\u0442\u043E\u043C\u043D\u0430\u044F
+    \u0431\u043E\u043C\u0431\u0430"
+  guid: cb769393582a9d458ec40eb27104b392
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4041
+--- !u!114 &9066415827339096436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u0438 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442 \u043A\u0440\u043E\u043A\u043E\u0434\u0438\u043B\u0430"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0438 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442 \u043A\u0440\u043E\u043A\u043E\u0434\u0438\u043B\u0430"
+  guid: b8a2c1045fa222419eed68af33d34507
+  Banks:
+  - {fileID: -9137573937502016426}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2999
