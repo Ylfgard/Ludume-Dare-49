@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.UI;
 
 namespace Rimba
@@ -19,14 +20,27 @@ namespace Rimba
             [SerializeField] private Text itemNameText;
             [SerializeField] private Text itemDescriptionText;
 
+            [Header("Dawn")]
+            [SerializeField] private float timeTillDawn;
+            [SerializeField] private float timeTillDay;
+            [SerializeField] private Light2D globalLight;
+            [SerializeField] private float nightLightIntensity;
+            [SerializeField] private float dayLightIntensity;
+
             [Header("Misc")]
             [SerializeField] private GameObject gameOverScreen;
+            [SerializeField] private GameObject winScreen;
 
             private IInteractable lastInteractable;
+            private float dawnTime;
+            private float dayTime;
 
             void Start()
             {
                 lastInteractable = null;
+                globalLight.intensity = nightLightIntensity;
+                dawnTime = Time.time + timeTillDawn;
+                dayTime = Time.time + timeTillDay;
             }
 
             void Update()
@@ -44,9 +58,18 @@ namespace Rimba
                     lastInteractable = player.selectedInteractable;
                 }
 
+                globalLight.intensity = (Time.time < dawnTime) ? nightLightIntensity :
+                    Mathf.Lerp(nightLightIntensity, dayLightIntensity, Mathf.Min((Time.time - dawnTime) / (dayTime - dawnTime), 1f));
+
                 if (player.health <= 0)
                 {
                     gameOverScreen.SetActive(true);
+                    Time.timeScale = 0f;
+                }
+
+                if (Time.time >= dayTime)
+                {
+                    winScreen.SetActive(true);
                     Time.timeScale = 0f;
                 }
             }
