@@ -20,15 +20,31 @@ namespace ElusiveRimba
         [SerializeField] private GameObject hero;
 
         [SerializeField] private Transform[] waypoints;
+        [SerializeField] private LayerMask fovLayerMask;
 
         private Mesh fovMesh;
         private Transform targetWaypoint;
         private Vector3 lookDirection;
+        private Vector3 origin;
+        private float startAngle;
 
         private int currWaypointNdx;
         private float changeActionTimer;
-        private bool isGameOver;
+        private bool _isGameOver;
         private bool canMove;
+
+        public bool isGameOver
+        {
+            get
+            {
+                return _isGameOver;
+            }
+            private set
+            {
+                _isGameOver = value;
+                StealthStageManager.S.isGameOver = _isGameOver;
+            }
+        }
 
         private void Start()
         {
@@ -40,26 +56,31 @@ namespace ElusiveRimba
 
             fovMesh = new Mesh();
             fovMF.mesh = fovMesh;
-
-            DrawFieldOfView();
         }
 
         private void Update()
         {
             if(!isGameOver)
             {
-                DrawFieldOfView();
                 Perception();
                 Patrolling();
+                PosAndDirOfFieldOfView();
+            }
+        }
+
+        private void LateUpdate()
+        {
+            if(!isGameOver)
+            {
+                DrawFieldOfView();
             }
         }
 
         private void DrawFieldOfView()
         {
             int rayCount = 50;
-            float angle = 0f;
+            float angle = startAngle;
             float angleIncreases = fieldOfView / rayCount;
-            Vector3 origin = Vector3.zero;
 
             Vector3[] verticies = new Vector3[rayCount + 2];
             Vector2[] uv = new Vector2[verticies.Length];
@@ -75,7 +96,7 @@ namespace ElusiveRimba
                 Vector3 v = new Vector3(Mathf.Cos(angleRadian), Mathf.Sin(angleRadian));
                 Vector3 vertex;
 
-                RaycastHit2D hit = Physics2D.Raycast(origin, origin + v, lookRange);
+                RaycastHit2D hit = Physics2D.Raycast(origin, origin + v, lookRange, fovLayerMask);
                 if(hit.collider == null)
                 {
                     vertex = origin + v * lookRange;
@@ -116,7 +137,7 @@ namespace ElusiveRimba
             if(vToHero.magnitude < lookRange)
             {
                 float angle = Vector3.Angle(lookDirection, vToHero);
-                if(angle <= fieldOfView / 2)
+                if(angle <= fieldOfView * 0.5f)
                 {
                     if(Physics2D.Raycast(transform.position, hero.transform.position - transform.position).collider.gameObject.CompareTag("Player"))
                     {
@@ -132,6 +153,16 @@ namespace ElusiveRimba
         private void ChangeLookDirection()
         {
             lookDirection = (waypoints[(currWaypointNdx + 1) % waypoints.Length].position - transform.position).normalized;
+        }
+
+        private void PosAndDirOfFieldOfView()
+        {
+            startAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+            if(startAngle < 0)
+                startAngle += 360;
+            startAngle = startAngle + fieldOfView * 0.5f;
+
+            origin = transform.position;
         }
 
         private void OnDrawGizmos()

@@ -8,9 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FieldOfView
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -60,6 +60,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ExtraTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Illum:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -142,6 +146,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Emission: 1
     - _EnableExternalAlpha: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 1
@@ -184,6 +189,8 @@ Material:
     - _BaseColor: {r: 0.6792453, g: 0.14417945, b: 0.14417945, a: 0.2627451}
     - _Color: {r: 1, g: 1, b: 1, a: 0.4627451}
     - _EMISSION_COLOR: {r: 0, g: 0, b: 0, a: 0}
+    - _EmisColor: {r: 0.2, g: 0.2, b: 0.2, a: 0}
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.1}
