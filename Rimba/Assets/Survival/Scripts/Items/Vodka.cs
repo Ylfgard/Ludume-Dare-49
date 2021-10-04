@@ -8,8 +8,8 @@ namespace Rimba
         {
             [SerializeField] private float antidotAmount = 50f;
 
-            public string ItemName { get { return "Vodka"; } }
-            public string ItemDescription { get { return "Universal cure for all kinds of poisoning."; } }
+            public string ItemName { get { return "Водка"; } }
+            public string ItemDescription { get { return "Универсальное средство от всех отравлений!"; } }
 
             public void Interact(PlayerController player)
             {

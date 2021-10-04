@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6598656203472330141}
   - component: {fileID: 340624535205263323}
   - component: {fileID: 8087599823601069556}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: slash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7134122027219960432}
   - component: {fileID: 7134122027219960433}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hand.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 7134122027759288733}
   - component: {fileID: 7134122027759288734}
   - component: {fileID: 7134122027759288735}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ MonoBehaviour:
   - {x: -0.49648, y: 0.12676668, z: 0}
   m_ShapePathHash: 1191697805
   m_Mesh: {fileID: 0}
-  m_InstanceId: -7638
+  m_InstanceId: 103126
 --- !u!1 &7134122027916499270
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 7134122027916499272}
   - component: {fileID: 7134122027898383410}
   - component: {fileID: 7134122027898383411}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 7309838155598019727}
   - component: {fileID: 1828316342212833930}
   - component: {fileID: 8724705839697096501}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -534,6 +534,9 @@ MonoBehaviour:
   coolnessRate: 2
   coolnessDamageRate: 2
   interactionWidth: 1
+  interactionLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
   carryingLog: 0
   logFuelAmount: 0
 --- !u!95 &7309838155598019727
@@ -599,6 +602,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7134122027759288733}
     m_Modifications:
+    - target: {fileID: 207882710711711218, guid: 748b8e8b8754249928ebfa35fcb2966d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971095442359881231, guid: 748b8e8b8754249928ebfa35fcb2966d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3707798414758502512, guid: 748b8e8b8754249928ebfa35fcb2966d, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -660,6 +671,10 @@ PrefabInstance:
       value: Log
       objectReference: {fileID: 0}
     - target: {fileID: 4873168145265760827, guid: 748b8e8b8754249928ebfa35fcb2966d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873168145265760827, guid: 748b8e8b8754249928ebfa35fcb2966d, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -670,6 +685,10 @@ PrefabInstance:
     - target: {fileID: 4928810492785980234, guid: 748b8e8b8754249928ebfa35fcb2966d, type: 3}
       propertyPath: m_Simulated
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877878205009425945, guid: 748b8e8b8754249928ebfa35fcb2966d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7740018080137379365, guid: 748b8e8b8754249928ebfa35fcb2966d, type: 3}
       propertyPath: m_SortingLayer

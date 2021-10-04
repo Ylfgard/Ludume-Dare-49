@@ -8,8 +8,10 @@ namespace Rimba
     namespace Survival
     {
         [RequireComponent(typeof(Animator))]
-        public class PlayerController : MonoBehaviour
+        public class PlayerController : MonoBehaviour, IDamagable
         {
+            [SerializeField] private new Camera camera;
+
             [Header("Movement")]
             [SerializeField] private float maxSpeed;
 
@@ -84,11 +86,13 @@ namespace Rimba
                 if (animationRunning)
                     return;
 
+                Vector3 lookDirection = camera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+                transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg, Vector3.forward);
+
                 Vector2 movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
                 if (movement.sqrMagnitude > 0.1f)
                 {
-                    transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg, Vector3.forward);
-                    transform.position += transform.right * maxSpeed * Time.deltaTime;
+                    transform.position += ((Vector3)movement) * maxSpeed * Time.deltaTime;
                     animator.SetBool(ANIMATOR_MOVE, true);
                 }
                 else
@@ -149,6 +153,11 @@ namespace Rimba
                         return item;
                 }
                 return null;
+            }
+
+            public void ApplyDamage(float damage)
+            {
+                health = Mathf.Max(health - damage, 0f);
             }
 
             /*
