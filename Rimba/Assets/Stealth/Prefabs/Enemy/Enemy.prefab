@@ -183,10 +183,10 @@ MonoBehaviour:
   fieldOfView: 90
   body: {fileID: 2614957428852080538}
   fovPrefab: {fileID: 1575679842519763428, guid: 64d0e4455a3e8394ba6eaef43bd92110, type: 3}
-  face: {fileID: 21300000, guid: 8e442bdc8130aa24b80d9af4fb0ef906, type: 3}
-  back: {fileID: 21300000, guid: 2f7b04c655f3bc6439133950358ec9cd, type: 3}
-  left: {fileID: 21300000, guid: 979a0e0d6f71fa6438b552c2945fb4c7, type: 3}
-  right: {fileID: 21300000, guid: b34986ef1e06d584790047dbb881a6c9, type: 3}
+  face: {fileID: 21300000, guid: cdc489598cca1a244bbb84f69dc81a48, type: 3}
+  back: {fileID: 21300000, guid: 51291881a48a0044c83aa38ecf6739a6, type: 3}
+  left: {fileID: 21300000, guid: 004698cc14928eb4c99e4f7f5e5f79c3, type: 3}
+  right: {fileID: 21300000, guid: adafeaba300302446adeb6d656c31304, type: 3}
   hero: {fileID: 3823499828234444994, guid: ad5c09d526d722640a5aff96183e8dca, type: 3}
   waypoints:
   - {fileID: 0}

@@ -97,17 +97,13 @@ namespace ElusiveRimba
                 Patrolling();
 
                 PosAndDirOfFieldOfView();
-                //fovMF.gameObject.transform.position = transform.position;
             }
         }
 
         private void LateUpdate()
         {
-            if(!isGameOver)
-            {
-                DrawFieldOfView();
-                fovMF.gameObject.transform.position = transform.position;
-            }
+            DrawFieldOfView();
+            fovMF.gameObject.transform.position = transform.position;
         }
 
         private void DrawFieldOfView()
@@ -320,7 +316,7 @@ namespace ElusiveRimba
         public void Died()
         {
             Destroy(gameObject);
+            Destroy(fovMF.gameObject);
         }
-
     }
 }
