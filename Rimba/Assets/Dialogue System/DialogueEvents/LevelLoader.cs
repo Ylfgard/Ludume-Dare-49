@@ -9,12 +9,14 @@ public class LevelLoader : MonoBehaviour, IDialogueEvent
 
     public void PlayEvent()
     {
+        GamePauser.StopGame(gameObject);
+        FindObjectOfType<DialogueHandler>().PausePlayerEffect();
         StartCoroutine(DelayedLoad());
     }
 
     private IEnumerator DelayedLoad()
     {
         yield return new WaitForSecondsRealtime(levelLoadDelay);
-        SceneManager.LoadScene(levelName);
+        FindObjectOfType<SceneChanger>().ChangeScene(levelName);
     }
 }

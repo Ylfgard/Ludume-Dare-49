@@ -20,16 +20,18 @@ public class DialogueHandler : MonoBehaviour
     {
         EndDialogue();
     }
+    
+    public void PausePlayerEffect()
+    {
+        postProcessingVolume.weight = 1;
+        playImage.SetActive(true);
+        GamePauser.StopGame(gameObject);
+    }
 
     public void StartDialogue(TextAsset dialogue, IDialogueEvent[] dialEvs, bool pauseGame)
     {
         ClearSentences();
-        if(pauseGame)
-        {
-            postProcessingVolume.weight = 1;
-            playImage.SetActive(true);
-            GamePauser.StopGame(gameObject);
-        }
+        if(pauseGame) PausePlayerEffect();
         curSentenceIndex = 0;
         curDialogue = DialogueViewer.Load(dialogue);
         foreach(IDialogueEvent ev in dialEvs)
@@ -57,6 +59,7 @@ public class DialogueHandler : MonoBehaviour
             EndDialogue();
         }
     }
+
     private void SpawnSentence(string sentenceText, string fmodSoundPath, float delayBeforeShowNext)
     {
         GameObject sentence = Instantiate(sentencePref, contentTransform);
