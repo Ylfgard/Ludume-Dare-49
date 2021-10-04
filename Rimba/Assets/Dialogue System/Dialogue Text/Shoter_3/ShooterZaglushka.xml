@@ -1,0 +1,38 @@
+<dialogue>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Наверное, дальше у вас припасена перестрелка?</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/наверное дальше у вас припасена</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Да, нас прижали в баре "Синяя каракатица". Герой будет пробираться через напряженную сцену с минимум патронов и пистолетов. Все как в жизни!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/да, нас прижали в баре</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Может сделать чуть больше врагов? Аудитории не понравится такие затяжные битвы, нам нужно настоящее месиво! А еще по статистике герои с автоматом более популярны, чем с пистолетом. Дайте этому парню автомат!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/может сделать чуть больше</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: А теперь он находит дедовский дробовик и становится самым крутым в округе. Представьте, в нем столько адреналина, что ему даже перезаряжаться не нужно!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/а теперь он находит дедовский дробовик</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: А пото-ом! Приезжают оперативники специального отдела по борьбе с изобретениями Леонардо да Винчи, крутые ребята, но наш герой проявляет благородство и старается их не убивать.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/а потом приезжают оперативники</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Врагов было слишком много, герой получает ранение но ему удается спастись в канализации...</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/врагов было слишком много</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>

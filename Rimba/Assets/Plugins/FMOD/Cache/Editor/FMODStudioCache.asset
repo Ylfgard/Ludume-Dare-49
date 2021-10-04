@@ -778,7 +778,7 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637689841674769311
+  lastModified: 637689862324812656
   FileSizes: []
   Exists: 1
 --- !u!114 &-5408116696647953133
@@ -1591,13 +1591,13 @@ MonoBehaviour:
   guid: 2344d89140b7c643a3e9c74593aaecab
   Banks:
   - {fileID: -5788830950135445270}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2000
+  Length: 440
 --- !u!114 &-571160463639973025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1889,12 +1889,14 @@ MonoBehaviour:
   - {fileID: 8825033989375210524}
   - {fileID: -7635910086464691683}
   - {fileID: 508138664587672923}
+  - {fileID: 1853472027117065329}
+  - {fileID: 5491561474947407746}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5788830950135445270}
   StringsBanks:
   - {fileID: 2960576793651158255}
-  stringsBankWriteTime: 637689841674809940
+  stringsBankWriteTime: 637689862324850477
   cacheVersion: 8
 --- !u!114 &22896947123631521
 MonoBehaviour:
@@ -2104,6 +2106,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 36000
+--- !u!114 &1853472027117065329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/boss dead
+  m_EditorClassIdentifier: 
+  Path: event:/boss dead
+  guid: 5df243fed927d24db85c03fa3924a5a8
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &1965993897173306382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,10 +2309,10 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637689841674809940
+  lastModified: 637689862324850477
   FileSizes:
   - Name: 
-    Value: 7236
+    Value: 7320
   Exists: 1
 --- !u!114 &3023270755927604053
 MonoBehaviour:
@@ -2729,6 +2754,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 60091
+--- !u!114 &5491561474947407746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/jeap
+  m_EditorClassIdentifier: 
+  Path: event:/jeap
+  guid: 696892c8fdf34747a9c048ac42f5d64d
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
 --- !u!114 &6019736980351328627
 MonoBehaviour:
   m_ObjectHideFlags: 0
