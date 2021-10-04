@@ -7,7 +7,8 @@ namespace ElusiveRimba
     public class Enemy : MonoBehaviour
     {
         [SerializeField] private float speed = 100f;
-        [SerializeField] private float standStillTime = 3f;
+        [SerializeField] private float standInPatroolTime = 3f;
+        [SerializeField] private float standDistructedTime = 3f;
 
         [SerializeField] private float lookRange = 10f;
         [SerializeField] private float hearRange = 3f;
@@ -20,46 +21,83 @@ namespace ElusiveRimba
         [SerializeField] private GameObject hero;
 
         [SerializeField] private Transform[] waypoints;
+        [SerializeField] private LayerMask fovLayerMask;
 
         private Mesh fovMesh;
         private Transform targetWaypoint;
         private Vector3 lookDirection;
+        private Vector3 origin;
+        private float startAngle;
 
         private int currWaypointNdx;
         private float changeActionTimer;
-        private bool isGameOver;
+        private bool _isGameOver;
         private bool canMove;
+        private bool isStanding, isDistracted;
+
+        public bool isGameOver
+        {
+            get
+            {
+                return _isGameOver;
+            }
+            private set
+            {
+                _isGameOver = value;
+                StealthStageManager.S.isGameOver = _isGameOver;
+            }
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawLine(transform.position, lookDirection * lookRange + transform.position);
+
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, hearRange);
+
+            Gizmos.color = Color.white;
+            for(int i = 0; i < waypoints.Length; i++)
+            {
+                Gizmos.DrawLine(waypoints[i].position, waypoints[((i + 1 < waypoints.Length) ? i + 1 : 0)].position);
+            }
+        }
 
         private void Start()
         {
             body.SetActive(true);
             bodyDead.SetActive(false);
 
-            StartCoroutine(StandingCoroutine(standStillTime));
-
+            StartCoroutine(StandingInPatroolCoroutine(Random.Range(0.1f, 5f)));
+            targetWaypoint = waypoints[currWaypointNdx];
 
             fovMesh = new Mesh();
             fovMF.mesh = fovMesh;
-
-            DrawFieldOfView();
         }
 
         private void Update()
         {
             if(!isGameOver)
             {
-                DrawFieldOfView();
                 Perception();
                 Patrolling();
+                PosAndDirOfFieldOfView();
+            }
+        }
+
+        private void LateUpdate()
+        {
+            if(!isGameOver)
+            {
+                DrawFieldOfView();
             }
         }
 
         private void DrawFieldOfView()
         {
             int rayCount = 50;
-            float angle = 0f;
+            float angle = startAngle;
             float angleIncreases = fieldOfView / rayCount;
-            Vector3 origin = Vector3.zero;
 
             Vector3[] verticies = new Vector3[rayCount + 2];
             Vector2[] uv = new Vector2[verticies.Length];
@@ -75,7 +113,7 @@ namespace ElusiveRimba
                 Vector3 v = new Vector3(Mathf.Cos(angleRadian), Mathf.Sin(angleRadian));
                 Vector3 vertex;
 
-                RaycastHit2D hit = Physics2D.Raycast(origin, origin + v, lookRange);
+                RaycastHit2D hit = Physics2D.Raycast(origin, origin + v, lookRange, fovLayerMask);
                 if(hit.collider == null)
                 {
                     vertex = origin + v * lookRange;
@@ -116,7 +154,7 @@ namespace ElusiveRimba
             if(vToHero.magnitude < lookRange)
             {
                 float angle = Vector3.Angle(lookDirection, vToHero);
-                if(angle <= fieldOfView / 2)
+                if(angle <= fieldOfView * 0.5f)
                 {
                     if(Physics2D.Raycast(transform.position, hero.transform.position - transform.position).collider.gameObject.CompareTag("Player"))
                     {
@@ -129,24 +167,42 @@ namespace ElusiveRimba
             }
         }
 
-        private void ChangeLookDirection()
+        private void UpdateLookAtNextWaypointDirection()
         {
-            lookDirection = (waypoints[(currWaypointNdx + 1) % waypoints.Length].position - transform.position).normalized;
+            lookDirection = (waypoints[(currWaypointNdx) % waypoints.Length].position - transform.position).normalized;
         }
 
-        private void OnDrawGizmos()
+        private void PosAndDirOfFieldOfView()
         {
-            Gizmos.color = Color.magenta;
-            Gizmos.DrawLine(transform.position, lookDirection * lookRange + transform.position);
+            startAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+            if(startAngle < 0)
+                startAngle += 360;
+            startAngle = startAngle + fieldOfView * 0.5f;
 
-            Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(transform.position, hearRange);
+            origin = transform.position;
+        }
 
-            Gizmos.color = Color.white;
-            for(int i = 0; i < waypoints.Length; i++)
-            {
-                Gizmos.DrawLine(waypoints[i].position, waypoints[((i + 1 < waypoints.Length) ? i + 1 : 0)].position);
-            }
+        public void Distract(Pebble pebble)
+        {
+            if(isDistracted) return;
+
+            isDistracted = true;
+            canMove = false;
+
+            Vector3 lookAtPebbleDir = (pebble.gameObject.transform.position - transform.position).normalized;
+            lookDirection = lookAtPebbleDir;
+
+            StopAllCoroutines();
+            StartCoroutine(StandDistructedCoroutine());
+        }
+
+        private IEnumerator StandDistructedCoroutine()
+        {
+            yield return new WaitForSeconds(standDistructedTime);
+            isDistracted = false;
+            canMove = true;
+
+            UpdateLookAtNextWaypointDirection();
         }
 
         private void Patrolling()
@@ -164,19 +220,23 @@ namespace ElusiveRimba
             if((target.transform.position - transform.position).magnitude <= 0.1f)
             {
                 canMove = false;
-                changeActionTimer = Time.time + standStillTime;
-                StartCoroutine(StandingCoroutine(standStillTime));
+                isStanding = true;
+                //changeActionTimer = Time.time + standInPatroolTime;
+                StartCoroutine(StandingInPatroolCoroutine(standInPatroolTime));
             }
         }
 
-        private IEnumerator StandingCoroutine(float time)
+        private IEnumerator StandingInPatroolCoroutine(float time)
         {
-            ChangeLookDirection();
+            lookDirection = (waypoints[(currWaypointNdx + 1) % waypoints.Length].position - transform.position).normalized;
 
             yield return new WaitForSeconds(time);
 
             ChangeToNextTargetWaypoint();
+            UpdateLookAtNextWaypointDirection();
+
             canMove = true;
+            isStanding = false;
         }
 
         private void ChangeToNextTargetWaypoint()
@@ -192,6 +252,7 @@ namespace ElusiveRimba
 
             targetWaypoint = waypoints[currWaypointNdx];
         }
+
 
         public void Died()
         {

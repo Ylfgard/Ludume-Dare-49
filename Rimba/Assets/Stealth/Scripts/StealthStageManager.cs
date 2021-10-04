@@ -15,7 +15,19 @@ public class StealthStageManager : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TextMeshProUGUI knivesNumberText;
 
-    public bool isGameOver { get; set; }
+    private bool _isGameOver;
+
+    public bool isGameOver
+    {
+        get
+        {
+            return _isGameOver;
+        }
+        set
+        {
+            _isGameOver = value;
+        }
+    }
 
     private void Start()
     {
@@ -25,13 +37,13 @@ public class StealthStageManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Backspace))
-        {
-            RestartLevel();
-        }
-    }
+    //private void Update()
+    //{
+    //    if(Input.GetKeyDown(KeyCode.Backspace))
+    //    {
+    //        RestartLevel();
+    //    }
+    //}
 
     public void GameOverAndRestart()
     {

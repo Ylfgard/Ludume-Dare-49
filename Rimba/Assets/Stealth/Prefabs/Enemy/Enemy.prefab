@@ -189,6 +189,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
+  fovLayerMask:
+    serializedVersion: 2
+    m_Bits: 1048576
 --- !u!1 &7968072621107002681
 GameObject:
   m_ObjectHideFlags: 0
