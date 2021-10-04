@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alexandria.unity
     guid: cb19c7784fc242444b16c20a4208f508
+  - enabled: 1
+    path: Assets/Runner/Scenes/First.unity
+    guid: 52ecbdf6cb0559d409d36d1973c8aef4
+  - enabled: 1
+    path: Assets/Runner/Scenes/Second.unity
+    guid: 616080fb597ccda41b8772c68053b8bc
+  - enabled: 1
+    path: Assets/Runner/Scenes/Third.unity
+    guid: 926445de143d70c45a4c245edf62bab1
   m_configObjects: {}

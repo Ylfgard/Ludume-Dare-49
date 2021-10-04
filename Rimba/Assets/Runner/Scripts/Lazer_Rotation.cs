@@ -64,16 +64,17 @@ public class Lazer_Rotation : MonoBehaviour
     IEnumerator Shoot(){
         Coroutine_is_running = true;
         yield return new WaitForSeconds(wait_for_shoot);
-        gameObject.AddComponent<BoxCollider2D>();
-        gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        Lazer.AddComponent<BoxCollider2D>();
+        Lazer.GetComponent<BoxCollider2D>().isTrigger = true;
         _tr.localScale = new Vector3(_tr.localScale.x , _tr.localScale.y * 15, _tr.localScale.z);
-        Destroy(gameObject,Dead_time);
+        Destroy(Lazer,Dead_time);
+        Destroy(gameObject , Dead_time);
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
-            SceneManager.LoadScene("First");
+            SceneManager.LoadScene(Go_to_the_next.lvl);
     }
 }
 
