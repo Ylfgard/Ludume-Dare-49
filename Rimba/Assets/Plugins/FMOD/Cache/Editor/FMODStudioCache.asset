@@ -1,28 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9181863764130614918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/music/Credits
-  m_EditorClassIdentifier: 
-  Path: event:/music/Credits
-  guid: 72e489978a35504db5c1c8f93b1b095b
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 41400
 --- !u!114 &-9100435066279679974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,29 +177,6 @@ MonoBehaviour:
   - Name: 
     Value: 792
   Exists: 1
---- !u!114 &-8126927644648742597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/music/LongDark
-  m_EditorClassIdentifier: 
-  Path: event:/music/LongDark
-  guid: e4b84eebcc7b394cb21bd4e3801c88b4
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 39000
 --- !u!114 &-8084263421456991435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +248,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1500
+--- !u!114 &-7822491319421006252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/boss dead
+  m_EditorClassIdentifier: 
+  Path: event:/boss dead
+  guid: 5df243fed927d24db85c03fa3924a5a8
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-7789796985167901341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,29 +319,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8906
---- !u!114 &-7635910086464691683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/enemy damage knife
-  m_EditorClassIdentifier: 
-  Path: event:/enemy damage knife
-  guid: eb8506e38b1d794bb804a1ddd8026d04
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
 --- !u!114 &-7320811406464266532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,29 +369,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8823
---- !u!114 &-7239909275326288117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/laser
-  m_EditorClassIdentifier: 
-  Path: event:/laser
-  guid: e2382e7f0a24a345a14cfd6220f66dcc
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1203
 --- !u!114 &-7224575139822396826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,6 +440,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1995
+--- !u!114 &-6944075302601066950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/Hotline
+  m_EditorClassIdentifier: 
+  Path: event:/music/Hotline
+  guid: 7da1f45c0f13604fa0838053912b596d
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 38397
 --- !u!114 &-6698629431955066429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,6 +555,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-6395520897810529858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/DMC
+  m_EditorClassIdentifier: 
+  Path: event:/music/DMC
+  guid: 2a7f8a7b2e63bd48ae9e656e7131c231
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 42000
 --- !u!114 &-6365643926167210181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,6 +651,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 16376
+--- !u!114 &-5976755803963061503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/Bondiana
+  m_EditorClassIdentifier: 
+  Path: event:/music/Bondiana
+  guid: 45d7df5061da2c44870f7ad5d70e6552
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 60091
 --- !u!114 &-5961114208677291763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637689841674769311
+  lastModified: 637689853165331058
   FileSizes: []
   Exists: 1
 --- !u!114 &-5408116696647953133
@@ -1188,6 +1188,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 16115
+--- !u!114 &-3084133736054053827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/Cuba
+  m_EditorClassIdentifier: 
+  Path: event:/music/Cuba
+  guid: 13e7a98422c20846a45ce8e4584e4e30
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 48000
 --- !u!114 &-2723774924405252505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,8 +1248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Knife_throw
   guid: e93fbdd4f6f5d94bb8e7664a31020947
-  Banks:
-  - {fileID: -5788830950135445270}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1280,29 +1302,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 320
---- !u!114 &-2223568644078967498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/damage_wolf
-  m_EditorClassIdentifier: 
-  Path: event:/damage_wolf
-  guid: 7107329fbf931844bf927f066442d60b
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &-2056237394088243595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1325,29 +1324,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-1887540386350814361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/music/Hotline
-  m_EditorClassIdentifier: 
-  Path: event:/music/Hotline
-  guid: 7da1f45c0f13604fa0838053912b596d
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 38397
 --- !u!114 &-1700669379223043145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1575,7 +1551,7 @@ MonoBehaviour:
   lastModified: 637688843707510459
   FileSizes: []
   Exists: 1
---- !u!114 &-700026271031989201
+--- !u!114 &-676838437240728900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1585,19 +1561,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/knife fall
+  m_Name: event:/laser
   m_EditorClassIdentifier: 
-  Path: event:/knife fall
-  guid: 2344d89140b7c643a3e9c74593aaecab
+  Path: event:/laser
+  guid: e2382e7f0a24a345a14cfd6220f66dcc
   Banks:
   - {fileID: -5788830950135445270}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2000
+  Length: 1203
 --- !u!114 &-571160463639973025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1873,28 +1849,30 @@ MonoBehaviour:
   - {fileID: -1509718389680110127}
   - {fileID: 9010232113680067308}
   - {fileID: 2001452841224344015}
-  - {fileID: 6509406536146583551}
-  - {fileID: 3735725992790967803}
-  - {fileID: -700026271031989201}
-  - {fileID: 3733117216891516352}
-  - {fileID: 5410947808064971542}
-  - {fileID: 1772512434398921218}
-  - {fileID: -2223568644078967498}
-  - {fileID: -9181863764130614918}
-  - {fileID: -1887540386350814361}
-  - {fileID: 7099622251271561799}
-  - {fileID: 4747733469275491522}
-  - {fileID: -7239909275326288117}
-  - {fileID: -8126927644648742597}
-  - {fileID: 8825033989375210524}
-  - {fileID: -7635910086464691683}
-  - {fileID: 508138664587672923}
+  - {fileID: 6870987110473113186}
+  - {fileID: -3084133736054053827}
+  - {fileID: 6878530791037395606}
+  - {fileID: -6395520897810529858}
+  - {fileID: -5976755803963061503}
+  - {fileID: 1678583820934723784}
+  - {fileID: 4875007713564755175}
+  - {fileID: 2597113590098802713}
+  - {fileID: -6944075302601066950}
+  - {fileID: 8072961865010802975}
+  - {fileID: 3795889757479733541}
+  - {fileID: -676838437240728900}
+  - {fileID: 3412405749496602886}
+  - {fileID: 2887246391965542159}
+  - {fileID: 8203020712200172842}
+  - {fileID: 2051058811943452368}
+  - {fileID: -7822491319421006252}
+  - {fileID: 892416720226812152}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5788830950135445270}
   StringsBanks:
   - {fileID: 2960576793651158255}
-  stringsBankWriteTime: 637689841674809940
+  stringsBankWriteTime: 637689853165351059
   cacheVersion: 8
 --- !u!114 &22896947123631521
 MonoBehaviour:
@@ -1965,29 +1943,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3492
---- !u!114 &508138664587672923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/damage_human
-  m_EditorClassIdentifier: 
-  Path: event:/damage_human
-  guid: ef27027a108fd94da127460d6af2ba81
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 496
 --- !u!114 &674222428111769926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2010,6 +1965,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &892416720226812152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/jeap
+  m_EditorClassIdentifier: 
+  Path: event:/jeap
+  guid: 696892c8fdf34747a9c048ac42f5d64d
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
 --- !u!114 &941924640959979116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2081,7 +2059,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3765
---- !u!114 &1772512434398921218
+--- !u!114 &1678583820934723784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2177,6 +2155,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6544
+--- !u!114 &2051058811943452368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/damage_human
+  m_EditorClassIdentifier: 
+  Path: event:/damage_human
+  guid: ef27027a108fd94da127460d6af2ba81
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 496
 --- !u!114 &2277120988796989214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2246,6 +2247,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5759
+--- !u!114 &2597113590098802713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/Credits
+  m_EditorClassIdentifier: 
+  Path: event:/music/Credits
+  guid: 72e489978a35504db5c1c8f93b1b095b
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 41400
+--- !u!114 &2887246391965542159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/knife_throw
+  m_EditorClassIdentifier: 
+  Path: event:/knife_throw
+  guid: e93fbdd4f6f5d94bb8e7664a31020947
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 180
 --- !u!114 &2891079976781028608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,10 +2331,10 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637689841674809940
+  lastModified: 637689853165351059
   FileSizes:
   - Name: 
-    Value: 7236
+    Value: 7320
   Exists: 1
 --- !u!114 &3023270755927604053
 MonoBehaviour:
@@ -2357,6 +2404,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5495
+--- !u!114 &3412405749496602886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/LongDark
+  m_EditorClassIdentifier: 
+  Path: event:/music/LongDark
+  guid: e4b84eebcc7b394cb21bd4e3801c88b4
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 39000
 --- !u!114 &3446205811329390020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,7 +2495,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 410
---- !u!114 &3733117216891516352
+--- !u!114 &3795889757479733541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2435,10 +2505,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/music/DMC
+  m_Name: event:/music/Da Vinci
   m_EditorClassIdentifier: 
-  Path: event:/music/DMC
-  guid: 2a7f8a7b2e63bd48ae9e656e7131c231
+  Path: event:/music/Da Vinci
+  guid: 9c8308b22dfa6848b62b4b94020335cc
   Banks:
   - {fileID: -5788830950135445270}
   IsStream: 1
@@ -2447,30 +2517,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 42000
---- !u!114 &3735725992790967803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/music/Cuba
-  m_EditorClassIdentifier: 
-  Path: event:/music/Cuba
-  guid: 13e7a98422c20846a45ce8e4584e4e30
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 48000
+  Length: 41200
 --- !u!114 &4172064369636686822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2613,7 +2660,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2210
---- !u!114 &4747733469275491522
+--- !u!114 &4875007713564755175
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2623,19 +2670,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/music/Da Vinci
+  m_Name: event:/damage_wolf
   m_EditorClassIdentifier: 
-  Path: event:/music/Da Vinci
-  guid: 9c8308b22dfa6848b62b4b94020335cc
+  Path: event:/damage_wolf
+  guid: 7107329fbf931844bf927f066442d60b
   Banks:
   - {fileID: -5788830950135445270}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 41200
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &4951432405387308092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2706,29 +2753,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7645
---- !u!114 &5410947808064971542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/music/Bondiana
-  m_EditorClassIdentifier: 
-  Path: event:/music/Bondiana
-  guid: 45d7df5061da2c44870f7ad5d70e6552
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 60091
 --- !u!114 &6019736980351328627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2801,29 +2825,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11999
---- !u!114 &6509406536146583551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/wood throw at fireplase
-  m_EditorClassIdentifier: 
-  Path: event:/wood throw at fireplase
-  guid: 036231c48c48344f91bbb4d6ebfd38fe
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &6693444487294348887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2872,6 +2873,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5289
+--- !u!114 &6870987110473113186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/wood throw at fireplase
+  m_EditorClassIdentifier: 
+  Path: event:/wood throw at fireplase
+  guid: 036231c48c48344f91bbb4d6ebfd38fe
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &6878530791037395606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/knife fall
+  m_EditorClassIdentifier: 
+  Path: event:/knife fall
+  guid: 2344d89140b7c643a3e9c74593aaecab
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 440
 --- !u!114 &7096970982621069173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2887,32 +2934,9 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 637688849614891303
+  lastModified: 637688866332712804
   FileSizes: []
   Exists: 1
---- !u!114 &7099622251271561799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/bombs
-  m_EditorClassIdentifier: 
-  Path: event:/bombs
-  guid: 970966db71e4904fabea91b7cbc28fed
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &7180716547655501812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3071,6 +3095,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5442
+--- !u!114 &8072961865010802975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/bombs
+  m_EditorClassIdentifier: 
+  Path: event:/bombs
+  guid: 970966db71e4904fabea91b7cbc28fed
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &8149825393620465332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3108,6 +3155,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/meat eat
   guid: 053a070f6068814dbdad27b6bdae5696
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &8203020712200172842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/enemy damage knife
+  m_EditorClassIdentifier: 
+  Path: event:/enemy damage knife
+  guid: eb8506e38b1d794bb804a1ddd8026d04
   Banks:
   - {fileID: -5788830950135445270}
   IsStream: 0
@@ -3157,29 +3227,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3250
---- !u!114 &8825033989375210524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/knife_throw
-  m_EditorClassIdentifier: 
-  Path: event:/knife_throw
-  guid: e93fbdd4f6f5d94bb8e7664a31020947
-  Banks:
-  - {fileID: -5788830950135445270}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 180
 --- !u!114 &8861563683689964596
 MonoBehaviour:
   m_ObjectHideFlags: 0
