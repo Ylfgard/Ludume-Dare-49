@@ -1,6 +1,6 @@
 <dialogue>
     <sentence>
-        <text></text>
+        <text>      </text>
         <duration>0</duration>
         <fmodSoundPath></fmodSoundPath>
         <triggerEvent>true</triggerEvent>
