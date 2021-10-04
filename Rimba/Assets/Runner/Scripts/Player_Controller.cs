@@ -11,12 +11,12 @@ public class Player_Controller : MonoBehaviour
 
         Transform tr;
 
-        private void Awake()
+    private void Awake()
         {
                 m_rigidBody = GetComponent<Rigidbody2D>();  
 
                 tr=gameObject.GetComponent<Transform>();
-        }
+    }
        
         // Update is called once per frame
         void Update () {
