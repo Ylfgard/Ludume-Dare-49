@@ -8,8 +8,8 @@ namespace Rimba
         {
             [SerializeField] private float healAmount = 40f;
 
-            public string ItemName { get { return "First Aid Kit"; } }
-            public string ItemDescription { get { return "Invaluable set of bandaids and pills."; } }
+            public string ItemName { get { return "Аптечка"; } }
+            public string ItemDescription { get { return "Бесценный набор бинтов и таблеток."; } }
 
             public void Interact(PlayerController player)
             {

@@ -8,8 +8,8 @@ namespace Rimba
         {
             public float fuelAmount = 30f;
 
-            public string ItemName { get { return "Log"; } }
-            public string ItemDescription { get { return "A wooden log. Can be used as bonfire fuel."; } }
+            public string ItemName { get { return "Полено"; } }
+            public string ItemDescription { get { return "Деревянно полено. Им можно что нибудь растапливать."; } }
 
             public void Interact(PlayerController player)
             {
