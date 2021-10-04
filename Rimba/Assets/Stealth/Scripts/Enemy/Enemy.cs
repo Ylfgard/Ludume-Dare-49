@@ -14,8 +14,14 @@ namespace ElusiveRimba
         [SerializeField] private float hearRange = 3f;
         [SerializeField] private float fieldOfView = 90f;
 
-        [SerializeField] private GameObject body, bodyDead;
-        [SerializeField] private MeshFilter fovMF;
+        [SerializeField] private GameObject body;
+        [SerializeField] private GameObject fovPrefab;
+
+        [Header("Enemy body sprites:")]
+        [SerializeField] Sprite face;
+        [SerializeField] Sprite back;
+        [SerializeField] Sprite left;
+        [SerializeField] Sprite right;
 
         [Header("")]
         [SerializeField] private GameObject hero;
@@ -23,7 +29,9 @@ namespace ElusiveRimba
         [SerializeField] private Transform[] waypoints;
         [SerializeField] private LayerMask fovLayerMask;
 
+        private SpriteRenderer sr;
         private Mesh fovMesh;
+        private MeshFilter fovMF;
         private Transform targetWaypoint;
         private Vector3 lookDirection;
         private Vector3 origin;
@@ -63,15 +71,18 @@ namespace ElusiveRimba
             }
         }
 
+        private void Awake()
+        {
+            sr = GetComponentInChildren<SpriteRenderer>();
+        }
+
         private void Start()
         {
-            body.SetActive(true);
-            bodyDead.SetActive(false);
-
             StartCoroutine(StandingInPatroolCoroutine(Random.Range(0.1f, 5f)));
             targetWaypoint = waypoints[currWaypointNdx];
 
             fovMesh = new Mesh();
+            fovMF = Instantiate(fovPrefab).GetComponent<MeshFilter>();
             fovMF.mesh = fovMesh;
         }
 
@@ -79,9 +90,11 @@ namespace ElusiveRimba
         {
             if(!isGameOver)
             {
+                AnimateBody();
                 Perception();
                 Patrolling();
                 PosAndDirOfFieldOfView();
+                //fovMF.gameObject.transform.position = transform.position;
             }
         }
 
@@ -90,6 +103,7 @@ namespace ElusiveRimba
             if(!isGameOver)
             {
                 DrawFieldOfView();
+                fovMF.gameObject.transform.position = transform.position;
             }
         }
 
@@ -144,7 +158,7 @@ namespace ElusiveRimba
         private void Perception()
         {
             Vector3 vToHero = hero.transform.position - transform.position;
-            
+
             if(vToHero.magnitude < hearRange)
             {
                 StealthStageManager.S.GameOverAndRestart();
@@ -174,17 +188,17 @@ namespace ElusiveRimba
 
         private void PosAndDirOfFieldOfView()
         {
+            //origin = transform.position;
             startAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
             if(startAngle < 0)
                 startAngle += 360;
             startAngle = startAngle + fieldOfView * 0.5f;
-
-            origin = transform.position;
         }
 
         public void Distract(Pebble pebble)
         {
-            if(isDistracted) return;
+            if(isDistracted)
+                return;
 
             isDistracted = true;
             canMove = false;
@@ -253,6 +267,31 @@ namespace ElusiveRimba
             targetWaypoint = waypoints[currWaypointNdx];
         }
 
+
+
+        private void AnimateBody()
+        {
+            Vector3 mouseRel = lookDirection;
+            if(mouseRel.y > -mouseRel.x && mouseRel.y > mouseRel.x)
+            {
+                sr.sprite = back;
+            }
+
+            else if(mouseRel.y > -mouseRel.x && mouseRel.y < mouseRel.x)
+            {
+                sr.sprite = right;
+            }
+
+            else if(mouseRel.y < -mouseRel.x && mouseRel.y < mouseRel.x)
+            {
+                sr.sprite = face;
+            }
+
+            else if(mouseRel.y < -mouseRel.x && mouseRel.y > mouseRel.x)
+            {
+                sr.sprite = left;
+            }
+        }
 
         public void Died()
         {
