@@ -37,13 +37,13 @@ public class StealthStageManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Backspace))
-        {
-            RestartLevel();
-        }
-    }
+    //private void Update()
+    //{
+    //    if(Input.GetKeyDown(KeyCode.Backspace))
+    //    {
+    //        RestartLevel();
+    //    }
+    //}
 
     public void GameOverAndRestart()
     {

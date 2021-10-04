@@ -6,8 +6,9 @@ namespace ElusiveRimba
 {
     public class Pebble : MonoBehaviour
     {
+        [SerializeField] private float distractionRange = 5f;
         [SerializeField] private float speed = 20;
-        [SerializeField] private float rotationSpeed = 100f;
+        //[SerializeField] private float rotationSpeed = 100f;
 
         private float maxRange, range;
         private bool isResting;
@@ -30,6 +31,8 @@ namespace ElusiveRimba
 
             float r = (endPos - startPos).magnitude;
             range = r < maxRange ? r : maxRange;
+
+            Debug.LogError("Pebble throw sound here");
         }
 
         private void FixedUpdate()
@@ -49,16 +52,31 @@ namespace ElusiveRimba
                 // Projectile ranged stop actions
                 // Fall on ground sound
                 ProjectileStopped();
+
+                Debug.LogError("(1) Pebble fall down sound here");
             }
         }
 
         private void ProjectileStopped()
         {
+            Debug.LogWarning("Single pebble sound for all (only if no other sounds in this script)");
+
             rb.Sleep();
             coll.enabled = false;
             enabled = false;
 
             // Enemy reaction
+            //List<Enemy> enemies = new List<Enemy>();
+            Enemy[] e = FindObjectsOfType<Enemy>();
+            foreach(Enemy enemy in e)
+            {
+                float dist = (enemy.gameObject.transform.position - transform.position).magnitude;
+                if(dist <= distractionRange)
+                {
+                    //enemies.Add(enemy);
+                    enemy.Distract(this);
+                }
+            }
         }
 
         private void OnCollisionEnter2D(Collision2D other)
@@ -68,11 +86,17 @@ namespace ElusiveRimba
                 case "Enemy":
                     // When pebble hits enemy?
                     ProjectileStopped();
+
+                    Debug.LogWarning("(optional) Pebble hits enemy sound here");
+
                     break;
 
                 case "Obstacle":
                     // Obstacle hit sound (same as ground hit sound?)
                     ProjectileStopped();
+
+                    Debug.LogError("(2) Pebble fall down sound here");
+
                     break;
 
                 default:

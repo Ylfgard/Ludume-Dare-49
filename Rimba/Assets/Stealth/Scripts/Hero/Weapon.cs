@@ -179,16 +179,18 @@ namespace ElusiveRimba
 
         public void PlusOneKnife()
         {
+            Debug.LogError("Pick up knife sound here");
+
             numberOfKnives++;
-            Debug.Log(numberOfKnives);
             StealthStageManager.S.KnivesUIRefresh(numberOfKnives);
         }
         public void MinusOneKnife()
         {
             if(numberOfKnives > 0)
             {
+                Debug.LogError("Throw knife sound here");
+
                 numberOfKnives--;
-                Debug.Log(numberOfKnives);
                 StealthStageManager.S.KnivesUIRefresh(numberOfKnives);
             }
         }
