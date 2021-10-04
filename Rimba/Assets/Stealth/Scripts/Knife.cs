@@ -64,6 +64,8 @@ namespace ElusiveRimba
                 case "Enemy":
                     // Enemy hit sound and blood effects
                     ProjectileStopped();
+                    other.gameObject.TryGetComponent(out Enemy enemy);
+                    enemy.Died();
                     break;
 
                 case "Obstacle":
