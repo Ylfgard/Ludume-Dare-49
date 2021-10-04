@@ -6,15 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Game Levels/MainMenu.unity
+    path: Assets/Scenes/Game Levels/Start_0/MainMenu.unity
     guid: fb9cddfb8d78b7f4a88e837c9cfc77d6
   - enabled: 1
-    path: Assets/Scenes/Game Levels/MansionCatscene.unity
+    path: Assets/Scenes/Game Levels/Start_0/StartComics.unity
+    guid: 2375311668a59ae48862a5e7683415ea
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/Stealth_1/MansionCatscene.unity
     guid: e7bf328859473e844982b2367a03d427
   - enabled: 1
-    path: Assets/Scenes/Game Levels/Mansion.unity
+    path: Assets/Scenes/Game Levels/Stealth_1/Mansion.unity
     guid: c86fa353a867a3447be7fa780e0c75af
   - enabled: 1
-    path: Assets/Scenes/Alexandria.unity
-    guid: cb19c7784fc242444b16c20a4208f508
+    path: Assets/Scenes/Game Levels/Stealth_1/Gateway.unity
+    guid: 1088d305d198f034cbe4c22269a7e35f
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/Stealth_1/DaVinchyCastleStealth.unity
+    guid: 486a33d5ec7cd704eadb787835669f07
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/Runner_2/Cuba.unity
+    guid: a9f67409149bbea48afcb6e9dc0a6657
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/Stealth_1/ModernCity.unity
+    guid: f7e54320eea6145498fd3b3ba211b207
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/Slasher_5/DaVinchyCastleSlasher.unity
+    guid: dbc7345b999bd0740bc665434158f971
   m_configObjects: {}

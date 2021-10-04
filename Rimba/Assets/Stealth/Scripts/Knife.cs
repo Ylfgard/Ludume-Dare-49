@@ -28,6 +28,8 @@ namespace ElusiveRimba
         private void Start()
         {
             startPos = transform.position;
+
+            Debug.LogError("Throw knife sound here");
         }
 
         private void FixedUpdate()
@@ -66,11 +68,14 @@ namespace ElusiveRimba
                     ProjectileStopped();
                     other.gameObject.TryGetComponent(out Enemy enemy);
                     enemy.Died();
+
+                    Debug.LogError("Knife hits enemy sound here");
                     break;
 
                 case "Obstacle":
                     // Obstacle hit sound and maybe some particle effects
                     ProjectileStopped();
+                    Debug.LogError("Knife hits obstacle sound here");
                     break;
 
                 default:

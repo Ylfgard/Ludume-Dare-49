@@ -1,0 +1,26 @@
+<dialogue>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Вам не кажется,  что это избитый прием? Мы видели это миллион раз в фильмах. И кстати,  почему мы именно  на Кубе?</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Да, может показаться, что это обычный боевик, где герой должен перерезать нужный провод и таймер бомбы остановится за секунду до взрыва,  если бы не одно “но” отключать таймер на бомбе будет жрица вуду, где же ей жить, если не на Кубе?</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Действительно, этот рояль в кустах я никак не ожидал, но это слишком экстравагантно, даже для охотника за сокровищами.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Ну а иначе ску-учно, как вы там предлагали, обычный парень с улицы? Чтож, он просто пытается сбыть атомную бомбу, за ним охотятся бандиты и снайперы.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>

@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour, IDialogueEvent
 {
     [SerializeField] private string levelName;
+    [SerializeField] private bool dontStopGame;
     [SerializeField] private float levelLoadDelay;
 
     public void PlayEvent()
     {
-        GamePauser.StopGame(gameObject);
-        FindObjectOfType<DialogueHandler>().PausePlayerEffect();
+        if(!dontStopGame)
+        {
+            GamePauser.StopGame(gameObject);
+            FindObjectOfType<DialogueHandler>().PausePlayerEffect();
+        } 
         StartCoroutine(DelayedLoad());
     }
 

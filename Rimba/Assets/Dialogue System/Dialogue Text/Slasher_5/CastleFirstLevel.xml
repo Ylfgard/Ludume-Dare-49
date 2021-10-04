@@ -1,0 +1,14 @@
+<dialogue>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Так слишком долго, давайте ускорим процесс.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Он заходит в главный зал, пробил в колокол тревогу и к нему сбегаются толпы врагов.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+</dialogue>
