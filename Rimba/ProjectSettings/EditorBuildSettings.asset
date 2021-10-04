@@ -36,6 +36,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Levels/Shoter_3/GayBar.unity
     guid: 68c0da275163a1448aaeaed860491a79
   - enabled: 1
+    path: Assets/Scenes/Game Levels/Survival_4/Sewerage.unity
+    guid: bb6cdfb187aa48b4aa7fe3e16eba8ce8
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/Survival_4/Siberia.unity
+    guid: b8c0d8033c28a8846a8af10a1e886a6a
+  - enabled: 1
     path: Assets/Scenes/Game Levels/Slasher_5/DaVinchyCastleSlasher.unity
     guid: dbc7345b999bd0740bc665434158f971
   m_configObjects: {}
