@@ -336,7 +336,7 @@ MonoBehaviour:
   - {x: -0.49648, y: 0.12676668, z: 0}
   m_ShapePathHash: 1191697805
   m_Mesh: {fileID: 0}
-  m_InstanceId: 43448
+  m_InstanceId: -7638
 --- !u!1 &7134122027916499270
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LightType: 3
-  m_BlendStyleIndex: 0
+  m_BlendStyleIndex: 1
   m_FalloffIntensity: 0.3
   m_Color: {r: 0.9622642, g: 0.6983789, b: 0.013616921, a: 1}
   m_Intensity: 1
@@ -525,20 +525,17 @@ MonoBehaviour:
   maxSpeed: 3
   health: 100
   warmth: 100
-  warmthRate: 2
+  warmthRate: 5
   warmthDamageRate: 5
   radiation: 0
   radiationRate: 2
-  radiationDamageRate: 5
+  radiationDamageRate: 2
   coolness: 100
   coolnessRate: 2
-  coolnessDamageRate: 5
-  pickupWidth: 0.5
-  pickupDistance: 1
-  pickupLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
+  coolnessDamageRate: 2
+  interactionWidth: 1
   carryingLog: 0
+  logFuelAmount: 0
 --- !u!95 &7309838155598019727
 Animator:
   serializedVersion: 3

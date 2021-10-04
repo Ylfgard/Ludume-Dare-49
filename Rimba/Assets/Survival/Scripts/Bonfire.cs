@@ -78,6 +78,13 @@ namespace Rimba
                 player = collider.GetComponent<PlayerController>();
             }
 
+            public void OnTriggerExit2D(Collider2D collider) {
+                if (!collider.CompareTag("Player"))
+                    return;
+
+                player = null;
+            }
+
             void OnDrawGizmosSelected() {
                 Handles.color = Color.yellow;
                 Handles.DrawWireDisc(transform.position, Vector3.forward, radius);
@@ -95,7 +102,7 @@ namespace Rimba
                 if (!player.carryingLog)
                     return;
 
-                burnoutTime = Mathf.Min(burnoutTime + 10f, Time.time + maxTime);
+                burnoutTime = Mathf.Min(burnoutTime + player.logFuelAmount, Time.time + maxTime);
                 player.carryingLog = false;
             }
             #endregion
