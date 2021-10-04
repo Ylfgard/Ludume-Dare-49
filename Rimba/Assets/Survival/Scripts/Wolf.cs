@@ -176,12 +176,12 @@ namespace Rimba
             }
 
             void OnDrawGizmosSelected() {
-                Handles.color = Color.yellow;
-                Handles.DrawWireDisc(transform.position, Vector3.forward, detectionRadius);
-
-                Handles.color = Color.red;
-                Handles.DrawWireDisc(transform.position, Vector3.forward, followDistanceMax);
-                Handles.DrawWireDisc(transform.position, Vector3.forward, followDistanceMin);
+                // Handles.color = Color.yellow;
+                // Handles.DrawWireDisc(transform.position, Vector3.forward, detectionRadius);
+                //
+                // Handles.color = Color.red;
+                // Handles.DrawWireDisc(transform.position, Vector3.forward, followDistanceMax);
+                // Handles.DrawWireDisc(transform.position, Vector3.forward, followDistanceMin);
             }
         }
     }

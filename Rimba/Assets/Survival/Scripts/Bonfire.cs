@@ -86,11 +86,11 @@ namespace Rimba
             }
 
             void OnDrawGizmosSelected() {
-                Handles.color = Color.yellow;
-                Handles.DrawWireDisc(transform.position, Vector3.forward, radius);
-
-                Handles.color = Color.red;
-                Handles.DrawWireDisc(transform.position, Vector3.forward, warmRadius);
+                // Handles.color = Color.yellow;
+                // Handles.DrawWireDisc(transform.position, Vector3.forward, radius);
+                //
+                // Handles.color = Color.red;
+                // Handles.DrawWireDisc(transform.position, Vector3.forward, warmRadius);
             }
 
             #region IInteractable
