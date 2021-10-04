@@ -9,15 +9,18 @@ public class GameManager : MonoBehaviour
     
     public GameObject gameOverText;
     public Text battleTimerText;
-
     public GameObject firstRoom;
     public GameObject mainHall;
     public GameObject mainHall2;
 
-    private float battleTimer = 120.0f; // в секундах
+    [SerializeField] private TextAsset firstDialogue;
+
+    private DialogueHandler dialogueHandler;
+    [SerializeField] private float battleTimer = 120.0f; // в секундах
     
     void Start()
     {
+        dialogueHandler = FindObjectOfType<DialogueHandler>();
         gameOverText.SetActive(false);
         
         firstRoom.SetActive(true);
@@ -37,7 +40,7 @@ public class GameManager : MonoBehaviour
         if (battleTimer <= 0)
         {
             battleTimerText.fontSize = 40;
-            battleTimerText.text = "Тут типа диалог";
+            battleTimerText.text = "";
         }
         else
         {
@@ -63,6 +66,9 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(battleTimer);
         firstRoom.SetActive(false);
+        IDialogueEvent [] diaEv = new IDialogueEvent[0];
+        dialogueHandler.StartDialogue(firstDialogue, diaEv, true);
+        FindObjectOfType<PlayerController>().GetComponent<Transform>().position = new Vector3(-14.6f, 6.08f, 0);
         mainHall.SetActive(true);
     }
 }
