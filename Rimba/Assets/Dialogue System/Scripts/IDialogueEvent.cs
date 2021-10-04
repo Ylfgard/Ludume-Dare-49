@@ -1,4 +1,4 @@
 public interface IDialogueEvent
 {
-    void PlayEvent();
+    void PlayEvent(float i);
 }

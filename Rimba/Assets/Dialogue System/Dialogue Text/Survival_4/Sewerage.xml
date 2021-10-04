@@ -1,0 +1,32 @@
+<dialogue>
+    <sentence>
+        <text>ПИСАТЕЛЬ: ... и встречает крокодила</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Кого!? Откуда в канализации крокодил? Вы в своем уме?</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Ну аллигатор, кайман, не знаю, сбежал из зоопарка, я писатель, я так вижу.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Нет уж, давайте что то более приземленное. Мы тут с вами не Фэнтези пишем, а еще у нас герой,  он какой то пустой, давайте раскроем его характер, пусть будут внутренние переживания, драма.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Тайга! Сибирская, холодная тайга. И волки, побольше волков вокруг. Пусть воют.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>

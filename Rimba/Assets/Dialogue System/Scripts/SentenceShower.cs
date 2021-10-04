@@ -24,12 +24,19 @@ public class SentenceShower : MonoBehaviour
         text.text = curSentenceText;
         if(fmodSoundPath != "")
         {
+            Debug.Log("PlayMusic: " + fmodSoundPath);
             instance = FMODUnity.RuntimeManager.CreateInstance(fmodSoundPath);
+            instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(Camera.main.transform)); 
             instance.start();
-            delayBeforeShowNext = FMODUnity.EventManager.EventFromPath(fmodSoundPath).Length + 0.1f;
+            delayBeforeShowNext = FMODUnity.EventManager.EventFromPath(fmodSoundPath).Length/1000 + 0.1f;
             StartCoroutine(ShowNextSentence());
         }
         StartCoroutine(ShowByLetters());
+    }
+
+    private void FixedUpdate() 
+    {
+        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(Camera.main.transform));
     }
 
     private IEnumerator ShowByLetters()
@@ -65,5 +72,14 @@ public class SentenceShower : MonoBehaviour
             instance.release();
         }
         Destroy(gameObject);
+    }
+
+    private void OnDestroy() 
+    {
+        if(fmodSoundPath != "")
+        {
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            instance.release();
+        }
     }
 }

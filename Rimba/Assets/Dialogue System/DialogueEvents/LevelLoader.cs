@@ -8,13 +8,14 @@ public class LevelLoader : MonoBehaviour, IDialogueEvent
     [SerializeField] private bool dontStopGame;
     [SerializeField] private float levelLoadDelay;
 
-    public void PlayEvent()
+    public void PlayEvent(float duration)
     {
         if(!dontStopGame)
         {
             GamePauser.StopGame(gameObject);
             FindObjectOfType<DialogueHandler>().PausePlayerEffect();
         } 
+        levelLoadDelay = duration;
         StartCoroutine(DelayedLoad());
     }
 

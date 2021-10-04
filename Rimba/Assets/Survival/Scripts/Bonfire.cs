@@ -94,8 +94,8 @@ namespace Rimba
             }
 
             #region IInteractable
-            public string ItemName { get { return "Bonfire"; } }
-            public string ItemDescription { get { return "A good thing to stay warm and keep predators away in a middle of a night."; } }
+            public string ItemName { get { return "Костер"; } }
+            public string ItemDescription { get { return "Отличный способ согреваться и отпугивать хищников по ночам."; } }
 
             public void Interact(PlayerController player)
             {
