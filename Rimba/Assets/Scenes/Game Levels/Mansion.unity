@@ -301,6 +301,10 @@ PrefabInstance:
       value: Enemy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 490587936}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 1472238253}
@@ -595,6 +599,10 @@ PrefabInstance:
       value: Enemy (3)
       objectReference: {fileID: 0}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 490587936}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 584094556}
@@ -834,6 +842,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd7693f12809f4c4eb90abb9cf6489d8, type: 3}
+--- !u!1 &490587936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3823499828234444994, guid: ad5c09d526d722640a5aff96183e8dca, type: 3}
+  m_PrefabInstance: {fileID: 1807900975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &498873852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -889,6 +902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 490587936}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -1558,6 +1575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 4900000, guid: bc57b3140b706ce4e98daa62ece7389a, type: 3}
   stopTime: 1
+  playOnStart: 0
 --- !u!114 &1209754065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1571,6 +1589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Gateway
+  dontStopGame: 0
   levelLoadDelay: 15
 --- !u!1001 &1221206111
 PrefabInstance:
@@ -1957,6 +1976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 490587936}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 

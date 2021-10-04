@@ -423,6 +423,10 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1391892538}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 2060515574}
@@ -464,7 +468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2033853fe2d63e1429fb8531de266c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: Alexandria
+  levelName: DaVinchyCastleStealth
+  dontStopGame: 0
   levelLoadDelay: 15
 --- !u!114 &237125354
 MonoBehaviour:
@@ -747,6 +752,10 @@ PrefabInstance:
       value: Enemy (4)
       objectReference: {fileID: 0}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1391892538}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -955,6 +964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1391892538}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.size
       value: 4
@@ -2368,6 +2381,10 @@ PrefabInstance:
       value: Enemy (5)
       objectReference: {fileID: 0}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1391892538}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -2630,6 +2647,10 @@ PrefabInstance:
       value: Enemy (2)
       objectReference: {fileID: 0}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1391892538}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -2824,6 +2845,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6457719262510477083, guid: dd7693f12809f4c4eb90abb9cf6489d8, type: 3}
   m_PrefabInstance: {fileID: 1379026199}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1391892538 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3823499828234444994, guid: ad5c09d526d722640a5aff96183e8dca, type: 3}
+  m_PrefabInstance: {fileID: 1605796231}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1405286684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3005,7 +3031,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300000, guid: e8d5fa0f9f0c8f44ab0f43c86356e537, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ff96e8e1e98164488f6b709c841036a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3621,6 +3647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1391892538}
     - target: {fileID: 2614957429387619491, guid: 82c22fe3502d1614ea112592755bb130, type: 3}
       propertyPath: waypoints.Array.size
       value: 2

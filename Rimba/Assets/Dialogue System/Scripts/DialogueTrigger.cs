@@ -17,7 +17,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        IDialogueEvent[]  dialogueEvents = gameObject.GetComponents<IDialogueEvent>();
+        IDialogueEvent[] dialogueEvents = gameObject.GetComponents<IDialogueEvent>();
         dialogueHandler.StartDialogue(dialogueText, dialogueEvents, stopTime);
     }
 
