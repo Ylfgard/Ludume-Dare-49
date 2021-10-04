@@ -1,0 +1,38 @@
+<dialogue>
+    <sentence>
+        <text>ПИСАТЕЛЬ: ...где будет наслаждаться жизнью до конца своих дней.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/где будет жить</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Или его бросит девушка и сбежит с деньгами к молодому альфонсу.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/или его бросит девушка</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: а герой сопьется в подворотне.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/или его бросит девушка</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Ну уж нет! это слишком бесславный конец для героя такого масштаба!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/или его бросит девушка</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Пусть лучше отправится освобождать Афганистан с ядерной бомбой. Отличный задел на сиквел!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/или его бросит девушка</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Нет, не думаю. Может лучше добавить серой морали? Допустим, наш герой взорвет бомбу в центре города ради защиты прав угнетенных!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/или его бросит девушка</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>
