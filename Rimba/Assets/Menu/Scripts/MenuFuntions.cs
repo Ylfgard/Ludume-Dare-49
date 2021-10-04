@@ -10,7 +10,8 @@ public class MenuFuntions : MonoBehaviour
     [SerializeField] private GameObject menuFone;
     [SerializeField] private GameObject settingsFone;
     [SerializeField] private Slider textShowSpeedSlider;
-    [SerializeField] private Slider volumeSlider;
+    [SerializeField] private Slider musicVolumeSlider;
+    [SerializeField] private Slider dialogsVolumeSlider;
     [SerializeField] private SceneChanger sceneChanger;
 
     private FMOD.Studio.Bus musicBus;
@@ -18,9 +19,21 @@ public class MenuFuntions : MonoBehaviour
 
     public void SetVolume()
     {
-        float volume = volumeSlider.value;
-        musicBus.setVolume(volume);
-        dialogsBus.setVolume(volume);
+        float musicVolume = musicVolumeSlider.value;
+        float dialogsVolume = dialogsVolumeSlider.value;
+        musicBus.setVolume(musicVolume);
+        dialogsBus.setVolume(dialogsVolume);
+        PlayerPrefs.SetFloat("musicVolume", musicVolume);
+        PlayerPrefs.SetFloat("dialogsVolume", dialogsVolume);
+        PlayerPrefs.Save();
+    }
+
+    public void GetVolume()
+    {
+        float musicVolume = PlayerPrefs.GetFloat("musicVolume");
+        float dialogsVolume = PlayerPrefs.GetFloat("dialogsVolume");
+        musicVolumeSlider.value = musicVolume;
+        dialogsVolumeSlider.value = dialogsVolume;
     }
 
     public void LoadLevel(string levelName) 
@@ -75,10 +88,15 @@ public class MenuFuntions : MonoBehaviour
         Application.Quit(); 
     }
 
-    private void Start() 
+    private void Awake()
     {
         musicBus = FMODUnity.RuntimeManager.GetBus("bus:/music");
         dialogsBus = FMODUnity.RuntimeManager.GetBus("bus:/dialogs");
+    }
+
+    private void Start() 
+    {
+        GetVolume();
 
         if(isStartMenu) 
         {
