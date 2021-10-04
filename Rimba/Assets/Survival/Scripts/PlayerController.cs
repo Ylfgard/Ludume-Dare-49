@@ -8,8 +8,10 @@ namespace Rimba
     namespace Survival
     {
         [RequireComponent(typeof(Animator))]
-        public class PlayerController : MonoBehaviour
+        public class PlayerController : MonoBehaviour, IDamagable
         {
+            [SerializeField] private new Camera camera;
+
             [Header("Movement")]
             [SerializeField] private float maxSpeed;
 
@@ -37,17 +39,17 @@ namespace Rimba
             private int ANIMATOR_CARRYING_LOG = Animator.StringToHash("CarryingLog");
             #endregion
 
-            #region Pickup
-            [Header("Pickup")]
-            [SerializeField] private float pickupWidth = 1f;
-            [SerializeField] private float pickupDistance = 1f;
-            [SerializeField] private LayerMask pickupLayerMask;
+            #region Interaction
+            [Header("Interaction")]
+            [SerializeField] private float interactionWidth = 1f;
+            [SerializeField] private LayerMask interactionLayerMask;
 
+            [HideInInspector] public IInteractable selectedInteractable;
             private Collider2D[] hits;
             #endregion
 
-            [HideInInspector] public IInteractable selectedInteractable;
             [HideInInspector] public bool carryingLog;
+            [HideInInspector] public float logFuelAmount;
 
             void Start()
             {
@@ -55,7 +57,7 @@ namespace Rimba
                 animationRunning = false;
                 animationTimeout = -1;
 
-                hits = new Collider2D[3];
+                hits = new Collider2D[10];
 
                 lastTick = Mathf.Round(Time.time);
 
@@ -84,11 +86,13 @@ namespace Rimba
                 if (animationRunning)
                     return;
 
+                Vector3 lookDirection = camera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+                transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg, Vector3.forward);
+
                 Vector2 movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
                 if (movement.sqrMagnitude > 0.1f)
                 {
-                    transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg, Vector3.forward);
-                    transform.position += transform.right * maxSpeed * Time.deltaTime;
+                    transform.position += ((Vector3)movement) * maxSpeed * Time.deltaTime;
                     animator.SetBool(ANIMATOR_MOVE, true);
                 }
                 else
@@ -111,8 +115,11 @@ namespace Rimba
 
             void UpdateStats()
             {
-                float time = Mathf.Floor(Time.time);
+                warmth = Math.Max(warmth - warmthRate * Time.deltaTime, 0f);
+                radiation = Math.Min(radiation + radiationRate * Time.deltaTime, 100f);
+                coolness = Math.Max(coolness - coolnessRate * Time.deltaTime, 0f);
 
+                float time = Mathf.Floor(Time.time);
                 if (time == lastTick)
                     return;
                 
@@ -129,17 +136,12 @@ namespace Rimba
                 {
                     health = Mathf.Max(health - coolnessDamageRate, 0f);
                 }
-
-                warmth = Math.Max(warmth - warmthRate, 0f);
-                radiation = Math.Min(radiation + radiationRate, 100f);
-                coolness = Math.Max(coolness - coolnessRate, 0f);
             }
 
             IInteractable FindInteractable()
             {
                 int pickupCount = Physics2D.OverlapBoxNonAlloc(
-                    transform.position + transform.right * 0.8f, Vector2.one * pickupWidth, 0,
-                    hits, pickupLayerMask
+                    transform.position + transform.right * 0.8f, Vector2.one * interactionWidth, 0, hits, interactionLayerMask
                 );
                 for (int i=0; i < pickupCount; i++)
                 {
@@ -151,6 +153,11 @@ namespace Rimba
                         return item;
                 }
                 return null;
+            }
+
+            public void ApplyDamage(float damage)
+            {
+                health = Mathf.Max(health - damage, 0f);
             }
 
             /*
@@ -168,7 +175,7 @@ namespace Rimba
 
             void OnDrawGizmosSelected() {
                 Handles.color = Color.blue;
-                Handles.DrawWireCube(transform.position + transform.right * 0.8f, Vector2.one * pickupWidth);
+                Handles.DrawWireCube(transform.position + transform.right * 0.8f, Vector2.one * interactionWidth);
             }
         }
     }

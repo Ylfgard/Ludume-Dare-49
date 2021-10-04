@@ -6,8 +6,10 @@ namespace Rimba
     {
         public class Log : MonoBehaviour, IInteractable
         {
-            public string ItemName { get { return "Log"; } }
-            public string ItemDescription { get { return "A wooden log. Can be used as bonfire fuel."; } }
+            public float fuelAmount = 30f;
+
+            public string ItemName { get { return "Полено"; } }
+            public string ItemDescription { get { return "Деревянно полено. Им можно что нибудь растапливать."; } }
 
             public void Interact(PlayerController player)
             {
@@ -15,6 +17,7 @@ namespace Rimba
                     return;
 
                 player.carryingLog = true;
+                player.logFuelAmount = fuelAmount;
                 Destroy(gameObject);
             }
         }

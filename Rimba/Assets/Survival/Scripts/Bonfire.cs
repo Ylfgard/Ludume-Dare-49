@@ -78,6 +78,13 @@ namespace Rimba
                 player = collider.GetComponent<PlayerController>();
             }
 
+            public void OnTriggerExit2D(Collider2D collider) {
+                if (!collider.CompareTag("Player"))
+                    return;
+
+                player = null;
+            }
+
             void OnDrawGizmosSelected() {
                 Handles.color = Color.yellow;
                 Handles.DrawWireDisc(transform.position, Vector3.forward, radius);
@@ -87,15 +94,15 @@ namespace Rimba
             }
 
             #region IInteractable
-            public string ItemName { get { return "Bonfire"; } }
-            public string ItemDescription { get { return "A good thing to stay warm and keep predators away in a middle of a night."; } }
+            public string ItemName { get { return "Костер"; } }
+            public string ItemDescription { get { return "Отличный способ согреваться и отпугивать хищников по ночам."; } }
 
             public void Interact(PlayerController player)
             {
                 if (!player.carryingLog)
                     return;
 
-                burnoutTime = Mathf.Min(burnoutTime + 10f, Time.time + maxTime);
+                burnoutTime = Mathf.Min(burnoutTime + player.logFuelAmount, Time.time + maxTime);
                 player.carryingLog = false;
             }
             #endregion

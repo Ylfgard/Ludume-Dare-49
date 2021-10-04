@@ -6,12 +6,14 @@ namespace Rimba
     {
         public class FirstAidKit : MonoBehaviour, IInteractable
         {
-            public string ItemName { get { return "First Aid Kit"; } }
-            public string ItemDescription { get { return "Invaluable set of bandaids and pills."; } }
+            [SerializeField] private float healAmount = 40f;
+
+            public string ItemName { get { return "Аптечка"; } }
+            public string ItemDescription { get { return "Бесценный набор бинтов и таблеток."; } }
 
             public void Interact(PlayerController player)
             {
-                player.health = Mathf.Max(player.health + 20f, 0);
+                player.health = Mathf.Max(player.health + healAmount, 0);
                 Destroy(gameObject);
             }
         }

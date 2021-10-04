@@ -1,0 +1,8 @@
+<dialogue>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Нет-нет, не так. Это недостаточно эпично! Мы - секретный агент и нам нужно доставить украденую атомную бомбу в оперативный штаб, откуда нас эвакуируют вертолетом. И все это происходит в Марракеше.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/нет нет не так</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>

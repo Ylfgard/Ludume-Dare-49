@@ -2,25 +2,25 @@
     <sentence>
         <text>ИЗДАТЕЛЬ: Вам не кажется,  что это избитый прием? Мы видели это миллион раз в фильмах. И кстати,  почему мы именно  на Кубе?</text>
         <duration>5</duration>
-        <fmodSoundPath></fmodSoundPath>
+        <fmodSoundPath>event:/вам не кажется что это избитый</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Да, может показаться, что это обычный боевик, где герой должен перерезать нужный провод и таймер бомбы остановится за секунду до взрыва,  если бы не одно “но” отключать таймер на бомбе будет жрица вуду, где же ей жить, если не на Кубе?</text>
+        <text>ПИСАТЕЛЬ: Да, может показаться, что это обычный боевик, где герой отрезает нужный провод и таймер бомбы остановится за секунду до взрыва,  если бы не одно “но”: отключать таймер на бомбе будет жрица вуду. Где же ей жить, если не на Кубе?</text>
         <duration>5</duration>
-        <fmodSoundPath></fmodSoundPath>
+        <fmodSoundPath>event:/да может показаться что это</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
         <text>ИЗДАТЕЛЬ: Действительно, этот рояль в кустах я никак не ожидал, но это слишком экстравагантно, даже для охотника за сокровищами.</text>
         <duration>5</duration>
-        <fmodSoundPath></fmodSoundPath>
+        <fmodSoundPath>event:/действительно, этот рояль</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Ну а иначе ску-учно, как вы там предлагали, обычный парень с улицы? Чтож, он просто пытается сбыть атомную бомбу, за ним охотятся бандиты и снайперы.</text>
+        <text>ПИСАТЕЛЬ: Ну а иначе скучно. Как вы там предлагали? Обычный парень с улицы? Чтож, он просто пытается сбыть атомную бомбу, и за ним охотятся бандиты и снайперы.</text>
         <duration>5</duration>
-        <fmodSoundPath></fmodSoundPath>
+        <fmodSoundPath>event:/ну а иначе скучно</fmodSoundPath>
         <triggerEvent>true</triggerEvent>
     </sentence>
 </dialogue>
