@@ -10,22 +10,23 @@ public class MenuFuntions : MonoBehaviour
     [SerializeField] private GameObject menuFone;
     [SerializeField] private GameObject settingsFone;
     [SerializeField] private Slider textShowSpeedSlider;
+    [SerializeField] private SceneChanger sceneChanger;
 
     public void LoadLevel(string levelName) 
     { 
-        SceneManager.LoadScene(levelName); 
+       sceneChanger.ChangeScene(levelName);
     }
 
     public void LoadLastPlayedLevel() 
     { 
         string loadedLevelName;
-        loadedLevelName = PlayerPrefs.GetString("lastGameScene", "Mansion");
-        SceneManager.LoadScene(loadedLevelName); 
+        loadedLevelName = PlayerPrefs.GetString("lastGameScene", "StartComics");
+        sceneChanger.ChangeScene(loadedLevelName);
     }
 
     public void RestartLevel() 
     { 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+        sceneChanger.ChangeScene(SceneManager.GetActiveScene().name); 
     }
 
     public void OpenSettings()
