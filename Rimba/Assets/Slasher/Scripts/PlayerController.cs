@@ -18,15 +18,23 @@ public class PlayerController : MonoBehaviour
     public GameObject sword;
     public GameObject spear;
     public GameObject hammer;
+    
+    private bool isCooldown;
 
     [SerializeField] private float hammerCharge = 0;
     [SerializeField] private int medicineHeal = 30;
 
+    public Sprite[] directions;
+    private Vector2 pos; // Текущая позиция
+    private SpriteRenderer spriteRenderer;
+    public Vector2 mouseRel; // Координаты курсора относительно игрока
+
     private void Awake()
     {
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         playerRb = GetComponent<Rigidbody2D>();
         camera = Camera.main;
-        
+
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
     
@@ -39,35 +47,41 @@ public class PlayerController : MonoBehaviour
     {
         if (gameManager.isGameActive)
         {
+            mouse = camera.ScreenToWorldPoint(Input.mousePosition);
             MovePlayer();
         }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        // Атаки разным оружием
+        if (gameManager.isGameActive && !isCooldown)
         {
-            SwordAttack();
-        }
-        
-        else if (Input.GetKeyDown(KeyCode.Mouse1))
-        { 
-            SpearAttack();
-        }
-        
-        else if (Input.GetKey(KeyCode.Mouse2))
-        {
-            hammerCharge += Time.deltaTime;
-        }
-        
-        if (Input.GetKeyUp(KeyCode.Mouse2))
-        {
-            if (hammerCharge >= 3.0f)
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                HammerAttack();
+                SwordAttack();
             }
-            hammerCharge = 0;
+                    
+            else if (Input.GetKeyDown(KeyCode.Mouse1))
+            { 
+                SpearAttack();
+            }
+                    
+            else if (Input.GetKey(KeyCode.Mouse2))
+            {
+                hammerCharge += Time.deltaTime;
+            }
+                    
+            if (Input.GetKeyUp(KeyCode.Mouse2))
+            {
+                if (hammerCharge >= 3.0f)
+                {
+                    HammerAttack();
+                }
+                hammerCharge = 0;
+            }
         }
+        
     }
 
     void MovePlayer()
@@ -76,13 +90,36 @@ public class PlayerController : MonoBehaviour
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector2.right * (inputX * speed * Time.deltaTime), Space.World);
-        transform.Translate(Vector2.up * (inputY * speed * Time.deltaTime), Space.World);
+        transform.Translate(Vector2.right * (inputX * speed * Time.fixedDeltaTime), Space.World);
+        transform.Translate(Vector2.up * (inputY * speed * Time.fixedDeltaTime), Space.World);
+
+        // Вращение спрайта за курсором
+        pos = transform.position;
+        mouseRel = mouse - pos;
+        if (mouseRel.y > -mouseRel.x && mouseRel.y > mouseRel.x)
+        {
+            spriteRenderer.sprite = directions[2]; // Up
+        }
+
+        else if (mouseRel.y > -mouseRel.x && mouseRel.y < mouseRel.x)
+        {
+            spriteRenderer.sprite = directions[3]; // Right
+        }
+
+        else if (mouseRel.y < -mouseRel.x && mouseRel.y < mouseRel.x)
+        {
+            spriteRenderer.sprite = directions[0]; // Down
+        }
         
+        else if (mouseRel.y < -mouseRel.x && mouseRel.y > mouseRel.x)
+        {
+            spriteRenderer.sprite = directions[1]; // Left
+        }
+
         // Вращение
-        Vector3 dir = Input.mousePosition - camera.WorldToScreenPoint(transform.position);
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        // Vector3 dir = Input.mousePosition - camera.WorldToScreenPoint(transform.position);
+        // float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg/* - 90*/;
+        // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
     
     // При получении урона или поднятия хилки
@@ -95,16 +132,26 @@ public class PlayerController : MonoBehaviour
     void SwordAttack()
     {
         Instantiate(sword, gameObject.transform);
+        StartCoroutine(Cooldown(1.0f));
     }
 
     void SpearAttack()
     {
         Instantiate(spear, gameObject.transform);
+        StartCoroutine(Cooldown(3.0f));
     }
     
     void HammerAttack()
     {
         Instantiate(hammer, gameObject.transform);
+        StartCoroutine(Cooldown(1.0f));
+    }
+
+    IEnumerator Cooldown(float cooldownTime)
+    {
+        isCooldown = true;
+        yield return new WaitForSeconds(cooldownTime);
+        isCooldown = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)

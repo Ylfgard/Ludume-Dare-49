@@ -22,12 +22,17 @@ public class EnemyController : MonoBehaviour
     public GameObject sword;
     public GameObject spear;
     public GameObject hammer;
+    
+    public Sprite[] directions;
+    private SpriteRenderer spriteRenderer;
+    private Vector2 playerRelPos;
 
     private void Awake()
     {
         player = GameObject.Find("Player");
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         enemyHPText = GameObject.Find("Enemy HP Text").GetComponent<Text>();
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        target = player.transform;
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
     
@@ -46,13 +51,34 @@ public class EnemyController : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             
             // И смотрит в его сторону
-            Vector3 dir = player.transform.position;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            // Vector2 dir = player.transform.position;
+            // float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
+            // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+            playerRelPos = player.transform.position - gameObject.transform.position;
+            if (playerRelPos.y > -playerRelPos.x && playerRelPos.y > playerRelPos.x)
+            {
+                spriteRenderer.sprite = directions[2]; // Up
+            }
+
+            else if (playerRelPos.y > -playerRelPos.x && playerRelPos.y < playerRelPos.x)
+            {
+                spriteRenderer.sprite = directions[3]; // Right
+            }
+
+            else if (playerRelPos.y < -playerRelPos.x && playerRelPos.y < playerRelPos.x)
+            {
+                spriteRenderer.sprite = directions[0]; // Down
+            }
+        
+            else if (playerRelPos.y < -playerRelPos.x && playerRelPos.y > playerRelPos.x)
+            {
+                spriteRenderer.sprite = directions[1]; // Left
+            }
         }
     }
     
-    // При получении урона или поднятия хилки
+    // При получении урона или поднятия хилки меняем хп
     public void UpdateHP(int HPDifference)
     {
         HP += HPDifference;
@@ -64,7 +90,7 @@ public class EnemyController : MonoBehaviour
         }
     }
     
-    // Если игрок в зоне досягаемости удара
+    // Если игрок в зоне видимости
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -88,7 +114,7 @@ public class EnemyController : MonoBehaviour
         Instantiate(hammer, gameObject.transform);
     }
 
-    // Рандомная атака через рандомный промежуток времени
+    // Нужная атака через рандомный промежуток времени
     IEnumerator RandomAttack()
     {
         while (gameManager.isGameActive)

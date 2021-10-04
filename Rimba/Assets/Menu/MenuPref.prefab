@@ -1128,10 +1128,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8122008392448097656
 MonoBehaviour:
@@ -1145,6 +1145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405f645582a31e949a9af6619cc3e9e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStartMenu: 0
   menuFone: {fileID: 299284918886084689}
   settingsFone: {fileID: 4631993685322661564}
   textShowSpeedSlider: {fileID: 9069763518751015732}

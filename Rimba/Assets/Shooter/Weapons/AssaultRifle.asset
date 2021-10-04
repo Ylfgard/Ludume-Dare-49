@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AssaultRifle
   m_EditorClassIdentifier: 
   Damage: 5
-  Accuracy: 3
+  Accuracy: 20
   Rate: 0.5
-  Ammo: 20
+  Ammo: 500
+  AmmoPerShot: 1

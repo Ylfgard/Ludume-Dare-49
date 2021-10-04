@@ -22,7 +22,13 @@ public class CharacterData : ScriptableObject
     {
         get { return currentStamina; }
     }
+
+    public event Action AmmoChanged;
     public event Action StatChanged;
+    public void InvokeAmmoChanged()
+    {
+        AmmoChanged?.Invoke();
+    }
     private void OnEnable()
     {
         currentHealth = Health;
@@ -37,6 +43,11 @@ public class CharacterData : ScriptableObject
     {
         currentStamina += volume;
         StatChanged?.Invoke();
+    }
+    public void ChangeAmmo(int amount)
+    {
+        Weapon.WeaponObject.Ammo += amount;
+        AmmoChanged?.Invoke();
     }
 
 }

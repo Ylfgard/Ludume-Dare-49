@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class SentenceShower : MonoBehaviour
 {
@@ -12,12 +12,12 @@ public class SentenceShower : MonoBehaviour
     private float showByLettersDelay;
     private string curSentenceText;
     private int curSymbol;
-    private Text text;
+    private TextMeshProUGUI text;
 
     private void Start()
     {
         dialogueHandler.showNextSentenceEvent.AddListener(EndWritting);
-        text = gameObject.GetComponent<Text>();
+        text = gameObject.GetComponent<TextMeshProUGUI>();
         
         showByLettersDelay = PlayerPrefs.GetFloat("TextShowSpeed");
         curSentenceText = ""; curSymbol = 0;

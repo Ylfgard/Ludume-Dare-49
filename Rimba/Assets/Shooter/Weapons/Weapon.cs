@@ -30,17 +30,19 @@ public class Weapon : GroundItem
             this.transform.rotation = new Quaternion(0, 0, 0, 0);
             transform.localScale = new Vector3(1, 1, 1);
             collector.CharacterData.Weapon = this;
+            collector.CharacterData.InvokeAmmoChanged();
         }
         isEquipped = true;
     }
     public void Drop(Collector collector)
-    { 
+    {        
         rigidBody.bodyType = RigidbodyType2D.Dynamic;
         rigidBody.AddForceAtPosition(transform.right * 10, transform.right * 5, ForceMode2D.Impulse);
         this.transform.parent = null;
         Invoke("EnableCollider", 0.5f);
         collector.CharacterData.Weapon = null;
         isEquipped = false;
+        collector.CharacterData.InvokeAmmoChanged();
     }
     void Update()
     {

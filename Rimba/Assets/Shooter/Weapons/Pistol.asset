@@ -15,4 +15,5 @@ MonoBehaviour:
   Damage: 10
   Accuracy: 50
   Rate: 1
-  Ammo: 0
+  Ammo: 500
+  AmmoPerShot: 1

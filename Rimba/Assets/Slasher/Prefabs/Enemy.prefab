@@ -47,7 +47,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 8
 --- !u!114 &5751146304401656848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +89,7 @@ Transform:
   m_GameObject: {fileID: 5534596848813667654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.96, y: 0.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 1458199214638242296}
   m_Father: {fileID: 0}
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 748ae8b33df036b46a86e0387f1602cf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e442bdc8130aa24b80d9af4fb0ef906, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -180,9 +180,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1.02}
   serializedVersion: 2
-  m_Radius: 0.32
+  m_Radius: 1.28
 --- !u!114 &5534596848813667657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +202,8 @@ MonoBehaviour:
   sword: {fileID: 3247788434698149695, guid: 3b2b6b1462a0d8b40accf1038bb8440a, type: 3}
   spear: {fileID: 4056597273730945965, guid: 1a03e4fa1f3dcc64e93ec8bdb88977a8, type: 3}
   hammer: {fileID: 3861803348845893281, guid: 0c8f8c9a9cebcb047aa87e06b8a3a611, type: 3}
+  directions:
+  - {fileID: 21300000, guid: 8e442bdc8130aa24b80d9af4fb0ef906, type: 3}
+  - {fileID: 21300000, guid: 979a0e0d6f71fa6438b552c2945fb4c7, type: 3}
+  - {fileID: 21300000, guid: 2f7b04c655f3bc6439133950358ec9cd, type: 3}
+  - {fileID: 21300000, guid: b34986ef1e06d584790047dbb881a6c9, type: 3}

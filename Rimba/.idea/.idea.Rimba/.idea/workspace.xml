@@ -42,13 +42,14 @@
         <option value="$PROJECT_DIR$/Assets/Slaher/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Slaher/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Slaher/Scripts/EnemyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SwordAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/PlayerTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SpearAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/HammerAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/EnemyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/PlayerTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/DaVinchiMechController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SwordAttack.cs" />
       </list>
     </option>
   </component>
@@ -94,7 +95,8 @@
       <option name="presentableId" value="Default" />
       <updated>1633181857907</updated>
       <workItem from="1633181866813" duration="14646000" />
-      <workItem from="1633196682159" duration="20114000" />
+      <workItem from="1633196682159" duration="23706000" />
+      <workItem from="1633271338070" duration="22914000" />
     </task>
     <servers />
   </component>
@@ -117,5 +119,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2855" y="240" key="run.anything.popup" timestamp="1633292367683">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state x="2855" y="240" key="run.anything.popup/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1633292367683" />
   </component>
 </project>
