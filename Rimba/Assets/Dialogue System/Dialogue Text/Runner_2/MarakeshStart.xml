@@ -1,0 +1,8 @@
+<dialogue>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Нужно больше эпичности, вокруг все взрывается!</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+</dialogue>
