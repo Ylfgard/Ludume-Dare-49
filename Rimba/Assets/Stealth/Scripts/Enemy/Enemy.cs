@@ -93,6 +93,7 @@ namespace ElusiveRimba
                 AnimateBody();
                 Perception();
                 Patrolling();
+
                 PosAndDirOfFieldOfView();
                 //fovMF.gameObject.transform.position = transform.position;
             }
@@ -117,7 +118,7 @@ namespace ElusiveRimba
             Vector2[] uv = new Vector2[verticies.Length];
             int[] triangles = new int[rayCount * 3];
 
-            verticies[0] = origin;
+            verticies[0] = Vector3.zero;
 
             int vertexIndex = 1;
             int triangleIndex = 0;
@@ -127,14 +128,14 @@ namespace ElusiveRimba
                 Vector3 v = new Vector3(Mathf.Cos(angleRadian), Mathf.Sin(angleRadian));
                 Vector3 vertex;
 
-                RaycastHit2D hit = Physics2D.Raycast(origin, origin + v, lookRange, fovLayerMask);
+                RaycastHit2D hit = Physics2D.Raycast(origin, v, lookRange, fovLayerMask);
                 if(hit.collider == null)
                 {
-                    vertex = origin + v * lookRange;
+                    vertex = v * lookRange;
                 }
                 else
                 {
-                    vertex = hit.point;
+                    vertex = ((Vector3)hit.point) - origin;
                 }
                 verticies[vertexIndex] = vertex;
 
@@ -188,7 +189,7 @@ namespace ElusiveRimba
 
         private void PosAndDirOfFieldOfView()
         {
-            //origin = transform.position;
+            origin = transform.position;
             startAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
             if(startAngle < 0)
                 startAngle += 360;
@@ -271,23 +272,23 @@ namespace ElusiveRimba
 
         private void AnimateBody()
         {
-            Vector3 mouseRel = lookDirection;
-            if(mouseRel.y > -mouseRel.x && mouseRel.y > mouseRel.x)
+            Vector3 look = lookDirection;
+            if(look.y > -look.x && look.y > look.x)
             {
                 sr.sprite = back;
             }
 
-            else if(mouseRel.y > -mouseRel.x && mouseRel.y < mouseRel.x)
+            else if(look.y > -look.x && look.y < look.x)
             {
                 sr.sprite = right;
             }
 
-            else if(mouseRel.y < -mouseRel.x && mouseRel.y < mouseRel.x)
+            else if(look.y < -look.x && look.y < look.x)
             {
                 sr.sprite = face;
             }
 
-            else if(mouseRel.y < -mouseRel.x && mouseRel.y > mouseRel.x)
+            else if(look.y < -look.x && look.y > look.x)
             {
                 sr.sprite = left;
             }
