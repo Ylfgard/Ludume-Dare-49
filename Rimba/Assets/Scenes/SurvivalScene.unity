@@ -9603,6 +9603,10 @@ PrefabInstance:
       value: Bonfire
       objectReference: {fileID: 0}
     - target: {fileID: 3466594508507524513, guid: 82522315c7b1f4918bec93e4907e1504, type: 3}
+      propertyPath: maxTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3466594508507524513, guid: 82522315c7b1f4918bec93e4907e1504, type: 3}
       propertyPath: warmRate
       value: 15
       objectReference: {fileID: 0}
@@ -9714,6 +9718,10 @@ PrefabInstance:
     - target: {fileID: 7134122028370493349, guid: 0e3b1e7b700494165b1b7325f6d7208b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134122028370493350, guid: 0e3b1e7b700494165b1b7325f6d7208b, type: 3}
+      propertyPath: warmthRate
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7134122028370493350, guid: 0e3b1e7b700494165b1b7325f6d7208b, type: 3}
       propertyPath: warmthDamageRate
