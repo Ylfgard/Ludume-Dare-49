@@ -15,7 +15,6 @@ public class EnemyController : MonoBehaviour
 
     private Transform target;
     private GameManager gameManager;
-    private Text enemyHPText;
     private GameObject player;
     private bool playerIsNear;
     
@@ -31,15 +30,12 @@ public class EnemyController : MonoBehaviour
     {
         player = GameObject.Find("Player");
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        enemyHPText = GameObject.Find("Enemy HP Text").GetComponent<Text>();
         target = player.transform;
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
     
     void Start()
     {
-        enemyHPText.text = "HP: " + HP;
-        
         StartCoroutine(RandomAttack());
     }
     
@@ -82,10 +78,13 @@ public class EnemyController : MonoBehaviour
     public void UpdateHP(int HPDifference)
     {
         HP += HPDifference;
-        enemyHPText.text = "Enemy HP: " + HP;
-        
+
         if (HP <= 0)
         {
+            if (gameManager.currentScene == "Throne Room")
+            {
+                gameManager.enemyCounter--;
+            }
             Destroy(gameObject);
         }
     }
@@ -126,17 +125,17 @@ public class EnemyController : MonoBehaviour
                 {
                     case EnemyType.sword:
                         SwordAttack();
-                        randomTime = Random.Range(1, 3);
+                        randomTime = Random.Range(1.0f, 3.0f);
                         break;
                     
                     case EnemyType.spear:
                         SpearAttack();
-                        randomTime = Random.Range(2, 4);
+                        randomTime = Random.Range(2.0f, 4.0f);
                         break;
                     
                     case EnemyType.hammer:
                         HammerAttack();
-                        randomTime = Random.Range(4, 5);
+                        randomTime = Random.Range(4.0f, 5.0f);
                         break;
                 }
             }

@@ -33,8 +33,6 @@ namespace ElusiveRimba
         private Mesh fovMesh;
         private MeshFilter fovMF;
         private Transform targetWaypoint;
-
-        private Coroutine stepCo;
         private Vector3 lookDirection;
         private Vector3 origin;
         private float startAngle;
@@ -43,7 +41,7 @@ namespace ElusiveRimba
         private float changeActionTimer;
         private bool _isGameOver;
         private bool canMove;
-        private bool isStanding, isDistracted, isStepSoundPlaying;
+        private bool isStanding, isDistracted;
 
         public bool isGameOver
         {
@@ -223,28 +221,7 @@ namespace ElusiveRimba
             if(canMove)
             {
                 Move(targetWaypoint);
-
-                if(!isStepSoundPlaying)
-                {
-                    stepCo = StartCoroutine(EnemyStepSound());
-                    isStepSoundPlaying = true;
-                }
             }
-            else
-            {
-                if(stepCo != null)
-                {
-                    StopCoroutine(stepCo);
-                    isStepSoundPlaying = false;
-                }
-            }
-        }
-
-        private IEnumerator EnemyStepSound()
-        {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/steps_wood");
-            yield return new WaitForSeconds(0.4f);
-            stepCo = StartCoroutine(EnemyStepSound());
         }
 
         private void Move(Transform target)

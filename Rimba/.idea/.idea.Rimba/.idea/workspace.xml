@@ -42,14 +42,14 @@
         <option value="$PROJECT_DIR$/Assets/Slaher/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Slaher/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Slaher/Scripts/EnemyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/PlayerTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SpearAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/HammerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/EnemyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/DaVinchiMechController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/PlayerTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SwordAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/HammerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SpearAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/DaVinchiMechController.cs" />
       </list>
     </option>
   </component>
