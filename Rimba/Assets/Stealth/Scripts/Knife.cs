@@ -48,6 +48,7 @@ namespace ElusiveRimba
             {
                 // Projectile ranged stop actions
                 ProjectileStopped();
+                FMODUnity.RuntimeManager.PlayOneShot("event:/knife fall");
             }
         }
 
@@ -69,7 +70,7 @@ namespace ElusiveRimba
                     ProjectileStopped();
                     other.gameObject.TryGetComponent(out Enemy enemy);
                     enemy.Died();
-
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/enemy damage knife");
                     Debug.LogWarning("Knife hits enemy sound here");
                     break;
 
@@ -77,6 +78,7 @@ namespace ElusiveRimba
                     // Obstacle hit sound and maybe some particle effects
                     ProjectileStopped();
                     Debug.LogWarning("Knife hits obstacle sound here");
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/knife fall");
                     break;
 
                 default:
