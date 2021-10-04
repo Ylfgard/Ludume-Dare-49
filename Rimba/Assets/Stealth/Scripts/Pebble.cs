@@ -32,7 +32,7 @@ namespace ElusiveRimba
             float r = (endPos - startPos).magnitude;
             range = r < maxRange ? r : maxRange;
 
-            Debug.LogError("Pebble throw sound here");
+            Debug.LogWarning("Pebble throw sound here");
         }
 
         private void FixedUpdate()
@@ -53,13 +53,14 @@ namespace ElusiveRimba
                 // Fall on ground sound
                 ProjectileStopped();
 
-                Debug.LogError("(1) Pebble fall down sound here");
+                Debug.LogWarning("(1) Pebble fall down sound here");
             }
         }
 
         private void ProjectileStopped()
         {
-            Debug.LogWarning("Single pebble sound for all (only if no other sounds in this script)");
+            //Debug.LogWarning("Single pebble sound for all (only if no other sounds in this script)");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/rrocks");
 
             rb.Sleep();
             coll.enabled = false;
@@ -95,7 +96,7 @@ namespace ElusiveRimba
                     // Obstacle hit sound (same as ground hit sound?)
                     ProjectileStopped();
 
-                    Debug.LogError("(2) Pebble fall down sound here");
+                    Debug.LogWarning("(2) Pebble fall down sound here");
 
                     break;
 

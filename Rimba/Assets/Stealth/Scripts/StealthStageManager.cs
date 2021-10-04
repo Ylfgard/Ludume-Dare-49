@@ -53,8 +53,14 @@ public class StealthStageManager : MonoBehaviour
     }
     private IEnumerator GameOverAndRestartCoroutine()
     {
+        StartCoroutine(RestartSound(restartDelay - 0.39f));
         yield return new WaitForSeconds(restartDelay);
         RestartLevel();
+    }
+    private IEnumerator RestartSound(float time)
+    {
+        yield return new WaitForSeconds(time);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/dash");
     }
 
     public void RestartLevel()

@@ -29,7 +29,8 @@ namespace ElusiveRimba
         {
             startPos = transform.position;
 
-            Debug.LogError("Throw knife sound here");
+            //Debug.LogError("Throw knife sound here");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Knife_throw");
         }
 
         private void FixedUpdate()
