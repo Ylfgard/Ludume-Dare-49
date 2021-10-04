@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6934451676380024026}
   m_Layer: 0
   m_Name: DaVinchiMech
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc97a83a6463a34aaee2b9ff31564bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  HP: 0
+  mechAttack: {fileID: 0}
+  directions: []
 --- !u!58 &6934451676380024026
 CircleCollider2D:
   m_ObjectHideFlags: 0
