@@ -6278,6 +6278,7 @@ MonoBehaviour:
   - {x: 8, y: -7}
   firstRoomEnemiesGroup: {fileID: 1328795698}
   firstDialogue: {fileID: 4900000, guid: 403213d81d6f27a428de13e04a4abebf, type: 3}
+  secondDialogue: {fileID: 4900000, guid: 9651d1c20d7580048bd90e093302dd2c, type: 3}
 --- !u!4 &1619597103
 Transform:
   m_ObjectHideFlags: 0

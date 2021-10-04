@@ -16,7 +16,7 @@ public class DialogueHandler : MonoBehaviour
     private DialogueViewer curDialogue;
     private List<GameObject> sentences = new List<GameObject>();
 
-    private void Start() 
+    private void Awake() 
     {
         EndDialogue();
     }
@@ -48,7 +48,8 @@ public class DialogueHandler : MonoBehaviour
             showNextSentenceEvent?.Invoke();
             if(dialogueEvents.Count > 0 && curSentence.triggerEvent) // Запускает первое в очереди событие и стерает его
             {
-                dialogueEvents[0].PlayEvent(FMODUnity.EventManager.EventFromPath(curSentence.fmodSoundPath).Length/1000 + 0.1f);
+                if(curSentence.fmodSoundPath != "") dialogueEvents[0].PlayEvent(FMODUnity.EventManager.EventFromPath(curSentence.fmodSoundPath).Length/1000 + 0.1f);
+                else dialogueEvents[0].PlayEvent(0);
                 dialogueEvents.Remove(dialogueEvents[0]);
             }
             SpawnSentence(curSentence.text, curSentence.fmodSoundPath, curSentence.duration);

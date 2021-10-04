@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Levels/Slasher_5/DaVinchyCastleSlasher.unity
     guid: dbc7345b999bd0740bc665434158f971
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/EndComics_6/FinalCatscene.unity
+    guid: 2abbdcdd6f7a3094aac710ef1163d2bd
   m_configObjects: {}

@@ -16,6 +16,9 @@
             <e p="Runner_2" t="Include">
               <e p="CubaEnd.xml" t="Include" />
               <e p="CubaStart.xml" t="Include" />
+              <e p="MarakeshEnd.xml" t="Include" />
+              <e p="MarakeshStart.xml" t="Include" />
+              <e p="ModernCityEnd.xml" t="Include" />
             </e>
             <e p="Slasher_5" t="Include">
               <e p="CastleFirstLevel.xml" t="Include" />
@@ -30,6 +33,9 @@
               <e p="Gateway.xml" t="Include" />
               <e p="MansionFinal.xml" t="Include" />
               <e p="MansionFirst.xml" t="Include" />
+            </e>
+            <e p="Survival_4" t="Include">
+              <e p="Sewerage.xml" t="Include" />
             </e>
             <e p="TestDialogue.xml" t="Include" />
           </e>
@@ -253,8 +259,11 @@
             </e>
             <e p="PlayerController.cs" t="Include" />
             <e p="Slash.cs" t="Include" />
+            <e p="Spawner.cs" t="Include" />
             <e p="Torch.cs" t="Include" />
             <e p="Tree.cs" t="Include" />
+            <e p="Wolf.cs" t="Include" />
+            <e p="WolfSpawner.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
