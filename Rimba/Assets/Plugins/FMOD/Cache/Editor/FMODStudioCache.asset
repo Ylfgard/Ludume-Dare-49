@@ -486,6 +486,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11347
+--- !u!114 &-6401823764885701901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/whoosh_rock_throw
+  m_EditorClassIdentifier: 
+  Path: event:/whoosh_rock_throw
+  guid: 34ed073a2df1cc439f8444666511fec3
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-6365643926167210181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,7 +686,7 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637689768226125558
+  lastModified: 637689815497371593
   FileSizes: []
   Exists: 1
 --- !u!114 &-5408116696647953133
@@ -1096,6 +1119,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7570
+--- !u!114 &-2649225078338501324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Knife_throw
+  m_EditorClassIdentifier: 
+  Path: event:/Knife_throw
+  guid: e93fbdd4f6f5d94bb8e7664a31020947
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &-2455483902430768598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1214,6 +1260,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6003
+--- !u!114 &-1509718389680110127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/fire
+  m_EditorClassIdentifier: 
+  Path: event:/fire
+  guid: 8d5b28cd497e264192e75d6998562ef4
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36081
 --- !u!114 &-1306822890344288268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,12 +1705,20 @@ MonoBehaviour:
   - {fileID: 22896947123631521}
   - {fileID: -784384535662431590}
   - {fileID: 9044938851824453254}
+  - {fileID: -6401823764885701901}
+  - {fileID: 4951432405387308092}
+  - {fileID: 2891079976781028608}
+  - {fileID: 2277120988796989214}
+  - {fileID: -1509718389680110127}
+  - {fileID: 9010232113680067308}
+  - {fileID: 2001452841224344015}
+  - {fileID: -2649225078338501324}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5788830950135445270}
   StringsBanks:
   - {fileID: 2960576793651158255}
-  stringsBankWriteTime: 637689768226166015
+  stringsBankWriteTime: 637689815497410844
   cacheVersion: 8
 --- !u!114 &22896947123631521
 MonoBehaviour:
@@ -1830,6 +1907,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13013
+--- !u!114 &2001452841224344015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sword
+  m_EditorClassIdentifier: 
+  Path: event:/sword
+  guid: d8505375d77aee4490e52cdd15ba8af6
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &2020360114121850879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1855,6 +1955,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6544
+--- !u!114 &2277120988796989214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/rrocks
+  m_EditorClassIdentifier: 
+  Path: event:/rrocks
+  guid: 895322cf65483a4aaf0a781089fecdd0
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &2391200389903257493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1901,6 +2024,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5759
+--- !u!114 &2891079976781028608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pike
+  m_EditorClassIdentifier: 
+  Path: event:/pike
+  guid: 76dc4cc16890b14b964939883512ad9c
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &2960576793651158255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1916,10 +2062,10 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637689768226166015
+  lastModified: 637689815497410844
   FileSizes:
   - Name: 
-    Value: 6210
+    Value: 6560
   Exists: 1
 --- !u!114 &3023270755927604053
 MonoBehaviour:
@@ -2199,6 +2345,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2210
+--- !u!114 &4951432405387308092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/hummer
+  m_EditorClassIdentifier: 
+  Path: event:/hummer
+  guid: 48c00cbb5df8fd42884e66274ae6690d
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &5210946947426467310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2653,6 +2822,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 16053
+--- !u!114 &9010232113680067308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shutgun
+  m_EditorClassIdentifier: 
+  Path: event:/shutgun
+  guid: cbc8c4c3b5ea634fa309ae85b26e352b
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &9044938851824453254
 MonoBehaviour:
   m_ObjectHideFlags: 0

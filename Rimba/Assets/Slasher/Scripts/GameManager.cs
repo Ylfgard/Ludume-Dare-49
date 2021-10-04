@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,12 +13,25 @@ public class GameManager : MonoBehaviour
     public Text battleTimerText;
     public GameObject firstRoom;
     public GameObject mainHall;
-    public GameObject mainHall2;
+
+    public string currentScene;
+    public int enemyCounter = 11;
+
+    public GameObject daVinchi;
+    public GameObject enemy;
+    public GameObject medicine;
+    public Vector2[] spawnPos = new Vector2[]
+    {
+        new Vector2(-10, 9) , new Vector2(9, 9),
+        new Vector2(-10, -2), new Vector2(8 ,-7)
+    };
+
+    public GameObject firstRoomEnemiesGroup;
 
     [SerializeField] private TextAsset firstDialogue;
 
     private DialogueHandler dialogueHandler;
-    [SerializeField] private float battleTimer = 120.0f; // в секундах
+    private float battleTimer = 10.0f; // в секундах
     
     void Start()
     {
@@ -25,7 +40,11 @@ public class GameManager : MonoBehaviour
         
         firstRoom.SetActive(true);
         mainHall.SetActive(false);
-        mainHall2.SetActive(false);
+
+        currentScene = "First Room";
+
+        StartCoroutine(EnemySpawner());
+        StartCoroutine(MedicineSpawner());
 
         StartCoroutine(ToMainHall());
     }
@@ -45,6 +64,15 @@ public class GameManager : MonoBehaviour
         else
         {
             BattleTimerUpdate();
+        }
+
+        if (enemyCounter == 0 && currentScene == "Throne Room")
+        {
+            // начать диалог
+            currentScene = "Bossfight";
+            Instantiate(daVinchi, new Vector3(-0.37f, 6, 0), Quaternion.identity);
+
+            // переход на боссфайт
         }
     }
 
@@ -68,7 +96,36 @@ public class GameManager : MonoBehaviour
         firstRoom.SetActive(false);
         IDialogueEvent [] diaEv = new IDialogueEvent[0];
         dialogueHandler.StartDialogue(firstDialogue, diaEv, true);
-        FindObjectOfType<PlayerController>().GetComponent<Transform>().position = new Vector3(-14.6f, 6.08f, 0);
+        FindObjectOfType<PlayerController>().GetComponent<Transform>().position = new Vector3(-1.0f, -9.0f, 0);
         mainHall.SetActive(true);
+        currentScene = "Throne Room";
+    }
+
+    IEnumerator EnemySpawner()
+    {
+        while (currentScene == "First Room")
+        {
+            Instantiate(enemy, spawnPos[Random.Range(0, 4)], Quaternion.identity, firstRoomEnemiesGroup.transform);
+            enemy.GetComponent<EnemyController>().enemyType = (EnemyController.EnemyType) Random.Range(0, 3);
+
+            float randomTime = Random.Range(4.0f, 6.0f);
+            yield return new WaitForSeconds(randomTime);
+        }
+    }
+
+    IEnumerator MedicineSpawner()
+    {
+        while (currentScene == "First Room")
+        {
+            Instantiate(medicine, spawnPos[Random.Range(0, 4)], Quaternion.identity);
+            
+            float randomTime = Random.Range(10.0f, 25.0f);
+            yield return new WaitForSeconds(randomTime);
+        }
+    }
+
+    public void GoToCredits()
+    {
+        // Переход на последние титры
     }
 }

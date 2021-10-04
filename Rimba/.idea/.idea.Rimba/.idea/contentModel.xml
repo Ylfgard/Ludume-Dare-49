@@ -13,8 +13,24 @@
         </e>
         <e p="Dialogue System" t="Include">
           <e p="Dialogue Text" t="Include">
-            <e p="MansionFinal.xml" t="Include" />
-            <e p="MansionFirst.xml" t="Include" />
+            <e p="Runner_2" t="Include">
+              <e p="CubaEnd.xml" t="Include" />
+              <e p="CubaStart.xml" t="Include" />
+            </e>
+            <e p="Slasher_5" t="Include">
+              <e p="CastleFirstLevel.xml" t="Include" />
+              <e p="CastleStart.xml" t="Include" />
+            </e>
+            <e p="Start_0" t="Include">
+              <e p="StartComics.xml" t="Include" />
+            </e>
+            <e p="Stealth_1" t="Include">
+              <e p="DaVinchyCastleStealthEnd.xml" t="Include" />
+              <e p="DaVinchyCastleStealthFirst.xml" t="Include" />
+              <e p="Gateway.xml" t="Include" />
+              <e p="MansionFinal.xml" t="Include" />
+              <e p="MansionFirst.xml" t="Include" />
+            </e>
             <e p="TestDialogue.xml" t="Include" />
           </e>
           <e p="DialogueEvents" t="Include">
@@ -33,6 +49,7 @@
           <e p="Scripts" t="Include">
             <e p="GamePauser.cs" t="Include" />
             <e p="MenuFuntions.cs" t="Include" />
+            <e p="SceneChanger.cs" t="Include" />
           </e>
         </e>
         <e p="Plugins" t="Include">
@@ -159,6 +176,18 @@
             </e>
           </e>
         </e>
+        <e p="Runner" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Bomb.cs" t="Include" />
+            <e p="Bomb_Creating.cs" t="Include" />
+            <e p="Cam_controller.cs" t="Include" />
+            <e p="Dead_in_Zone.cs" t="Include" />
+            <e p="Go_to_the_next.cs" t="Include" />
+            <e p="Lazer_Creator.cs" t="Include" />
+            <e p="Lazer_Rotation.cs" t="Include" />
+            <e p="Player_Controller.cs" t="Include" />
+          </e>
+        </e>
         <e p="Shooter" t="Include">
           <e p="CameraMover.cs" t="Include" />
           <e p="Characters" t="Include">
@@ -201,7 +230,6 @@
             <e p="Enemy" t="Include">
               <e p="Enemy.cs" t="Include" />
             </e>
-            <e p="FieldOfView.cs" t="Include" />
             <e p="Hero" t="Include">
               <e p="Hero.cs" t="Include" />
               <e p="Weapon.cs" t="Include" />

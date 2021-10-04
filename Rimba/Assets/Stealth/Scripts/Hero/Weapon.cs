@@ -179,7 +179,7 @@ namespace ElusiveRimba
 
         public void PlusOneKnife()
         {
-            Debug.LogError("Pick up knife sound here");
+            Debug.LogWarning("Pick up knife sound here");
 
             numberOfKnives++;
             StealthStageManager.S.KnivesUIRefresh(numberOfKnives);
@@ -188,7 +188,7 @@ namespace ElusiveRimba
         {
             if(numberOfKnives > 0)
             {
-                Debug.LogError("Throw knife sound here");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Knife_throw");
 
                 numberOfKnives--;
                 StealthStageManager.S.KnivesUIRefresh(numberOfKnives);

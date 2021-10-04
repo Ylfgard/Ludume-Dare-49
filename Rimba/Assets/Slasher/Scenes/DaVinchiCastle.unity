@@ -617,7 +617,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.8, y: 2.84}
+    oldSize: {x: 2.27, y: 2.61}
     newSize: {x: 2.8, y: 2.84}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1666,7 +1666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1163675547
 Transform:
   m_ObjectHideFlags: 0
@@ -1907,7 +1907,18 @@ MonoBehaviour:
   battleTimerText: {fileID: 1797135179}
   firstRoom: {fileID: 1685909099}
   mainHall: {fileID: 1562918141}
-  mainHall2: {fileID: 1163675546}
+  currentScene: 
+  enemyCounter: 11
+  daVinchi: {fileID: 0}
+  enemy: {fileID: 0}
+  medicine: {fileID: 0}
+  spawnPos:
+  - {x: -10, y: 9}
+  - {x: 9, y: 9}
+  - {x: -10, y: -2}
+  - {x: 8, y: -7}
+  firstRoomEnemiesGroup: {fileID: 0}
+  firstDialogue: {fileID: 0}
 --- !u!4 &1267459879
 Transform:
   m_ObjectHideFlags: 0
@@ -3201,7 +3212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1685909100
 Transform:
   m_ObjectHideFlags: 0

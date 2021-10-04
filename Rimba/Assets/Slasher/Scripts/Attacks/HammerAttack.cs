@@ -59,5 +59,10 @@ public class HammerAttack : MonoBehaviour
         {
             other.gameObject.GetComponent<EnemyController>().UpdateHP(-damage);
         }
+        
+        else if ( attacker.CompareTag("Player") && other.gameObject.CompareTag("Boss") )
+        {
+            other.gameObject.GetComponent<DaVinchiMechController>().UpdateHP(-damage);
+        }
     }
 }
