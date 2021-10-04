@@ -109,7 +109,7 @@ MonoBehaviour:
   - {x: -0.5, y: 0.5, z: 0}
   m_ShapePathHash: 0
   m_Mesh: {fileID: 0}
-  m_InstanceId: -7172
+  m_InstanceId: 31132
 --- !u!1 &3619883477894116484
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
-  trunk: {fileID: 0}
+  trunk: {fileID: 7649757184416821308}
   logPrefab: {fileID: 4873168145265760827, guid: 748b8e8b8754249928ebfa35fcb2966d, type: 3}
 --- !u!61 &7145763246329295349
 BoxCollider2D:
