@@ -1,0 +1,8 @@
+<dialogue>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Как мы помним, наш герой благороден, поэтому кодекс чести не позволяет ему использовать огнестрельное оружие, как и его враги.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+</dialogue>

@@ -23,7 +23,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        if(other.GetComponent<Hero>())
+        if(other.GetComponent<Hero>() || other.CompareTag("Player"))
         {
             TriggerDialogue();
             gameObject.GetComponent<Collider2D>().enabled = false;
