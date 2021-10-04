@@ -10,7 +10,6 @@ public class DaVinchiMechController : MonoBehaviour
 
     private Transform target;
     private GameManager gameManager;
-    private Text enemyHPText;
     private GameObject player;
     private bool playerIsNear;
     
@@ -24,15 +23,12 @@ public class DaVinchiMechController : MonoBehaviour
     {
         player = GameObject.Find("Player");
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        enemyHPText = GameObject.Find("Enemy HP Text").GetComponent<Text>();
         target = player.transform;
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
     
     void Start()
     {
-        enemyHPText.text = "HP: " + HP;
-        
         StartCoroutine(RandomAttack());
     }
     
@@ -70,11 +66,11 @@ public class DaVinchiMechController : MonoBehaviour
     public void UpdateHP(int HPDifference)
     {
         HP += HPDifference;
-        enemyHPText.text = "Enemy HP: " + HP;
-        
+
         if (HP <= 0)
         {
             Destroy(gameObject);
+            gameManager.GoToCredits();
         }
     }
     

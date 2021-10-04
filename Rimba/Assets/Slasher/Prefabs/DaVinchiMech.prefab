@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2616432113262159709}
   - component: {fileID: 5479942215613901191}
   - component: {fileID: 6934451676380024026}
+  - component: {fileID: 460453220408181610}
   m_Layer: 0
   m_Name: DaVinchiMech
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,10 +97,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc97a83a6463a34aaee2b9ff31564bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  HP: 0
-  mechAttack: {fileID: 0}
-  directions: []
+  speed: 2
+  HP: 200
+  mechAttack: {fileID: 3861803348845893281, guid: 0c8f8c9a9cebcb047aa87e06b8a3a611, type: 3}
+  directions:
+  - {fileID: 21300000, guid: c14ae834151c0564c8bf4232d2f1ed93, type: 3}
+  - {fileID: 21300000, guid: 6cccc50652109714f94d498fb4aee8fb, type: 3}
+  - {fileID: 21300000, guid: 7658d97fb13602647abfb7cf06eac309, type: 3}
+  - {fileID: 21300000, guid: 537e8fbf380da774482861c731d5b76f, type: 3}
 --- !u!58 &6934451676380024026
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116,3 +121,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.7601142}
   serializedVersion: 2
   m_Radius: 1.2398858
+--- !u!50 &460453220408181610
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8695154703323063421}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

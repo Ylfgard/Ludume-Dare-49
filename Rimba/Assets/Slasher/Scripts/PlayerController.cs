@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private bool isCooldown;
 
     [SerializeField] private float hammerCharge = 0;
-    [SerializeField] private int medicineHeal = 30;
+    private int medicineHeal = 150;
 
     public Sprite[] directions;
     private Vector2 pos; // Текущая позиция
