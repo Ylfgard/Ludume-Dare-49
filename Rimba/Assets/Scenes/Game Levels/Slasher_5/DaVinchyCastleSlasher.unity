@@ -6266,7 +6266,6 @@ MonoBehaviour:
   battleTimerText: {fileID: 900574269}
   firstRoom: {fileID: 1918861147}
   mainHall: {fileID: 1260501738}
-  mainHall2: {fileID: 204415308}
   currentScene: 
   enemyCounter: 11
   daVinchi: {fileID: 8695154703323063421, guid: 95d041a03358bbc478fd6ac5db8f49c6, type: 3}
@@ -6279,6 +6278,7 @@ MonoBehaviour:
   - {x: 8, y: -7}
   firstRoomEnemiesGroup: {fileID: 1328795698}
   firstDialogue: {fileID: 4900000, guid: 403213d81d6f27a428de13e04a4abebf, type: 3}
+  secondDialogue: {fileID: 4900000, guid: 9651d1c20d7580048bd90e093302dd2c, type: 3}
 --- !u!4 &1619597103
 Transform:
   m_ObjectHideFlags: 0

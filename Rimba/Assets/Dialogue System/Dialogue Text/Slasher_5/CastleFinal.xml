@@ -1,0 +1,14 @@
+<dialogue>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Но убивать злодея слишком предсказуемо, давайте найдем более интересный выход.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/но убивать злодея слишком</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Тогда герой потребует у него миллиард долларов и вертолет. И улетит на райский тропический остров…</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/тогда герой потребует у него</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>
