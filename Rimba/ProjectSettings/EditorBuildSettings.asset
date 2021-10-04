@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Game Levels/Gateway.unity
     guid: 1088d305d198f034cbe4c22269a7e35f
   - enabled: 1
-    path: Assets/Scenes/Alexandria.unity
-    guid: cb19c7784fc242444b16c20a4208f508
+    path: Assets/Scenes/Game Levels/DaVinchyCastleStealth.unity
+    guid: 486a33d5ec7cd704eadb787835669f07
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/Cuba.unity
+    guid: a9f67409149bbea48afcb6e9dc0a6657
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/ModernCity.unity
+    guid: f7e54320eea6145498fd3b3ba211b207
   m_configObjects: {}

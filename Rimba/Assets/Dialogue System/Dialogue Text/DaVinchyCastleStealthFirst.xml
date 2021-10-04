@@ -1,0 +1,14 @@
+<dialogue>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Пусть это будет старинный замок… Замок семьи да Винчи! А охраняют его средневековые рыцари.</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: И правда, обычное явление для богачей...</text>
+        <duration>5</duration>
+        <fmodSoundPath></fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>
