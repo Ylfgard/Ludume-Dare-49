@@ -19,16 +19,23 @@ public class Cam_controller : MonoBehaviour
     
     void FixedUpdate()
     {
-            if(plrPos.position.y > up && _transform.position.y < 0){
-                _transform.position =new  Vector3(_transform.position.x,_transform.position.y + Slide_on, _transform.position.z);
-                up += Slide_on;
-                down += Slide_on;
-            }
+        if(plrPos.position.y < _transform.position.y)
+        {
+            Vector3 newPos = _transform.position;
+            newPos.y = plrPos.position.y - 5;
+            _transform.position = newPos;
+        }
+        /*
+        if(plrPos.position.y > up && _transform.position.y < 0){
+            _transform.position =new  Vector3(_transform.position.x,_transform.position.y + Slide_on, _transform.position.z);
+            up += Slide_on;
+            down += Slide_on;
+        }
 
-            if(plrPos.position.y < down){
-                _transform.position =new  Vector3(_transform.position.x,_transform.position.y - Slide_on , _transform.position.z);
-                up -= Slide_on;
-                down -= Slide_on;
-            }
+        if(plrPos.position.y < down){
+            _transform.position =new  Vector3(_transform.position.x,_transform.position.y - Slide_on , _transform.position.z);
+            up -= Slide_on;
+            down -= Slide_on;
+        }*/
     }   
 }
