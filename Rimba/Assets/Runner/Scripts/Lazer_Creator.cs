@@ -10,14 +10,14 @@ public class Lazer_Creator : MonoBehaviour
 
     bool spowned = false;
 
-    public GameObject Lazer, Right, Left;
+    public GameObject Lazer, /*Lazer_container*/ Right, Left;
 
     public float spawn_right_X, spawn_left_X, spawnValuesDownY,spawnValuesUpY;
 
     void Awake(){
-        spawn_right_X = Right.GetComponent<Transform>().position.x; //- Right.GetComponent<Transform>().localScale.x;
+        spawn_right_X = Right.GetComponent<Transform>().position.x ;
 
-        spawn_left_X = Left.GetComponent<Transform>().position.x; //- Left.GetComponent<Transform>().localScale.x;
+        spawn_left_X = Left.GetComponent<Transform>().position.x ;
     }
     void Update()
     {
@@ -32,7 +32,13 @@ public class Lazer_Creator : MonoBehaviour
         yield return new WaitForSeconds(Time_to_Lazer);
         spawnValuesDownY = Cam_controller.down;
         spawnValuesUpY = Cam_controller.up;
-        float X = Random.Range(0,10) < 5.0f ? spawn_right_X : spawn_left_X;
+        float X = Random.Range(0,10);
+
+        if (X < 5.0f){
+            X = spawn_right_X;
+        } else{
+            X = spawn_left_X;
+        }
         Instantiate(Lazer, new Vector3(X,Random.Range (spawnValuesUpY , spawnValuesDownY)), Quaternion.identity);
         spowned = false;
     }

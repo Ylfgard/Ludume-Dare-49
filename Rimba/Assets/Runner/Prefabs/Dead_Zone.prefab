@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9203716441281267207
+--- !u!1 &7095640078119192146
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3112421346393143851}
-  - component: {fileID: 5320234455853218831}
-  - component: {fileID: 1814824384894543429}
+  - component: {fileID: 7095640078119192157}
+  - component: {fileID: 7095640078119192156}
+  - component: {fileID: 7095640078119192147}
+  - component: {fileID: 7095640078119192158}
   m_Layer: 0
-  m_Name: Lazer
+  m_Name: Dead_Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3112421346393143851
+--- !u!4 &7095640078119192157
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9203716441281267207}
+  m_GameObject: {fileID: 7095640078119192146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.96, y: 1.57, z: 0}
-  m_LocalScale: {x: 50, y: 0.045879602, z: 1}
+  m_LocalPosition: {x: 0.25, y: -1.57, z: 0}
+  m_LocalScale: {x: 2.1777458, y: 2.3491342, z: 2.1777458}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5320234455853218831
+--- !u!212 &7095640078119192156
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9203716441281267207}
+  m_GameObject: {fileID: 7095640078119192146}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -51,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72,30 +73,42 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.9960785, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a55c3c657665f0041ae956c33903e285, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.92, y: 0.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1814824384894543429
+--- !u!58 &7095640078119192147
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7095640078119192146}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0062627196, y: 0.01565671}
+  serializedVersion: 2
+  m_Radius: 0.2877761
+--- !u!114 &7095640078119192158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9203716441281267207}
+  m_GameObject: {fileID: 7095640078119192146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 776d3d1aa9daf924d8566d324462dabf, type: 3}
+  m_Script: {fileID: 11500000, guid: 73bea242a1d188846aab2abe11d339d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lazer: {fileID: 9203716441281267207}
-  RForRandomAngle: 30
-  wait_for_shoot: 3
-  Dead_time: 2
