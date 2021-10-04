@@ -925,7 +925,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 945064334811300973, guid: d77100913d6f69146bec99874be0d92e, type: 3}
       propertyPath: orthographic size
-      value: 10.816962
+      value: 9.355022
       objectReference: {fileID: 0}
     - target: {fileID: 945064334811300974, guid: d77100913d6f69146bec99874be0d92e, type: 3}
       propertyPath: m_Name
@@ -2229,25 +2229,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2378235832424344032, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
   m_PrefabInstance: {fileID: 1802487293}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1818072822 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 945064334811300974, guid: d77100913d6f69146bec99874be0d92e, type: 3}
-  m_PrefabInstance: {fileID: 959356664}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1818072823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818072822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
-  ListenerNumber: -1
 --- !u!1 &1821453831
 GameObject:
   m_ObjectHideFlags: 0
