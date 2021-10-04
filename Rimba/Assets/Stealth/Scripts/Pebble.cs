@@ -57,6 +57,8 @@ namespace ElusiveRimba
             rb.Sleep();
             coll.enabled = false;
             enabled = false;
+
+            // Enemy reaction
         }
 
         private void OnCollisionEnter2D(Collision2D other)

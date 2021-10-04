@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Enemy
+  - Medicine
   layers:
   - Default
   - TransparentFX
@@ -26,7 +28,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Environment
   - 
   - 
   - 
@@ -50,6 +52,7 @@ TagManager:
     locked: 0
   - name: WeaponFront
     uniqueID: 3272919895
+    locked: 0
   - name: Player
     uniqueID: 4070033729
     locked: 0
