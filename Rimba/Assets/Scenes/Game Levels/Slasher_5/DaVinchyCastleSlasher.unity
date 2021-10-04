@@ -6266,7 +6266,6 @@ MonoBehaviour:
   battleTimerText: {fileID: 900574269}
   firstRoom: {fileID: 1918861147}
   mainHall: {fileID: 1260501738}
-  mainHall2: {fileID: 204415308}
   currentScene: 
   enemyCounter: 11
   daVinchi: {fileID: 8695154703323063421, guid: 95d041a03358bbc478fd6ac5db8f49c6, type: 3}
@@ -6496,6 +6495,7 @@ GameObject:
   - component: {fileID: 1756292665}
   - component: {fileID: 1756292664}
   - component: {fileID: 1756292663}
+  - component: {fileID: 1756292667}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6586,6 +6586,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1756292667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756292662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabf9ae86460f1e4eb84943129f95df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicEvent: event:/music/Da Vinci
 --- !u!1 &1760405954
 GameObject:
   m_ObjectHideFlags: 0

@@ -248,6 +248,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1500
+--- !u!114 &-7822491319421006252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/boss dead
+  m_EditorClassIdentifier: 
+  Path: event:/boss dead
+  guid: 5df243fed927d24db85c03fa3924a5a8
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-7789796985167901341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,7 +778,7 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637689842184813008
+  lastModified: 637689853165331058
   FileSizes: []
   Exists: 1
 --- !u!114 &-5408116696647953133
@@ -1842,12 +1865,14 @@ MonoBehaviour:
   - {fileID: 2887246391965542159}
   - {fileID: 8203020712200172842}
   - {fileID: 2051058811943452368}
+  - {fileID: -7822491319421006252}
+  - {fileID: 892416720226812152}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5788830950135445270}
   StringsBanks:
   - {fileID: 2960576793651158255}
-  stringsBankWriteTime: 637689842184833009
+  stringsBankWriteTime: 637689853165351059
   cacheVersion: 8
 --- !u!114 &22896947123631521
 MonoBehaviour:
@@ -1940,6 +1965,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &892416720226812152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/jeap
+  m_EditorClassIdentifier: 
+  Path: event:/jeap
+  guid: 696892c8fdf34747a9c048ac42f5d64d
+  Banks:
+  - {fileID: -5788830950135445270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
 --- !u!114 &941924640959979116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2283,10 +2331,10 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637689842184833009
+  lastModified: 637689853165351059
   FileSizes:
   - Name: 
-    Value: 7236
+    Value: 7320
   Exists: 1
 --- !u!114 &3023270755927604053
 MonoBehaviour:
@@ -2864,13 +2912,13 @@ MonoBehaviour:
   guid: 2344d89140b7c643a3e9c74593aaecab
   Banks:
   - {fileID: -5788830950135445270}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2000
+  Length: 440
 --- !u!114 &7096970982621069173
 MonoBehaviour:
   m_ObjectHideFlags: 0
