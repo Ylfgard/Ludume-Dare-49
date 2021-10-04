@@ -29,9 +29,10 @@ public class GameManager : MonoBehaviour
     public GameObject firstRoomEnemiesGroup;
 
     [SerializeField] private TextAsset firstDialogue;
+    [SerializeField] private TextAsset secondDialogue;
 
     private DialogueHandler dialogueHandler;
-    private float battleTimer = 10.0f; // в секундах
+    private float battleTimer = 60.0f; // в секундах
     
     void Start()
     {
@@ -68,6 +69,8 @@ public class GameManager : MonoBehaviour
 
         if (enemyCounter == 0 && currentScene == "Throne Room")
         {
+            IDialogueEvent [] diaEv = new IDialogueEvent[0];
+            dialogueHandler.StartDialogue(secondDialogue, diaEv, true);
             // начать диалог
             currentScene = "Bossfight";
             Instantiate(daVinchi, new Vector3(-0.37f, 6, 0), Quaternion.identity);

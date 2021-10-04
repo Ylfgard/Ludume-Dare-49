@@ -1,0 +1,26 @@
+<dialogue>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: А в конце, когда подручные закончатся, выйдет сам главарь!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/а в конце, когда подручные</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Он будет в огромном паровом экзоскелете!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/он будет в огромном паровом</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Содеянном Леонардо да Винчи.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/содеяном Леонардо</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Конечно! И еще у него наша девушка. Бывшая.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/конечно и ещё у него наша</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+</dialogue>
