@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 41306261}
   - component: {fileID: 41306262}
   - component: {fileID: 41306263}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Column
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 269220046}
   - component: {fileID: 269220047}
   - component: {fileID: 269220048}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Vase
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -965,7 +965,7 @@ GameObject:
   - component: {fileID: 585720025}
   - component: {fileID: 585720026}
   - component: {fileID: 585720027}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Horse
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1592,6 +1592,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Mansion
       objectReference: {fileID: 0}
+    - target: {fileID: 4905020754564844028, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905020754564844028, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905020754564844028, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5006100221466687230, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1632,6 +1644,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -425
       objectReference: {fileID: 0}
+    - target: {fileID: 9109905417876741192, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109905417876741192, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109905417876741192, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
 --- !u!4 &1011174327 stripped
@@ -1655,7 +1679,7 @@ GameObject:
   - component: {fileID: 1044272311}
   - component: {fileID: 1044272312}
   - component: {fileID: 1044272313}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Box
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -2052,7 +2076,7 @@ GameObject:
   - component: {fileID: 1314773443}
   - component: {fileID: 1314773444}
   - component: {fileID: 1314773445}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Cat
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -2809,7 +2833,7 @@ GameObject:
   - component: {fileID: 1965379451}
   - component: {fileID: 1965379452}
   - component: {fileID: 1965379453}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Walls
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
