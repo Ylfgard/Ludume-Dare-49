@@ -48,8 +48,11 @@ public class DialogueHandler : MonoBehaviour
             showNextSentenceEvent?.Invoke();
             if(dialogueEvents.Count > 0 && curSentence.triggerEvent) // Запускает первое в очереди событие и стерает его
             {
-                //FMODUnity.EventManager.EventFromPath(curSentence.fmodSoundPath).Length/1000 + 0.1f
-                if(curSentence.fmodSoundPath != "") dialogueEvents[0].PlayEvent(15);
+                FMOD.Studio.EventDescription discription;
+                FMODUnity.RuntimeManager.CreateInstance(curSentence.fmodSoundPath).getDescription(out discription);
+                int lenght;
+                discription.getLength(out lenght);
+                if(curSentence.fmodSoundPath != "") dialogueEvents[0].PlayEvent(lenght/1000 + 1f);
                 else dialogueEvents[0].PlayEvent(0);
                 dialogueEvents.Remove(dialogueEvents[0]);
             }

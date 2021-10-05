@@ -1,5 +1,6 @@
 {
     "name": "FMODUnity",
+    "rootNamespace": "",
     "references": [
         "Unity.Timeline",
         "Unity.Addressables",
