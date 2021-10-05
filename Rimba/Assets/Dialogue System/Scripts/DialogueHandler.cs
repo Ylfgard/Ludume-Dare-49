@@ -52,7 +52,7 @@ public class DialogueHandler : MonoBehaviour
                 FMODUnity.RuntimeManager.CreateInstance(curSentence.fmodSoundPath).getDescription(out discription);
                 int lenght;
                 discription.getLength(out lenght);
-                if(curSentence.fmodSoundPath != "") dialogueEvents[0].PlayEvent(lenght/1000 + 1f);
+                if(curSentence.fmodSoundPath != "") dialogueEvents[0].PlayEvent(lenght/1000 + 0.7f);
                 else dialogueEvents[0].PlayEvent(0);
                 dialogueEvents.Remove(dialogueEvents[0]);
             }

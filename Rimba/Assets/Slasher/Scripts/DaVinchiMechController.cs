@@ -31,6 +31,11 @@ public class DaVinchiMechController : MonoBehaviour
     {
         StartCoroutine(RandomAttack());
     }
+
+    private void OnEnable() 
+    {
+        StartCoroutine(RandomAttack());
+    }
     
     void Update()
     {
@@ -69,8 +74,7 @@ public class DaVinchiMechController : MonoBehaviour
 
         if (HP <= 0)
         {
-            IDialogueEvent [] ide = gameObject.GetComponents<IDialogueEvent>();
-            FindObjectOfType<DialogueHandler>().StartDialogue(finalDialogue,ide,true);
+            GameObject.Find("EndDialogue").GetComponent<DialogueTrigger>().TriggerDialogue();
             Destroy(gameObject);
             gameManager.GoToCredits();
         }
@@ -96,11 +100,8 @@ public class DaVinchiMechController : MonoBehaviour
         while (gameManager.isGameActive)
         {
             float randomTime = 1;
-            if (playerIsNear)
-            {
-                MechAttack();
-                randomTime = Random.Range(1, 3);
-            }
+            MechAttack();
+            randomTime = Random.Range(1, 3);
             yield return new WaitForSeconds(randomTime);
         }
     }

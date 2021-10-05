@@ -38,6 +38,11 @@ public class EnemyController : MonoBehaviour
     {
         StartCoroutine(RandomAttack());
     }
+
+    private void OnEnable() 
+    {
+        StartCoroutine(RandomAttack());
+    }
     
     void Update()
     {

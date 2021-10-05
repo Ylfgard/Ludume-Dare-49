@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 
 public class SentenceShower : MonoBehaviour
 {
-    public string refSentenceText;
+    [Multiline(10)] public string refSentenceText;
     public float delayBeforeShowNext;
     public DialogueHandler dialogueHandler;
     public string fmodSoundPath;
@@ -34,7 +34,7 @@ public class SentenceShower : MonoBehaviour
             instance.getDescription(out discription);
             int lenght;
             discription.getLength(out lenght);
-            delayBeforeShowNext = lenght/1000 + 1f;
+            delayBeforeShowNext = lenght/1000 + 0.7f;
             StartCoroutine(ShowNextSentence());
         }
         StartCoroutine(ShowByLetters());

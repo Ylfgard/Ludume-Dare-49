@@ -23,7 +23,7 @@ public class HammerAttack : MonoBehaviour
             target = attacker.GetComponent<PlayerController>().mouseRel;
         }
 
-        if (attacker.CompareTag("Enemy"))
+        if (attacker.CompareTag("Enemy") || attacker.CompareTag("Boss"))
         {
             target = GameObject.Find("Player").transform.position - gameObject.transform.position;
         }
@@ -50,19 +50,17 @@ public class HammerAttack : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if ( attacker.CompareTag("Enemy") && other.gameObject.CompareTag("Player")  )
+        if(attacker != null)
         {
-            other.gameObject.GetComponent<PlayerController>().UpdateHP(-damage);
-        }
-        
-        else if ( attacker.CompareTag("Player") && other.gameObject.CompareTag("Enemy")  )
-        {
-            other.gameObject.GetComponent<EnemyController>().UpdateHP(-damage);
-        }
-        
-        else if ( attacker.CompareTag("Player") && other.gameObject.CompareTag("Boss") )
-        {
-            other.gameObject.GetComponent<DaVinchiMechController>().UpdateHP(-damage);
+            if ((attacker.CompareTag("Enemy") || attacker.CompareTag("Boss")) && other.gameObject.CompareTag("Player")  )
+            {
+                other.gameObject.GetComponent<PlayerController>().UpdateHP(-damage);
+            }
+            
+            else if ( attacker.CompareTag("Player") && (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Boss")))
+            {
+                other.gameObject.GetComponent<EnemyController>().UpdateHP(-damage);
+            }
         }
     }
 }
