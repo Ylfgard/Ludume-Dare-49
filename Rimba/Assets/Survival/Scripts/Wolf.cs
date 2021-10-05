@@ -175,7 +175,9 @@ namespace Rimba
                 attacking = false;
             }
 
-            void OnDrawGizmosSelected() {
+#if UNITY_EDITOR
+            void OnDrawGizmosSelected()
+            {
                 Handles.color = Color.yellow;
                 Handles.DrawWireDisc(transform.position, Vector3.forward, detectionRadius);
 
@@ -183,6 +185,7 @@ namespace Rimba
                 Handles.DrawWireDisc(transform.position, Vector3.forward, followDistanceMax);
                 Handles.DrawWireDisc(transform.position, Vector3.forward, followDistanceMin);
             }
+#endif
         }
     }
 }

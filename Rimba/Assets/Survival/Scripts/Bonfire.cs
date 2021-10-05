@@ -85,13 +85,16 @@ namespace Rimba
                 player = null;
             }
 
-            void OnDrawGizmosSelected() {
+#if UNITY_EDITOR
+            void OnDrawGizmosSelected()
+            {
                 Handles.color = Color.yellow;
                 Handles.DrawWireDisc(transform.position, Vector3.forward, radius);
 
                 Handles.color = Color.red;
                 Handles.DrawWireDisc(transform.position, Vector3.forward, warmRadius);
             }
+#endif
 
             #region IInteractable
             public string ItemName { get { return "Костер"; } }
