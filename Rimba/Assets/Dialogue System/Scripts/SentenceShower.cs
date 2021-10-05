@@ -28,7 +28,8 @@ public class SentenceShower : MonoBehaviour
             instance = FMODUnity.RuntimeManager.CreateInstance(fmodSoundPath);
             instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(Camera.main.transform)); 
             instance.start();
-            delayBeforeShowNext = FMODUnity.EventManager.EventFromPath(fmodSoundPath).Length/1000 + 1f;
+            //FMODUnity.EventManager.EventFromPath(fmodSoundPath).Length/1000 + 1f
+            delayBeforeShowNext = 15;
             StartCoroutine(ShowNextSentence());
         }
         StartCoroutine(ShowByLetters());

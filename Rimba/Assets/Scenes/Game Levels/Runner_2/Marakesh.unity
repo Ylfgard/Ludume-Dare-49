@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2033853fe2d63e1429fb8531de266c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: GayBar
+  levelName: DaVinchyCastleSlasher
   dontStopGame: 0
   levelLoadDelay: 0
 --- !u!114 &802153218
@@ -2989,6 +2989,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Mansion
       objectReference: {fileID: 0}
+    - target: {fileID: 4905020754564844028, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905020754564844028, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905020754564844028, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5006100221466687230, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3028,6 +3040,18 @@ PrefabInstance:
     - target: {fileID: 9006744235356461582, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -425
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109905417876741192, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109905417876741192, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9109905417876741192, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}

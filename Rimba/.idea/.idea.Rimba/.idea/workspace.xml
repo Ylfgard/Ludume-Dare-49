@@ -50,6 +50,7 @@
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/Attacks/SpearAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Slasher/Scripts/DaVinchiMechController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Survival/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
