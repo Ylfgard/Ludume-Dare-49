@@ -97,5 +97,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lazer: {fileID: 9203716441281267207}
   RForRandomAngle: 30
-  wait_for_shoot: 3
-  Dead_time: 2
+  wait_for_shoot: 1
+  Dead_time: 1
