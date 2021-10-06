@@ -1,16 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IngameMusic : MonoBehaviour
 {
     [SerializeField] private string musicEvent;
+    [SerializeField] private bool keepPlayingInNextScene;
 
-    FMOD.Studio.EventInstance instance;
+    private FMOD.Studio.EventInstance instance;
+    private int subscribeCount;
 
     private void Start()
     {
         SetMusic(musicEvent);
+
+        if(keepPlayingInNextScene)
+        {
+            KeepPlaying();
+        }
     }
 
     private void OnDestroy()
@@ -24,5 +32,25 @@ public class IngameMusic : MonoBehaviour
         instance = FMODUnity.RuntimeManager.CreateInstance(musicEvent);
         instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         instance.start();
+    }
+
+    private void KeepPlaying()
+    {
+
+        SceneManager.activeSceneChanged += DestroyMusic;
+        DontDestroyOnLoad(gameObject);
+        keepPlayingInNextScene = false;
+    }
+
+    private void DestroyMusic(Scene oldScene, Scene newScene)
+    {
+        Debug.Log(oldScene.name);
+        Debug.Log(newScene.name);
+        if(newScene.buildIndex == 0)
+        {
+            SceneManager.SetActiveScene(newScene);
+            SceneManager.activeSceneChanged -= DestroyMusic;
+            Destroy(gameObject);
+        }
     }
 }
