@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &306275753
 RectTransform:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &473428859
 RectTransform:
   m_ObjectHideFlags: 0
@@ -407,6 +407,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 591133946}
     m_Modifications:
+    - target: {fileID: 189606810263691916, guid: 9504d1acb7a263749bce083b41aacded, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 553618551923977462, guid: 9504d1acb7a263749bce083b41aacded, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -709,12 +713,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591133942}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cabf9ae86460f1e4eb84943129f95df2, type: 3}
+  m_Script: {fileID: 11500000, guid: 34d83c2e01ad4dc479f1c17197fc1bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicEvent: event:/music/Credits
+  delayOnStart: 2
+  speed: 1.7
+  titlesScrollbar: {fileID: 2104067462}
 --- !u!1 &705380876
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +828,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 4900000, guid: b7a8d34e2a85f8643a1397ef326daae6, type: 3}
   stopTime: 0
-  playOnStart: 1
+  playOnStart: 0
+  playOnStartDelayed: 1
+  playbackDelay: 8
+  skipButton: {fileID: 473428860}
 --- !u!1 &880279740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,17 +1253,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
       propertyPath: m_text
-      value: "\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0441\u0442\u044B\r\n\r\n\u041C\u043E\u0441\u044F\u0433\u0438\u043D
-        \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u0414\u0435\u043D\u0438\u0441\u043E\u0432\u0438\u0447\n\u041A\u0430\u0440\u043F\u0443\u0448\u043A\u0438\u043D
-        \u0421\u0435\u0440\u0433\u0435\u0439 \u0415\u0432\u0433\u0435\u043D\u044C\u0435\u0432\u0438\u0447\n\u041C\u0430\u043A\u0441\u0438\u043C
-        \u041A\u0443\u043B\u044C\u043A\u0438\u043D\n\u041F\u043E\u0441\u0442\u044B\u043B\u044C
-        \u0412\u044F\u0447\u0435\u0441\u043B\u0430\u0432\r\n\r\n\u0425\u0443\u0434\u043E\u0436\u043D\u0438\u043A\u0438\r\n\r\n\u041A\u0443\u0440\u043D\u043E\u0441\u043E\u0432\u0430
-        \u0410\u0440\u0441\u0435\u043D\u0438\u044F \u0412\u0430\u043B\u0435\u0440\u044C\u0435\u0432\u043D\u0430\r\n\u041E\u043B\u0435\u0433\n\r\n\u0413\u0435\u0439\u043C\u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\r\n\r\n\r\n\u0421\u0430\u0443\u043D\u0434-\u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440:\r\n\r\n\u0417\u043C\u0435\u0435\u0432\u0430
-        \u041C\u0430\u0440\u0438\u043D\u0430 [Inst: fiftysevensound] ?\r\n\r\n\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440\r\n\r\n\r\n\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0441\u0442\u044B\r\n\r\n\u0411\u0435\u043B\u0430\u043D\u043A\u043E\u0432
-        \u041C\u0430\u043A\u0441\u0438\u043C [maxbelankov@gmail.com, Aster813#6310]\r\n\r\n\u0410\u043A\u0442\u0451\u0440\u044B
-        \u043E\u0437\u0432\u0443\u0447\u0438\u0432\u0430\u043D\u0438\u044F:\r\n\n\u041A\u0430\u0440\u043E\u044F\u043D
-        \u042D\u0434\u0432\u0430\u0440\u0434 \u0412\u0440\u0443\u0439\u0440\u043E\u0432\u0438\u0447
-        @edward__karon\r"
+      value: "\n\n\n\n\n\n\n\u0420\u0410\u0421\u0421\u041A\u0410\u0417 \u041E \u041C\u041D\u041E\u0413\u041E\u041B\u0418\u041A\u041E\u041C
+        \u0413\u0415\u0420\u041E\u0415\n\n\n\n\n\n\n\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0441\u0442\u044B\r\n\n\r\n\u041C\u043E\u0441\u044F\u0433\u0438\u043D
+        \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\n\n\u041F\u043E\u0441\u0442\u044B\u043B\u044C
+        \u0412\u044F\u0447\u0435\u0441\u043B\u0430\u0432\r\n\n\u041A\u0430\u0440\u043F\u0443\u0448\u043A\u0438\u043D
+        \u0421\u0435\u0440\u0433\u0435\u0439\n\n\u041C\u0430\u043A\u0441\u0438\u043C
+        \u041A\u0443\u043B\u044C\u043A\u0438\u043D\n\n\u0428\u043B\u044F\u0447\u043A\u043E\u0432
+        \u0415\u0433\u043E\u0440\n\r\n\n\n\u0425\u0443\u0434\u043E\u0436\u043D\u0438\u043A\u0438\r\n\n\r\n\u041A\u0443\u0440\u043D\u043E\u0441\u043E\u0432\u0430
+        \u0410\u0440\u0441\u0435\u043D\u0438\u044F\n\n\u041C\u0430\u0443\u0440\u0435\u0440
+        \u041E\u043B\u0435\u0433\n\r\n\n\n\u0413\u0435\u0439\u043C\u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\r\n\n\r\n\u041C\u0438\u0445\u0430\u0438\u043B
+        \u041A\u043E\u0440\u0435\u0447\u0438\u043D\n\n\n\r\n\u0417\u0432\u0443\u043A\u043E\u0440\u0435\u0436\u0438\u0441\u0441\u0435\u0440\r\n\n\r\n\u0417\u043C\u0435\u0435\u0432\u0430
+        \u041C\u0430\u0440\u0438\u043D\u0430\n\r\n\n\n\u041A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440\n\n\n\u041D\u0430\u0443\u0433\u043E\u043B\u044C\u043D\u043E\u0432
+        \u0413\u0435\u043E\u0440\u0433\u0438\u0439\n\n\n\r\n\u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0441\u0442\u044B\r\n\n\r\n\u0411\u0435\u043B\u0430\u043D\u043A\u043E\u0432
+        \u041C\u0430\u043A\u0441\u0438\u043C\n\n\u041F\u043E\u0437\u0434\u043D\u044F\u043A\u043E\u0432
+        \u0410\u043D\u0434\u0440\u0435\u0439\n\n\n\r\n\u0410\u043A\u0442\u0451\u0440\u044B
+        \u043E\u0437\u0432\u0443\u0447\u0438\u0432\u0430\u043D\u0438\u044F\n\n\n\u041A\u0430\u0440\u043E\u044F\u043D
+        \u042D\u0434\u0432\u0430\u0440\u0434\n\n\u041A\u043E\u0440\u0441\u0430\u043A\u043E\u0432\u0430
+        \u0421\u043E\u0444\u0438\u044F\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u0421\u041F\u0410\u0421\u0418\u0411\u041E
+        \u0417\u0410 \u0412\u041D\u0418\u041C\u0410\u041D\u0418\u0415!\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
       propertyPath: m_fontColor.b
@@ -1269,6 +1289,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
+      propertyPath: m_lineSpacing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
+      propertyPath: m_wordSpacing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
+      propertyPath: m_characterSpacing
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4283825151
       objectReference: {fileID: 0}
@@ -1277,11 +1309,19 @@ PrefabInstance:
       value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
+      propertyPath: m_overrideHtmlColors
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139650910640399029, guid: 7ec64cf9bb7d2894f999103bcabc3363, type: 3}
+      propertyPath: m_enableVertexGradient
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -1322,7 +1362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.00024414062}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1568335562
@@ -1731,7 +1771,7 @@ GameObject:
   - component: {fileID: 2104067463}
   - component: {fileID: 2104067462}
   m_Layer: 5
-  m_Name: Scrollbar Vertical
+  m_Name: TitlesScrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1801,7 +1841,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 998387221}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.29782167
+  m_Size: 0.09772778
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1819,7 +1859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
+  m_Color: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
