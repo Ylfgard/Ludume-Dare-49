@@ -6,13 +6,13 @@
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ИЗДАТЕЛЬ: Вроде бы, я кроме имен сотрудников нашего издательства ничего не вижу.</text>
+        <text>ИЗДАТЕЛЬ: Вроде бы. Я, кроме имен сотрудников нашего издательства, ничего не вижу.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/вроде бы</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Я тут подумала.. Повествование какое то рваное, скачущее что-ли, не могу подобрать слово.</text>
+        <text>ПИСАТЕЛЬ: Я тут подумала... Повествование какое-то рваное. Скачущее что-ли... Не могу подобрать слово.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/я тут подумал</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
@@ -36,7 +36,7 @@
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Даже не знаю. Мне хотелось написать крутую книгу, а вот эта ваша нестабильность как то сама мелькнула.</text>
+        <text>ПИСАТЕЛЬ: Даже не знаю. Мне хотелось написать крутую книгу, а вот эта ваша нестабильность как-то сама мелькнула.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/даже не знаю</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
@@ -60,13 +60,13 @@
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Бросьте, ну на каком-же конкурсе может быть такая странная тема?</text>
+        <text>ПИСАТЕЛЬ: Бросьте, ну на каком конкурсе может быть такая странная тема?</text>
         <duration>5</duration>
         <fmodSoundPath>event:/бросьте</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ИЗДАТЕЛЬ: Ну есть разные конкурсы.</text>
+        <text>ИЗДАТЕЛЬ: Ну-у... Есть разные конкурсы.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/нуу есть разные</fmodSoundPath>
         <triggerEvent>false</triggerEvent>

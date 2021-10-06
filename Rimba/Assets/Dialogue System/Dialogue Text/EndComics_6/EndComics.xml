@@ -12,13 +12,13 @@
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ИЗДАТЕЛЬ: а герой сопьется в подворотне.</text>
+        <text>ИЗДАТЕЛЬ: А герой сопьется в подворотне.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/а герой</fmodSoundPath>
         <triggerEvent>true</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Ну уж нет! это слишком бесславный конец для героя такого масштаба!</text>
+        <text>ПИСАТЕЛЬ: Ну уж нет! Это слишком бесславный конец для героя такого масштаба!</text>
         <duration>5</duration>
         <fmodSoundPath>event:/ну уж нет</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
@@ -30,19 +30,19 @@
         <triggerEvent>true</triggerEvent>
     </sentence>
     <sentence>
-        <text>ИЗДАТЕЛЬ: Нет, не думаю. Может лучше добавить серой морали? Допустим, наш герой взорвет бомбу в центре города ради защиты прав угнетенных!</text>
+        <text>ИЗДАТЕЛЬ: Нет, не думаю. Может лучше добавить серой морали? Допустим, наш герой взорвет бомбу в центре города ради защиты прав угнетенных.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/нет не думаю</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Нет, нет и еще раз нет! Он же хороший! Он должен спасать мир. Вот мировая благотворительная организация или… или тайная организация по борьбе с криминалом, вот!</text>
+        <text>ПИСАТЕЛЬ: Нет, нет, и еще раз нет! Он же хороший! Он должен спасать мир. Вот мировая благотворительная организация или… или тайная организация по борьбе с криминалом, вот!</text>
         <duration>5</duration>
         <fmodSoundPath>event:/нет нет и ещё ращ нет</fmodSoundPath>
         <triggerEvent>true</triggerEvent>
     </sentence>
     <sentence>
-        <text>ИЗДАТЕЛЬ: Давайте лучше оставим, концовку открытой. Хороших книг должно быть много, а читатель не должен думать, что все закончилось.</text>
+        <text>ИЗДАТЕЛЬ: Давайте лучше оставим концовку открытой. Хороших книг должно быть много, а читатель не должен думать, что все закончилось.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/давайте лучше оставим</fmodSoundPath>
         <triggerEvent>true</triggerEvent>
@@ -60,19 +60,19 @@
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Знаете, а с этой перспективы.. Я могу рассказать еще много интересных историй. Предлагаю пустить титры и разойтись.</text>
+        <text>ПИСАТЕЛЬ: Знаете, а с этой перспективы... Я могу рассказать еще много интересных историй. Предлагаю пустить титры и разойтись.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/а знаете</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ИЗДАТЕЛЬ: Да, мне как раз уже нужно идти, время идти по домам.</text>
+        <text>ИЗДАТЕЛЬ: Да, мне как раз уже нужно идти... Время идти по домам.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/да мне как раз нужно идти</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: До новых встреч, мой друг.</text>
+        <text>ПИСАТЕЛЬ: До новых встреч, мой друг!</text>
         <duration>5</duration>
         <fmodSoundPath>event:/до новых встречь</fmodSoundPath>
         <triggerEvent>true</triggerEvent>
