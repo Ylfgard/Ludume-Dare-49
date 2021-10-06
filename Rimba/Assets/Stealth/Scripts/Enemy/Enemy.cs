@@ -150,6 +150,7 @@ namespace ElusiveRimba
             fovMF.mesh.vertices = verticies;
             fovMF.mesh.uv = uv;
             fovMF.mesh.triangles = triangles;
+            fovMF.mesh.RecalculateBounds();
         }
 
         private void Perception()

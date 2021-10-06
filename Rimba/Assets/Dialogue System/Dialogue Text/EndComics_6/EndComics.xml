@@ -1,0 +1,80 @@
+<dialogue>
+    <sentence>
+        <text>ПИСАТЕЛЬ: ...где будет наслаждаться жизнью до конца своих дней.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/где будет жить</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Или его бросит девушка и сбежит с деньгами к молодому альфонсу.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/или его бросит девушка</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: а герой сопьется в подворотне.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/а герой</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Ну уж нет! это слишком бесславный конец для героя такого масштаба!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/ну уж нет</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Пусть лучше отправится освобождать Афганистан с ядерной бомбой. Отличный задел на сиквел!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/пусть лучше</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Нет, не думаю. Может лучше добавить серой морали? Допустим, наш герой взорвет бомбу в центре города ради защиты прав угнетенных!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/нет не думаю</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Нет, нет и еще раз нет! Он же хороший! Он должен спасать мир. Вот мировая благотворительная организация или… или тайная организация по борьбе с криминалом, вот!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/нет нет и ещё ращ нет</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Давайте лучше оставим, концовку открытой. Хороших книг должно быть много, а читатель не должен думать, что все закончилось.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/давайте лучше оставим</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Да вы просто хотите стрясти лишнюю копейку с моей аудитории!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/да вы просто хотите</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Лучше подумайте в какую страну поедете в отпуск с продаж новой книжной франшизы.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/лучше подумайте</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Знаете, а с этой перспективы.. Я могу рассказать еще много интересных историй. Предлагаю пустить титры и разойтись.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/а знаете</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Да, мне как раз уже нужно идти, время идти по домам.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/да мне как раз нужно идти</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: До новых встреч, мой друг.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/до новых встречь</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>

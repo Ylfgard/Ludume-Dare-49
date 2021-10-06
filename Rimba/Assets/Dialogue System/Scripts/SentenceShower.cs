@@ -1,10 +1,12 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using System;
+using System.Runtime.InteropServices;
 
 public class SentenceShower : MonoBehaviour
 {
-    public string refSentenceText;
+    [Multiline(10)] public string refSentenceText;
     public float delayBeforeShowNext;
     public DialogueHandler dialogueHandler;
     public string fmodSoundPath;
@@ -28,7 +30,11 @@ public class SentenceShower : MonoBehaviour
             instance = FMODUnity.RuntimeManager.CreateInstance(fmodSoundPath);
             instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(Camera.main.transform)); 
             instance.start();
-            delayBeforeShowNext = FMODUnity.EventManager.EventFromPath(fmodSoundPath).Length/1000 + 1f;
+            FMOD.Studio.EventDescription discription;
+            instance.getDescription(out discription);
+            int lenght;
+            discription.getLength(out lenght);
+            delayBeforeShowNext = lenght/1000 + 0.7f;
             StartCoroutine(ShowNextSentence());
         }
         StartCoroutine(ShowByLetters());

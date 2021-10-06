@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Levels/EndComics_6/FinalCatscene.unity
     guid: 2abbdcdd6f7a3094aac710ef1163d2bd
+  - enabled: 1
+    path: Assets/Scenes/Game Levels/EndComics_6/Titles.unity
+    guid: b329b98533993824c82cfaae9e552845
   m_configObjects: {}

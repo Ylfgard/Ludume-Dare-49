@@ -173,10 +173,12 @@ namespace Rimba
             }
             */
 
+#if UNITY_EDITOR
             void OnDrawGizmosSelected() {
                 Handles.color = Color.blue;
                 Handles.DrawWireCube(transform.position + transform.right * 0.8f, Vector2.one * interactionWidth);
             }
+#endif
         }
     }
 }

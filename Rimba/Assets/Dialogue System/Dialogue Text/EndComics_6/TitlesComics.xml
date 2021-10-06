@@ -1,0 +1,80 @@
+<dialogue>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Титры уже начались?</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/титры уже начались</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Вроде бы, я кроме имен сотрудников нашего издательства ничего не вижу.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/вроде бы</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Я тут подумала.. Повествование какое то рваное, скачущее что-ли, не могу подобрать слово.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/я тут подумал</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Нестабильное?</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/нестбильное</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Да, нестабильное!</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/да нестбильное</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Знаете, а мне даже нравится. Я думал, так и планировалось.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/знаете а мне даже нравится</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Даже не знаю. Мне хотелось написать крутую книгу, а вот эта ваша нестабильность как то сама мелькнула.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/даже не знаю</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: А по-моему вы изначально так под это писали. Как будто на конкурс.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/а по-моему вы изнаально</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: На конкурс?</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/на конкурс</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Ну да, на конкурс. Когда у вас есть четкая тема и вы делаете что-то под нее.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/ну да , на конкурс</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: Бросьте, ну на каком-же конкурсе может быть такая странная тема?</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/бросьте</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ИЗДАТЕЛЬ: Ну есть разные конкурсы.</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/нуу есть разные</fmodSoundPath>
+        <triggerEvent>false</triggerEvent>
+    </sentence>
+    <sentence>
+        <text>ПИСАТЕЛЬ: ...</text>
+        <duration>5</duration>
+        <fmodSoundPath>event:/вдох</fmodSoundPath>
+        <triggerEvent>true</triggerEvent>
+    </sentence>
+</dialogue>
