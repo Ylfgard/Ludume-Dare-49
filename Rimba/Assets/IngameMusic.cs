@@ -10,14 +10,19 @@ public class IngameMusic : MonoBehaviour
 
     private void Start()
     {
-        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        instance = FMODUnity.RuntimeManager.CreateInstance(musicEvent);
-        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-        instance.start();
+        SetMusic(musicEvent);
     }
 
     private void OnDestroy()
     {
         instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    public void SetMusic(string musicEvent)
+    {
+        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        instance = FMODUnity.RuntimeManager.CreateInstance(musicEvent);
+        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        instance.start();
     }
 }

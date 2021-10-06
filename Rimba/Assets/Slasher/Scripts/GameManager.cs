@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
@@ -76,6 +77,8 @@ public class GameManager : MonoBehaviour
             Instantiate(daVinchi, new Vector3(-0.37f, 6, 0), Quaternion.identity);
 
             // переход на боссфайт
+
+            FindObjectOfType<IngameMusic>().SetMusic("event:/music/DMC");
         }
     }
 
@@ -83,6 +86,9 @@ public class GameManager : MonoBehaviour
     {
         isGameActive = false;
         gameOverText.SetActive(true);
+
+        // Затычка с рестартом всего уровня...
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void BattleTimerUpdate()

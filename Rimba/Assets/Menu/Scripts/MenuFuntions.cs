@@ -30,7 +30,7 @@ public class MenuFuntions : MonoBehaviour
 
     public void GetVolume()
     {
-        float musicVolume = PlayerPrefs.GetFloat("musicVolume", 0.7f);
+        float musicVolume = PlayerPrefs.GetFloat("musicVolume", 0.5f);
         float dialogsVolume = PlayerPrefs.GetFloat("dialogsVolume", 0.7f);
         musicVolumeSlider.value = musicVolume;
         dialogsVolumeSlider.value = dialogsVolume;
