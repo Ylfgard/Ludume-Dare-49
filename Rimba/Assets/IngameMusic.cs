@@ -29,8 +29,9 @@ public class IngameMusic : MonoBehaviour
     public void SetMusic(string musicEvent)
     {
         instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        instance.release();
         instance = FMODUnity.RuntimeManager.CreateInstance(musicEvent);
-        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        //instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         instance.start();
     }
 
