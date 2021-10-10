@@ -17,6 +17,7 @@ public class Weapon : GroundItem
         SpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         rigidBody.bodyType = RigidbodyType2D.Kinematic;
         AimGunEndPointTransform = transform.Find("AimGunEndPoint");
+        WeaponObject.Ammo = WeaponObject.MaxAmmo;
     }
 
     protected override void PickUp(Collector collector)
