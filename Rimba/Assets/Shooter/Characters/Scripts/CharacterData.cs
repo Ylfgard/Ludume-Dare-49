@@ -9,7 +9,7 @@ public class CharacterData : ScriptableObject
     public float Health;
     public float Stamina;
 
-    private float currentHealth;    
+    public float currentHealth;    
     private float currentStamina;
 
     public Weapon Weapon; //test

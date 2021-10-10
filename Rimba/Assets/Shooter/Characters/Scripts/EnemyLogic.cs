@@ -17,7 +17,8 @@ public class EnemyLogic : BaseCharacterLogic
     public float cosViewingAngle = 0.5f;
 
     [SerializeField] private GameObject visual;
-    
+    [SerializeField] private GameObject hud;
+
 
 
     private void Start()
@@ -28,6 +29,7 @@ public class EnemyLogic : BaseCharacterLogic
         spriteRenderer = visual.GetComponentInChildren<SpriteRenderer>();
         visual.transform.SetParent(null);
         visual.transform.rotation = new Quaternion(0, 0, 0, 0);
+        hud.GetComponent<EnemyHUD>().characterData = characterData;
     }
     private IEnumerator RotateTargetCoroutine()
     {
@@ -110,6 +112,8 @@ public class EnemyLogic : BaseCharacterLogic
     protected override void Die()
     {
         this.gameObject.SetActive(false);
+        visual.gameObject.SetActive(false);
+        hud.gameObject.SetActive(false);
     }
     private void Update()
     {
