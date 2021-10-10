@@ -7,6 +7,7 @@ TagManager:
   - Obstacle
   - Enemy
   - Medicine
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -58,4 +59,7 @@ TagManager:
     locked: 0
   - name: Trees
     uniqueID: 18285441
+    locked: 0
+  - name: BlockHand
+    uniqueID: 3125770829
     locked: 0

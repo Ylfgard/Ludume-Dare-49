@@ -10,6 +10,7 @@ public class MainCharacterLogic : BaseCharacterLogic
         Move();
         Aim(MouseWorld.GetPosition());
         Attack();
+        ManageAnimation();
         
     }
     private void Move()

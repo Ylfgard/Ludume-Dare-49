@@ -15,6 +15,8 @@ public class EnemyLogic : BaseCharacterLogic
     public float rotateSpeed;
     public float VisibilityDistance;
     public float cosViewingAngle = 0.5f;
+
+    [SerializeField] private GameObject visual;
     
 
 
@@ -23,6 +25,9 @@ public class EnemyLogic : BaseCharacterLogic
         transform.position = PatrolPoints[0].position;
         rotateTargetCoroutine = StartCoroutine(RotateTargetCoroutine());
         patrolCoroutine = StartCoroutine(PatrolCoroutine());
+        spriteRenderer = visual.GetComponentInChildren<SpriteRenderer>();
+        visual.transform.SetParent(null);
+        visual.transform.rotation = new Quaternion(0, 0, 0, 0);
     }
     private IEnumerator RotateTargetCoroutine()
     {
@@ -50,7 +55,7 @@ public class EnemyLogic : BaseCharacterLogic
 
                 Vector3 targetDirection = PatrolPoints[i].position - transform.position;
                 Vector3 rotatedDirection = Quaternion.Euler(0, 0, 360) * targetDirection;
-                float singleStep = rotateSpeed * Time.deltaTime;
+                float singleStep = rotateSpeed * Time.deltaTime;                
                 Vector3 newDirection = Vector3.RotateTowards(transform.up, rotatedDirection, singleStep, 0.0f);
                 transform.rotation = Quaternion.LookRotation(Vector3.forward, newDirection);
 
@@ -106,5 +111,9 @@ public class EnemyLogic : BaseCharacterLogic
     {
         this.gameObject.SetActive(false);
     }
-   
+    private void Update()
+    {
+        visual.transform.position = transform.position;
+    }
 }
+   

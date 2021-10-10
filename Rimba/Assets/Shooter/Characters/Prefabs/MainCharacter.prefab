@@ -167,7 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponSlot: {fileID: 3480104216086184268}
-  Weapon: {fileID: 0}
   CharacterData: {fileID: 11400000, guid: 5a0527fdded04854cab92ae1ac47a7cc, type: 2}
 --- !u!114 &3480104216298802003
 MonoBehaviour:
@@ -182,3 +181,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 5a0527fdded04854cab92ae1ac47a7cc, type: 2}
+  hitPoint: {fileID: 0}
+  LookingForward: {fileID: 21300000, guid: 09a2310e1e9673745bd08b75bc638722, type: 3}
+  LookingBack: {fileID: 21300000, guid: 1afe3576f904d0b4282710f53af5f241, type: 3}
+  LookingRight: {fileID: 21300000, guid: 44c920033e466f7448d2ac3a8ddc1a5c, type: 3}
+  LookingLeft: {fileID: 21300000, guid: 1261328012b831b42a290e1b576cb76f, type: 3}

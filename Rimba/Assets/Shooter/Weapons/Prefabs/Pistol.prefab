@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3123015875298556562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.561, y: 0.208, z: 0}
+  m_LocalPosition: {x: 0.823, y: 0.301, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8553910987506213165}
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f49d9c0fe56b7944e91cb332405e5410, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b477216cd063594fa8bbba27d710fc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -153,7 +153,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.07, y: 0.7}
+    oldSize: {x: 1.44, y: 0.94}
     newSize: {x: 1.07, y: 0.7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -192,9 +192,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 8
-  m_AngularDrag: 5
-  m_GravityScale: 1
+  m_LinearDrag: 10
+  m_AngularDrag: 8
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

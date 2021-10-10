@@ -9,7 +9,7 @@ public class EnemyHUD : HUD
     void Awake()
     {
         transform.SetParent(null);
-        offset = new Vector3(0, 1.5f, 0);
+        offset = new Vector3(0, 3f, 0);
     }
     void Update()
     {
