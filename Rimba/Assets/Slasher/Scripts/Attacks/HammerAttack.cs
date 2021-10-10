@@ -47,7 +47,7 @@ public class HammerAttack : MonoBehaviour
     
     IEnumerator Attack()
     {
-        instance = FMODUnity.RuntimeManager.CreateInstance("event:/hummer");
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/whoosh_rock_throw");
         instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(attacker.transform.position));
         instance.start();
         instance.release();
