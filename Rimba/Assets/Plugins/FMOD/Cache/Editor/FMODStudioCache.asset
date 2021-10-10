@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
+--- !u!114 &-8879490399809976551
+=======
 --- !u!114 &-9213685007381810087
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,20 +14,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043A\u043E\u043D\u0435\u0447\u043D\u043E \u0438 \u0435\u0449\u0451
+    \u0443 \u043D\u0435\u0433\u043E \u043D\u0430\u0448\u0430"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043A\u043E\u043D\u0435\u0447\u043D\u043E \u0438 \u0435\u0449\u0451
+    \u0443 \u043D\u0435\u0433\u043E \u043D\u0430\u0448\u0430"
+  guid: d6e3777813404147898c7be087780fde
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/enemy damage knife
   m_EditorClassIdentifier: 
   Path: event:/enemy damage knife
   guid: eb8506e38b1d794bb804a1ddd8026d04
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4678
+--- !u!114 &-8766494619266379226
+=======
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
 --- !u!114 &-9170755004500211245
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33,6 +55,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0437\u043D\u0430\u0435\u0442\u0435 \u0430 \u043C\u043D\u0435
+    \u0434\u0430\u0436\u0435 \u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0437\u043D\u0430\u0435\u0442\u0435 \u0430 \u043C\u043D\u0435 \u0434\u0430\u0436\u0435
+    \u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F"
+  guid: 75b11a7a947faa43b8138d1541a980ff
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4710
+--- !u!114 &-8594864470928996676
+=======
   m_Name: event:/steps_dirt
   m_EditorClassIdentifier: 
   Path: event:/steps_dirt
@@ -47,6 +87,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 2000
 --- !u!114 &-8876019484689126355
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,6 +97,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C"
+  guid: faae5c191acadb42be850b98882b29d1
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 620
+--- !u!114 &-8289148708145688138
+=======
   m_Name: event:/knife_throw
   m_EditorClassIdentifier: 
   Path: event:/knife_throw
@@ -70,6 +127,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 180
 --- !u!114 &-8818648340768132651
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,6 +137,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/sword
+  m_EditorClassIdentifier: 
+  Path: event:/sword
+  guid: d8505375d77aee4490e52cdd15ba8af6
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: "event:/\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
     \u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0438\u0439 \u0434\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
   m_EditorClassIdentifier: 
@@ -88,13 +155,15 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 13013
---- !u!114 &-8315022726753397927
+<<<<<<< HEAD
+  Length: 2000
+--- !u!114 &-8257309619086657375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,6 +173,92 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/steps_sand
+  m_EditorClassIdentifier: 
+  Path: event:/steps_sand
+  guid: 25e31e600bb9a04d8127e33a3e72730d
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-8005914283694068604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043E\u043D \u0431\u0443\u0434\u0435\u0442 \u0432 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u043C
+    \u043F\u0430\u0440\u043E\u0432\u043E\u043C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043E\u043D \u0431\u0443\u0434\u0435\u0442 \u0432 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u043C
+    \u043F\u0430\u0440\u043E\u0432\u043E\u043C"
+  guid: 08c8339bc778924593f10e436b043046
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3765
+--- !u!114 &-7952628008117422055
+=======
+  Length: 13013
+--- !u!114 &-8315022726753397927
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/fire
+  m_EditorClassIdentifier: 
+  Path: event:/fire
+  guid: 8d5b28cd497e264192e75d6998562ef4
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36081
+--- !u!114 &-7926468563191735862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/\u043D\u0430\u0432\u0435\u0440\u043D\u043E\u0435 \u0434\u0430\u043B\u044C\u0448\u0435
+    \u0443 \u0432\u0430\u0441 \u043F\u0440\u0438\u043F\u0430\u0441\u0435\u043D\u0430"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0430\u0432\u0435\u0440\u043D\u043E\u0435 \u0434\u0430\u043B\u044C\u0448\u0435
+    \u0443 \u0432\u0430\u0441 \u043F\u0440\u0438\u043F\u0430\u0441\u0435\u043D\u0430"
+  guid: 7dec6693446a62479db06ae6714ba66d
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: "event:/\u0434\u0430, \u043D\u0430\u0441 \u043F\u0440\u0438\u0436\u0430\u043B\u0438
     \u0432 \u0431\u0430\u0440\u0435"
   m_EditorClassIdentifier: 
@@ -113,13 +268,15 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 11999
---- !u!114 &-7863552417190867543
+<<<<<<< HEAD
+  Length: 3252
+--- !u!114 &-7797120361094936777
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,6 +286,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/Bondiana
+  m_EditorClassIdentifier: 
+  Path: event:/music/Bondiana
+  guid: 45d7df5061da2c44870f7ad5d70e6552
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 60091
+--- !u!114 &-7676766372722373447
+=======
+  Length: 11999
+--- !u!114 &-7863552417190867543
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/music/Credits
+  m_EditorClassIdentifier: 
+  Path: event:/music/Credits
+  guid: 72e489978a35504db5c1c8f93b1b095b
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 41400
+--- !u!114 &-7546798259565531149
+=======
   m_Name: "event:/\u043D\u0443\u0443 \u0435\u0441\u0442\u044C \u0440\u0430\u0437\u043D\u044B\u0435"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0443\u0443 \u0435\u0441\u0442\u044C \u0440\u0430\u0437\u043D\u044B\u0435"
@@ -143,6 +343,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 2741
 --- !u!114 &-7787779542161321422
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,6 +353,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043C\u043E\u0436\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+    \u0447\u0443\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043C\u043E\u0436\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+    \u0447\u0443\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
+  guid: a7407a7b2bf49d439c2f4c4f64a34cd6
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: event:/wood throw at fireplase
   m_EditorClassIdentifier: 
   Path: event:/wood throw at fireplase
@@ -159,13 +371,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 16376
+--- !u!114 &-7535690107958737865
+=======
   Length: 2000
 --- !u!114 &-7765489158102998161
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,20 +393,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043E\u043D \u0437\u0430\u0445\u043E\u0434\u0438\u0442 \u0432
+    \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0437\u0430\u043B"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043E\u043D \u0437\u0430\u0445\u043E\u0434\u0438\u0442 \u0432 \u0433\u043B\u0430\u0432\u043D\u044B\u0439
+    \u0437\u0430\u043B"
+  guid: cab74a35d97f254aa9360624de7561a6
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/bombs
   m_EditorClassIdentifier: 
   Path: event:/bombs
   guid: 970966db71e4904fabea91b7cbc28fed
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 6381
+--- !u!114 &-7342207865729943531
+=======
   Length: 2000
 --- !u!114 &-7675568571185759516
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,20 +432,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/rrocks
+  m_EditorClassIdentifier: 
+  Path: event:/rrocks
+  guid: 895322cf65483a4aaf0a781089fecdd0
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/steps_wood
   m_EditorClassIdentifier: 
   Path: event:/steps_wood
   guid: fff722549d84f44f8e8880e2b117ebdb
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+<<<<<<< HEAD
+  Length: 2000
+--- !u!114 &-7339961836704715398
+=======
   Length: 600
 --- !u!114 &-7460149765481327922
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,20 +469,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439 \u0431\u043B\u043F\u0433\u043E\u0440\u043E\u0434\u0435\u043D"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439 \u0431\u043B\u043F\u0433\u043E\u0440\u043E\u0434\u0435\u043D"
+  guid: 389e51512cec324199e1663c9d1c169e
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/mashine_gun
   m_EditorClassIdentifier: 
   Path: event:/mashine_gun
   guid: f801d068f9627749801839ee71f7d244
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8716
+--- !u!114 &-7314420919013842259
+=======
   MinDistance: 0
   MaxDistance: 0
   Length: 3250
 --- !u!114 &-7380372931691349484
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,6 +508,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C \u0437\u043B\u043E\u0434\u0435\u044F
+    \u0441\u043B\u0438\u0448\u043A\u043E\u043C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C \u0437\u043B\u043E\u0434\u0435\u044F
+    \u0441\u043B\u0438\u0448\u043A\u043E\u043C"
+  guid: d8d4720e98bfee48b52a976b7deb7750
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7355
+--- !u!114 &-7114487540551405293
+=======
   m_Name: event:/music/Credits
   m_EditorClassIdentifier: 
   Path: event:/music/Credits
@@ -258,6 +540,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 41400
 --- !u!114 &-7329802618035620192
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,6 +550,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/knife_throw
+  m_EditorClassIdentifier: 
+  Path: event:/knife_throw
+  guid: e93fbdd4f6f5d94bb8e7664a31020947
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: event:/music/Hotline
   m_EditorClassIdentifier: 
   Path: event:/music/Hotline
@@ -274,13 +566,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+<<<<<<< HEAD
+  Length: 180
+--- !u!114 &-7111234551487828462
+=======
   Length: 38397
 --- !u!114 &-7172375908195928350
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -290,6 +588,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0432\u0430\u043C \u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
+    \u0447\u0442\u043E \u044D\u0442\u043E \u0438\u0437\u0431\u0438\u0442\u044B\u0439"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0432\u0430\u043C \u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
+    \u0447\u0442\u043E \u044D\u0442\u043E \u0438\u0437\u0431\u0438\u0442\u044B\u0439"
+  guid: cbe69649fd2a9d4fb6bf4bc5ff69f621
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u043F\u0443\u0441\u0442\u044C \u044D\u0442\u043E \u0431\u0443\u0434\u0435\u0442
     \u0441\u0442\u0430\u0440\u0438\u043D\u043D\u044B\u0439 \u0437\u0430\u043C\u043E\u043A"
   m_EditorClassIdentifier: 
@@ -298,14 +606,20 @@ MonoBehaviour:
   guid: 0f02713d5055454abfeed4c0a557d9b5
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 8906
+--- !u!114 &-7094511782592578129
+=======
   Length: 8525
 --- !u!114 &-7137693127334417247
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,20 +629,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0430 \u0433\u0435\u0440\u043E\u0439"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0433\u0435\u0440\u043E\u0439"
+  guid: f41bcc36e8ca1a4ba43d6277ab12e1a8
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0433\u0434\u0435 \u0431\u0443\u0434\u0435\u0442 \u0436\u0438\u0442\u044C"
   m_EditorClassIdentifier: 
   Path: "event:/\u0433\u0434\u0435 \u0431\u0443\u0434\u0435\u0442 \u0436\u0438\u0442\u044C"
   guid: e320d922a050c944a154356c9dea39a1
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 3686
+--- !u!114 &-6818411045957987001
+=======
   Length: 4012
 --- !u!114 &-6775028918438158873
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -338,6 +666,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/boss dead
+  m_EditorClassIdentifier: 
+  Path: event:/boss dead
+  guid: 5df243fed927d24db85c03fa3924a5a8
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0432\u0440\u0430\u0433\u043E\u0432 \u0431\u044B\u043B\u043E \u0441\u043B\u0438\u0448\u043A\u043E\u043C
     \u043C\u043D\u043E\u0433\u043E"
   m_EditorClassIdentifier: 
@@ -346,14 +682,20 @@ MonoBehaviour:
   guid: 7531adb258e3494a86ae8b0a3499fe9a
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 2000
+--- !u!114 &-6762129536474720790
+=======
   Length: 7645
 --- !u!114 &-6750343168251007319
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -362,6 +704,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank A.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Desktop/Bank A.bank
+  Name: Bank A
+  StudioPath: bank:/Bank A
+  lastModified: 637689025033427451
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6711803752368340608
+=======
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: "event:/\u043A\u043E\u043D\u0435\u0447\u043D\u043E \u0438 \u0435\u0449\u0451
     \u0443 \u043D\u0435\u0433\u043E \u043D\u0430\u0448\u0430"
@@ -379,6 +733,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 4678
 --- !u!114 &-6669827125786861431
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,12 +743,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/enemy damage knife
+  m_EditorClassIdentifier: 
+  Path: event:/enemy damage knife
+  guid: eb8506e38b1d794bb804a1ddd8026d04
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/rrocks
   m_EditorClassIdentifier: 
   Path: event:/rrocks
   guid: 895322cf65483a4aaf0a781089fecdd0
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -401,7 +765,11 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+<<<<<<< HEAD
+--- !u!114 &-6668463800914972871
+=======
 --- !u!114 &-6459784660783959667
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -411,6 +779,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0442\u0430\u0439\u0433\u0430, \u0441\u0438\u0431\u0438\u0440\u0441\u043A\u0430\u044F
+    \u0445\u043E\u043B\u043E\u0434\u043D\u0430\u044F"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0442\u0430\u0439\u0433\u0430, \u0441\u0438\u0431\u0438\u0440\u0441\u043A\u0430\u044F
+    \u0445\u043E\u043B\u043E\u0434\u043D\u0430\u044F"
+  guid: 14d30304d84c524391e62d5b11f1a502
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: "event:/\u0434\u0430\u0434\u0430 \u044F \u043F\u0438\u0448\u0443 \u0440\u043E\u043C\u0430\u043D"
   m_EditorClassIdentifier: 
   Path: "event:/\u0434\u0430\u0434\u0430 \u044F \u043F\u0438\u0448\u0443 \u0440\u043E\u043C\u0430\u043D"
@@ -418,13 +797,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 8489
+--- !u!114 &-6495645142289339598
+=======
   Length: 589
 --- !u!114 &-6047961915532451475
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -434,6 +819,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/heal
+  m_EditorClassIdentifier: 
+  Path: event:/heal
+  guid: 733e1c07e2815c45976160148f57a747
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2044
+--- !u!114 &-6475635783830894317
+=======
   m_Name: "event:/\u0442\u043E\u0447\u043D\u043E \u0442\u043E\u0447\u043D\u043E 
     \u0432 \u043F\u043E\u0434\u0432\u043E\u0440\u043E\u0442\u043D\u0435"
   m_EditorClassIdentifier: 
@@ -475,6 +876,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 9894
 --- !u!114 &-5743183769755365861
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -484,6 +886,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/pistol_shot
+  m_EditorClassIdentifier: 
+  Path: event:/pistol_shot
+  guid: 1b55d22895b4084aa1b354779c539f7e
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 600
+--- !u!114 &-6364209418407420879
+=======
   m_Name: "event:/\u043E\u043D \u0431\u0443\u0434\u0435\u0442 \u0432 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u043C
     \u043F\u0430\u0440\u043E\u0432\u043E\u043C"
   m_EditorClassIdentifier: 
@@ -500,6 +918,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 3765
 --- !u!114 &-5447551169932222938
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -509,6 +928,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043F\u0443\u0441\u0442\u044C \u043B\u0443\u0447\u0448\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043F\u0443\u0441\u0442\u044C \u043B\u0443\u0447\u0448\u0435"
+  guid: 71c001fb57144a459f5c15d67ebb8296
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5759
+--- !u!114 &-6252767677571561082
+=======
   m_Name: event:/pistol_shot
   m_EditorClassIdentifier: 
   Path: event:/pistol_shot
@@ -523,6 +958,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 600
 --- !u!114 &-5310453656998627246
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -532,6 +968,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/whoosh_rock_throw
+  m_EditorClassIdentifier: 
+  Path: event:/whoosh_rock_throw
+  guid: 34ed073a2df1cc439f8444666511fec3
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-5846315774898380604
+=======
   m_Name: event:/fire
   m_EditorClassIdentifier: 
   Path: event:/fire
@@ -546,6 +998,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 36081
 --- !u!114 &-5220355802117273098
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -555,6 +1008,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/steps_snow
+  m_EditorClassIdentifier: 
+  Path: event:/steps_snow
+  guid: d65aec6f5e34284e8bb4f02d8e9d6909
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-5540158176558706564
+=======
   m_Name: "event:/\u043D\u0443 \u0430 \u0438\u043D\u0430\u0447\u0435 \u0441\u043A\u0443\u0447\u043D\u043E"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0443 \u0430 \u0438\u043D\u0430\u0447\u0435 \u0441\u043A\u0443\u0447\u043D\u043E"
@@ -569,6 +1038,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 11990
 --- !u!114 &-5050569588754075607
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -578,6 +1048,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0442\u0430\u043A \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043E\u043B\u0433\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0442\u0430\u043A \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043E\u043B\u0433\u043E"
+  guid: d04a664192094842bd91d5143c0d7822
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: "event:/\u043D\u0443 \u043D\u0435\u0442 \u044D\u0442\u043E \u0441\u043A\u0443\u0447\u043D\u043E"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0443 \u043D\u0435\u0442 \u044D\u0442\u043E \u0441\u043A\u0443\u0447\u043D\u043E"
@@ -585,13 +1064,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 2936
+--- !u!114 &-5535618523818237123
+=======
   Length: 21853
 --- !u!114 &-5020567931938441683
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -601,6 +1086,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0433\u0435\u0440\u043E\u0439 \u0441\u043F\u0430\u0441\u0430\u0435\u0442\u0441\u044F"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0433\u0435\u0440\u043E\u0439 \u0441\u043F\u0430\u0441\u0430\u0435\u0442\u0441\u044F"
+  guid: 40dcee824c97d341bca264931e59fb5c
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: "event:/\u043E\u043D \u0437\u0430\u0445\u043E\u0434\u0438\u0442 \u0432
     \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0437\u0430\u043B"
   m_EditorClassIdentifier: 
@@ -610,13 +1104,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 11347
+--- !u!114 &-5485520402965553053
+=======
   Length: 6381
 --- !u!114 &-4405885845146483354
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,20 +1126,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0443 \u0430\u043B\u0438\u0433\u0430\u0442\u043E\u0440\u0430
+    , \u043A\u0430\u0439\u043C\u0430\u043D\u0430"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0443 \u0430\u043B\u0438\u0433\u0430\u0442\u043E\u0440\u0430
+    , \u043A\u0430\u0439\u043C\u0430\u043D\u0430"
+  guid: 2cddf56f680bdb489969b07f8298d47a
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0434\u043E \u043D\u043E\u0432\u044B\u0445 \u0432\u0441\u0442\u0440\u0435\u0447\u044C"
   m_EditorClassIdentifier: 
   Path: "event:/\u0434\u043E \u043D\u043E\u0432\u044B\u0445 \u0432\u0441\u0442\u0440\u0435\u0447\u044C"
   guid: e3cdeb578ac23642883de1d6e4c17d6e
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 6544
+--- !u!114 &-5398162479036322185
+=======
   Length: 1995
 --- !u!114 &-4105901501608529285
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -649,6 +1165,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
+    \u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0438\u0439 \u0434\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
+    \u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0438\u0439 \u0434\u0440\u043E\u0431\u043E\u0432\u0438\u043A"
+  guid: e1684f46de4c19439c779b3208e6967c
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: "event:/\u0434\u0430 \u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
   m_EditorClassIdentifier: 
   Path: "event:/\u0434\u0430 \u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
@@ -656,13 +1183,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 13013
+--- !u!114 &-5259349364310666151
+=======
   Length: 2210
 --- !u!114 &-3891929286288587455
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -672,6 +1205,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
+  guid: f035b8965cf4e940b402c9ca89782638
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u043D\u0430\u0432\u0435\u0440\u043D\u043E\u0435 \u0434\u0430\u043B\u044C\u0448\u0435
     \u0443 \u0432\u0430\u0441 \u043F\u0440\u0438\u043F\u0430\u0441\u0435\u043D\u0430"
   m_EditorClassIdentifier: 
@@ -680,14 +1221,20 @@ MonoBehaviour:
   guid: 7dec6693446a62479db06ae6714ba66d
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 1395
+--- !u!114 &-5112415701127627377
+=======
   Length: 3252
 --- !u!114 &-3761133345247538622
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -697,20 +1244,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0438\u043B\u0438 \u0435\u0433\u043E \u0431\u0440\u043E\u0441\u0438\u0442
+    \u0434\u0435\u0432\u0443\u0448\u043A\u0430"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0438\u043B\u0438 \u0435\u0433\u043E \u0431\u0440\u043E\u0441\u0438\u0442
+    \u0434\u0435\u0432\u0443\u0448\u043A\u0430"
+  guid: 383f7158bc37944491edb618eb390c32
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
   guid: 92ee527e9bb55a409c83385d5de12429
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5289
+--- !u!114 &-5083592145088136308
+=======
   Length: 1133
 --- !u!114 &-3666675635971537675
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -720,6 +1283,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/knife fall
+  m_EditorClassIdentifier: 
+  Path: event:/knife fall
+  guid: 2344d89140b7c643a3e9c74593aaecab
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 440
+--- !u!114 &-5030627772424318731
+=======
   m_Name: "event:/\u043D\u0443 \u0443\u0436 \u043D\u0435\u0442"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0443 \u0443\u0436 \u043D\u0435\u0442"
@@ -734,6 +1313,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 4944
 --- !u!114 &-3620372800305451877
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -743,6 +1323,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/laser
+  m_EditorClassIdentifier: 
+  Path: event:/laser
+  guid: e2382e7f0a24a345a14cfd6220f66dcc
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1203
+--- !u!114 &-4152319036386451031
+=======
   m_Name: "event:/\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E,
     \u044D\u0442\u043E\u0442 \u0440\u043E\u044F\u043B\u044C"
   m_EditorClassIdentifier: 
@@ -759,6 +1355,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 10612
 --- !u!114 &-3260191160798687452
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -768,20 +1365,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/steps_dirt
+  m_EditorClassIdentifier: 
+  Path: event:/steps_dirt
+  guid: bdd8ef3062910f41a64e539d5427215d
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/heal
   m_EditorClassIdentifier: 
   Path: event:/heal
   guid: 733e1c07e2815c45976160148f57a747
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+<<<<<<< HEAD
+  Length: 2000
+--- !u!114 &-3928104467149893522
+=======
   Length: 2044
 --- !u!114 &-3092695121020134613
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -791,20 +1402,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043F\u0443\u0441\u0442\u044C \u044D\u0442\u043E \u0431\u0443\u0434\u0435\u0442
+    \u0441\u0442\u0430\u0440\u0438\u043D\u043D\u044B\u0439 \u0437\u0430\u043C\u043E\u043A"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043F\u0443\u0441\u0442\u044C \u044D\u0442\u043E \u0431\u0443\u0434\u0435\u0442
+    \u0441\u0442\u0430\u0440\u0438\u043D\u043D\u044B\u0439 \u0437\u0430\u043C\u043E\u043A"
+  guid: 0f02713d5055454abfeed4c0a557d9b5
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0442\u0430\u043A \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043E\u043B\u0433\u043E"
   m_EditorClassIdentifier: 
   Path: "event:/\u0442\u0430\u043A \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043E\u043B\u0433\u043E"
   guid: d04a664192094842bd91d5143c0d7822
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 8525
+--- !u!114 &-3775285642612561936
+=======
   Length: 2936
 --- !u!114 &-3064547935908706999
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -814,6 +1441,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
+  guid: 92ee527e9bb55a409c83385d5de12429
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: "event:/\u0434\u0430\u043B\u044C\u0448\u0435 \u0441\u0430\u043C\u043E\u0435
     \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435"
   m_EditorClassIdentifier: 
@@ -823,13 +1459,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 1133
+--- !u!114 &-3065407834765476928
+=======
   Length: 19071
 --- !u!114 &-2861873579405507525
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -839,6 +1481,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/pause
+  m_EditorClassIdentifier: 
+  Path: event:/pause
+  guid: 0c24d34445fc514ea5a7821b65b87738
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 410
+--- !u!114 &-2999931203940827392
+=======
   m_Name: event:/boss dead
   m_EditorClassIdentifier: 
   Path: event:/boss dead
@@ -853,6 +1511,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 2000
 --- !u!114 &-2717037259626510298
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -862,6 +1521,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/steps_metal
+  m_EditorClassIdentifier: 
+  Path: event:/steps_metal
+  guid: aae17726d075194eb724b1d313080159
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-2784218945596517625
+=======
   m_Name: "event:/\u0430 \u043F\u043E\u0442\u043E\u043C \u043F\u0440\u0438\u0435\u0437\u0436\u0430\u044E\u0442
     \u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0438\u043A\u0438"
   m_EditorClassIdentifier: 
@@ -878,6 +1553,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 13314
 --- !u!114 &-2697417658447036653
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -887,20 +1563,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/shutgun
+  m_EditorClassIdentifier: 
+  Path: event:/shutgun
+  guid: cbc8c4c3b5ea634fa309ae85b26e352b
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/whoosh_rock_throw
   m_EditorClassIdentifier: 
   Path: event:/whoosh_rock_throw
   guid: 34ed073a2df1cc439f8444666511fec3
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 2000
+--- !u!114 &-2769249045284073172
+=======
   Length: 1000
 --- !u!114 &-2689156289687841583
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -910,6 +1600,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/steps_wood
+  m_EditorClassIdentifier: 
+  Path: event:/steps_wood
+  guid: fff722549d84f44f8e8880e2b117ebdb
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: event:/music/Da Vinci
   m_EditorClassIdentifier: 
   Path: event:/music/Da Vinci
@@ -917,13 +1616,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+<<<<<<< HEAD
+  Length: 600
+--- !u!114 &-2447509428898035701
+=======
   Length: 41200
 --- !u!114 &-2678090785822891821
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -933,6 +1638,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0443 \u0430 \u0438\u043D\u0430\u0447\u0435 \u0441\u043A\u0443\u0447\u043D\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0443 \u0430 \u0438\u043D\u0430\u0447\u0435 \u0441\u043A\u0443\u0447\u043D\u043E"
+  guid: 3e4a4038a510c344b8498ce44059eaef
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: "event:/\u0432\u0440\u043E\u0434\u0435 \u0431\u044B"
   m_EditorClassIdentifier: 
   Path: "event:/\u0432\u0440\u043E\u0434\u0435 \u0431\u044B"
@@ -940,13 +1654,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 11990
+--- !u!114 &-2348147415521643904
+=======
   Length: 5495
 --- !u!114 &-2586958920646926898
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -956,6 +1676,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u043B\u0443\u0447\u0448\u0435
+    \u043E\u0441\u0442\u0430\u0432\u0438\u043C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u043B\u0443\u0447\u0448\u0435
+    \u043E\u0441\u0442\u0430\u0432\u0438\u043C"
+  guid: 9224bb3b09f2794da91793f78f89ecd7
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0438 \u043F\u0440\u0430\u0432\u0434\u0430, \u043E\u0431\u044B\u0447\u043D\u043E\u0435
     \u044F\u0432\u043B\u0435\u043D\u0438\u0435"
   m_EditorClassIdentifier: 
@@ -964,14 +1694,20 @@ MonoBehaviour:
   guid: 6f5c2116b69e0448bba94e617c3a6056
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 9894
+--- !u!114 &-2324406323456071078
+=======
   Length: 3954
 --- !u!114 &-2566835554032223046
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -981,6 +1717,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/music/Hotline
+  m_EditorClassIdentifier: 
+  Path: event:/music/Hotline
+  guid: 7da1f45c0f13604fa0838053912b596d
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u043D\u0435\u0442 \u0443\u0436 \u0434\u0430\u0432\u0430\u0439\u0442\u0435
     \u0447\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435"
   m_EditorClassIdentifier: 
@@ -989,14 +1733,22 @@ MonoBehaviour:
   guid: 0284725b2beef14982139f048f4371af
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
+  Is3D: 0
+  IsOneShot: 0
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 38397
+--- !u!114 &-2299928362491792977
+=======
   MinDistance: 1
   MaxDistance: 20
   Length: 12990
 --- !u!114 &-2531230263480283745
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1006,6 +1758,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u043D\u0435 \u0442\u0430\u043A"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u043D\u0435 \u0442\u0430\u043A"
+  guid: b42e157dd903f54c9cc57fe577eb5f93
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: event:/pike
   m_EditorClassIdentifier: 
   Path: event:/pike
@@ -1013,13 +1774,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 14734
+--- !u!114 &-2280638884281886293
+=======
   Length: 2000
 --- !u!114 &-2487667981802352514
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1029,6 +1796,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/music/Da Vinci
+  m_EditorClassIdentifier: 
+  Path: event:/music/Da Vinci
+  guid: 9c8308b22dfa6848b62b4b94020335cc
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: "event:/\u0438 \u0442\u0430\u043A \u0438\u0441\u0442\u043E\u0440\u0438\u044F"
   m_EditorClassIdentifier: 
   Path: "event:/\u0438 \u0442\u0430\u043A \u0438\u0441\u0442\u043E\u0440\u0438\u044F"
@@ -1059,11 +1835,16 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+<<<<<<< HEAD
+  Length: 41200
+--- !u!114 &-2280264394088026224
+=======
   Length: 4000
 --- !u!114 &-2432171680619194619
 MonoBehaviour:
@@ -1089,6 +1870,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 1640
 --- !u!114 &-2206120889025856601
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1098,20 +1880,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0432\u0440\u043E\u0434\u0435 \u0431\u044B"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0432\u0440\u043E\u0434\u0435 \u0431\u044B"
+  guid: e339758f741645478d297ad2e14ba0b3
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
   guid: f035b8965cf4e940b402c9ca89782638
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5495
+--- !u!114 &-2191698266209350111
+=======
   Length: 1395
 --- !u!114 &-1841005621895633128
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1121,6 +1917,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0430 \u043F\u043E\u0442\u043E\u043C \u043F\u0440\u0438\u0435\u0437\u0436\u0430\u044E\u0442
+    \u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0438\u043A\u0438"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u043F\u043E\u0442\u043E\u043C \u043F\u0440\u0438\u0435\u0437\u0436\u0430\u044E\u0442
+    \u043E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0438\u043A\u0438"
+  guid: a58c58fbfbde234bbd461f53fc4c0150
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: "event:/\u043D\u0443 \u0434\u0430 , \u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0443 \u0434\u0430 , \u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
@@ -1128,11 +1935,16 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 13314
+--- !u!114 &-2158903338274693408
+=======
   Length: 6541
 --- !u!114 &-1504820369572533215
 MonoBehaviour:
@@ -1183,6 +1995,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 16115
 --- !u!114 &-1162883879744671336
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1192,6 +2005,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E,
+    \u044D\u0442\u043E\u0442 \u0440\u043E\u044F\u043B\u044C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043B\u044C\u043D\u043E,
+    \u044D\u0442\u043E\u0442 \u0440\u043E\u044F\u043B\u044C"
+  guid: 2ac381789b8d2e40acee1748d2018362
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: "event:/\u043D\u0443 \u0430\u043B\u0438\u0433\u0430\u0442\u043E\u0440\u0430
     , \u043A\u0430\u0439\u043C\u0430\u043D\u0430"
   m_EditorClassIdentifier: 
@@ -1201,13 +2025,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 10612
+--- !u!114 &-2095544995116385216
+=======
   Length: 6544
 --- !u!114 &-1108061315118077691
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1217,20 +2047,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u043E \u043D\u043E\u0432\u044B\u0445 \u0432\u0441\u0442\u0440\u0435\u0447\u044C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u043E \u043D\u043E\u0432\u044B\u0445 \u0432\u0441\u0442\u0440\u0435\u0447\u044C"
+  guid: e3cdeb578ac23642883de1d6e4c17d6e
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/hummer
   m_EditorClassIdentifier: 
   Path: event:/hummer
   guid: 48c00cbb5df8fd42884e66274ae6690d
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1995
+--- !u!114 &-1956545709713300832
+=======
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
 --- !u!114 &-1041029510241304253
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1240,20 +2086,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/steps_concrete1
+  m_EditorClassIdentifier: 
+  Path: event:/steps_concrete1
+  guid: 67937f5a623ba042a0ab6c017fb66c0f
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0438 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442 \u043A\u0440\u043E\u043A\u043E\u0434\u0438\u043B\u0430"
   m_EditorClassIdentifier: 
   Path: "event:/\u0438 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442 \u043A\u0440\u043E\u043A\u043E\u0434\u0438\u043B\u0430"
   guid: b8a2c1045fa222419eed68af33d34507
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1640
+--- !u!114 &-1636274259994206987
+=======
   MinDistance: 1
   MaxDistance: 20
   Length: 2999
 --- !u!114 &-828390781702057901
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1263,6 +2125,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/dash
+  m_EditorClassIdentifier: 
+  Path: event:/dash
+  guid: bc4a5b0cd7627841abf88de92ecaf4ac
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 390
+--- !u!114 &-1617072206246336415
+=======
   m_Name: event:/shutgun
   m_EditorClassIdentifier: 
   Path: event:/shutgun
@@ -1277,6 +2155,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 2000
 --- !u!114 &-592028391583313876
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1286,6 +2165,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0442\u043E\u0447\u043D\u043E \u0442\u043E\u0447\u043D\u043E 
+    \u0432 \u043F\u043E\u0434\u0432\u043E\u0440\u043E\u0442\u043D\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0442\u043E\u0447\u043D\u043E \u0442\u043E\u0447\u043D\u043E  \u0432
+    \u043F\u043E\u0434\u0432\u043E\u0440\u043E\u0442\u043D\u0435"
+  guid: 7d2cf62f8f14d54fa9da95587ed78a6f
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16053
+--- !u!114 &-1088104827349536425
+=======
   m_Name: event:/steps_sand
   m_EditorClassIdentifier: 
   Path: event:/steps_sand
@@ -1300,6 +2197,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 2000
 --- !u!114 &-400727736328615514
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1309,20 +2207,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/pike
+  m_EditorClassIdentifier: 
+  Path: event:/pike
+  guid: 76dc4cc16890b14b964939883512ad9c
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/dash
   m_EditorClassIdentifier: 
   Path: event:/dash
   guid: bc4a5b0cd7627841abf88de92ecaf4ac
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-999891218531416746
+=======
   MinDistance: 0
   MaxDistance: 0
   Length: 390
 --- !u!114 &-10827725845438927
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1332,6 +2246,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u0430\u043B\u044C\u0448\u0435 \u0441\u0430\u043C\u043E\u0435
+    \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430\u043B\u044C\u0448\u0435 \u0441\u0430\u043C\u043E\u0435
+    \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435"
+  guid: 42a3bbfd83163247ad414e30cfbab81b
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19071
+--- !u!114 &-671534157350280890
+=======
   m_Name: event:/steps_snow
   m_EditorClassIdentifier: 
   Path: event:/steps_snow
@@ -1346,6 +2278,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 2000
 --- !u!114 &11400000
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1354,9 +2287,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: Assets/fmod/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637694712434626479
+  FileSizes:
+  - Name: 
+    Value: 7436
+  Exists: 1
+--- !u!114 &-523271873389282685
+=======
   EditorBanks:
   - {fileID: 4961321531470846705}
   - {fileID: 8237356536902244927}
@@ -1479,6 +2423,7 @@ MonoBehaviour:
   stringsBankWriteTime: 637689911917399465
   cacheVersion: 8
 --- !u!114 &492008632004065879
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1488,20 +2433,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/mashine_gun
+  m_EditorClassIdentifier: 
+  Path: event:/mashine_gun
+  guid: f801d068f9627749801839ee71f7d244
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/knife fall
   m_EditorClassIdentifier: 
   Path: event:/knife fall
   guid: 2344d89140b7c643a3e9c74593aaecab
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+<<<<<<< HEAD
+  Length: 3250
+--- !u!114 &-447120580683952708
+=======
   Length: 440
 --- !u!114 &837387079470931667
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1511,6 +2470,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0442\u043E\u0433\u0434\u0430 \u0433\u0435\u0440\u043E\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0435\u0442
+    \u0443 \u043D\u0435\u0433\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0442\u043E\u0433\u0434\u0430 \u0433\u0435\u0440\u043E\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0435\u0442
+    \u0443 \u043D\u0435\u0433\u043E"
+  guid: b0914feec21b7740b91300277c1186a9
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7496
+--- !u!114 &-407296244670606635
+=======
   m_Name: event:/music/LongDark
   m_EditorClassIdentifier: 
   Path: event:/music/LongDark
@@ -1525,6 +2502,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 39000
 --- !u!114 &950742261261189188
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1534,6 +2512,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/damage_wolf
+  m_EditorClassIdentifier: 
+  Path: event:/damage_wolf
+  guid: 7107329fbf931844bf927f066442d60b
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u043D\u0435 \u0442\u0430\u043A"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u043D\u0435 \u0442\u0430\u043A"
@@ -1541,13 +2528,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 2000
+--- !u!114 &-402664086185222604
+=======
   Length: 14734
 --- !u!114 &1263533203062335584
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1557,20 +2550,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0442\u0438\u0442\u0440\u044B \u0443\u0436\u0435 \u043D\u0430\u0447\u0430\u043B\u0438\u0441\u044C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0442\u0438\u0442\u0440\u044B \u0443\u0436\u0435 \u043D\u0430\u0447\u0430\u043B\u0438\u0441\u044C"
+  guid: 68cf43ec5ed32e41b122f6b092b0def9
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/boss_steps
   m_EditorClassIdentifier: 
   Path: event:/boss_steps
   guid: bc19cd64616b3547b124cd1bf83b21f3
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1262
+--- !u!114 &-373364697187421908
+=======
   MinDistance: 0
   MaxDistance: 0
   Length: 1500
 --- !u!114 &1450807121429231595
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1580,6 +2589,47 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u0438 \u0435\u0449\u0451
+    \u0440\u0430\u0449 \u043D\u0435\u0442"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u0438 \u0435\u0449\u0451 \u0440\u0430\u0449
+    \u043D\u0435\u0442"
+  guid: 4e6384cb56ff814caa65cac9a0152a22
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13423
+--- !u!114 &-337276797184355261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/bombs
+  m_EditorClassIdentifier: 
+  Path: event:/bombs
+  guid: 970966db71e4904fabea91b7cbc28fed
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-232303040030024097
+=======
   m_Name: event:/wood_hit
   m_EditorClassIdentifier: 
   Path: event:/wood_hit
@@ -1594,6 +2644,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 2000
 --- !u!114 &1541986231609515699
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1603,6 +2654,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0438 \u0432\u043E\u0442 \u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0438 \u0432\u043E\u0442 \u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439"
+  guid: d54936c86547ac4292afca481a3e5399
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: "event:/\u043B\u0443\u0447\u0448\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435"
   m_EditorClassIdentifier: 
   Path: "event:/\u043B\u0443\u0447\u0448\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435"
@@ -1610,13 +2670,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 10950
+--- !u!114 &-156795940647920811
+=======
   Length: 5349
 --- !u!114 &1789043746910238827
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1631,15 +2697,24 @@ MonoBehaviour:
   Path: "event:/\u0434\u0430\u0436\u0435 \u043D\u0435 \u0437\u043D\u0430\u044E"
   guid: 3df7e914b336394ea53aa2023ac21529
   Banks:
+<<<<<<< HEAD
+  - {fileID: 1173229230197797283}
+=======
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 9587
+--- !u!114 &-146239547796884938
+=======
   Length: 7570
 --- !u!114 &1873855747551928812
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1649,6 +2724,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0430 \u043A\u043E\u0433\u0434\u0430 \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
+    \u044D\u0442\u043E \u0438\u0437\u043E\u0431\u0440\u0435\u0442\u0435\u043D\u0438\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u043A\u043E\u0433\u0434\u0430 \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
+    \u044D\u0442\u043E \u0438\u0437\u043E\u0431\u0440\u0435\u0442\u0435\u043D\u0438\u0435"
+  guid: 47fbc37ed92cd04e87d9154390f77fef
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0437\u043D\u0430\u0435\u0442\u0435 \u0430 \u043C\u043D\u0435
     \u0434\u0430\u0436\u0435 \u043D\u0440\u0430\u0432\u0438\u0442\u0441\u044F"
   m_EditorClassIdentifier: 
@@ -1657,14 +2742,153 @@ MonoBehaviour:
   guid: 75b11a7a947faa43b8138d1541a980ff
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 8823
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -671534157350280890}
+  - {fileID: -6762129536474720790}
+  - {fileID: 1173229230197797283}
+  EditorEvents:
+  - {fileID: 4737353205112300928}
+  - {fileID: 3741967355868832735}
+  - {fileID: 553297312911751708}
+  - {fileID: -8005914283694068604}
+  - {fileID: -3065407834765476928}
+  - {fileID: 5589467171084778803}
+  - {fileID: -3928104467149893522}
+  - {fileID: 3132582553501590810}
+  - {fileID: -6668463800914972871}
+  - {fileID: -6475635783830894317}
+  - {fileID: 4866915484799910084}
+  - {fileID: -5083592145088136308}
+  - {fileID: -8257309619086657375}
+  - {fileID: 7849516995317935329}
+  - {fileID: 6233666067692616602}
+  - {fileID: 3261233617163235578}
+  - {fileID: -2158903338274693408}
+  - {fileID: -5485520402965553053}
+  - {fileID: 6415391218215993503}
+  - {fileID: 1248904405516407798}
+  - {fileID: 6092297470658134738}
+  - {fileID: -6252767677571561082}
+  - {fileID: -5112415701127627377}
+  - {fileID: -7339961836704715398}
+  - {fileID: -156795940647920811}
+  - {fileID: 8575509311508146635}
+  - {fileID: -2447509428898035701}
+  - {fileID: -5535618523818237123}
+  - {fileID: -999891218531416746}
+  - {fileID: -7797120361094936777}
+  - {fileID: -146239547796884938}
+  - {fileID: 8461383600086041495}
+  - {fileID: 1328927267965030313}
+  - {fileID: -373364697187421908}
+  - {fileID: 4723743527589829535}
+  - {fileID: 6991050117211923049}
+  - {fileID: -6818411045957987001}
+  - {fileID: 7987239557316019673}
+  - {fileID: 6424853602320835719}
+  - {fileID: -1956545709713300832}
+  - {fileID: -402664086185222604}
+  - {fileID: 86369112622935252}
+  - {fileID: 3901180094582311223}
+  - {fileID: 4572504751500728908}
+  - {fileID: 2849191131318479557}
+  - {fileID: -407296244670606635}
+  - {fileID: -6364209418407420879}
+  - {fileID: -7676766372722373447}
+  - {fileID: -6495645142289339598}
+  - {fileID: 7984944429126983887}
+  - {fileID: -8766494619266379226}
+  - {fileID: -1088104827349536425}
+  - {fileID: 5349892091124053310}
+  - {fileID: -1617072206246336415}
+  - {fileID: -2324406323456071078}
+  - {fileID: -7926468563191735862}
+  - {fileID: -7342207865729943531}
+  - {fileID: 5817553613978136903}
+  - {fileID: -7952628008117422055}
+  - {fileID: -2348147415521643904}
+  - {fileID: -3775285642612561936}
+  - {fileID: 7296542366698069628}
+  - {fileID: -337276797184355261}
+  - {fileID: -2280638884281886293}
+  - {fileID: 5379474097950155516}
+  - {fileID: -2191698266209350111}
+  - {fileID: -7546798259565531149}
+  - {fileID: -2999931203940827392}
+  - {fileID: -447120580683952708}
+  - {fileID: -2299928362491792977}
+  - {fileID: 4512245824585099041}
+  - {fileID: 1285545032625047332}
+  - {fileID: 1216891525175620442}
+  - {fileID: -1636274259994206987}
+  - {fileID: -4152319036386451031}
+  - {fileID: 2541620067624627541}
+  - {fileID: -7535690107958737865}
+  - {fileID: 8339090951623083901}
+  - {fileID: -2784218945596517625}
+  - {fileID: -7111234551487828462}
+  - {fileID: 8683527157803059608}
+  - {fileID: -5540158176558706564}
+  - {fileID: -232303040030024097}
+  - {fileID: -5846315774898380604}
+  - {fileID: -8879490399809976551}
+  - {fileID: 6491545702380901714}
+  - {fileID: -8289148708145688138}
+  - {fileID: -7314420919013842259}
+  - {fileID: 8571777747800828165}
+  - {fileID: 356492637366881607}
+  - {fileID: 2965857401577426174}
+  - {fileID: -5398162479036322185}
+  - {fileID: -5030627772424318731}
+  - {fileID: 1117372795521312805}
+  - {fileID: -2280264394088026224}
+  - {fileID: -2095544995116385216}
+  - {fileID: 5910182338799997954}
+  - {fileID: 261409846272974316}
+  - {fileID: -7114487540551405293}
+  - {fileID: 5194192133324639775}
+  - {fileID: -6711803752368340608}
+  - {fileID: 216492764809362270}
+  - {fileID: -5259349364310666151}
+  - {fileID: 5001654633579613307}
+  - {fileID: -7094511782592578129}
+  - {fileID: -523271873389282685}
+  - {fileID: 6072944019974825404}
+  - {fileID: -8594864470928996676}
+  - {fileID: -2769249045284073172}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 1173229230197797283}
+  StringsBanks:
+  - {fileID: -671534157350280890}
+  stringsBankWriteTime: 637694712434626479
+  cacheVersion: 8
+--- !u!114 &86369112622935252
+=======
   Length: 4710
 --- !u!114 &2049341840174839719
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1674,6 +2898,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/jeap
+  m_EditorClassIdentifier: 
+  Path: event:/jeap
+  guid: 696892c8fdf34747a9c048ac42f5d64d
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &216492764809362270
+=======
   m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435 \u0434\u0443\u043C\u0430\u044E"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0435\u0442 \u043D\u0435 \u0434\u0443\u043C\u0430\u044E"
@@ -1688,6 +2928,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 14990
 --- !u!114 &2443096361416024673
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1697,20 +2938,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/damage_human
+  m_EditorClassIdentifier: 
+  Path: event:/damage_human
+  guid: ef27027a108fd94da127460d6af2ba81
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0432\u0434\u043E\u0445"
   m_EditorClassIdentifier: 
   Path: "event:/\u0432\u0434\u043E\u0445"
   guid: 2e879ec7c65431478659bb2912db21ff
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 496
+--- !u!114 &261409846272974316
+=======
   Length: 3492
 --- !u!114 &2454739185132563143
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1720,6 +2975,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u0430\u0434\u0430 \u044F \u043F\u0438\u0448\u0443 \u0440\u043E\u043C\u0430\u043D"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430\u0434\u0430 \u044F \u043F\u0438\u0448\u0443 \u0440\u043E\u043C\u0430\u043D"
+  guid: e6c9a71928147141954071dbd64a1e2e
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 589
+--- !u!114 &356492637366881607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/wood_hit
+  m_EditorClassIdentifier: 
+  Path: event:/wood_hit
+  guid: db96e8784f0ed047a81494d4af368a80
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0442\u0430\u0439\u0433\u0430, \u0441\u0438\u0431\u0438\u0440\u0441\u043A\u0430\u044F
     \u0445\u043E\u043B\u043E\u0434\u043D\u0430\u044F"
   m_EditorClassIdentifier: 
@@ -1728,14 +3014,22 @@ MonoBehaviour:
   guid: 14d30304d84c524391e62d5b11f1a502
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &553297312911751708
+=======
   MinDistance: 1
   MaxDistance: 20
   Length: 8489
 --- !u!114 &2912405199156396364
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1745,20 +3039,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/meat eat
+  m_EditorClassIdentifier: 
+  Path: event:/meat eat
+  guid: 053a070f6068814dbdad27b6bdae5696
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u043F\u0443\u0441\u0442\u044C \u043B\u0443\u0447\u0448\u0435"
   m_EditorClassIdentifier: 
   Path: "event:/\u043F\u0443\u0441\u0442\u044C \u043B\u0443\u0447\u0448\u0435"
   guid: 71c001fb57144a459f5c15d67ebb8296
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &1117372795521312805
+=======
   MinDistance: 1
   MaxDistance: 20
   Length: 5759
 --- !u!114 &3095341310313907925
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1768,6 +3078,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0433\u0434\u0435 \u0431\u0443\u0434\u0435\u0442 \u0436\u0438\u0442\u044C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0433\u0434\u0435 \u0431\u0443\u0434\u0435\u0442 \u0436\u0438\u0442\u044C"
+  guid: e320d922a050c944a154356c9dea39a1
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0430 \u043A\u043E\u0433\u0434\u0430 \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442
     \u044D\u0442\u043E \u0438\u0437\u043E\u0431\u0440\u0435\u0442\u0435\u043D\u0438\u0435"
   m_EditorClassIdentifier: 
@@ -1776,14 +3094,20 @@ MonoBehaviour:
   guid: 47fbc37ed92cd04e87d9154390f77fef
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 4012
+--- !u!114 &1173229230197797283
+=======
   Length: 8823
 --- !u!114 &3134599424369130080
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1792,6 +3116,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/fmod/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637694712434606478
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1216891525175620442
+=======
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: "event:/\u0434\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C"
   m_EditorClassIdentifier: 
@@ -1807,6 +3143,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 620
 --- !u!114 &3451968650579900420
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1816,20 +3153,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/boss_steps
+  m_EditorClassIdentifier: 
+  Path: event:/boss_steps
+  guid: bc19cd64616b3547b124cd1bf83b21f3
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439 \u0431\u043B\u043F\u0433\u043E\u0440\u043E\u0434\u0435\u043D"
   m_EditorClassIdentifier: 
   Path: "event:/\u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439 \u0431\u043B\u043F\u0433\u043E\u0440\u043E\u0434\u0435\u043D"
   guid: 389e51512cec324199e1663c9d1c169e
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
+--- !u!114 &1248904405516407798
+=======
   MinDistance: 1
   MaxDistance: 20
   Length: 8716
 --- !u!114 &3503845419348813385
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1839,6 +3192,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0443 \u0443\u0436 \u043D\u0435\u0442"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0443 \u0443\u0436 \u043D\u0435\u0442"
+  guid: 304927680fed3b4e8e7fdab29655c989
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435\u0442 \u0438 \u0435\u0449\u0451
     \u0440\u0430\u0449 \u043D\u0435\u0442"
   m_EditorClassIdentifier: 
@@ -1848,13 +3210,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 4944
+--- !u!114 &1285545032625047332
+=======
   Length: 13423
 --- !u!114 &3770466136532728756
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1864,6 +3232,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0430 \u0432 \u043A\u043E\u043D\u0446\u0435, \u043A\u043E\u0433\u0434\u0430
+    \u043F\u043E\u0434\u0440\u0443\u0447\u043D\u044B\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0432 \u043A\u043E\u043D\u0446\u0435, \u043A\u043E\u0433\u0434\u0430
+    \u043F\u043E\u0434\u0440\u0443\u0447\u043D\u044B\u0435"
+  guid: b8a3a14d1642e3438b85be5eee4766b5
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0445\u043E\u0442\u044F \u043D\u0435\u0442, \u043A\u0430\u043A\u043E\u0439
     \u0447\u0430\u0441\u0442\u043D\u044B\u0439 \u043F\u0440\u0438\u0435\u043C"
   m_EditorClassIdentifier: 
@@ -1872,14 +3250,20 @@ MonoBehaviour:
   guid: 65466c343aee9c4fb0c6be37a71fd55d
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5638
+--- !u!114 &1328927267965030313
+=======
   Length: 736
 --- !u!114 &3836025240374705767
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1889,20 +3273,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0430 \u0437\u043D\u0430\u0435\u0442\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0437\u043D\u0430\u0435\u0442\u0435"
+  guid: 4bfc045ae111ce4086b2400605d9398b
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/damage_human
   m_EditorClassIdentifier: 
   Path: event:/damage_human
   guid: ef27027a108fd94da127460d6af2ba81
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 8202
+--- !u!114 &2541620067624627541
+=======
   Length: 496
 --- !u!114 &3875017455511186255
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1912,6 +3310,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0431\u0440\u043E\u0441\u044C\u0442\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0431\u0440\u043E\u0441\u044C\u0442\u0435"
+  guid: bfc797c9ca5d7c49acefd25d879ed5b7
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4788
+--- !u!114 &2849191131318479557
+=======
   m_Name: event:/music/NFS
   m_EditorClassIdentifier: 
   Path: event:/music/NFS
@@ -1926,6 +3340,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 36000
 --- !u!114 &3885480260146176728
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1935,6 +3350,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0438 \u0442\u0430\u043A \u0438\u0441\u0442\u043E\u0440\u0438\u044F"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0438 \u0442\u0430\u043A \u0438\u0441\u0442\u043E\u0440\u0438\u044F"
+  guid: 70d3752aae26b04999d6177d338504c6
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: "event:/\u0438 \u0432\u043E\u0442 \u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439"
   m_EditorClassIdentifier: 
   Path: "event:/\u0438 \u0432\u043E\u0442 \u043D\u0430\u0448 \u0433\u0435\u0440\u043E\u0439"
@@ -1942,13 +3366,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 636
+--- !u!114 &2965857401577426174
+=======
   Length: 10950
 --- !u!114 &3922788972257041249
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1958,6 +3388,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u0430 \u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430 \u043D\u0435\u0441\u0442\u0431\u0438\u043B\u044C\u043D\u043E\u0435"
+  guid: dd82086ba3abfd4c9132fae8dde0f5cf
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0430 \u043F\u043E-\u043C\u043E\u0435\u043C\u0443 \u0432\u044B
     \u0438\u0437\u043D\u0430\u0430\u043B\u044C\u043D\u043E"
   m_EditorClassIdentifier: 
@@ -1965,14 +3403,20 @@ MonoBehaviour:
   guid: 9f98eb6fe2fa9d42a765ca00d4ee637a
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 2210
+--- !u!114 &3132582553501590810
+=======
   Length: 5442
 --- !u!114 &4001670408309341455
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1982,6 +3426,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/music/Cuba
+  m_EditorClassIdentifier: 
+  Path: event:/music/Cuba
+  guid: 13e7a98422c20846a45ce8e4584e4e30
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 48000
+--- !u!114 &3261233617163235578
+=======
   m_Name: "event:/\u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435 \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435"
   m_EditorClassIdentifier: 
   Path: "event:/\u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435 \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435"
@@ -1996,6 +3456,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 16390
 --- !u!114 &4033239130239422642
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2005,6 +3466,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/music/DMC
+  m_EditorClassIdentifier: 
+  Path: event:/music/DMC
+  guid: 2a7f8a7b2e63bd48ae9e656e7131c231
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 42000
+--- !u!114 &3741967355868832735
+=======
   m_Name: "event:/\u043D\u043E \u0443\u0431\u0438\u0432\u0430\u0442\u044C \u0437\u043B\u043E\u0434\u0435\u044F
     \u0441\u043B\u0438\u0448\u043A\u043E\u043C"
   m_EditorClassIdentifier: 
@@ -2021,6 +3498,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 7355
 --- !u!114 &4069556351147028947
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2030,6 +3508,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/wood throw at fireplase
+  m_EditorClassIdentifier: 
+  Path: event:/wood throw at fireplase
+  guid: 036231c48c48344f91bbb4d6ebfd38fe
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+=======
   m_Name: "event:/\u0433\u0435\u0440\u043E\u0439 \u0441\u043F\u0430\u0441\u0430\u0435\u0442\u0441\u044F"
   m_EditorClassIdentifier: 
   Path: "event:/\u0433\u0435\u0440\u043E\u0439 \u0441\u043F\u0430\u0441\u0430\u0435\u0442\u0441\u044F"
@@ -2037,13 +3524,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 2000
+--- !u!114 &3901180094582311223
+=======
   Length: 11347
 --- !u!114 &4451414445569781415
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2053,6 +3546,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0443 \u043D\u0435\u0442 \u044D\u0442\u043E \u0441\u043A\u0443\u0447\u043D\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0443 \u043D\u0435\u0442 \u044D\u0442\u043E \u0441\u043A\u0443\u0447\u043D\u043E"
+  guid: 6c055fd40346114da935ee31859d87d3
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: "event:/\u0442\u043E\u0433\u0434\u0430 \u0433\u0435\u0440\u043E\u0439 \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0435\u0442
     \u0443 \u043D\u0435\u0433\u043E"
   m_EditorClassIdentifier: 
@@ -2062,13 +3564,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 21853
+--- !u!114 &4512245824585099041
+=======
   Length: 7496
 --- !u!114 &4656955345466554218
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2078,20 +3586,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0438 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442 \u043A\u0440\u043E\u043A\u043E\u0434\u0438\u043B\u0430"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0438 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u0435\u0442 \u043A\u0440\u043E\u043A\u043E\u0434\u0438\u043B\u0430"
+  guid: b8a2c1045fa222419eed68af33d34507
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/meat eat
   m_EditorClassIdentifier: 
   Path: event:/meat eat
   guid: 053a070f6068814dbdad27b6bdae5696
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2999
+--- !u!114 &4572504751500728908
+=======
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
 --- !u!114 &4765009813282297555
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2101,16 +3625,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0438 \u043F\u0440\u0430\u0432\u0434\u0430, \u043E\u0431\u044B\u0447\u043D\u043E\u0435
+    \u044F\u0432\u043B\u0435\u043D\u0438\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0438 \u043F\u0440\u0430\u0432\u0434\u0430, \u043E\u0431\u044B\u0447\u043D\u043E\u0435
+    \u044F\u0432\u043B\u0435\u043D\u0438\u0435"
+  guid: 6f5c2116b69e0448bba94e617c3a6056
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/laser
   m_EditorClassIdentifier: 
   Path: event:/laser
   guid: e2382e7f0a24a345a14cfd6220f66dcc
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3954
+--- !u!114 &4723743527589829535
+=======
   MinDistance: 0
   MaxDistance: 0
   Length: 1203
@@ -2153,6 +3694,7 @@ MonoBehaviour:
     Value: 7436
   Exists: 1
 --- !u!114 &5105342300522690884
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2162,6 +3704,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043B\u0443\u0447\u0448\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043B\u0443\u0447\u0448\u0435 \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435"
+  guid: 58e4cf9866f52043b1e55fa2897effda
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u043A\u043E\u0433\u043E \u0432\u044B \u0432 \u0441\u0432\u043E\u0435\u043C
     \u0443\u043C\u0435"
   m_EditorClassIdentifier: 
@@ -2170,14 +3720,20 @@ MonoBehaviour:
   guid: f0bfc750ee6e97409ca7f81fcf16db7e
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5349
+--- !u!114 &4737353205112300928
+=======
   Length: 7603
 --- !u!114 &5142023975601231001
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2187,20 +3743,117 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/music/Cuba
+  m_Name: "event:/\u043D\u0435\u0442 \u0443\u0436 \u0434\u0430\u0432\u0430\u0439\u0442\u0435
+    \u0447\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435"
   m_EditorClassIdentifier: 
-  Path: event:/music/Cuba
-  guid: 13e7a98422c20846a45ce8e4584e4e30
+  Path: "event:/\u043D\u0435\u0442 \u0443\u0436 \u0434\u0430\u0432\u0430\u0439\u0442\u0435
+    \u0447\u0442\u043E-\u0442\u043E \u0431\u043E\u043B\u0435\u0435"
+  guid: 0284725b2beef14982139f048f4371af
   Banks:
+<<<<<<< HEAD
+  - {fileID: 1173229230197797283}
+=======
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
+  Is3D: 1
+  IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12990
+--- !u!114 &4866915484799910084
+=======
   MinDistance: 0
   MaxDistance: 0
   Length: 48000
 --- !u!114 &5154278084166416134
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u0430 \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F
+    \u0447\u0442\u043E \u044D\u0442\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430 \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F
+    \u0447\u0442\u043E \u044D\u0442\u043E"
+  guid: 217b85386fa82e4b8f829c86e871b4e0
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
+  m_Name: "event:/\u043D\u0443\u0436\u043D\u043E \u0431\u043E\u043B\u044C\u0448\u0435
+    \u044D\u043F\u0438\u0447\u043D\u043E\u0441\u0442\u0438"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0443\u0436\u043D\u043E \u0431\u043E\u043B\u044C\u0448\u0435
+    \u044D\u043F\u0438\u0447\u043D\u043E\u0441\u0442\u0438"
+  guid: ea04620ae779c94d9bc3c2a7b2c20bbf
+  Banks:
+  - {fileID: 4810926623328344927}
+  IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 16115
+--- !u!114 &5001654633579613307
+=======
+  Length: 4950
+--- !u!114 &5674675723741058570
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043A\u043E\u0433\u043E \u0432\u044B \u0432 \u0441\u0432\u043E\u0435\u043C
+    \u0443\u043C\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043A\u043E\u0433\u043E \u0432\u044B \u0432 \u0441\u0432\u043E\u0435\u043C
+    \u0443\u043C\u0435"
+  guid: f0bfc750ee6e97409ca7f81fcf16db7e
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7603
+--- !u!114 &5194192133324639775
+=======
+  m_Name: event:/ammo
+  m_EditorClassIdentifier: 
+  Path: event:/ammo
+  guid: 312a48454a7a8444804c7610463e46d1
+  Banks:
+  - {fileID: 4810926623328344927}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 320
+--- !u!114 &5675513172115563298
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2217,63 +3870,25 @@ MonoBehaviour:
     \u044D\u043F\u0438\u0447\u043D\u043E\u0441\u0442\u0438"
   guid: ea04620ae779c94d9bc3c2a7b2c20bbf
   Banks:
-  - {fileID: 4810926623328344927}
+<<<<<<< HEAD
+  - {fileID: 1173229230197797283}
   IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4950
---- !u!114 &5674675723741058570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ammo
-  m_EditorClassIdentifier: 
-  Path: event:/ammo
-  guid: 312a48454a7a8444804c7610463e46d1
-  Banks:
-  - {fileID: 4810926623328344927}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 320
---- !u!114 &5675513172115563298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u043C\u043E\u0436\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-    \u0447\u0443\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u043C\u043E\u0436\u0435\u0442 \u0441\u0434\u0435\u043B\u0430\u0442\u044C
-    \u0447\u0443\u0442\u044C \u0431\u043E\u043B\u044C\u0448\u0435"
-  guid: a7407a7b2bf49d439c2f4c4f64a34cd6
-  Banks:
+=======
   - {fileID: 4810926623328344927}
   IsStream: 1
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 4950
+--- !u!114 &5349892091124053310
+=======
   Length: 16376
 --- !u!114 &5695430359424608469
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2283,20 +3898,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0443 \u0434\u0430 , \u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0443 \u0434\u0430 , \u043D\u0430 \u043A\u043E\u043D\u043A\u0443\u0440\u0441"
+  guid: 7b47811d56fcb946925accb64a8db530
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0430 \u0437\u043D\u0430\u0435\u0442\u0435"
   m_EditorClassIdentifier: 
   Path: "event:/\u0430 \u0437\u043D\u0430\u0435\u0442\u0435"
   guid: 4bfc045ae111ce4086b2400605d9398b
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 6541
+--- !u!114 &5379474097950155516
+=======
   Length: 8202
 --- !u!114 &5999709088216288649
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2306,20 +3935,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0430 \u043F\u043E-\u043C\u043E\u0435\u043C\u0443 \u0432\u044B
+    \u0438\u0437\u043D\u0430\u0430\u043B\u044C\u043D\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u043F\u043E-\u043C\u043E\u0435\u043C\u0443 \u0432\u044B \u0438\u0437\u043D\u0430\u0430\u043B\u044C\u043D\u043E"
+  guid: 9f98eb6fe2fa9d42a765ca00d4ee637a
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/sword
   m_EditorClassIdentifier: 
   Path: event:/sword
   guid: d8505375d77aee4490e52cdd15ba8af6
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5442
+--- !u!114 &5589467171084778803
+=======
   Length: 2000
 --- !u!114 &6506354880515811539
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2329,6 +3973,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u0430, \u043D\u0430\u0441 \u043F\u0440\u0438\u0436\u0430\u043B\u0438
+    \u0432 \u0431\u0430\u0440\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430, \u043D\u0430\u0441 \u043F\u0440\u0438\u0436\u0430\u043B\u0438
+    \u0432 \u0431\u0430\u0440\u0435"
+  guid: 0d0271e7db7d3d4d835e36f11079b2c9
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
   m_Name: "event:/\u0430 \u0435\u0449\u0451 \u0434\u043E\u0431\u0430\u0432\u0438\u043C
     \u0433\u0435\u0440\u043E\u044E"
   m_EditorClassIdentifier: 
@@ -2338,13 +3993,19 @@ MonoBehaviour:
   Banks:
   - {fileID: 4810926623328344927}
   IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 11999
+--- !u!114 &5817553613978136903
+=======
   Length: 6003
 --- !u!114 &6667760528061507180
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2354,6 +4015,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0435\u0442 \u043D\u0435 \u0434\u0443\u043C\u0430\u044E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0435\u0442 \u043D\u0435 \u0434\u0443\u043C\u0430\u044E"
+  guid: 8a7aaf992766df468289306f919ac122
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14990
+--- !u!114 &5910182338799997954
+=======
   m_Name: event:/vodka
   m_EditorClassIdentifier: 
   Path: event:/vodka
@@ -2368,6 +4045,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 2000
 --- !u!114 &7327823777702342744
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2377,6 +4055,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/music/LongDark
+  m_EditorClassIdentifier: 
+  Path: event:/music/LongDark
+  guid: e4b84eebcc7b394cb21bd4e3801c88b4
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 39000
+--- !u!114 &6072944019974825404
+=======
   m_Name: event:/pause
   m_EditorClassIdentifier: 
   Path: event:/pause
@@ -2391,6 +4085,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 410
 --- !u!114 &7406285927706314260
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2400,6 +4095,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043D\u0443\u0443 \u0435\u0441\u0442\u044C \u0440\u0430\u0437\u043D\u044B\u0435"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043D\u0443\u0443 \u0435\u0441\u0442\u044C \u0440\u0430\u0437\u043D\u044B\u0435"
+  guid: f9763083ab4ae14db958619404e17454
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0438\u043B\u0438 \u0435\u0433\u043E \u0431\u0440\u043E\u0441\u0438\u0442
     \u0434\u0435\u0432\u0443\u0448\u043A\u0430"
   m_EditorClassIdentifier: 
@@ -2408,14 +4111,20 @@ MonoBehaviour:
   guid: 383f7158bc37944491edb618eb390c32
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 2741
+--- !u!114 &6092297470658134738
+=======
   Length: 5289
 --- !u!114 &7595041119940066436
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2425,6 +4134,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/ammo
+  m_EditorClassIdentifier: 
+  Path: event:/ammo
+  guid: 312a48454a7a8444804c7610463e46d1
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u043E\u043F\u044F\u0442\u044C \u0430\u0442\u043E\u043C\u043D\u0430\u044F
     \u0431\u043E\u043C\u0431\u0430"
   m_EditorClassIdentifier: 
@@ -2433,14 +4150,22 @@ MonoBehaviour:
   guid: cb769393582a9d458ec40eb27104b392
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
+<<<<<<< HEAD
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 320
+--- !u!114 &6233666067692616602
+=======
   MinDistance: 1
   MaxDistance: 20
   Length: 4041
 --- !u!114 &7650537651333745959
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2450,12 +4175,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/vodka
+  m_EditorClassIdentifier: 
+  Path: event:/vodka
+  guid: 29b77371cac7f34a8a4cfa80e4507f0f
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: event:/steps_metal
   m_EditorClassIdentifier: 
   Path: event:/steps_metal
   guid: aae17726d075194eb724b1d313080159
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2463,7 +4197,11 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+<<<<<<< HEAD
+--- !u!114 &6415391218215993503
+=======
 --- !u!114 &7708821482107369205
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2473,6 +4211,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0432\u0434\u043E\u0445"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0432\u0434\u043E\u0445"
+  guid: 2e879ec7c65431478659bb2912db21ff
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0442\u043E\u0447\u043D\u043E \u0443 \u0433\u0435\u0440\u043E\u044F
     \u0435\u0441\u0442\u044C"
   m_EditorClassIdentifier: 
@@ -2481,14 +4227,20 @@ MonoBehaviour:
   guid: 3deb621c4e0fd343aadc4d9370d9549d
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 3492
+--- !u!114 &6424853602320835719
+=======
   Length: 9587
 --- !u!114 &7777547943907446954
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2498,6 +4250,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0445\u043E\u0442\u044F \u043D\u0435\u0442, \u043A\u0430\u043A\u043E\u0439
+    \u0447\u0430\u0441\u0442\u043D\u044B\u0439 \u043F\u0440\u0438\u0435\u043C"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0445\u043E\u0442\u044F \u043D\u0435\u0442, \u043A\u0430\u043A\u043E\u0439
+    \u0447\u0430\u0441\u0442\u043D\u044B\u0439 \u043F\u0440\u0438\u0435\u043C"
+  guid: 65466c343aee9c4fb0c6be37a71fd55d
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0430 \u0432 \u043A\u043E\u043D\u0446\u0435, \u043A\u043E\u0433\u0434\u0430
     \u043F\u043E\u0434\u0440\u0443\u0447\u043D\u044B\u0435"
   m_EditorClassIdentifier: 
@@ -2506,14 +4268,20 @@ MonoBehaviour:
   guid: b8a3a14d1642e3438b85be5eee4766b5
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 736
+--- !u!114 &6491545702380901714
+=======
   Length: 5638
 --- !u!114 &7941154222026777704
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2523,6 +4291,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0430 \u0435\u0449\u0451 \u0434\u043E\u0431\u0430\u0432\u0438\u043C
+    \u0433\u0435\u0440\u043E\u044E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0430 \u0435\u0449\u0451 \u0434\u043E\u0431\u0430\u0432\u0438\u043C
+    \u0433\u0435\u0440\u043E\u044E"
+  guid: d747d50982b34c43a2bd4874cae24780
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6003
+--- !u!114 &6991050117211923049
+=======
   m_Name: event:/music/Bondiana
   m_EditorClassIdentifier: 
   Path: event:/music/Bondiana
@@ -2537,6 +4323,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 60091
 --- !u!114 &8001276432878000476
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2551,6 +4338,17 @@ MonoBehaviour:
   Path: "event:/\u0431\u0440\u043E\u0441\u044C\u0442\u0435"
   guid: bfc797c9ca5d7c49acefd25d879ed5b7
   Banks:
+<<<<<<< HEAD
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 36000
+--- !u!114 &7296542366698069628
+=======
   - {fileID: 4810926623328344927}
   IsStream: 0
   Is3D: 1
@@ -2560,6 +4358,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 4788
 --- !u!114 &8171238267213724410
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2569,18 +4368,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
+    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
+    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
+  guid: 931b89714561164f8f3ab18be4e49383
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0441\u043E\u0434\u0435\u044F\u043D\u043E\u043C \u041B\u0435\u043E\u043D\u0430\u0440\u0434\u043E"
   m_EditorClassIdentifier: 
   Path: "event:/\u0441\u043E\u0434\u0435\u044F\u043D\u043E\u043C \u041B\u0435\u043E\u043D\u0430\u0440\u0434\u043E"
   guid: 5eb3b7cc1d1e24409e1acefe9e6e5fa4
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 5423
+--- !u!114 &7849516995317935329
+=======
   Length: 2304
 --- !u!114 &8237356536902244927
 MonoBehaviour:
@@ -2601,6 +4415,7 @@ MonoBehaviour:
   FileSizes: []
   Exists: 1
 --- !u!114 &8382516720388603256
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2610,22 +4425,171 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0432\u0430\u043C \u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
-    \u0447\u0442\u043E \u044D\u0442\u043E \u0438\u0437\u0431\u0438\u0442\u044B\u0439"
+  m_Name: "event:/\u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435 \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435"
   m_EditorClassIdentifier: 
-  Path: "event:/\u0432\u0430\u043C \u043D\u0435 \u043A\u0430\u0436\u0435\u0442\u0441\u044F
-    \u0447\u0442\u043E \u044D\u0442\u043E \u0438\u0437\u0431\u0438\u0442\u044B\u0439"
-  guid: cbe69649fd2a9d4fb6bf4bc5ff69f621
+  Path: "event:/\u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435 \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435"
+  guid: 25fbccd3a599a045aaa7a68d041ea166
+  Banks:
+<<<<<<< HEAD
+  - {fileID: 1173229230197797283}
+  IsStream: 1
+=======
+  - {fileID: 4810926623328344927}
+  IsStream: 0
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 16390
+--- !u!114 &7984944429126983887
+=======
+  Length: 8906
+--- !u!114 &8444257937879745078
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0432\u0440\u0430\u0433\u043E\u0432 \u0431\u044B\u043B\u043E \u0441\u043B\u0438\u0448\u043A\u043E\u043C
+    \u043C\u043D\u043E\u0433\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0432\u0440\u0430\u0433\u043E\u0432 \u0431\u044B\u043B\u043E \u0441\u043B\u0438\u0448\u043A\u043E\u043C
+    \u043C\u043D\u043E\u0433\u043E"
+  guid: 7531adb258e3494a86ae8b0a3499fe9a
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
+  m_Name: "event:/\u044F \u0442\u0443\u0442 \u043F\u043E\u0434\u0443\u043C\u0430\u043B"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u044F \u0442\u0443\u0442 \u043F\u043E\u0434\u0443\u043C\u0430\u043B"
+  guid: d942a67c191c8a41985ce2a3b63fd6f9
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8906
---- !u!114 &8444257937879745078
+<<<<<<< HEAD
+  Length: 7645
+--- !u!114 &7987239557316019673
+=======
+  Length: 7432
+--- !u!114 &8450570646588403183
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0441\u043E\u0434\u0435\u044F\u043D\u043E\u043C \u041B\u0435\u043E\u043D\u0430\u0440\u0434\u043E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0441\u043E\u0434\u0435\u044F\u043D\u043E\u043C \u041B\u0435\u043E\u043D\u0430\u0440\u0434\u043E"
+  guid: 5eb3b7cc1d1e24409e1acefe9e6e5fa4
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
+  m_Name: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
+    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
+    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
+  guid: 931b89714561164f8f3ab18be4e49383
+  Banks:
+  - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 2304
+--- !u!114 &8339090951623083901
+=======
+  Length: 5423
+--- !u!114 &8818771013226505988
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u043E\u043F\u044F\u0442\u044C \u0430\u0442\u043E\u043C\u043D\u0430\u044F
+    \u0431\u043E\u043C\u0431\u0430"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u043E\u043F\u044F\u0442\u044C \u0430\u0442\u043E\u043C\u043D\u0430\u044F
+    \u0431\u043E\u043C\u0431\u0430"
+  guid: cb769393582a9d458ec40eb27104b392
+  Banks:
+  - {fileID: 1173229230197797283}
+=======
+  m_Name: event:/damage_wolf
+  m_EditorClassIdentifier: 
+  Path: event:/damage_wolf
+  guid: 7107329fbf931844bf927f066442d60b
+  Banks:
+  - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< HEAD
+  Length: 4041
+--- !u!114 &8461383600086041495
+=======
+  Length: 2000
+--- !u!114 &8836699756571683227
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: event:/hummer
+  m_EditorClassIdentifier: 
+  Path: event:/hummer
+  guid: 48c00cbb5df8fd42884e66274ae6690d
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &8571777747800828165
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2640,86 +4604,28 @@ MonoBehaviour:
   Path: "event:/\u044F \u0442\u0443\u0442 \u043F\u043E\u0434\u0443\u043C\u0430\u043B"
   guid: d942a67c191c8a41985ce2a3b63fd6f9
   Banks:
-  - {fileID: 4810926623328344927}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 7432
---- !u!114 &8450570646588403183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
-    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
-  m_EditorClassIdentifier: 
-  Path: "event:/\u0434\u0430 \u043C\u043D\u0435 \u043A\u0430\u043A \u0440\u0430\u0437
-    \u043D\u0443\u0436\u043D\u043E \u0438\u0434\u0442\u0438"
-  guid: 931b89714561164f8f3ab18be4e49383
-  Banks:
-  - {fileID: 4810926623328344927}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5423
---- !u!114 &8818771013226505988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/damage_wolf
-  m_EditorClassIdentifier: 
-  Path: event:/damage_wolf
-  guid: 7107329fbf931844bf927f066442d60b
-  Banks:
-  - {fileID: 4810926623328344927}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &8836699756571683227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  - {fileID: 1173229230197797283}
+=======
   m_Name: "event:/\u0430 \u0433\u0435\u0440\u043E\u0439"
   m_EditorClassIdentifier: 
   Path: "event:/\u0430 \u0433\u0435\u0440\u043E\u0439"
   guid: f41bcc36e8ca1a4ba43d6277ab12e1a8
   Banks:
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< HEAD
+  Length: 7432
+--- !u!114 &8575509311508146635
+=======
   Length: 3686
 --- !u!114 &9075640340478337274
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2729,6 +4635,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< HEAD
+  m_Name: "event:/\u0434\u0430\u0436\u0435 \u043D\u0435 \u0437\u043D\u0430\u044E"
+  m_EditorClassIdentifier: 
+  Path: "event:/\u0434\u0430\u0436\u0435 \u043D\u0435 \u0437\u043D\u0430\u044E"
+  guid: 3df7e914b336394ea53aa2023ac21529
+  Banks:
+  - {fileID: 1173229230197797283}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7570
+--- !u!114 &8683527157803059608
+=======
   m_Name: event:/music/DMC
   m_EditorClassIdentifier: 
   Path: event:/music/DMC
@@ -2743,6 +4665,7 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 42000
 --- !u!114 &9218536259072579044
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2758,7 +4681,11 @@ MonoBehaviour:
   Path: "event:/\u0434\u0430 \u0432\u044B \u043F\u0440\u043E\u0441\u0442\u043E \u0445\u043E\u0442\u0438\u0442\u0435"
   guid: cf5b73fa26d70e49b505c3740ac30274
   Banks:
+<<<<<<< HEAD
+  - {fileID: 1173229230197797283}
+=======
   - {fileID: 4810926623328344927}
+>>>>>>> fa3cf52e56bd0c5851712c005da0add7ce6e903d
   IsStream: 0
   Is3D: 1
   IsOneShot: 1

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 5
   Accuracy: 20
-  Rate: 0.5
-  Ammo: 500
+  Rate: 0.1
+  Ammo: 267
   AmmoPerShot: 1
