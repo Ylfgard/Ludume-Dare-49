@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 namespace Rimba
@@ -7,6 +8,8 @@ namespace Rimba
         public class Spawner : MonoBehaviour
         {
             [SerializeField] private BoxCollider2D spawnArea;
+            [SerializeField] private Transform bonfire;
+            [SerializeField] private float bonfireMinDistance;
             [SerializeField] private GameObject prefab;
             [SerializeField] private int count;
             [SerializeField] private float minDistance;
@@ -25,6 +28,11 @@ namespace Rimba
                             Random.Range(bounds.min.y, bounds.max.y),
                             Random.Range(bounds.min.z, bounds.max.z)
                         );
+
+                        if (Vector3.Distance(position, bonfire.position) < bonfireMinDistance)
+                        {
+                            continue;
+                        }
 
                         bool failed = false;
                         for (int j=0; j < i; j++)
@@ -49,6 +57,11 @@ namespace Rimba
             public virtual GameObject SpawnAt(Vector3 position)
             {
                 return Instantiate(prefab, position, Quaternion.identity, transform);
+            }
+
+            void OnDrawGizmosSelected() {
+                Handles.color = new Color(0f, 1f, 0f, 0.2f);
+                Handles.DrawSolidDisc(transform.position, Vector3.forward, bonfireMinDistance);
             }
         }
     }

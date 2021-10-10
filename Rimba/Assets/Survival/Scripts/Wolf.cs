@@ -1,6 +1,15 @@
+using System.Runtime.InteropServices.ComTypes;
+using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering;
+
+public static class Vector3LateralHelper
+{
+    public static Vector3 lateral(this Vector3 direction)
+    {
+        return new Vector3(direction.y, -direction.x, direction.z);
+    }
+}
 
 namespace Rimba
 {
@@ -9,6 +18,17 @@ namespace Rimba
         [RequireComponent(typeof(Rigidbody2D))]
         public class Wolf : MonoBehaviour, IDamagable
         {
+
+            enum State
+            {
+                Idle,
+                Roaming,
+                AvoidingBonfire,
+                Chasing,
+                Attacking,
+                Waiting
+            }
+
             [SerializeField] private float detectionRadius = 8f;
             [SerializeField] private LayerMask detectionLayerMask;
             [SerializeField] private float maxSpeed = 4f;
@@ -16,6 +36,9 @@ namespace Rimba
 
             [SerializeField] private float roamDistance = 5f;
             [SerializeField] public Collider2D roamArea;
+
+            [SerializeField] public Bonfire bonfire;
+            [SerializeField] private float bonfireDistanceOffset;
 
             [SerializeField] private float followDistanceMin = 2f;
             [SerializeField] private float followDistanceMax = 2f;
@@ -30,11 +53,10 @@ namespace Rimba
             private PlayerController target;
             private float speed;
 
-            private bool attacking;
+            private State state;
             private float attackNext = 0;
-
-            private bool roaming;
             private Vector3 roamTarget;
+            private float waitTimeout = 0;
 
             private new Rigidbody2D rigidbody;
 
@@ -43,8 +65,7 @@ namespace Rimba
                 rigidbody = GetComponent<Rigidbody2D>();
                 target = null;
 
-                roaming = false;
-                attacking = false;
+                state = State.Idle;
 
                 hits = new Collider2D[5];
             }
@@ -61,22 +82,115 @@ namespace Rimba
                     return;
                 }
 
-                if (target is null)
-                {
-                    Roam();
-                    LookForVictim();
-                }
-                else
-                {
-                    speed = Mathf.Lerp(speed, maxSpeed, 0.6f * Time.deltaTime);
+            }
 
-                    Vector3 targetPosition = target.transform.position;
-                    Vector3 direction = (targetPosition - transform.position).normalized;
-                    transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg, Vector3.forward);
-
-                    float distance = Vector3.Distance(target.transform.position, transform.position);
-                    if (attacking)
+            void UpdateState()
+            {
+                switch (state)
+                {
+                    case State.AvoidingBonfire:
                     {
+                        speed = Mathf.Lerp(speed, maxSpeed, 0.6f * Time.deltaTime);
+
+                        Vector3 direction = (roamTarget - transform.position);
+                        if (direction.sqrMagnitude < 0.2f)
+                        {
+                            state = (target == null) ? State.Idle : State.Waiting;
+                            if (state == State.Waiting)
+                            {
+                                waitTimeout = Time.time + Random.Range(1f, 3f);
+                            }
+                        }
+                        else
+                        {
+                            transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg, Vector3.forward);
+                            rigidbody.MovePosition(transform.position + direction.normalized * speed * Time.deltaTime);
+                        }
+                        break;
+                    }
+                    case State.Roaming:
+                    {
+                        Vector3 roamDirection = (roamTarget - transform.position);
+                        if (roamDirection.sqrMagnitude < 0.2f)
+                        {
+                            state = State.Idle;
+                        }
+                        else
+                        {
+                            if (IsCloseToBonfire())
+                            {
+                                roamTarget = PositionAwayFromBonfire(2f);
+                                state = State.AvoidingBonfire;
+                            }
+                            else
+                            {
+                                Vector3 lateral = new Vector3(roamDirection.y, -roamDirection.x, roamDirection.z);
+                                Vector3 newDirection = roamDirection + lateral * Random.value;
+                                transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(roamDirection.y, roamDirection.x) * Mathf.Rad2Deg, Vector3.forward);
+                                rigidbody.MovePosition(transform.position + (newDirection).normalized * maxSpeed * Time.deltaTime);
+                            }
+                        }
+
+                        LookForVictim();
+                        break;
+                    }
+                    case State.Idle:
+                    {
+                        if (Random.value < 0.01f)
+                        {
+                            if (FindNewRoamLocation())
+                            {
+                                state = State.Roaming;
+                            }
+                        }
+
+                        LookForVictim();
+
+                        break;
+                    }
+                    case State.Chasing:
+                    {
+                        if (IsCloseToBonfire())
+                        {
+                            roamTarget = PositionAwayFromBonfire(2f);
+                            state = State.AvoidingBonfire;
+                            break;
+                        }
+
+                        speed = Mathf.Lerp(speed, maxSpeed, 0.6f * Time.deltaTime);
+
+                        FaceTarget();
+
+                        float distance = Vector3.Distance(target.transform.position, transform.position);
+                        if (distance > followDistanceMax)
+                        {
+                            MoveToTarget((followDistanceMin + followDistanceMax) * 0.5f);
+                        }
+                        else if (distance < followDistanceMin)
+                        {
+                            MoveToTarget((followDistanceMin + followDistanceMax) * 0.5f);
+                        }
+                        else if (Vector3.Dot(target.transform.right, transform.right) > -0.5f && Time.time > attackNext)
+                        {
+                            state = State.Attacking;
+                        }
+
+                        break;
+                    }
+                    case State.Attacking:
+                    {
+                        if (IsCloseToBonfire())
+                        {
+                            roamTarget = PositionAwayFromBonfire(2f);
+                            state = State.AvoidingBonfire;
+                            break;
+                        }
+
+                        speed = Mathf.Lerp(speed, maxSpeed, 0.6f * Time.deltaTime);
+
+                        FaceTarget();
+
+                        float distance = Vector3.Distance(target.transform.position, transform.position);
                         if (distance > attackRange)
                         {
                             MoveToTarget(1f);
@@ -84,22 +198,19 @@ namespace Rimba
                         else
                         {
                             target.ApplyDamage(attackDamage);
-                            attacking = false;
+                            state = State.Chasing;
                             attackNext = Time.time + attackCooldown;
                         }
+
+                        break;
                     }
-                    // TODO: implement better logic to keep distance
-                    else if (distance > followDistanceMax)
+                    case State.Waiting:
                     {
-                        MoveToTarget((followDistanceMin + followDistanceMax) * 0.5f);
-                    }
-                    else if (distance < followDistanceMin)
-                    {
-                        MoveToTarget((followDistanceMin + followDistanceMax) * 0.5f);
-                    }
-                    else if (Vector3.Dot(target.transform.right, transform.right) > -0.5f && Time.time > attackNext)
-                    {
-                        attacking = true;
+                        if (Time.time > waitTimeout)
+                        {
+                            state = (target is null) ? State.Idle : State.Chasing;
+                        }
+                        break;
                     }
                 }
             }
@@ -120,40 +231,29 @@ namespace Rimba
                 if (target != null)
                 {
                     speed = 0;
-                    roaming = false;
+                    state = State.Chasing;
                 }
             }
 
-            void Roam()
+            bool FindNewRoamLocation()
             {
-                if (roaming)
+                for (int i=0; i < 5; i++)
                 {
-                    Vector3 roamDirection = (roamTarget - transform.position);
-                    if (roamDirection.sqrMagnitude < 0.2f)
+                    roamTarget = transform.position + new Vector3(Random.value, Random.value, 0f) * roamDistance;
+                    if (roamArea.OverlapPoint(roamTarget))
                     {
-                        roaming = false;
+                        return true;
                     }
-                    else
-                    {
-                        Vector3 lateral = new Vector3(roamDirection.y, -roamDirection.x, roamDirection.z);
-                        Vector3 newDirection = roamDirection + lateral * Random.value;
-                        transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(roamDirection.y, roamDirection.x) * Mathf.Rad2Deg, Vector3.forward);
-                        rigidbody.MovePosition(transform.position + (newDirection).normalized * maxSpeed * Time.deltaTime);
-                    }
-                }
-                else if (Random.value < 0.01f)
-                {
-                    for (int i=0; i < 5; i++)
-                    {
-                        roamTarget = transform.position + new Vector3(Random.value, Random.value, 0f) * roamDistance;
-                        if (roamArea.OverlapPoint(roamTarget))
-                        {
-                            roaming = true;
-                            break;
-                        }
-                    }                    
                 }
 
+                return false;
+            }
+
+            void FaceTarget()
+            {
+                Vector3 targetPosition = target.transform.position;
+                Vector3 direction = (targetPosition - transform.position).normalized;
+                transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg, Vector3.forward);
             }
 
             void MoveToTarget(float range)
@@ -169,10 +269,25 @@ namespace Rimba
                 rigidbody.MovePosition(newPosition);
             }
 
+            Vector3 PositionAwayFromBonfire(float amount)
+            {
+                Vector3 awayDirection = (transform.position - bonfire.transform.position).normalized;
+                Vector3 lateralDirection = new Vector3(awayDirection.y, -awayDirection.x, awayDirection.z);
+                return transform.position + awayDirection * amount + lateralDirection * Random.Range(-2f, 2f);
+            }
+
+            bool IsCloseToBonfire()
+            {
+                return Vector3.Distance(transform.position, bonfire.transform.position) < bonfire.CurrentRadius + bonfireDistanceOffset;
+            }
+
             public void ApplyDamage(float damage)
             {
                 health = Mathf.Max(health - damage, 0f);
-                attacking = false;
+                if (state == State.Attacking)
+                {
+                    state = State.Chasing;
+                }
             }
 
 #if UNITY_EDITOR

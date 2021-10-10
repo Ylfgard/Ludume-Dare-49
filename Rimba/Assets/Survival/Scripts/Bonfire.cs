@@ -21,6 +21,8 @@ namespace Rimba
             [SerializeField] private float warmRadius = 1f;
             [SerializeField] private float warmRate = 2f;
 
+            public float CurrentRadius { get; protected set; }
+
             private float burnoutTime;
             private bool burnedOut;
 
@@ -34,6 +36,8 @@ namespace Rimba
             void Start() {
                 originalInnerRadius = radius * 0.5f;
                 originalOuterRadius = radius;
+
+                CurrentRadius = radius;
                 
                 burnedOut = false;
                 burnoutTime = Time.time + initialTime;
@@ -65,9 +69,8 @@ namespace Rimba
                 light.pointLightOuterRadius = originalOuterRadius * intensity + noise;
                 shape.transform.localScale = Vector3.one * intensity;
                 collider.radius = warmRadius * intensity;
-            }
 
-            public void AddTime(float time) {
+                CurrentRadius = originalOuterRadius * intensity;
             }
 
             public void OnTriggerEnter2D(Collider2D collider)
