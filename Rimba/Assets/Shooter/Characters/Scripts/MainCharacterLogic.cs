@@ -4,7 +4,17 @@ using UnityEngine;
 
 public class MainCharacterLogic : BaseCharacterLogic
 {
-    
+    private FMOD.Studio.EventInstance instance;
+
+    // Temp for sound problem solve
+    public FMOD.Studio.EventInstance eInst
+    {
+        get
+        {
+            return instance;
+        }
+    }
+
     private void Update()
     {
         Move();
@@ -40,6 +50,29 @@ public class MainCharacterLogic : BaseCharacterLogic
             characterData.ChangeAmmo(-characterData.Weapon.WeaponObject.AmmoPerShot);
             Shoot();
             reloadingWeaponCoroutine = StartCoroutine(ReloadingWeaponsCoroutine());
+
+            // Temp shooting sound, need to fix pistol sound event
+            PlayShootSound();
         }
     }
+    #region Tempotaty shooting sound
+    private void PlayShootSound()
+    {
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/pistol_shot");
+        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
+        instance.start();
+        instance.release();
+        StartCoroutine(StopShootSoundCoroutine());
+    }
+    private IEnumerator StopShootSoundCoroutine()
+    {
+        yield return new WaitForSeconds(characterData.Weapon.WeaponObject.Rate);
+        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
+    private void OnDestroy()
+    {
+        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+    #endregion
 }
