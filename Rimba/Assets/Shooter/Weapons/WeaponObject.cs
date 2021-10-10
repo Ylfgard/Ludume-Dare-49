@@ -9,6 +9,7 @@ public class WeaponObject : ScriptableObject
     public int Damage;
     public float Accuracy;
     public float Rate;
+    public int MaxAmmo;
     public int Ammo;
     public int AmmoPerShot;
     public event Action AmmoChanged;
@@ -16,4 +17,5 @@ public class WeaponObject : ScriptableObject
     {
         Ammo += amount;
     }
+    
 }

@@ -520,6 +520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuPref
       objectReference: {fileID: 0}
+    - target: {fileID: 8122008392448097656, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
+      propertyPath: isStartMenu
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9109905417876741192, guid: d1c928133f62a8c43b1fe681e2e88279, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

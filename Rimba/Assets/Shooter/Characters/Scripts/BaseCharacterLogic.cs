@@ -10,7 +10,7 @@ public class BaseCharacterLogic : MonoBehaviour
     protected Rigidbody2D m_rigidBody;
     protected SpriteRenderer spriteRenderer;
     protected Animator animator;
-    public GameObject hitPoint;
+    //public GameObject hitPoint;
 
 
     protected bool isReloadingWeapon = false;
@@ -20,7 +20,7 @@ public class BaseCharacterLogic : MonoBehaviour
     public Sprite LookingBack;
     public Sprite LookingRight;
     public Sprite LookingLeft;
-    protected TerningSide directionOfView = TerningSide.forward;
+    protected TerningSide directionOfView = TerningSide.back;
 
     private void Awake()
     {
