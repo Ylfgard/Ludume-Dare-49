@@ -15,6 +15,7 @@ namespace Rimba
             [SerializeField] private Image coldBar;
             [SerializeField] private Image radiationBar;
             [SerializeField] private Image coolnessBar;
+            [SerializeField] private Text survivalTimerText;
 
             [Header("Item info")]
             [SerializeField] private Text itemNameText;
@@ -28,19 +29,32 @@ namespace Rimba
             [SerializeField] private float dayLightIntensity;
 
             [Header("Misc")]
+            [SerializeField] private MenuFuntions menuFuntions;
+            [SerializeField] private DialogueTrigger startDialogue;
             [SerializeField] private GameObject gameOverScreen;
-            [SerializeField] private GameObject winScreen;
+            [SerializeField] private DialogueTrigger winDialogue;
 
             private IInteractable lastInteractable;
             private float dawnTime;
             private float dayTime;
+            private float survivalTime;
 
             void Start()
             {
+                survivalTimerText.enabled = false;
                 lastInteractable = null;
                 globalLight.intensity = nightLightIntensity;
                 dawnTime = Time.time + timeTillDawn;
                 dayTime = Time.time + timeTillDay;
+            }
+
+            void TimerTextUpdate()
+            {
+                survivalTime = dayTime - Time.time;
+                if(survivalTime < 0) survivalTime = 0;
+                int minutes = Mathf.FloorToInt(survivalTime / 60F);
+                int seconds = Mathf.FloorToInt(survivalTime % 60F);
+                survivalTimerText.text = minutes.ToString ("00") + ":" + seconds.ToString ("00");
             }
 
             void Update()
@@ -63,14 +77,26 @@ namespace Rimba
 
                 if (player.health <= 0)
                 {
+                    menuFuntions.RestartLevel();
                     gameOverScreen.SetActive(true);
                     Time.timeScale = 0f;
                 }
 
+                if(survivalTimerText.enabled == false && Time.time >= timeTillDawn)
+                {
+                    startDialogue.TriggerDialogue();
+                    TimerTextUpdate();
+                    survivalTimerText.enabled = true;
+                }
+                else
+                {
+                    TimerTextUpdate();
+                }
+
                 if (Time.time >= dayTime)
                 {
-                    winScreen.SetActive(true);
-                    Time.timeScale = 0f;
+                    Destroy(gameObject);
+                    winDialogue.TriggerDialogue();
                 }
             }
         }
