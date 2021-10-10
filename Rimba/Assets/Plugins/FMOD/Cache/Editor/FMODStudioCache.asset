@@ -539,7 +539,11 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 637694712434626479
+=======
+  lastModified: 637689911917399465
+>>>>>>> c0b1bf87c4b594353476ac650fd950490cae47da
   FileSizes:
   - Name: 
     Value: 7436
@@ -1515,7 +1519,11 @@ MonoBehaviour:
   - {fileID: 4224659067186801353}
   StringsBanks:
   - {fileID: -6117564320783721272}
+<<<<<<< HEAD
   stringsBankWriteTime: 637694712434626479
+=======
+  stringsBankWriteTime: 637689911917399465
+>>>>>>> c0b1bf87c4b594353476ac650fd950490cae47da
   cacheVersion: 8
 --- !u!114 &385411870406493806
 MonoBehaviour:
@@ -1649,7 +1657,11 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
+<<<<<<< HEAD
   lastModified: 637689025033427451
+=======
+  lastModified: 637688849614891303
+>>>>>>> c0b1bf87c4b594353476ac650fd950490cae47da
   FileSizes: []
   Exists: 1
 --- !u!114 &1379893927144444846
@@ -2072,7 +2084,11 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< HEAD
   lastModified: 637694712434606478
+=======
+  lastModified: 637689911917347169
+>>>>>>> c0b1bf87c4b594353476ac650fd950490cae47da
   FileSizes: []
   Exists: 1
 --- !u!114 &4540546426683603400

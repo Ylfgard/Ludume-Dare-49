@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2033853fe2d63e1429fb8531de266c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: DaVinchyCastleSlasher
+  levelName: GayBar
   dontStopGame: 0
   levelLoadDelay: 0
 --- !u!114 &802153218
@@ -1314,6 +1314,9 @@ MonoBehaviour:
   dialogueText: {fileID: 4900000, guid: 684739506336d1646a259f5494d64cf0, type: 3}
   stopTime: 0
   playOnStart: 0
+  playOnStartDelayed: 0
+  playbackDelay: 0
+  skipButton: {fileID: 0}
 --- !u!61 &802153219
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2152,6 +2155,9 @@ MonoBehaviour:
   dialogueText: {fileID: 4900000, guid: 40ade05d65b717442b755702eb50bc32, type: 3}
   stopTime: 0
   playOnStart: 1
+  playOnStartDelayed: 0
+  playbackDelay: 0
+  skipButton: {fileID: 0}
 --- !u!61 &1308934201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3421,6 +3427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicEvent: event:/music/Cuba
+  keepPlayingInNextScene: 0
 --- !u!1 &2022260709
 GameObject:
   m_ObjectHideFlags: 0

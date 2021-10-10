@@ -11,8 +11,6 @@ public class DaVinchiMechController : MonoBehaviour
     private Transform target;
     private GameManager gameManager;
     private GameObject player;
-    private bool playerIsNear;
-    
     public GameObject mechAttack;
 
     public Sprite[] directions;
@@ -77,15 +75,6 @@ public class DaVinchiMechController : MonoBehaviour
             GameObject.Find("EndDialogue").GetComponent<DialogueTrigger>().TriggerDialogue();
             Destroy(gameObject);
             gameManager.GoToCredits();
-        }
-    }
-    
-    // Если игрок в зоне видимости
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            playerIsNear = true;
         }
     }
     
