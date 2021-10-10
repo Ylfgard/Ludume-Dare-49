@@ -9,7 +9,8 @@ public class HammerAttack : MonoBehaviour
     private float time;
     private float speed = 3.0f;
     private float timeOfAttack = 0.5f;
-    
+
+    private FMOD.Studio.EventInstance instance;
     private Vector2 target;
 
     // Start is called before the first frame update
@@ -17,6 +18,8 @@ public class HammerAttack : MonoBehaviour
     {
         attacker = gameObject.transform.parent.gameObject;
         transform.position = attacker.transform.position;
+
+        Debug.Log(attacker.name);
         
         if (attacker.CompareTag("Player"))
         {
@@ -44,6 +47,10 @@ public class HammerAttack : MonoBehaviour
     
     IEnumerator Attack()
     {
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/hummer");
+        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(attacker.transform.position));
+        instance.start();
+        instance.release();
         yield return new WaitForSeconds(timeOfAttack);
         Destroy(gameObject);
     }
@@ -57,9 +64,14 @@ public class HammerAttack : MonoBehaviour
                 other.gameObject.GetComponent<PlayerController>().UpdateHP(-damage);
             }
             
-            else if ( attacker.CompareTag("Player") && (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Boss")))
+            else if ( attacker.CompareTag("Player") && other.gameObject.CompareTag("Enemy"))
             {
                 other.gameObject.GetComponent<EnemyController>().UpdateHP(-damage);
+            }
+
+            else if(attacker.CompareTag("Player") && other.gameObject.CompareTag("Boss"))
+            {
+                other.gameObject.GetComponent<DaVinchiMechController>().UpdateHP(-damage);
             }
         }
     }

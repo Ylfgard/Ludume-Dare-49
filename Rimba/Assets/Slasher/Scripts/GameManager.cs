@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 {
     public bool isGameActive = true;
     
-    public GameObject gameOverText;
+    public GameObject gameOverPanel;
     public Text battleTimerText;
     public GameObject firstRoom;
     public GameObject mainHall;
@@ -32,13 +32,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextAsset firstDialogue;
     [SerializeField] private TextAsset secondDialogue;
 
+    private PlayerController playerScript;
     private DialogueHandler dialogueHandler;
     private float battleTimer = 60.0f; // в секундах
     
     void Start()
     {
+        playerScript = FindObjectOfType<PlayerController>();
         dialogueHandler = FindObjectOfType<DialogueHandler>();
-        gameOverText.SetActive(false);
+        gameOverPanel.SetActive(false);
         
         firstRoom.SetActive(true);
         mainHall.SetActive(false);
@@ -53,7 +55,7 @@ public class GameManager : MonoBehaviour
     
     void Update()
     {
-        if (PlayerController.HP <= 0)
+        if (playerScript.HP <= 0)
         {
             GameOver();
         }
@@ -85,7 +87,13 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         isGameActive = false;
-        gameOverText.SetActive(true);
+        gameOverPanel.SetActive(true);
+
+        StartCoroutine(RestartLevelCoroutine());
+    }
+    private IEnumerator RestartLevelCoroutine()
+    {
+        yield return new WaitForSeconds(1);
 
         // Затычка с рестартом всего уровня...
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

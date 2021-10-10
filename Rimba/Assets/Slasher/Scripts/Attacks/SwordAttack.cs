@@ -13,6 +13,8 @@ public class SwordAttack : MonoBehaviour
     public GameObject attacker;
     public GameObject slashEffect;
 
+    private FMOD.Studio.EventInstance instance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,10 @@ public class SwordAttack : MonoBehaviour
 
     IEnumerator Attack()
     {
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/sword");
+        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(attacker.transform.position));
+        instance.start();
+        instance.release();
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
         Destroy(slashEffect.gameObject);
