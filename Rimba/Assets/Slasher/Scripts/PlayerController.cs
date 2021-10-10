@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     private float speed = 6.0f;
-    public static int HP = 1000;
+    public int HP = 1000;
 
     private Rigidbody2D playerRb;
     private Vector2 mouse;
