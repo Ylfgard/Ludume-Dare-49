@@ -10,6 +10,7 @@ public class SpearAttack : MonoBehaviour
     private float speed = 15.0f;
     private float timeOfAttack = 0.2f;
 
+    private FMOD.Studio.EventInstance instance;
     private Vector2 target;
     
     // Start is called before the first frame update
@@ -44,6 +45,10 @@ public class SpearAttack : MonoBehaviour
     
     IEnumerator Attack()
     {
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/pike");
+        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(attacker.transform.position));
+        instance.start();
+        instance.release();
         yield return new WaitForSeconds(timeOfAttack);
         Destroy(gameObject);
     }

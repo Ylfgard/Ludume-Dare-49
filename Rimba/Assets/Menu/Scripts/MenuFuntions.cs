@@ -52,6 +52,15 @@ public class MenuFuntions : MonoBehaviour
     { 
         sceneChanger.ChangeScene(SceneManager.GetActiveScene().name); 
     }
+    public void RestartLevel(float delay) 
+    {
+        StartCoroutine(RestartLevelCoroutine(delay));
+    }
+    private IEnumerator RestartLevelCoroutine(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay);
+        RestartLevel();
+    }
 
     public void OpenSettings()
     {

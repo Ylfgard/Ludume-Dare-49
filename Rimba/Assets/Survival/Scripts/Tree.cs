@@ -22,6 +22,8 @@ namespace Rimba
                 if (!active)
                     return;
                 
+                FMODUnity.RuntimeManager.PlayOneShotAttached("event:/wood_hit", gameObject);
+                
                 health -= amount;
                 if (health <= 0f)
                 {

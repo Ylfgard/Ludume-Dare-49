@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     private float speed = 6.0f;
-    public static int HP = 1000;
+    public int HP = 1000;
+    public float hammerCharge = 1f;
 
     private Rigidbody2D playerRb;
     private Vector2 mouse;
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour
     
     private bool isCooldown;
 
-    [SerializeField] private float hammerCharge = 0;
+    private float hammerChargeTimer = 0;
     private int medicineHeal = 150;
 
     public Sprite[] directions;
@@ -69,16 +70,16 @@ public class PlayerController : MonoBehaviour
                     
             else if (Input.GetKey(KeyCode.Mouse2))
             {
-                hammerCharge += Time.deltaTime;
+                hammerChargeTimer += Time.deltaTime;
             }
                     
             if (Input.GetKeyUp(KeyCode.Mouse2))
             {
-                if (hammerCharge >= 3.0f)
+                if (hammerChargeTimer >= hammerCharge)
                 {
                     HammerAttack();
                 }
-                hammerCharge = 0;
+                hammerChargeTimer = 0;
             }
         }
         

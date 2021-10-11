@@ -12,19 +12,19 @@
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Ну аллигатор, кайман, не знаю, сбежал из зоопарка, я писатель, я так вижу.</text>
+        <text>ПИСАТЕЛЬ: Ну аллигатор, кайман - не знаю - сбежал из зоопарка. Я писатель, я так вижу.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/ну алигатора , каймана</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ИЗДАТЕЛЬ: Нет уж, давайте что то более приземленное. Мы тут с вами не Фэнтези пишем, а еще у нас герой,  он какой то пустой, давайте раскроем его характер, пусть будут внутренние переживания, драма.</text>
+        <text>ИЗДАТЕЛЬ: Нет уж, давайте что то более приземленное. Мы тут с вами не Фэнтези пишем. А еще у нас герой пустой. Давайте раскроем его характер, пусть будут внутренние переживания, драма.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/нет уж давайте что-то более</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Тайга! Сибирская, холодная тайга. И волки, побольше волков вокруг. Пусть воют.</text>
+        <text>ПИСАТЕЛЬ: Тайга! Сибирская, холодная тайга. И волки. Побольше волков вокруг. Пусть воют.</text>
         <duration>5</duration>
         <fmodSoundPath>event:/тайга, сибирская холодная</fmodSoundPath>
         <triggerEvent>true</triggerEvent>

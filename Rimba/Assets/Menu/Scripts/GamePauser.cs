@@ -5,6 +5,7 @@ using UnityEngine;
 public static class GamePauser
 {
     private static List<GameObject> openedObjects = new List<GameObject>();
+
     public static void StopGame(GameObject openObject)
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
