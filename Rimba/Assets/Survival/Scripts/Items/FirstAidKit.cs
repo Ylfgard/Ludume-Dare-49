@@ -14,6 +14,7 @@ namespace Rimba
             public void Interact(PlayerController player)
             {
                 player.health = Mathf.Max(player.health + healAmount, 0);
+                FMODUnity.RuntimeManager.PlayOneShotAttached("event:/heal", gameObject);
                 Destroy(gameObject);
             }
         }

@@ -19,7 +19,8 @@ public class LevelLoader : MonoBehaviour, IDialogueEvent
         StartCoroutine(DelayedLoad());
 
         // Temp shooter pistol sound problem solving
-        if(FindObjectOfType<MainCharacterLogic>().TryGetComponent(out MainCharacterLogic mcl))
+        MainCharacterLogic logic = FindObjectOfType<MainCharacterLogic>();
+        if(logic != null && logic.TryGetComponent(out MainCharacterLogic mcl))
         {
             mcl.eInst.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }

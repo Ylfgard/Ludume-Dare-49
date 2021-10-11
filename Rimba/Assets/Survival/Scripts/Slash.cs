@@ -11,7 +11,10 @@ namespace Rimba
             void OnTriggerEnter2D(Collider2D other) {
                 IDamagable damagable = other.GetComponent<IDamagable>();
                 if (damagable is null)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShotAttached("event:/whoosh_rock_throw", gameObject);
                     return;
+                }
 
                 damagable.ApplyDamage(damage);
             }

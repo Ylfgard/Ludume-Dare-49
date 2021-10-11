@@ -30,6 +30,7 @@ namespace Rimba
 
             private new CircleCollider2D collider;
             private PlayerController player;
+            FMOD.Studio.EventInstance instance;
 
             void Start() {
                 originalInnerRadius = radius * 0.5f;
@@ -40,6 +41,10 @@ namespace Rimba
 
                 collider = GetComponent<CircleCollider2D>();
                 collider.radius = warmRadius;
+
+                instance = FMODUnity.RuntimeManager.CreateInstance("event:/fire");
+                instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
+                instance.start();
 
                 player = null;
             }
@@ -65,6 +70,8 @@ namespace Rimba
                 light.pointLightOuterRadius = originalOuterRadius * intensity + noise;
                 shape.transform.localScale = Vector3.one * intensity;
                 collider.radius = warmRadius * intensity;
+
+                instance.setVolume(Mathf.Clamp01(intensity));
             }
 
             public void AddTime(float time) {
@@ -83,6 +90,11 @@ namespace Rimba
                     return;
 
                 player = null;
+            }
+
+            private void OnDestroy()
+            {
+                instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             }
 
 #if UNITY_EDITOR

@@ -32,6 +32,7 @@ namespace Rimba
             [SerializeField] private MenuFuntions menuFuntions;
             [SerializeField] private DialogueTrigger startDialogue;
             [SerializeField] private GameObject gameOverScreen;
+            [SerializeField] private float restartLevelDelay = 2f;
             [SerializeField] private DialogueTrigger winDialogue;
 
             private IInteractable lastInteractable;
@@ -77,7 +78,7 @@ namespace Rimba
 
                 if (player.health <= 0)
                 {
-                    menuFuntions.RestartLevel();
+                    menuFuntions.RestartLevel(restartLevelDelay);
                     gameOverScreen.SetActive(true);
                     Time.timeScale = 0f;
                 }

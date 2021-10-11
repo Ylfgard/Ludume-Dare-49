@@ -51,6 +51,8 @@ namespace Rimba
             [HideInInspector] public bool carryingLog;
             [HideInInspector] public float logFuelAmount;
 
+            private bool canAddFuel;
+
             void Start()
             {
                 animator = GetComponent<Animator>();
@@ -83,8 +85,8 @@ namespace Rimba
 
             void HandleInput()
             {
-                if (animationRunning)
-                    return;
+                if (animationRunning) return;
+                if (Time.timeScale == 0f) return;
 
                 Vector3 lookDirection = camera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
                 transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg, Vector3.forward);
@@ -111,6 +113,17 @@ namespace Rimba
                 }
 
                 animator.SetBool(ANIMATOR_CARRYING_LOG, carryingLog);
+
+                if(!carryingLog && canAddFuel)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/wood throw at fireplase");
+                    canAddFuel = false;
+
+                }
+                else if(carryingLog && !canAddFuel)
+                {
+                    canAddFuel = true;
+                }
             }
 
             void UpdateStats()
@@ -158,6 +171,7 @@ namespace Rimba
             public void ApplyDamage(float damage)
             {
                 health = Mathf.Max(health - damage, 0f);
+                FMODUnity.RuntimeManager.PlayOneShotAttached("event:/meat eat", gameObject);
             }
 
             /*

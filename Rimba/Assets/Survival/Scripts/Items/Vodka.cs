@@ -14,6 +14,7 @@ namespace Rimba
             public void Interact(PlayerController player)
             {
                 player.radiation = Mathf.Max(player.radiation - antidotAmount, 0);
+                FMODUnity.RuntimeManager.PlayOneShotAttached("event:/vodka", gameObject);
                 Destroy(gameObject);
             }
         }

@@ -173,6 +173,8 @@ namespace Rimba
             {
                 health = Mathf.Max(health - damage, 0f);
                 attacking = false;
+
+                FMODUnity.RuntimeManager.PlayOneShotAttached("event:/damage_wolf", gameObject);
             }
 
 #if UNITY_EDITOR
