@@ -17,6 +17,8 @@ public class MainCharacterLogic : BaseCharacterLogic
 
     private void Update()
     {
+        if(Time.timeScale == 0) return;
+
         Move();
         Aim(MouseWorld.GetPosition());
         Attack();
@@ -52,7 +54,9 @@ public class MainCharacterLogic : BaseCharacterLogic
             reloadingWeaponCoroutine = StartCoroutine(ReloadingWeaponsCoroutine());
 
             // Temp shooting sound, need to fix pistol sound event
-            PlayShootSound();
+            //PlayShootSound();
+
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/pistol_shot", gameObject);
         }
     }
     #region Tempotaty shooting sound

@@ -9,11 +9,12 @@ namespace ElusiveRimba
         [SerializeField] private float speed = 100f;
         [SerializeField] private float standInPatroolTime = 3f;
         [SerializeField] private float standDistructedTime = 3f;
-
+        [Space]
         [SerializeField] private float lookRange = 10f;
         [SerializeField] private float hearRange = 3f;
         [SerializeField] private float fieldOfView = 90f;
-
+        [SerializeField] private int rayCount = 50;
+        [Space]
         [SerializeField] private GameObject body;
         [SerializeField] private GameObject fovPrefab;
 
@@ -106,7 +107,6 @@ namespace ElusiveRimba
 
         private void DrawFieldOfView()
         {
-            int rayCount = 50;
             float angle = startAngle;
             float angleIncreases = fieldOfView / rayCount;
 

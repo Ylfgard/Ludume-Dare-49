@@ -37,21 +37,16 @@ public class IngameMusic : MonoBehaviour
 
     private void KeepPlaying()
     {
+        DontDestroyOnLoad(gameObject);
 
         SceneManager.activeSceneChanged += DestroyMusic;
-        DontDestroyOnLoad(gameObject);
         keepPlayingInNextScene = false;
     }
 
     private void DestroyMusic(Scene oldScene, Scene newScene)
     {
-        Debug.Log(oldScene.name);
-        Debug.Log(newScene.name);
-        if(newScene.buildIndex == 0)
-        {
-            SceneManager.SetActiveScene(newScene);
-            SceneManager.activeSceneChanged -= DestroyMusic;
-            Destroy(gameObject);
-        }
+        SceneManager.SetActiveScene(newScene);
+        SceneManager.activeSceneChanged -= DestroyMusic;
+        Destroy(gameObject);
     }
 }

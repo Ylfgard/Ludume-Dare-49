@@ -181,6 +181,7 @@ MonoBehaviour:
   lookRange: 10
   hearRange: 2
   fieldOfView: 90
+  rayCount: 100
   body: {fileID: 2614957428852080538}
   fovPrefab: {fileID: 1575679842519763428, guid: 64d0e4455a3e8394ba6eaef43bd92110, type: 3}
   face: {fileID: 21300000, guid: cdc489598cca1a244bbb84f69dc81a48, type: 3}

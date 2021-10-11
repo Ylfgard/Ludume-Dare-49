@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: Assets/fmod/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637695018368293904
+  lastModified: 637695848129826351
   FileSizes: []
   Exists: 1
 --- !u!114 &-8533009232359082646
@@ -857,11 +857,11 @@ MonoBehaviour:
   Banks:
   - {fileID: -8542297205920782022}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 2000
 --- !u!114 &-3346639826673192564
 MonoBehaviour:

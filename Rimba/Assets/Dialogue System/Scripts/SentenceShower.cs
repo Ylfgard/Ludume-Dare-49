@@ -23,7 +23,16 @@ public class SentenceShower : MonoBehaviour
         
         showByLettersDelay = PlayerPrefs.GetFloat("TextShowSpeed");
         curSentenceText = ""; curSymbol = 0;
-        text.text = curSentenceText;
+        //text.text = curSentenceText;
+
+        #region Experimenting
+        text.fontSize = 40f;
+        text.alignment = TextAlignmentOptions.TopLeft;
+        text.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Application.isEditor ? Camera.main.scaledPixelWidth * 0.75f : Screen.width * 0.75f);
+        //text.rectTransform.sizeDelta = Vector2.one * 0.9f;
+        text.rectTransform.ForceUpdateRectTransforms();
+        #endregion
+
         if(fmodSoundPath != "")
         {
             Debug.Log("PlayMusic: " + fmodSoundPath);
