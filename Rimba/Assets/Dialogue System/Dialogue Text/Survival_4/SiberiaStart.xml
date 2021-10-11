@@ -6,7 +6,7 @@
         <triggerEvent>false</triggerEvent>
     </sentence>
     <sentence>
-        <text>ПИСАТЕЛЬ: Точно! У него есть бывшая девушка! Они до сих пор любят друг друга, но боятся друг другу в этом признаться, она как раз спешит к нему на помощь!</text>
+        <text>ПИСАТЕЛЬ: Точно! У него есть бывшая девушка. Они до сих пор любят друг-друга, но боятся в этом признаться. Она как раз спешит к нему на помощь!</text>
         <duration>5</duration>
         <fmodSoundPath>event:/точно у героя есть</fmodSoundPath>
         <triggerEvent>false</triggerEvent>
