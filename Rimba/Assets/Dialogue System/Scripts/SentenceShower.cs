@@ -23,7 +23,7 @@ public class SentenceShower : MonoBehaviour
         
         showByLettersDelay = PlayerPrefs.GetFloat("TextShowSpeed");
         curSentenceText = ""; curSymbol = 0;
-        //text.text = curSentenceText;
+        text.text = curSentenceText;
 
         #region Experimenting
         text.fontSize = 40f;
