@@ -1657,7 +1657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cabf9ae86460f1e4eb84943129f95df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicEvent: event:/music/Da Vinci
+  musicEvent: event:/music/Hotline
   keepPlayingInNextScene: 0
 --- !u!114 &578273945
 MonoBehaviour:
