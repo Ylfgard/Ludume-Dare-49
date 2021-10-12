@@ -25,11 +25,10 @@ public class SentenceShower : MonoBehaviour
         curSentenceText = ""; curSymbol = 0;
         text.text = curSentenceText;
 
-        #region Experimenting
+        #region Font size and alignment
         text.fontSize = 40f;
         text.alignment = TextAlignmentOptions.TopLeft;
-        text.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Application.isEditor ? Camera.main.scaledPixelWidth * 0.75f : Screen.width * 0.75f);
-        //text.rectTransform.sizeDelta = Vector2.one * 0.9f;
+        text.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Screen.currentResolution.width * 0.75f);
         text.rectTransform.ForceUpdateRectTransforms();
         #endregion
 
