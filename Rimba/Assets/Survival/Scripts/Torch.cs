@@ -23,13 +23,17 @@ namespace Rimba
 
             void Start()
             {
-                bonfireLight = bonfire.GetComponent<Light2D>();
+                if(bonfire != null)
+                {
+                    bonfire.TryGetComponent(out bonfireLight);
+
+                    ndxLight = light.pointLightOuterRadius / bonfireLight.pointLightOuterRadius;
+                    ndxLight = Mathf.Clamp(ndxLight, 0.2f, 0.8f);
+                }
 
                 originalInnerRadius = light.pointLightInnerRadius;
                 originalOuterRadius = light.pointLightOuterRadius;
 
-                ndxLight = light.pointLightOuterRadius / bonfireLight.pointLightOuterRadius;
-                ndxLight = Mathf.Clamp(ndxLight, 0.2f, 0.8f);
             }
 
             void Update()
@@ -40,13 +44,16 @@ namespace Rimba
 
                 torchInHand.localScale = Vector2.one * (torchValue + noise * torchValue);
 
-                float distToBonfire = Vector3.Magnitude(bonfire.transform.position - transform.position);
-                if(distToBonfire <= bonfireLight.pointLightOuterRadius)
+                if(bonfire != null)
                 {
-                    float value = Mathf.Clamp(bonfireLight.pointLightOuterRadius - (bonfireLight.pointLightOuterRadius / light.pointLightOuterRadius), 0.1f, float.MaxValue);
-                    value = distToBonfire / value * ndxLight * (1 - globalLight.intensity);
-                    light.intensity = Mathf.Clamp(value, 0.1f, 1f);
+                    float distToBonfire = Vector3.Magnitude(bonfire.transform.position - transform.position);
+                    if(distToBonfire <= bonfireLight.pointLightOuterRadius)
+                    {
+                        float value = Mathf.Clamp(bonfireLight.pointLightOuterRadius - (bonfireLight.pointLightOuterRadius / light.pointLightOuterRadius), 0.1f, float.MaxValue);
+                        value = distToBonfire / value * ndxLight * (1 - globalLight.intensity);
+                        light.intensity = Mathf.Clamp(value, 0.1f, 1f);
 
+                    }
                 }
             }
         }
