@@ -20,32 +20,37 @@ public class SentenceShower : MonoBehaviour
     {
         dialogueHandler.showNextSentenceEvent.AddListener(EndWritting);
         text = gameObject.GetComponent<TextMeshProUGUI>();
-        
+
         showByLettersDelay = PlayerPrefs.GetFloat("TextShowSpeed");
-        curSentenceText = ""; curSymbol = 0;
+        curSentenceText = "";
+        curSymbol = 0;
         text.text = curSentenceText;
 
-        #region Font size and alignment
-        text.fontSize = 40f;
-        text.alignment = TextAlignmentOptions.TopLeft;
-        text.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Screen.currentResolution.width * 0.75f);
-        text.rectTransform.ForceUpdateRectTransforms();
-        #endregion
+        // Text size stuff here
+        SetDialogTextSize();
 
         if(fmodSoundPath != "")
         {
             Debug.Log("PlayMusic: " + fmodSoundPath);
             instance = FMODUnity.RuntimeManager.CreateInstance(fmodSoundPath);
-            instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(Camera.main.transform)); 
+            instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(Camera.main.transform));
             instance.start();
             FMOD.Studio.EventDescription discription;
             instance.getDescription(out discription);
             int lenght;
             discription.getLength(out lenght);
-            delayBeforeShowNext = lenght/1000 + 0.7f;
+            delayBeforeShowNext = lenght / 1000 + 0.7f;
             StartCoroutine(ShowNextSentence());
         }
         StartCoroutine(ShowByLetters());
+    }
+
+    private void SetDialogTextSize()
+    {
+        text.fontSize = 40f;
+        text.alignment = TextAlignmentOptions.TopLeft;
+        text.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, Screen.currentResolution.width * 0.75f);
+        text.rectTransform.ForceUpdateRectTransforms();
     }
 
     private void FixedUpdate() 
