@@ -9,6 +9,7 @@ namespace Rimba
         [RequireComponent(typeof(CircleCollider2D))]
         public class Bonfire : MonoBehaviour, IInteractable
         {
+            [SerializeField] private Light2D globalLight;
             [SerializeField] private new Light2D light;
             [SerializeField] private GameObject shape;
             [SerializeField] private float flameTwinklingMagnitude = 0.2f;
@@ -24,6 +25,9 @@ namespace Rimba
             private float burnoutTime;
             private bool burnedOut;
 
+            private float originalLightIntensity;
+            private float originalGlobalLightIntensity;
+
             private float originalInnerRadius;
             private float originalOuterRadius;
             private float noise = 0;
@@ -33,6 +37,9 @@ namespace Rimba
             FMOD.Studio.EventInstance instance;
 
             void Start() {
+                originalLightIntensity = light.intensity;
+                originalGlobalLightIntensity = globalLight.intensity;
+
                 originalInnerRadius = radius * 0.5f;
                 originalOuterRadius = radius;
                 
@@ -70,6 +77,9 @@ namespace Rimba
                 light.pointLightOuterRadius = originalOuterRadius * intensity + noise;
                 shape.transform.localScale = Vector3.one * intensity;
                 collider.radius = warmRadius * intensity;
+
+                light.intensity = Mathf.Clamp(originalLightIntensity * (originalGlobalLightIntensity / globalLight.intensity), 0, originalLightIntensity);
+                Debug.Log(light.intensity);
 
                 instance.setVolume(Mathf.Clamp01(intensity));
             }
