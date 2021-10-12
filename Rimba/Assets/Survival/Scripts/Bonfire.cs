@@ -79,7 +79,6 @@ namespace Rimba
                 collider.radius = warmRadius * intensity;
 
                 light.intensity = Mathf.Clamp(originalLightIntensity * (originalGlobalLightIntensity / globalLight.intensity), 0, originalLightIntensity);
-                Debug.Log(light.intensity);
 
                 instance.setVolume(Mathf.Clamp01(intensity));
             }

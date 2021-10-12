@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
             // переход на боссфайт
 
-            FindObjectOfType<IngameMusic>().SetMusic("event:/music/DMC");
+            FindObjectOfType<IngameMusic>().PlayMusic("event:/music/DMC");
         }
     }
 

@@ -9,44 +9,47 @@ public class IngameMusic : MonoBehaviour
     [SerializeField] private bool keepPlayingInNextScene;
 
     private FMOD.Studio.EventInstance instance;
-    private int subscribeCount;
 
     private void Start()
     {
-        SetMusic(musicEvent);
+        PlayMusic(musicEvent);
+
+        SceneManager.activeSceneChanged += OnSceneChange;
 
         if(keepPlayingInNextScene)
         {
-            KeepPlaying();
+            DontDestroyOnLoad(gameObject);
         }
     }
 
     private void OnDestroy()
     {
-        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-    }
-
-    public void SetMusic(string musicEvent)
-    {
         instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         instance.release();
+    }
+
+    public void PlayMusic(string musicEvent)
+    {
         instance = FMODUnity.RuntimeManager.CreateInstance(musicEvent);
         //instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         instance.start();
     }
 
-    private void KeepPlaying()
+    private void OnSceneChange(Scene oldScene, Scene newScene)
     {
-        DontDestroyOnLoad(gameObject);
-
-        SceneManager.activeSceneChanged += DestroyMusic;
-        keepPlayingInNextScene = false;
+        if(keepPlayingInNextScene)
+        {
+            keepPlayingInNextScene = false;
+        }
+        else
+        {
+            DestroyMusic();
+        }
     }
 
-    private void DestroyMusic(Scene oldScene, Scene newScene)
+    private void DestroyMusic()
     {
-        SceneManager.SetActiveScene(newScene);
-        SceneManager.activeSceneChanged -= DestroyMusic;
+        SceneManager.activeSceneChanged -= OnSceneChange;
         Destroy(gameObject);
     }
 }
