@@ -9,6 +9,7 @@ namespace Rimba
         [RequireComponent(typeof(CircleCollider2D))]
         public class Bonfire : MonoBehaviour, IInteractable
         {
+            [SerializeField] private ParticleSystem sparkles;
             [SerializeField] private Light2D globalLight;
             [SerializeField] private new Light2D light;
             [SerializeField] private GameObject shape;
@@ -34,7 +35,11 @@ namespace Rimba
 
             private new CircleCollider2D collider;
             private PlayerController player;
+
+            ParticleSystem.ShapeModule sparklesShape;
+            ParticleSystem.EmissionModule sparklesEmission;
             FMOD.Studio.EventInstance instance;
+            private float sparklesRateOverTimeAtStart;
 
             void Start() {
                 originalLightIntensity = light.intensity;
@@ -48,6 +53,11 @@ namespace Rimba
 
                 collider = GetComponent<CircleCollider2D>();
                 collider.radius = warmRadius;
+
+                sparklesShape = sparkles.shape;
+                sparklesEmission = sparkles.emission;
+                sparklesRateOverTimeAtStart = sparklesEmission.rateOverTimeMultiplier;
+
 
                 instance = FMODUnity.RuntimeManager.CreateInstance("event:/fire");
                 instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
@@ -64,6 +74,7 @@ namespace Rimba
                 float intensity = (Time.time > burnoutTime) ? 0f : (burnoutTime - Time.time) / maxTime;
                 if (intensity <= 0) {
                     burnedOut = true;
+                    gameObject.SetActive(false);
                     return;
                 }
 
@@ -79,6 +90,9 @@ namespace Rimba
                 collider.radius = warmRadius * intensity;
 
                 light.intensity = Mathf.Clamp(originalLightIntensity * (originalGlobalLightIntensity / globalLight.intensity), 0, originalLightIntensity);
+
+                sparklesShape.radius = intensity;
+                sparklesEmission.rateOverTimeMultiplier = sparklesRateOverTimeAtStart * (intensity > 0.15f ? intensity : 0);
 
                 instance.setVolume(Mathf.Clamp01(intensity));
             }
