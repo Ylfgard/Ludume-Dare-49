@@ -106,6 +106,10 @@ namespace Rimba
                 {
                     animator.SetTrigger(ANIMATOR_SWING);
                 }
+                if(Input.GetButtonDown("Fire2") && carryingLog)
+                {
+                    carryingLog = false;
+                }
 
                 if (Input.GetButtonDown("Interact") && selectedInteractable != null)
                 {
@@ -116,9 +120,7 @@ namespace Rimba
 
                 if(!carryingLog && canAddFuel)
                 {
-                    FMODUnity.RuntimeManager.PlayOneShot("event:/wood throw at fireplase");
                     canAddFuel = false;
-
                 }
                 else if(carryingLog && !canAddFuel)
                 {

@@ -92,7 +92,7 @@ namespace Rimba
                 light.intensity = Mathf.Clamp(originalLightIntensity * (originalGlobalLightIntensity / globalLight.intensity), 0, originalLightIntensity);
 
                 sparklesShape.radius = intensity;
-                sparklesEmission.rateOverTimeMultiplier = sparklesRateOverTimeAtStart * (intensity > 0.15f ? intensity : 0);
+                sparklesEmission.rateOverTimeMultiplier = sparklesRateOverTimeAtStart * (intensity > 0.1f ? intensity : 0);
 
                 instance.setVolume(Mathf.Clamp01(intensity));
             }
@@ -142,6 +142,10 @@ namespace Rimba
 
                 burnoutTime = Mathf.Min(burnoutTime + player.logFuelAmount, Time.time + maxTime);
                 player.carryingLog = false;
+
+                ParticleSystem.EmitParams eParams = new ParticleSystem.EmitParams();
+                sparkles.Emit(eParams, 100);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/wood throw at fireplase");
             }
             #endregion
         }
