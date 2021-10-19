@@ -67,5 +67,4 @@ Rimba/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
 Rimba/UserSettings/EditorUserSettings.asset
 Rimba/UserSettings/EditorUserSettings.asset
 Rimba/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
-Rimba/Library/CurrentLayout-default.dwlt
-Rimba/Library/CurrentMaximizeLayout.dwlt
+Rimba/Library/*.dwlt
