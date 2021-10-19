@@ -68,12 +68,12 @@ public class PlayerController : MonoBehaviour
                 SpearAttack();
             }
                     
-            else if (Input.GetKey(KeyCode.Mouse2))
+            else if (Input.GetKey(KeyCode.Space))
             {
                 hammerChargeTimer += Time.deltaTime;
             }
                     
-            if (Input.GetKeyUp(KeyCode.Mouse2))
+            if (Input.GetKeyUp(KeyCode.Space))
             {
                 if (hammerChargeTimer >= hammerCharge)
                 {
