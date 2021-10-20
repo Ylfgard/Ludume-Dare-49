@@ -85,11 +85,6 @@ public class SentenceShower : MonoBehaviour
     public void EndWritting()
     {
         StopAllCoroutines();
-        if(fmodSoundPath != "")
-        {
-            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            instance.release();
-        }
         Destroy(gameObject);
     }
 

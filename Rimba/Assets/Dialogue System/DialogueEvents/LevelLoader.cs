@@ -16,7 +16,7 @@ public class LevelLoader : MonoBehaviour, IDialogueEvent
             FindObjectOfType<DialogueHandler>().PausePlayerEffect();
         } 
         levelLoadDelay = duration;
-        StartCoroutine(DelayedLoad());
+        StartCoroutine(DelayedLoad(levelLoadDelay));
 
         // Temp shooter pistol sound problem solving
         //MainCharacterLogic logic = FindObjectOfType<MainCharacterLogic>();
@@ -26,9 +26,9 @@ public class LevelLoader : MonoBehaviour, IDialogueEvent
         //}
     }
 
-    private IEnumerator DelayedLoad()
+    private IEnumerator DelayedLoad(float delay)
     {
-        yield return new WaitForSecondsRealtime(levelLoadDelay);
+        yield return new WaitForSecondsRealtime(delay);
         FindObjectOfType<SceneChanger>().ChangeScene(levelName);
     }
 }

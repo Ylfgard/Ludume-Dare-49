@@ -20,7 +20,7 @@ public class DialogueHandler : MonoBehaviour
     {
         EndDialogue();
     }
-    
+
     public void PausePlayerEffect()
     {
         postProcessingVolume.weight = 1;
@@ -44,10 +44,16 @@ public class DialogueHandler : MonoBehaviour
     {
         if(curDialogue != null && curSentenceIndex < curDialogue.sentences.Length)
         {
+
             var curSentence = curDialogue.sentences[curSentenceIndex];
             showNextSentenceEvent?.Invoke();
             if(dialogueEvents.Count > 0 && curSentence.triggerEvent) // Запускает первое в очереди событие и стерает его
             {
+                if(curSentenceIndex > 0 && curDialogue.sentences[curSentenceIndex - 1].triggerEvent)
+                {
+                    dialogueEvents.Remove(dialogueEvents[0]);
+                }
+
                 if(curSentence.fmodSoundPath != "")
                 {
                     FMOD.Studio.EventDescription discription;
@@ -57,7 +63,6 @@ public class DialogueHandler : MonoBehaviour
                     dialogueEvents[0].PlayEvent(lenght/1000 + 0.7f);
                 }
                 else dialogueEvents[0].PlayEvent(0);
-                dialogueEvents.Remove(dialogueEvents[0]);
             }
             SpawnSentence(curSentence.text, curSentence.fmodSoundPath, curSentence.duration);
             curSentenceIndex++;
