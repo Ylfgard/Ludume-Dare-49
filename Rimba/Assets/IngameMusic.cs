@@ -12,7 +12,8 @@ public class IngameMusic : MonoBehaviour
 
     private void Start()
     {
-        PlayMusic(musicEvent);
+        if(FMODUnity.RuntimeManager.HasBankLoaded("Master"))
+            PlayMusic(musicEvent);
 
 
         if(keepPlayingInNextScene)

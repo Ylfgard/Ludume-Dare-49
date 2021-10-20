@@ -37,16 +37,25 @@ public class MenuFuntions : MonoBehaviour
     }
 
     public void LoadLevel(string levelName) 
-    { 
-       sceneChanger.ChangeScene(levelName);
+    {
+        if(isStartMenu == false)
+            return;
+
+        sceneChanger.ChangeScene(levelName);
     }
 
     public void LoadLastPlayedLevel() 
-    { 
+    {
+        if(isStartMenu == false)
+        {
+            CloseMenu();
+            return;
+        }
+
         string loadedLevelName;
         loadedLevelName = PlayerPrefs.GetString("lastGameScene", "");
         if(loadedLevelName != "")
-            LoadLevel(loadedLevelName);
+            sceneChanger.ChangeScene(loadedLevelName);
     }
 
     public void RestartLevel() 
