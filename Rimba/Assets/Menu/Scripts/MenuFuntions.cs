@@ -44,8 +44,9 @@ public class MenuFuntions : MonoBehaviour
     public void LoadLastPlayedLevel() 
     { 
         string loadedLevelName;
-        loadedLevelName = PlayerPrefs.GetString("lastGameScene", "StartComics");
-        sceneChanger.ChangeScene(loadedLevelName);
+        loadedLevelName = PlayerPrefs.GetString("lastGameScene", "");
+        if(loadedLevelName != "")
+            LoadLevel(loadedLevelName);
     }
 
     public void RestartLevel() 
@@ -80,14 +81,16 @@ public class MenuFuntions : MonoBehaviour
     
     public void OpenMenu()
     {
-        GamePauser.StopGame(gameObject);
+        if(!isStartMenu)
+            GamePauser.StopGame(gameObject);
         CloseSettings();
         menuFone.SetActive(true);
     }
 
     public void CloseMenu()
     {
-        GamePauser.ContinueGame(gameObject);
+        if(!isStartMenu)
+            GamePauser.ContinueGame(gameObject);
         CloseSettings();
         menuFone.SetActive(false);
     }
@@ -99,8 +102,11 @@ public class MenuFuntions : MonoBehaviour
 
     private void Awake()
     {
-        musicBus = FMODUnity.RuntimeManager.GetBus("bus:/music");
-        dialogsBus = FMODUnity.RuntimeManager.GetBus("bus:/dialogs");
+        if(FMODUnity.RuntimeManager.HasBankLoaded("Master"))
+        {
+            musicBus = FMODUnity.RuntimeManager.GetBus("bus:/music");
+            dialogsBus = FMODUnity.RuntimeManager.GetBus("bus:/dialogs");
+        }
     }
 
     private void Start() 

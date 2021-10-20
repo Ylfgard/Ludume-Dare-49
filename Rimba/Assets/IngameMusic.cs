@@ -14,18 +14,12 @@ public class IngameMusic : MonoBehaviour
     {
         PlayMusic(musicEvent);
 
-        SceneManager.activeSceneChanged += OnSceneChange;
 
         if(keepPlayingInNextScene)
         {
             DontDestroyOnLoad(gameObject);
+            SceneManager.activeSceneChanged += OnSceneChange;
         }
-    }
-
-    private void OnDestroy()
-    {
-        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        instance.release();
     }
 
     public void PlayMusic(string musicEvent)
@@ -53,5 +47,11 @@ public class IngameMusic : MonoBehaviour
     {
         SceneManager.activeSceneChanged -= OnSceneChange;
         Destroy(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        instance.release();
     }
 }
