@@ -232,6 +232,7 @@ MonoBehaviour:
   cosViewingAngle: 0.5
   visual: {fileID: 4013125941530300666}
   hud: {fileID: 4776129726794856982}
+  smokeEffect: {fileID: 8206635672448576084, guid: 7ffe7d9f26bda0a4dbf08339f9f39bde, type: 3}
 --- !u!61 &2206838055782972389
 BoxCollider2D:
   m_ObjectHideFlags: 0
