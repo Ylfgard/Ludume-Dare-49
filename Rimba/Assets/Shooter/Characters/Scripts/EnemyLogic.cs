@@ -21,7 +21,7 @@ public class EnemyLogic : BaseCharacterLogic
     [SerializeField] private GameObject smokeEffect;
 
     FMOD.Studio.EventInstance instance;
-    FMOD.Studio.EventDescription is3d;
+    FMOD.Studio.EventDescription instDesc;
 
     private void Start()
     {
@@ -37,9 +37,6 @@ public class EnemyLogic : BaseCharacterLogic
         instance = FMODUnity.RuntimeManager.CreateInstance("event:/mashine_gun");
         //instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, gameObject.transform, GetComponent<Rigidbody>());
-        instance.getDescription(out is3d);
-        is3d.is3D(out bool d);
-        Debug.Log(d);
     }
     private IEnumerator RotateTargetCoroutine()
     {
