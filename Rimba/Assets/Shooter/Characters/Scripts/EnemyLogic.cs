@@ -18,8 +18,10 @@ public class EnemyLogic : BaseCharacterLogic
 
     [SerializeField] private GameObject visual;
     [SerializeField] private GameObject hud;
+    [SerializeField] private GameObject smokeEffect;
 
-
+    FMOD.Studio.EventInstance instance;
+    FMOD.Studio.EventDescription is3d;
 
     private void Start()
     {
@@ -30,6 +32,14 @@ public class EnemyLogic : BaseCharacterLogic
         visual.transform.SetParent(null);
         visual.transform.rotation = new Quaternion(0, 0, 0, 0);
         hud.GetComponent<EnemyHUD>().characterData = characterData;
+
+        // Shoot sound
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/mashine_gun");
+        //instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, gameObject.transform, GetComponent<Rigidbody>());
+        instance.getDescription(out is3d);
+        is3d.is3D(out bool d);
+        Debug.Log(d);
     }
     private IEnumerator RotateTargetCoroutine()
     {
@@ -107,6 +117,19 @@ public class EnemyLogic : BaseCharacterLogic
         {
             Shoot();
             reloadingWeaponCoroutine = StartCoroutine(ReloadingWeaponsCoroutine());
+
+            // Shoot sound
+            FMOD.Studio.PLAYBACK_STATE state;
+            instance.getPlaybackState(out state);
+            if(state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            {
+                instance.start();
+            }
+
+            // Shoot particles
+            Transform shot = characterData.Weapon.AimGunEndPointTransform;
+            GameObject go = Instantiate(smokeEffect, shot.position, shot.rotation, shot);
+            go.transform.localScale *= 0.5f;
         }
     }
     protected override void Die()
@@ -114,6 +137,15 @@ public class EnemyLogic : BaseCharacterLogic
         this.gameObject.SetActive(false);
         visual.gameObject.SetActive(false);
         hud.gameObject.SetActive(false);
+
+        // Shoot sound
+        FMOD.Studio.PLAYBACK_STATE state;
+        instance.getPlaybackState(out state);
+        if(state == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            instance.release();
+        }
     }
     private void Update()
     {

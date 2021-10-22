@@ -12,29 +12,24 @@ public class SoundPreloader : MonoBehaviour
 
     private float loadingValue;
 
-    private void Awake()
-    {
-        if(sp != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
+    //private void Awake()
+    //{
+    //    if(sp != null)
+    //    {
+    //        Destroy(gameObject);
+    //        return;
+    //    }
 
-        sp = this;
-        DontDestroyOnLoad(gameObject);
+    //    sp = this;
+    //    DontDestroyOnLoad(gameObject);
 
-        //FMODUnity.RuntimeManager.LoadBank("Master");
-        //Debug.Log(FMODUnity.RuntimeManager.HasBankLoaded("Master"));
-    }
+    //    //FMODUnity.RuntimeManager.LoadBank("Master");
+    //    //Debug.Log(FMODUnity.RuntimeManager.HasBankLoaded("Master"));
+    //}
 
     private void Start()
     {
         StartCoroutine(LoadAsync());
-    }
-
-    private void Update()
-    {
-        
     }
 
     private IEnumerator LoadAsync()

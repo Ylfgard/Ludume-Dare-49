@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class MainCharacterLogic : BaseCharacterLogic
 {
+    [SerializeField] private GameObject smokeEffect;
+
     private FMOD.Studio.EventInstance instance;
 
     // Temp for sound problem solve
-    public FMOD.Studio.EventInstance eInst
-    {
-        get
-        {
-            return instance;
-        }
-    }
+    //public FMOD.Studio.EventInstance eInst
+    //{
+    //    get
+    //    {
+    //        return instance;
+    //    }
+    //}
 
     private void Update()
     {
@@ -53,30 +55,11 @@ public class MainCharacterLogic : BaseCharacterLogic
             Shoot();
             reloadingWeaponCoroutine = StartCoroutine(ReloadingWeaponsCoroutine());
 
-            // Temp shooting sound, need to fix pistol sound event
-            //PlayShootSound();
-
             FMODUnity.RuntimeManager.PlayOneShotAttached("event:/pistol_shot", gameObject);
+
+            Transform shot = characterData.Weapon.AimGunEndPointTransform;
+            GameObject go = Instantiate(smokeEffect, shot.position, shot.rotation, shot);
+            go.transform.localScale *= 0.3f;
         }
     }
-    #region Tempotaty shooting sound
-    private void PlayShootSound()
-    {
-        instance = FMODUnity.RuntimeManager.CreateInstance("event:/pistol_shot");
-        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));
-        instance.start();
-        instance.release();
-        StartCoroutine(StopShootSoundCoroutine());
-    }
-    private IEnumerator StopShootSoundCoroutine()
-    {
-        yield return new WaitForSeconds(characterData.Weapon.WeaponObject.Rate);
-        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-    }
-
-    private void OnDestroy()
-    {
-        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-    }
-    #endregion
 }

@@ -171,6 +171,7 @@ MonoBehaviour:
   LookingBack: {fileID: 21300000, guid: 1afe3576f904d0b4282710f53af5f241, type: 3}
   LookingRight: {fileID: 21300000, guid: 44c920033e466f7448d2ac3a8ddc1a5c, type: 3}
   LookingLeft: {fileID: 21300000, guid: 1261328012b831b42a290e1b576cb76f, type: 3}
+  smokeEffect: {fileID: 8206635672448576084, guid: 7ffe7d9f26bda0a4dbf08339f9f39bde, type: 3}
 --- !u!95 &854501971
 Animator:
   serializedVersion: 3
@@ -223,6 +224,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3480104216086184243}
     m_Modifications:
+    - target: {fileID: 5322709432856971671, guid: 17f2917e7ec14e3408b5d875dfdc5b63, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322709432856971671, guid: 17f2917e7ec14e3408b5d875dfdc5b63, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322709432856971671, guid: 17f2917e7ec14e3408b5d875dfdc5b63, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8553910987506213164, guid: 17f2917e7ec14e3408b5d875dfdc5b63, type: 3}
       propertyPath: m_Name
       value: Pistol
