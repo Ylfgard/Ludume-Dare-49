@@ -36,9 +36,10 @@ namespace Rimba
             private new CircleCollider2D collider;
             private PlayerController player;
 
+            FMOD.Studio.EventInstance instance;
+
             ParticleSystem.ShapeModule sparklesShape;
             ParticleSystem.EmissionModule sparklesEmission;
-            FMOD.Studio.EventInstance instance;
             private float sparklesRateOverTimeAtStart;
 
             void Start() {
@@ -57,7 +58,6 @@ namespace Rimba
                 sparklesShape = sparkles.shape;
                 sparklesEmission = sparkles.emission;
                 sparklesRateOverTimeAtStart = sparklesEmission.rateOverTimeMultiplier;
-
 
                 instance = FMODUnity.RuntimeManager.CreateInstance("event:/fire");
                 instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(transform.position));

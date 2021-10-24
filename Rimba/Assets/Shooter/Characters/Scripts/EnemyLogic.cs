@@ -21,7 +21,7 @@ public class EnemyLogic : BaseCharacterLogic
     [SerializeField] private GameObject smokeEffect;
 
     FMOD.Studio.EventInstance instance;
-    FMOD.Studio.EventDescription instDesc;
+    FMODUnity.StudioEventEmitter emitter;
 
     private void Start()
     {
@@ -34,8 +34,9 @@ public class EnemyLogic : BaseCharacterLogic
         hud.GetComponent<EnemyHUD>().characterData = characterData;
 
         // Shoot sound
-        instance = FMODUnity.RuntimeManager.CreateInstance("event:/mashine_gun");
-        //instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+        //GetComponent<FMODUnity.StudioEventEmitter>();
+        emitter = GetComponent<FMODUnity.StudioEventEmitter>();
+        //instance = FMODUnity.RuntimeManager.CreateInstance("event:/mashine_gun");
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, gameObject.transform, GetComponent<Rigidbody>());
     }
     private IEnumerator RotateTargetCoroutine()
@@ -116,12 +117,20 @@ public class EnemyLogic : BaseCharacterLogic
             reloadingWeaponCoroutine = StartCoroutine(ReloadingWeaponsCoroutine());
 
             // Shoot sound
-            FMOD.Studio.PLAYBACK_STATE state;
-            instance.getPlaybackState(out state);
-            if(state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            if(!emitter.IsPlaying())
             {
-                instance.start();
+                emitter.Play();
             }
+            if(Time.timeScale == 0)
+            {
+                emitter.Stop();
+            }
+            //FMOD.Studio.PLAYBACK_STATE state;
+            //instance.getPlaybackState(out state);
+            //if(state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            //{
+            //    instance.start();
+            //}
 
             // Shoot particles
             Transform shot = characterData.Weapon.AimGunEndPointTransform;
@@ -136,13 +145,17 @@ public class EnemyLogic : BaseCharacterLogic
         hud.gameObject.SetActive(false);
 
         // Shoot sound
-        FMOD.Studio.PLAYBACK_STATE state;
-        instance.getPlaybackState(out state);
-        if(state == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        if(emitter.IsPlaying())
         {
-            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            instance.release();
+            emitter.Stop();
         }
+        //FMOD.Studio.PLAYBACK_STATE state;
+        //instance.getPlaybackState(out state);
+        //if(state == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        //{
+        //    instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //    instance.release();
+        //}
     }
     private void Update()
     {

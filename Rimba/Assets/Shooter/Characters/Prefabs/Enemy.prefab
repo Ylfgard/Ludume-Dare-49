@@ -155,6 +155,7 @@ GameObject:
   - component: {fileID: 4499709674113810909}
   - component: {fileID: 9044391924369920105}
   - component: {fileID: 2206838055782972389}
+  - component: {fileID: 6942712138486835275}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Player
@@ -259,6 +260,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.578239, y: 3.8911943}
   m_EdgeRadius: 0
+--- !u!114 &6942712138486835275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4499709674113810905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/mashine_gun
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 1
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 40
 --- !u!1 &4776129726794856982
 GameObject:
   m_ObjectHideFlags: 0
